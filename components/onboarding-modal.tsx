@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
@@ -8,16 +8,15 @@ import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { useAppStore } from '@/lib/store';
 import { getRecommendedCountries } from '@/lib/recommendation-engine';
-import { X, ArrowLeft, ArrowRight } from 'lucide-react';
+import { X, ArrowLeft, ArrowRight, Sparkles } from 'lucide-react';
 
 import { Step1Personal } from './form-steps/step1-personal';
 import { Step2Professional } from './form-steps/step2-professional';
 import { Step3Languages } from './form-steps/step3-languages';
 import { Step4Budget } from './form-steps/step4-budget';
 import { Step5Goals } from './form-steps/step5-goals';
-import { Step6Consultation } from './form-steps/step6-consultation';
 
-const TOTAL_STEPS = 6;
+const TOTAL_STEPS = 5;
 
 export function OnboardingModal() {
   const router = useRouter();
@@ -68,8 +67,23 @@ export function OnboardingModal() {
         return 'Bütçe ve Zaman';
       case 5:
         return 'Hedefleriniz';
-      case 6:
-        return 'Size Nasıl Yardımcı Olabiliriz?';
+      default:
+        return '';
+    }
+  };
+
+  const getStepDescription = () => {
+    switch (currentStep) {
+      case 1:
+        return 'Sizinle ilgili temel bilgileri öğrenelim';
+      case 2:
+        return 'İş deneyiminiz ve eğitiminiz hakkında bilgi verin';
+      case 3:
+        return 'Hangi dilleri konuşabiliyorsunuz?';
+      case 4:
+        return 'Bütçeniz ve zaman planınız nasıl?';
+      case 5:
+        return 'Göç etme amacınız ve tercihleriniz';
       default:
         return '';
     }
@@ -87,8 +101,6 @@ export function OnboardingModal() {
         return <Step4Budget onValidChange={setIsValid} />;
       case 5:
         return <Step5Goals onValidChange={setIsValid} />;
-      case 6:
-        return <Step6Consultation onValidChange={setIsValid} />;
       default:
         return null;
     }
@@ -96,64 +108,76 @@ export function OnboardingModal() {
 
   return (
     <Dialog open={isModalOpen} onOpenChange={closeModal}>
-      <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto p-0">
+      <DialogContent className="max-w-3xl max-h-[95vh] overflow-hidden p-0 gap-0 bg-white">
         <DialogTitle className="sr-only">{getStepTitle()}</DialogTitle>
-        {/* Header */}
-        <div className="sticky top-0 z-10 bg-white border-b px-6 py-4">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-xl font-semibold text-zinc-900" aria-hidden="true">{getStepTitle()}</h2>
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={closeModal}
-              className="h-8 w-8"
-              aria-label="Formu kapat"
-            >
-              <X className="h-4 w-4" />
-            </Button>
-          </div>
-          <div className="space-y-2">
-            <div className="flex items-center justify-between text-sm text-zinc-600">
-              <span>Adım {currentStep} / {TOTAL_STEPS}</span>
-              <span>{Math.round(progress)}% tamamlandı</span>
+
+        {/* Header with gradient */}
+        <div className="bg-gradient-to-r from-blue-600 to-indigo-600 px-8 pt-8 pb-6">
+          <div className="flex items-start justify-between mb-4">
+            <div className="flex-1">
+              <div className="flex items-center gap-2 text-blue-100 text-sm mb-2">
+                <Sparkles className="w-4 h-4" />
+                <span>Adım {currentStep} / {TOTAL_STEPS}</span>
+              </div>
+              <h2 className="text-2xl font-bold text-white mb-1">
+                {getStepTitle()}
+              </h2>
+              <p className="text-blue-100 text-sm">
+                {getStepDescription()}
+              </p>
             </div>
-            <Progress value={progress} className="h-2" />
+            <button
+              onClick={closeModal}
+              className="text-white/80 hover:text-white transition-colors p-1"
+            >
+              <X className="w-5 h-5" />
+            </button>
+          </div>
+
+          {/* Progress Bar */}
+          <div className="mt-6">
+            <Progress value={progress} className="h-2 bg-white/20" />
           </div>
         </div>
 
-        {/* Content */}
-        <div className="px-6 py-6">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={currentStep}
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -20 }}
-              transition={{ duration: 0.3 }}
-            >
-              {renderStep()}
-            </motion.div>
-          </AnimatePresence>
+        {/* Content Area - with scroll */}
+        <div className="overflow-y-auto" style={{ maxHeight: 'calc(95vh - 240px)' }}>
+          <div className="p-8">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentStep}
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -20 }}
+                transition={{ duration: 0.2 }}
+              >
+                {renderStep()}
+              </motion.div>
+            </AnimatePresence>
+          </div>
         </div>
 
-        {/* Footer */}
-        <div className="sticky bottom-0 z-10 bg-white border-t px-6 py-4">
+        {/* Footer with buttons - fixed at bottom */}
+        <div className="border-t bg-zinc-50 px-8 py-4">
           <div className="flex items-center justify-between">
             <Button
+              type="button"
               variant="ghost"
               onClick={handleBack}
               className="gap-2"
             >
-              <ArrowLeft className="h-4 w-4" />
-              {currentStep === 1 ? 'Kapat' : 'Geri'}
+              <ArrowLeft className="w-4 h-4" />
+              {currentStep === 1 ? 'İptal' : 'Geri'}
             </Button>
+
             <Button
+              type="button"
               onClick={handleNext}
               disabled={!isValid}
-              className="gap-2"
+              className="gap-2 min-w-[120px]"
             >
               {currentStep === TOTAL_STEPS ? 'Önerileri Gör' : 'İleri'}
-              {currentStep !== TOTAL_STEPS && <ArrowRight className="h-4 w-4" />}
+              {currentStep !== TOTAL_STEPS && <ArrowRight className="w-4 h-4" />}
             </Button>
           </div>
         </div>
