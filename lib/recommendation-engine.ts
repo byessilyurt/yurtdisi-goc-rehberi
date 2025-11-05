@@ -1,5 +1,5 @@
 import { UserProfileData } from './store';
-import { MOCK_COUNTRIES } from './mock-data';
+import { MOCK_COUNTRIES } from './real-data';
 
 interface CountryScore {
   slug: string;
@@ -8,8 +8,8 @@ interface CountryScore {
 }
 
 /**
- * Mock recommendation engine that matches user profile to countries
- * Later this will be replaced with actual AI/ML or sophisticated matching
+ * Recommendation engine that matches user profile to countries
+ * Updated for real data: abd, almanya, irlanda, polonya, kanada
  */
 export function getRecommendedCountries(profile: UserProfileData): string[] {
   const scores: CountryScore[] = MOCK_COUNTRIES.map((country) => {
@@ -18,21 +18,21 @@ export function getRecommendedCountries(profile: UserProfileData): string[] {
 
     // Factor 1: Employment Status & Goals
     if (profile.employmentStatus === 'student' || profile.primaryGoal === 'education') {
-      if (['kanada', 'almanya', 'hollanda'].includes(country.slug)) {
+      if (['kanada', 'almanya', 'polonya', 'irlanda'].includes(country.slug)) {
         score += 20;
         reasons.push('Öğrenciler için mükemmel eğitim fırsatları');
       }
     }
 
     if (profile.employmentStatus === 'employed' || profile.primaryGoal === 'employment') {
-      if (['kanada', 'almanya', 'hollanda', 'avustralya'].includes(country.slug)) {
+      if (['kanada', 'almanya', 'irlanda', 'abd'].includes(country.slug)) {
         score += 15;
         reasons.push('Profesyoneller için güçlü iş pazarı');
       }
     }
 
     if (profile.primaryGoal === 'business') {
-      if (['hollanda', 'portekiz', 'kanada'].includes(country.slug)) {
+      if (['abd', 'irlanda', 'kanada', 'almanya'].includes(country.slug)) {
         score += 25;
         reasons.push('Girişimciler için özel vize programları');
       }
@@ -45,7 +45,7 @@ export function getRecommendedCountries(profile: UserProfileData): string[] {
       // IT/Tech
       if (professionLower.includes('yazılım') || professionLower.includes('developer') ||
           professionLower.includes('mühendis') || professionLower.includes('it')) {
-        if (['kanada', 'hollanda', 'almanya'].includes(country.slug)) {
+        if (['abd', 'irlanda', 'almanya', 'kanada'].includes(country.slug)) {
           score += 20;
           reasons.push('Teknoloji sektörü için yüksek talep');
         }
@@ -54,7 +54,7 @@ export function getRecommendedCountries(profile: UserProfileData): string[] {
       // Healthcare
       if (professionLower.includes('doktor') || professionLower.includes('hemşire') ||
           professionLower.includes('sağlık')) {
-        if (['kanada', 'almanya', 'avustralya'].includes(country.slug)) {
+        if (['almanya', 'irlanda', 'kanada', 'abd'].includes(country.slug)) {
           score += 25;
           reasons.push('Sağlık profesyonellerine acil ihtiyaç');
         }
@@ -62,7 +62,7 @@ export function getRecommendedCountries(profile: UserProfileData): string[] {
 
       // Engineering
       if (professionLower.includes('mühendis')) {
-        if (['almanya', 'kanada', 'hollanda'].includes(country.slug)) {
+        if (['almanya', 'abd', 'kanada', 'irlanda'].includes(country.slug)) {
           score += 20;
           reasons.push('Mühendislik pozisyonları için yüksek maaşlar');
         }
@@ -71,15 +71,15 @@ export function getRecommendedCountries(profile: UserProfileData): string[] {
 
     // Factor 3: Budget
     if (profile.budgetRange) {
-      if (profile.budgetRange === '0-100k') {
-        // Low budget - favor cheaper countries
-        if (['ispanya', 'portekiz'].includes(country.slug)) {
-          score += 20;
-          reasons.push('Düşük yaşam maliyeti');
+      if (profile.budgetRange === '0-100k' || profile.budgetRange === '100k-250k') {
+        // Lower budget - favor Poland
+        if (['polonya'].includes(country.slug)) {
+          score += 25;
+          reasons.push('AB\'nin en uygun yaşam maliyeti');
         }
       } else if (profile.budgetRange === '500k+') {
         // High budget - favor premium destinations
-        if (['kanada', 'avustralya', 'hollanda'].includes(country.slug)) {
+        if (['abd', 'kanada', 'irlanda'].includes(country.slug)) {
           score += 15;
           reasons.push('Yüksek yaşam kalitesi');
         }
@@ -89,8 +89,8 @@ export function getRecommendedCountries(profile: UserProfileData): string[] {
     // Factor 4: Language Skills
     if (profile.languageSkills) {
       if (profile.languageSkills.english === 'fluent' || profile.languageSkills.english === 'intermediate') {
-        if (['kanada', 'avustralya', 'hollanda'].includes(country.slug)) {
-          score += 15;
+        if (['abd', 'kanada', 'irlanda'].includes(country.slug)) {
+          score += 20;
           reasons.push('İngilizce konuşulan ülke');
         }
       }
@@ -110,65 +110,85 @@ export function getRecommendedCountries(profile: UserProfileData): string[] {
       }
     }
 
-    // Factor 5: Climate Preference
-    if (profile.preferredClimate) {
-      if (profile.preferredClimate === 'sicak') {
-        if (['ispanya', 'portekiz', 'avustralya'].includes(country.slug)) {
-          score += 15;
-          reasons.push('Sıcak ve güneşli iklim');
-        }
-      } else if (profile.preferredClimate === 'ilik') {
-        if (['hollanda', 'almanya'].includes(country.slug)) {
-          score += 10;
-          reasons.push('Ilıman iklim');
-        }
-      }
-    }
-
-    // Factor 6: Age Range
+    // Factor 5: Age Range
     if (profile.ageRange) {
       if (profile.ageRange === '18-25' || profile.ageRange === '26-35') {
         // Young professionals - favor countries with easier entry for youth
-        if (['kanada', 'almanya', 'hollanda'].includes(country.slug)) {
+        if (['kanada', 'almanya', 'irlanda', 'polonya'].includes(country.slug)) {
           score += 10;
           reasons.push('Genç profesyoneller için uygun');
         }
-      } else if (profile.ageRange === '55+') {
-        // Retirees
-        if (['ispanya', 'portekiz'].includes(country.slug)) {
-          score += 20;
-          reasons.push('Emekliler için özel programlar');
-        }
-      }
-    }
-
-    // Factor 7: Timeline
-    if (profile.timeline) {
-      if (profile.timeline === 'urgent' || profile.timeline === '6months') {
-        // Fast processing countries
-        if (['portekiz', 'ispanya'].includes(country.slug)) {
-          score += 15;
-          reasons.push('Hızlı vize işlemleri');
-        }
-      }
-    }
-
-    // Factor 8: Experience Level
-    if (profile.yearsExperience) {
-      if (profile.yearsExperience >= 5) {
-        // Experienced professionals
-        if (['kanada', 'almanya', 'avustralya'].includes(country.slug)) {
-          score += 15;
+      } else if (profile.ageRange === '46-55' || profile.ageRange === '55+') {
+        // Older professionals - favor countries with experience-based programs
+        if (['kanada', 'almanya'].includes(country.slug)) {
+          score += 10;
           reasons.push('Deneyimli profesyonellere öncelik');
         }
       }
     }
 
-    // Factor 9: Family
+    // Factor 6: Timeline
+    if (profile.timeline) {
+      if (profile.timeline === 'urgent' || profile.timeline === '6months') {
+        // Fast processing countries
+        if (['polonya', 'irlanda'].includes(country.slug)) {
+          score += 15;
+          reasons.push('Hızlı vize işlemleri');
+        }
+      } else if (profile.timeline === '1year' || profile.timeline === '2years') {
+        // Countries with thorough but worthwhile processes
+        if (['kanada', 'almanya', 'abd'].includes(country.slug)) {
+          score += 10;
+          reasons.push('Kapsamlı göç programları');
+        }
+      }
+    }
+
+    // Factor 7: Experience Level
+    if (profile.yearsExperience) {
+      if (profile.yearsExperience >= 5) {
+        // Experienced professionals
+        if (['abd', 'kanada', 'almanya', 'irlanda'].includes(country.slug)) {
+          score += 15;
+          reasons.push('Deneyimli profesyonellere öncelik');
+        }
+      } else if (profile.yearsExperience >= 1) {
+        // Some experience
+        if (['irlanda', 'polonya', 'almanya'].includes(country.slug)) {
+          score += 10;
+          reasons.push('Orta seviye deneyim yeterli');
+        }
+      }
+    }
+
+    // Factor 8: Family
     if (profile.hasFamily) {
-      if (['kanada', 'almanya', 'hollanda'].includes(country.slug)) {
-        score += 10;
+      if (['kanada', 'almanya', 'irlanda'].includes(country.slug)) {
+        score += 12;
         reasons.push('Aile dostu politikalar');
+      }
+    }
+
+    // Factor 9: Education Level
+    if (profile.educationLevel) {
+      if (profile.educationLevel === 'yuksek_lisans' || profile.educationLevel === 'doktora') {
+        // Higher education favored by all countries
+        if (['abd', 'kanada', 'almanya', 'irlanda'].includes(country.slug)) {
+          score += 15;
+          reasons.push('Yüksek eğitim seviyeniz büyük avantaj');
+        }
+      } else if (profile.educationLevel === 'universite') {
+        // Bachelor's degree
+        if (['almanya', 'kanada', 'irlanda', 'polonya'].includes(country.slug)) {
+          score += 10;
+          reasons.push('Üniversite mezunları için fırsatlar');
+        }
+      } else if (profile.educationLevel === 'lise') {
+        // High school - favor Ausbildung and vocational programs
+        if (['almanya', 'polonya'].includes(country.slug)) {
+          score += 15;
+          reasons.push('Meslek eğitimi programları');
+        }
       }
     }
 
@@ -196,11 +216,15 @@ export function getMatchReasons(countrySlug: string, profile: UserProfileData): 
     const professionLower = profile.profession.toLowerCase();
     if (professionLower.includes('sağlık') && country.matchReasons.healthcare) {
       reasons.push(country.matchReasons.healthcare);
-    } else if (professionLower.includes('it') || professionLower.includes('yazılım')) {
-      reasons.push(country.matchReasons.it || country.matchReasons.default);
+    } else if ((professionLower.includes('it') || professionLower.includes('yazılım')) && country.matchReasons.it) {
+      reasons.push(country.matchReasons.it);
+    } else if (professionLower.includes('mühendis') && country.matchReasons.engineer) {
+      reasons.push(country.matchReasons.engineer);
     } else {
       reasons.push(country.matchReasons.default);
     }
+  } else if (profile.primaryGoal === 'business' && country.matchReasons.business) {
+    reasons.push(country.matchReasons.business);
   } else {
     reasons.push(country.matchReasons.default);
   }

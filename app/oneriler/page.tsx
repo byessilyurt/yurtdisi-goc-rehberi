@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { useAppStore } from '@/lib/store';
-import { MOCK_COUNTRIES } from '@/lib/mock-data';
+import { MOCK_COUNTRIES } from '@/lib/real-data';
 import { getMatchReasons, getUserType } from '@/lib/recommendation-engine';
 import { ArrowRight, Sparkles, Clock, DollarSign, TrendingUp, Home } from 'lucide-react';
 

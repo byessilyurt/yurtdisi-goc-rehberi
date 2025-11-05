@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { CATEGORY_LISTS, MOCK_COUNTRIES } from '@/lib/mock-data';
+import { CATEGORY_LISTS, MOCK_COUNTRIES } from '@/lib/real-data';
 import { Home, ArrowRight, Sparkles } from 'lucide-react';
 
 export default function CategoryPage() {

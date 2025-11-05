@@ -9,7 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Badge } from '@/components/ui/badge';
 import { useAppStore } from '@/lib/store';
-import { MOCK_COUNTRIES, MOCK_VISA_TYPES, MOCK_REQUIREMENTS, MOCK_RESOURCES } from '@/lib/mock-data';
+import { MOCK_COUNTRIES, MOCK_VISA_TYPES, MOCK_REQUIREMENTS, MOCK_RESOURCES } from '@/lib/real-data';
 import { getUserType } from '@/lib/recommendation-engine';
 import {
   Home,

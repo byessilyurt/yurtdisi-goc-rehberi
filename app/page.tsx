@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { useAppStore } from '@/lib/store';
-import { CATEGORY_LISTS } from '@/lib/mock-data';
+import { CATEGORY_LISTS } from '@/lib/real-data';
 import { Globe, Sparkles, CheckCircle, ArrowRight, MapPin, GraduationCap, Briefcase, Heart } from 'lucide-react';
 
 export default function HomePage() {
@@ -101,8 +101,8 @@ export default function HomePage() {
             className="grid grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto"
           >
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-blue-600">15+</div>
-              <div className="text-sm text-zinc-600 mt-1">Ülke Seçeneği</div>
+              <div className="text-3xl md:text-4xl font-bold text-blue-600">5</div>
+              <div className="text-sm text-zinc-600 mt-1">Popüler Ülke</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-blue-600">5 dk</div>
