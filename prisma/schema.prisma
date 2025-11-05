@@ -1,0 +1,177 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Core entities
+model Country {
+  id          String   @id @default(cuid())
+  slug        String   @unique // "kanada", "almanya"
+  name        String   // "Kanada", "Almanya"
+  flagEmoji   String   // 🇨🇦, 🇩🇪
+  images      String[] // Hero images URLs
+  description String   @db.Text // Short pitch
+
+  // Metadata for ranking
+  popularityScore Int    @default(0)
+
+  // Relations
+  visaTypes       VisaType[]
+  requirements    Requirement[]
+  resources       Resource[]
+  costs           Cost[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([slug])
+  @@index([popularityScore])
+}
+
+model VisaType {
+  id          String  @id @default(cuid())
+  countryId   String
+  country     Country @relation(fields: [countryId], references: [id], onDelete: Cascade)
+
+  type        String  // "student", "work", "business", "skilled_worker"
+  name        String  // "Öğrenci Vizesi", "Çalışma İzni"
+  description String  @db.Text
+
+  // Eligibility criteria
+  minAge      Int?
+  maxAge      Int?
+  educationLevel String[] // ["lise", "universite", "yuksek_lisans"]
+  professions    String[] // Matched against user profession
+
+  // Requirements
+  requirements Requirement[]
+
+  // Timeline & Cost
+  processingTimeMin Int  // days
+  processingTimeMax Int
+  estimatedCostMin  Int  // TL
+  estimatedCostMax  Int
+
+  // Success factors
+  demandLevel    String // "high", "medium", "low"
+  difficultyLevel String // "easy", "medium", "hard"
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([countryId])
+  @@index([type])
+}
+
+model Requirement {
+  id         String   @id @default(cuid())
+  visaTypeId String
+  visaType   VisaType @relation(fields: [visaTypeId], references: [id], onDelete: Cascade)
+  countryId  String?
+  country    Country? @relation(fields: [countryId], references: [id], onDelete: Cascade)
+
+  category   String   // "documents", "qualifications", "financial", "language"
+  title      String
+  description String  @db.Text
+  isMandatory Boolean
+  personalizedFor String[] // ["student", "healthcare", "it", "entrepreneur"]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([visaTypeId])
+  @@index([countryId])
+}
+
+model Resource {
+  id        String  @id @default(cuid())
+  countryId String
+  country   Country @relation(fields: [countryId], references: [id], onDelete: Cascade)
+
+  category  String  // "job_search", "university_search", "housing", "community"
+  title     String
+  url       String
+  description String @db.Text
+  targetAudience String[] // ["student", "employee", "healthcare"]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([countryId])
+  @@index([category])
+}
+
+model Cost {
+  id        String  @id @default(cuid())
+  countryId String
+  country   Country @relation(fields: [countryId], references: [id], onDelete: Cascade)
+
+  category  String  // "visa_fees", "living_cost", "education", "healthcare"
+  item      String
+  amountMin Int     // TL
+  amountMax Int
+  period    String? // "monthly", "yearly", "one_time"
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([countryId])
+  @@index([category])
+}
+
+// User session data (no account needed initially)
+model UserProfile {
+  id        String   @id @default(cuid())
+  sessionId String   @unique
+
+  // Form responses
+  ageRange       String   // "18-25", "26-35", etc.
+  educationLevel String   // "lise", "universite", etc.
+  profession     String
+  industry       String?
+  employmentStatus String // "employed", "student", "unemployed"
+  yearsExperience Int?
+
+  // Preferences
+  budgetRange    String   // "0-100k", "100k-500k", "500k+"
+  timeline       String   // "urgent", "6months", "1year", "flexible"
+  languageSkills Json     // {"english": "basic", "german": "fluent"}
+  hasFamily      Boolean
+
+  // Goals
+  primaryGoal    String   // "education", "employment", "business", "quality_of_life"
+  preferredClimate String?
+
+  // Lead capture
+  email          String?
+  phone          String?
+  interestedInConsultation Boolean @default(false)
+
+  createdAt DateTime @default(now())
+  expiresAt DateTime // Auto-delete after 30 days
+
+  @@index([sessionId])
+  @@index([expiresAt])
+}
+
+// Pre-made category lists
+model CategoryList {
+  id          String @id @default(cuid())
+  slug        String @unique // "ogrenciler", "saglik-calisanlari"
+  title       String
+  description String @db.Text
+  icon        String
+  countries   Json   // Ordered array of country IDs with reasons
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([slug])
+}
