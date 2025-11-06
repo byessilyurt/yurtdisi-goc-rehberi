@@ -8,9 +8,9 @@ export const countries = [
     name: "Amerika Birleşik Devletleri",
     flagEmoji: "🇺🇸",
     images: [
-      "/images/usa-skyline.jpg",
-      "/images/usa-silicon-valley.jpg",
-      "/images/usa-statue-liberty.jpg"
+      "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=1200&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=1200&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=1200&h=600&fit=crop"
     ],
     description: "Teknoloji ve yenilikçiliğin başkenti. Yüksek maaşlar, kariyer fırsatları ve 350,000 kişilik Türk topluluğu. H-1B vizesi ile Silicon Valley'de çalışma imkanı.",
     popularityScore: 72
@@ -20,9 +20,9 @@ export const countries = [
     name: "Almanya",
     flagEmoji: "🇩🇪",
     images: [
-      "/images/germany-berlin.jpg",
-      "/images/germany-munich.jpg",
-      "/images/germany-turkish-community.jpg"
+      "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=1200&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1515488764276-beab7607c1e6?w=1200&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560930950-5cc20e80e392?w=1200&h=600&fit=crop"
     ],
     description: "3+ milyon Türk'ün yaşadığı, ücretsiz üniversite eğitimi sunan AB'nin kalbi. EU Blue Card ile 21 ayda kalıcı oturum. En güçlü Türk diasporası ve topluluk desteği.",
     popularityScore: 95
@@ -32,9 +32,9 @@ export const countries = [
     name: "İrlanda",
     flagEmoji: "🇮🇪",
     images: [
-      "/images/ireland-dublin.jpg",
-      "/images/ireland-tech-hub.jpg",
-      "/images/ireland-nature.jpg"
+      "https://images.unsplash.com/photo-1549918864-48ac978761a4?w=1200&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1590089415225-401ed6f9db8e?w=1200&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1200&h=600&fit=crop"
     ],
     description: "AB'nin İngilizce konuşulan tek ülkesi. Google, Meta, Apple'ın Avrupa merkezleri. Critical Skills İzni ile 21 ayda kalıcı oturum ve canlı teknoloji ekosistemi.",
     popularityScore: 65
@@ -44,9 +44,9 @@ export const countries = [
     name: "Polonya",
     flagEmoji: "🇵🇱",
     images: [
-      "/images/poland-warsaw.jpg",
-      "/images/poland-krakow.jpg",
-      "/images/poland-affordable.jpg"
+      "https://images.unsplash.com/photo-1559628376-f3fe5f782a2e?w=1200&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1605641495026-d8e2e3e88e04?w=1200&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1580159287648-d3cb43143b4d?w=1200&h=600&fit=crop"
     ],
     description: "AB'ye en uygun maliyetli giriş kapısı. Batı Avrupa'dan %50-60 daha ucuz yaşam, yıllık €2,000-6,000 üniversite harçları. Schengen vizesi ile tüm Avrupa'ya seyahat.",
     popularityScore: 72
@@ -56,9 +56,9 @@ export const countries = [
     name: "Kanada",
     flagEmoji: "🇨🇦",
     images: [
-      "/images/canada-toronto.jpg",
-      "/images/canada-vancouver.jpg",
-      "/images/canada-nature.jpg"
+      "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=1200&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=1200&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1519832979-6fa011b87667?w=1200&h=600&fit=crop"
     ],
     description: "Dünya'nın en şeffaf göç sistemi. Puana dayalı Express Entry ile 6-8 ayda kalıcı oturum. Yüksek yaşam kalitesi, çok kültürlülük ve net vatandaşlık yolu.",
     popularityScore: 35
