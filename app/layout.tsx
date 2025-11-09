@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { OnboardingModal } from "@/components/onboarding-modal";
 
@@ -42,12 +42,13 @@ export const metadata: Metadata = {
     description: "Yurtdışına göç etmek istiyorsunuz ama nereden başlayacağınızı bilmiyor musunuz? Size en uygun ülkeleri bulun.",
     images: ["/og-image.png"],
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-  },
   metadataBase: new URL("https://yurtdisi-goc-rehberi.vercel.app"),
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({
