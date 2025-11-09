@@ -18,12 +18,9 @@ import {
   Clock,
   TrendingUp,
   Briefcase,
-  GraduationCap,
-  Users,
   Zap,
   ThumbsUp,
   ArrowRight,
-  Filter,
   X,
 } from 'lucide-react';
 
@@ -105,13 +102,14 @@ export default function HomePage() {
 
             {/* Search Bar */}
             <div className="flex-1 max-w-md relative">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-400" />
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-400" aria-hidden="true" />
               <Input
                 type="text"
                 placeholder="Ülke ara..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="pl-10 pr-4"
+                aria-label="Ülke ara"
               />
             </div>
 
@@ -121,24 +119,36 @@ export default function HomePage() {
                 size="sm"
                 onClick={() => setShowFilters(!showFilters)}
                 className="gap-2"
+                aria-label="Filtreleri aç"
+                aria-expanded={showFilters}
               >
-                <Sliders className="w-4 h-4" />
+                <Sliders className="w-4 h-4" aria-hidden="true" />
                 Filtrele
               </Button>
-              <Button onClick={openModal} size="sm" className="gap-2">
-                <Zap className="w-4 h-4" />
+              <Button
+                onClick={openModal}
+                size="sm"
+                className="gap-2"
+                aria-label="Kişisel analiz formunu aç"
+              >
+                <Zap className="w-4 h-4" aria-hidden="true" />
                 Kişisel Analiz
               </Button>
             </div>
           </div>
 
           {/* Category Pills */}
-          <div className="flex items-center gap-2 mt-4 overflow-x-auto pb-2">
+          <div
+            className="flex items-center gap-2 mt-4 overflow-x-auto pb-2"
+            role="navigation"
+            aria-label="Kategori filtreleri"
+          >
             <Button
               variant={selectedCategory === null ? 'default' : 'outline'}
               size="sm"
               onClick={() => setSelectedCategory(null)}
               className="rounded-full"
+              aria-pressed={selectedCategory === null}
             >
               Tüm Ülkeler
             </Button>
@@ -151,8 +161,10 @@ export default function HomePage() {
                   setSelectedCategory(selectedCategory === category.slug ? null : category.slug)
                 }
                 className="rounded-full gap-2 whitespace-nowrap"
+                aria-pressed={selectedCategory === category.slug}
+                aria-label={`${category.title} kategorisi`}
               >
-                <span>{category.icon}</span>
+                <span aria-hidden="true">{category.icon}</span>
                 {category.title.replace('İçin', '').replace('En İyi Ülkeler', '').trim()}
               </Button>
             ))}

@@ -10,7 +10,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { useAppStore } from '@/lib/store';
 import { MOCK_COUNTRIES } from '@/lib/real-data';
-import { getMatchReasons, getUserType } from '@/lib/recommendation-engine';
+import { getMatchReasons } from '@/lib/recommendation-engine';
 import { ArrowRight, Sparkles, Clock, DollarSign, TrendingUp, Home } from 'lucide-react';
 
 export default function RecommendationsPage() {
@@ -27,7 +27,6 @@ export default function RecommendationsPage() {
     return null;
   }
 
-  const userType = getUserType(userProfile);
   const countries = MOCK_COUNTRIES.filter(c => recommendedCountries.includes(c.slug));
 
   return (

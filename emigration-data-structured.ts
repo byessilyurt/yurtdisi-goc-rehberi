@@ -48,7 +48,7 @@ export const countries = [
       "https://images.unsplash.com/photo-1605641495026-d8e2e3e88e04?w=1200&h=600&fit=crop",
       "https://images.unsplash.com/photo-1580159287648-d3cb43143b4d?w=1200&h=600&fit=crop"
     ],
-    description: "AB'ye en uygun maliyetli giriş kapısı. Batı Avrupa'dan %50-60 daha ucuz yaşam, yıllık €2,000-6,000 üniversite harçları. Schengen vizesi ile tüm Avrupa'ya seyahat.",
+    description: "AB'ye en uygun maliyetli giriş kapısı. Varşova'da aylık €1,150-1,600 yaşam bütçesi, yıllık €2,000-6,000 üniversite harçları ve Tip D vizeleri 15-30 günde sonuçlanır. EU Blue Card ile 2 yılda kalıcı oturum, Decision 1/80 sayesinde Türk vatandaşlarına özel iş güvenceleri.",
     popularityScore: 72
   },
   {
@@ -310,8 +310,8 @@ export const visaTypes = [
     countrySlug: "polonya",
     type: "work",
     name: "AB Mavi Kart",
-    description: "Üniversite mezunları için çalışma izni. 12,272 PLN aylık maaş (ulusal ortalamanın %150'si). 2 yıl sonra işveren değiştirme serbestliği.",
-    minAge: 21,
+    description: "2025 maaş eşiği €2,800 brüt (12,272 PLN) ve dil şartı yok. 12 ay sözleşme ile başvurulabilir; aile birleşimi ve 2 yılda kalıcı oturum imkanı sunar.",
+    minAge: 18,
     maxAge: null,
     educationLevel: ["universite", "yuksek_lisans", "doktora"],
     professions: [
@@ -324,8 +324,9 @@ export const visaTypes = [
     ],
     processingTimeMin: 150,
     processingTimeMax: 540,
-    estimatedCostMin: 1600, // 50 PLN * 32
-    estimatedCostMax: 6400, // 200 PLN * 32
+    estimatedCostMin: 240,
+    estimatedCostMax: 350,
+    costCurrency: "EUR",
     demandLevel: "high",
     difficultyLevel: "medium"
   },
@@ -333,15 +334,16 @@ export const visaTypes = [
     countrySlug: "polonya",
     type: "student",
     name: "Tip D Öğrenci Vizesi",
-    description: "AB'nin en ucuz eğitimi! €2,000-6,000 yıllık harç. 15-30 gün hızlı işlem. İngilizce programlar mevcut. Çalışma hakkı ve AB'ye seyahat özgürlüğü.",
+    description: "AB'nin en ucuz eğitimi! Yıllık €2,000-6,000 harç, 15-30 günde sonuçlanan vize ve haftada 20 saat çalışma hakkı. İngilizce programlar yaygın.",
     minAge: 17,
     maxAge: null,
     educationLevel: ["lise", "universite"],
     professions: ["ogrenci"],
     processingTimeMin: 15,
     processingTimeMax: 30,
-    estimatedCostMin: 2816, // €80 + €13.50 service * 32
-    estimatedCostMax: 2816,
+    estimatedCostMin: 270,
+    estimatedCostMax: 430,
+    costCurrency: "EUR",
     demandLevel: "high",
     difficultyLevel: "easy"
   },
@@ -349,15 +351,16 @@ export const visaTypes = [
     countrySlug: "polonya",
     type: "work",
     name: "Tip A Çalışma İzni",
-    description: "İşveren sponsorluğu ile genel çalışma izni. Çoğu meslek için uygun. 1-6 ay işlem süresi. Aile birleşimi hakkı.",
+    description: "İşveren sponsorluğu ile genel çalışma izni. Maaş eşiği yok, 1-6 ayda sonuçlanıyor ve Decision 1/80 sayesinde sözleşme uzatmalarında kolaylık var.",
     minAge: 18,
     maxAge: null,
     educationLevel: [],
     professions: [],
     processingTimeMin: 30,
     processingTimeMax: 180,
-    estimatedCostMin: 416, // 13 PLN * 32
-    estimatedCostMax: 832, // 26 PLN * 32
+    estimatedCostMin: 120,
+    estimatedCostMax: 160,
+    costCurrency: "EUR",
     demandLevel: "medium",
     difficultyLevel: "medium"
   },
@@ -776,7 +779,7 @@ export const requirements = [
     visaTypeName: "AB Mavi Kart",
     category: "qualifications",
     title: "İş Sözleşmesi",
-    description: "12,272 PLN aylık brüt maaş (Şubat 2025). 3+ yıl süreli üniversite diploması VEYA 5 yıl profesyonel tecrübe. Diploma olmadan da başvuru artık mümkün!",
+    description: "En az 12 aylık iş sözleşmesi ve 2025 için €2.800 brüt (12.272 PLN) maaş eşiği. Pozisyon diplomayla veya deneyimle uyumlu olmalı.",
     isMandatory: true,
     personalizedFor: ["yazilim_muhendisi", "muhendis"]
   },
@@ -785,7 +788,7 @@ export const requirements = [
     visaTypeName: "AB Mavi Kart",
     category: "documents",
     title: "Diploma Tanınması",
-    description: "Türk üniversite diploması genelde tanınır. Bazı durumlarda diploma denkliği gerekebilir. Nostrifikasyon süreci 2-4 ay sürer.",
+    description: "3+ yıllık üniversite diploması ya da 5 yıl mesleki deneyim kabul ediliyor. Apostil ve yeminli Lehçe/İngilizce çeviri hazırlayın; denkliği 2-4 ay sürebilir.",
     isMandatory: true,
     personalizedFor: []
   },
@@ -794,7 +797,7 @@ export const requirements = [
     visaTypeName: "AB Mavi Kart",
     category: "language",
     title: "Dil Şartı Yok",
-    description: "Resmi Lehçe/İngilizce dil testi gerekmez. İş İngilizcesi yeterli. Lehçe öğrenmek günlük yaşamı kolaylaştırır.",
+    description: "Resmi Lehçe veya İngilizce sınav zorunlu değil. İş İngilizcesi yeterli, Lehçe bilmek işyerinde ve günlük hayatta avantaj sağlar.",
     isMandatory: false,
     personalizedFor: []
   },
@@ -803,7 +806,7 @@ export const requirements = [
     visaTypeName: "AB Mavi Kart",
     category: "financial",
     title: "Sağlık Sigortası",
-    description: "İşveren ZUS sosyal güvenlik sigortasına kayıt yapar. NFZ devlet sağlık sistemine erişim sağlar. Özel sigorta €26-105 aylık opsiyonel.",
+    description: "İşveren ZUS/NFZ kaydını yapana kadar özel sağlık sigortası yaptırın (aylık €25-70). Blue Card onayında sürekli sağlık sigortası kanıtı istenir.",
     isMandatory: true,
     personalizedFor: []
   },
@@ -825,7 +828,7 @@ export const requirements = [
     visaTypeName: "Tip D Öğrenci Vizesi",
     category: "financial",
     title: "Mali Gösterim",
-    description: "1,018 PLN aylık (~$267) + 2,500 PLN dönüş uçuş parası. Toplam ~€3,000 ilk yıl için yeterli. AB'nin en uygun fiyatlı eğitimi!",
+    description: "Aylık €230 (1.018 PLN) yaşam bütçesi x 12 ay + €570 dönüş bileti parası göstermelisiniz. Banka ekstresi, sponsor mektubu veya burs kabul edilir.",
     isMandatory: true,
     personalizedFor: ["ogrenci"]
   },
@@ -843,7 +846,7 @@ export const requirements = [
     visaTypeName: "Tip D Öğrenci Vizesi",
     category: "financial",
     title: "Sağlık Sigortası",
-    description: "€30,000 kapsama minimum. Yıllık €150-300 arası poliçeler mevcut. Bazı üniversiteler kendi sigorta paketini sunar.",
+    description: "€30,000 teminatlı sağlık sigortası zorunlu. Öğrenci poliçeleri yıllık €150-300. Bazı üniversiteler kayıt sırasında paket sunar.",
     isMandatory: true,
     personalizedFor: ["ogrenci"]
   },
@@ -1196,6 +1199,14 @@ export const resources = [
   },
   {
     countrySlug: "polonya",
+    category: "job_search",
+    title: "Pracuj.pl",
+    url: "https://www.pracuj.pl/",
+    description: "Mühendislik, finans ve kurumsal pozisyonlar için ulusal iş arama portalı. Blue Card maaş aralıklarını filtreleyin.",
+    targetAudience: ["employee", "muhendis", "it"]
+  },
+  {
+    countrySlug: "polonya",
     category: "university_search",
     title: "Study in Poland",
     url: "https://www.study.gov.pl/",
@@ -1216,6 +1227,14 @@ export const resources = [
     title: "Turks in Poland Facebook",
     url: "https://www.facebook.com/groups/turksinpoland",
     description: "Polonya'daki Türk topluluğu. Varşova, Krakow, Wroclaw'daki deneyimler paylaşılıyor.",
+    targetAudience: ["employee", "student"]
+  },
+  {
+    countrySlug: "polonya",
+    category: "community",
+    title: "Gov.pl Türkçe Portal",
+    url: "https://www.gov.pl/web/turkiye",
+    description: "Resmi Türkçe portal: vizeler, e-Konsulat randevuları, karar 1/80 hakları ve iletişim bilgileri.",
     targetAudience: ["employee", "student"]
   },
   {
@@ -1564,81 +1583,91 @@ export const costs = [
     countrySlug: "polonya",
     category: "visa_fees",
     item: "EU Blue Card Başvuru",
-    amountMin: 1600,
-    amountMax: 6400,
-    period: "one_time"
+    amountMin: 120,
+    amountMax: 350,
+    period: "one_time",
+    currency: "EUR"
   },
   {
     countrySlug: "polonya",
     category: "visa_fees",
     item: "Tip D Öğrenci Vizesi",
-    amountMin: 2816,
-    amountMax: 2816,
-    period: "one_time"
+    amountMin: 270,
+    amountMax: 430,
+    period: "one_time",
+    currency: "EUR"
   },
   {
     countrySlug: "polonya",
     category: "living_cost",
     item: "Varşova Aylık Yaşam (kira dahil)",
-    amountMin: 46112,
-    amountMax: 71264,
-    period: "monthly"
+    amountMin: 1150,
+    amountMax: 1600,
+    period: "monthly",
+    currency: "EUR"
   },
   {
     countrySlug: "polonya",
     category: "living_cost",
     item: "Krakow Aylık Yaşam",
-    amountMin: 41600,
-    amountMax: 57600,
-    period: "monthly"
+    amountMin: 1030,
+    amountMax: 1370,
+    period: "monthly",
+    currency: "EUR"
   },
   {
     countrySlug: "polonya",
     category: "living_cost",
     item: "Küçük Şehirler Aylık Yaşam",
-    amountMin: 32000,
-    amountMax: 48000,
-    period: "monthly"
+    amountMin: 910,
+    amountMax: 1260,
+    period: "monthly",
+    currency: "EUR"
   },
   {
     countrySlug: "polonya",
     category: "education",
     item: "Devlet Üniversitesi Yıllık Harç",
-    amountMin: 70000,
-    amountMax: 210000,
-    period: "yearly"
+    amountMin: 2000,
+    amountMax: 6000,
+    period: "yearly",
+    currency: "EUR"
   },
   {
     countrySlug: "polonya",
     category: "education",
     item: "Özel Üniversite Yıllık Harç",
-    amountMin: 105000,
-    amountMax: 350000,
-    period: "yearly"
+    amountMin: 4000,
+    amountMax: 8000,
+    period: "yearly",
+    currency: "EUR"
   },
   {
     countrySlug: "polonya",
     category: "education",
     item: "Tıp Fakültesi Yıllık Harç",
-    amountMin: 525000,
-    amountMax: 700000,
-    period: "yearly"
+    amountMin: 12000,
+    amountMax: 15000,
+    period: "yearly",
+    currency: "EUR"
   },
   {
     countrySlug: "polonya",
     category: "healthcare",
     item: "Öğrenci Sağlık Sigortası",
-    amountMin: 4800,
-    amountMax: 9600,
-    period: "yearly"
+    amountMin: 140,
+    amountMax: 275,
+    period: "yearly",
+    currency: "EUR"
   },
   {
     countrySlug: "polonya",
     category: "healthcare",
     item: "Özel Sağlık Sigortası (çalışan)",
-    amountMin: 832,
-    amountMax: 3360,
-    period: "monthly"
+    amountMin: 25,
+    amountMax: 95,
+    period: "monthly",
+    currency: "EUR"
   },
 
   // ========================================

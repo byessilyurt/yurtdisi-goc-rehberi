@@ -10,6 +10,42 @@ import {
   costs as rawCosts
 } from '../emigration-data-structured';
 
+type MatchCategory = 'student' | 'it' | 'healthcare' | 'engineer' | 'business' | 'default';
+type CurrencyCode = 'TL' | 'EUR' | 'USD' | 'CAD';
+
+type VisaEntry = {
+  type: string;
+  name: string;
+  description: string;
+  processingTime: string;
+  estimatedCost: string;
+  difficulty: string;
+  demandLevel: string;
+  minAge: number | null;
+  maxAge: number | null;
+  educationLevel: string[];
+  professions: string[];
+};
+
+type RequirementEntry = {
+  category: string;
+  title: string;
+  description: string;
+  mandatory: boolean;
+  personalizedFor: string[];
+};
+
+export type ResourceCategory = 'job_search' | 'university_search' | 'community' | 'housing' | 'student';
+
+export type ResourceItem = {
+  title: string;
+  url: string;
+  description: string;
+  targetAudience: string[];
+};
+
+export type CountryResources = Partial<Record<ResourceCategory, ResourceItem[]>>;
+
 // Transform countries to match expected structure
 export const MOCK_COUNTRIES = rawCountries.map((country, index) => ({
   id: String(index + 1),
@@ -30,8 +66,8 @@ export const MOCK_COUNTRIES = rawCountries.map((country, index) => ({
 }));
 
 // Match reasons helper function
-function getMatchReason(countrySlug: string, category: string): string {
-  const reasons: Record<string, Record<string, string>> = {
+function getMatchReason(countrySlug: string, category: MatchCategory): string {
+  const reasons: Record<string, Partial<Record<MatchCategory, string>>> = {
     abd: {
       student: "STEM alanlarında 36 ay çalışma izni (OPT) ve dünyanın en iyi üniversiteleri",
       it: "Silicon Valley ve yüksek teknoloji maaşları. H-1B vizesi ile kariyer fırsatları",
@@ -54,11 +90,11 @@ function getMatchReason(countrySlug: string, category: string): string {
       business: "Start-up Entrepreneur Programme ve canlı girişim ekosistemi",
     },
     polonya: {
-      student: "AB'nin en uygun fiyatlı eğitimi. €2,000-6,000 yıllık harç",
-      it: "Hızla büyüyen teknoloji sektörü ve uygun yaşam maliyeti",
-      healthcare: "AB Mavi Kart ile sağlık profesyonellerine fırsatlar",
-      engineer: "Mühendislik işleri ve AB'ye ekonomik giriş kapısı",
-      business: "Düşük başlangıç maliyetleri ve Schengen vizesi avantajı",
+      student: "Yıllık €2.000-6.000 harç, Tip D vizeleri 15-30 günde ve haftada 20 saat çalışma hakkı",
+      it: "EU Blue Card 2025 maaş eşiği €2.800, 2 yılda kalıcı oturum ve Varşova/Wroclaw teknoloji sahnesi",
+      healthcare: "NFZ kamu sigortası erişimi, Decision 1/80 ile iş güvenceleri ve düşük yaşam maliyeti",
+      engineer: "Mühendisler için Blue Card maaş eşiği ve 12 ay sözleşme ile hızlı PR yolu",
+      business: "€1.200 civarı aylık giderle Schengen pazarı ve düşük operasyon maliyetleri",
     },
     kanada: {
       student: "Mezuniyet sonrası 3 yıla kadar çalışma izni (PGWP)",
@@ -69,11 +105,11 @@ function getMatchReason(countrySlug: string, category: string): string {
     },
   };
 
-  return reasons[countrySlug]?.[category] || reasons[countrySlug]?.default || '';
+  return reasons[countrySlug]?.[category] ?? reasons[countrySlug]?.default ?? '';
 }
 
 // Transform visa types to match expected structure (object keyed by country slug)
-export const MOCK_VISA_TYPES: Record<string, any[]> = {};
+export const MOCK_VISA_TYPES: Record<string, VisaEntry[]> = {};
 rawVisaTypes.forEach(visa => {
   if (!MOCK_VISA_TYPES[visa.countrySlug]) {
     MOCK_VISA_TYPES[visa.countrySlug] = [];
@@ -84,11 +120,15 @@ rawVisaTypes.forEach(visa => {
     name: visa.name,
     description: visa.description,
     processingTime: formatProcessingTime(visa.processingTimeMin, visa.processingTimeMax),
-    estimatedCost: formatCost(visa.estimatedCostMin, visa.estimatedCostMax),
+    estimatedCost: formatCost(
+      visa.estimatedCostMin,
+      visa.estimatedCostMax,
+      (visa.costCurrency as CurrencyCode | undefined) || 'TL'
+    ),
     difficulty: formatDifficulty(visa.difficultyLevel),
     demandLevel: formatDemandLevel(visa.demandLevel),
     minAge: visa.minAge,
-    maxAge: visa.maxAge,
+    maxAge: visa.maxAge ?? null,
     educationLevel: visa.educationLevel,
     professions: visa.professions,
   });
@@ -107,15 +147,35 @@ function formatProcessingTime(min: number, max: number): string {
   return `${formatDays(min)}-${formatDays(max)}`;
 }
 
-function formatCost(min: number, max: number): string {
+function formatCost(min: number, max: number, currency: CurrencyCode = 'TL'): string {
   const formatAmount = (amount: number) => {
+    if (currency === 'TL') {
+      if (amount >= 1000000) {
+        return `${(amount / 1000000).toFixed(1)}M TL`;
+      }
+      if (amount >= 1000) {
+        return `${(amount / 1000).toFixed(0)}K TL`;
+      }
+      return `${amount} TL`;
+    }
+
+    const symbolMap: Record<string, string> = {
+      EUR: '€',
+      USD: '$',
+      CAD: 'C$',
+    };
+    const symbol = symbolMap[currency] || '';
+
+    const formatWithSuffix = (value: number, divisor: number, suffix: string) =>
+      `${symbol}${(value / divisor).toFixed(1).replace(/\.0$/, '')}${suffix}`;
+
     if (amount >= 1000000) {
-      return `${(amount / 1000000).toFixed(1)}M TL`;
+      return formatWithSuffix(amount, 1000000, 'M');
     }
     if (amount >= 1000) {
-      return `${(amount / 1000).toFixed(0)}K TL`;
+      return formatWithSuffix(amount, 1000, 'K');
     }
-    return `${amount} TL`;
+    return `${symbol}${amount.toLocaleString('tr-TR')}`;
   };
 
   if (min === max) return formatAmount(min);
@@ -141,7 +201,7 @@ function formatDemandLevel(level: string): string {
 }
 
 // Transform requirements to match expected structure
-export const MOCK_REQUIREMENTS: Record<string, any[]> = {};
+export const MOCK_REQUIREMENTS: Record<string, RequirementEntry[]> = {};
 rawRequirements.forEach(req => {
   const key = `${req.visaTypeCountry}_${req.visaTypeName.toLowerCase().replace(/\s+/g, '_')}`;
   if (!MOCK_REQUIREMENTS[key]) {
@@ -158,22 +218,19 @@ rawRequirements.forEach(req => {
 });
 
 // Transform resources to match expected structure
-export const MOCK_RESOURCES: Record<string, Record<string, any[]>> = {};
+export const MOCK_RESOURCES: Record<string, CountryResources> = {};
 rawResources.forEach(resource => {
   if (!MOCK_RESOURCES[resource.countrySlug]) {
-    MOCK_RESOURCES[resource.countrySlug] = {
-      job_search: [],
-      university_search: [],
-      community: [],
-      housing: [],
-    };
+    MOCK_RESOURCES[resource.countrySlug] = {};
   }
 
-  if (!MOCK_RESOURCES[resource.countrySlug][resource.category]) {
-    MOCK_RESOURCES[resource.countrySlug][resource.category] = [];
+  const categoryKey = resource.category as ResourceCategory;
+
+  if (!MOCK_RESOURCES[resource.countrySlug][categoryKey]) {
+    MOCK_RESOURCES[resource.countrySlug][categoryKey] = [];
   }
 
-  MOCK_RESOURCES[resource.countrySlug][resource.category].push({
+  (MOCK_RESOURCES[resource.countrySlug][categoryKey] as ResourceItem[]).push({
     title: resource.title,
     url: resource.url,
     description: resource.description,

@@ -8,15 +8,18 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Badge } from '@/components/ui/badge';
-import { useAppStore } from '@/lib/store';
-import { MOCK_COUNTRIES, MOCK_VISA_TYPES, MOCK_REQUIREMENTS, MOCK_RESOURCES } from '@/lib/real-data';
-import { getUserType } from '@/lib/recommendation-engine';
 import {
-  Home,
+  MOCK_COUNTRIES,
+  MOCK_VISA_TYPES,
+  MOCK_REQUIREMENTS,
+  MOCK_RESOURCES,
+  type CountryResources,
+  type ResourceItem,
+} from '@/lib/real-data';
+import {
   ArrowLeft,
   FileText,
   DollarSign,
-  Users,
   ExternalLink,
   CheckCircle2,
   AlertCircle,
@@ -26,14 +29,12 @@ import {
   GraduationCap,
   Building2,
   Globe,
-  MapPin,
   ThumbsUp,
 } from 'lucide-react';
 
 export default function CountryDetailPage() {
   const params = useParams();
   const slug = params.slug as string;
-  const { userProfile } = useAppStore();
 
   const country = MOCK_COUNTRIES.find((c) => c.slug === slug);
 
@@ -50,13 +51,15 @@ export default function CountryDetailPage() {
     );
   }
 
-  const userType = getUserType(userProfile);
   const visaTypes = MOCK_VISA_TYPES[slug as keyof typeof MOCK_VISA_TYPES] || [];
-  const resources = MOCK_RESOURCES[slug as keyof typeof MOCK_RESOURCES] || {};
+  const resources: CountryResources = MOCK_RESOURCES[slug as keyof typeof MOCK_RESOURCES] || {};
 
   // Get requirements for first visa type as example
   const firstVisaKey = visaTypes.length > 0 ? `${slug}_${visaTypes[0].name.toLowerCase().replace(/\s+/g, '_')}` : '';
   const requirements = MOCK_REQUIREMENTS[firstVisaKey as keyof typeof MOCK_REQUIREMENTS] || [];
+  const categorizedResources = Object.entries(resources).filter(
+    (entry): entry is [string, ResourceItem[]] => Array.isArray(entry[1]) && entry[1].length > 0
+  );
 
   return (
     <div className="min-h-screen bg-zinc-50">
@@ -239,40 +242,48 @@ export default function CountryDetailPage() {
 
             {/* Resources Tab */}
             <TabsContent value="resources" className="space-y-4">
-              {Object.entries(resources).map(([category, items]: [string, any]) => (
-                <Card key={category}>
-                  <CardHeader className="bg-zinc-50">
-                    <CardTitle className="capitalize text-zinc-900">
-                      {category === 'student' && '🎓 Öğrenciler İçin Kaynaklar'}
-                      {category === 'job_search' && '💼 İş Arama Platformları'}
-                      {category === 'university_search' && '🏫 Üniversite Arama'}
-                      {category === 'community' && '👥 Topluluk ve Destek'}
-                      {category === 'housing' && '🏠 Konut Arama'}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="p-6">
-                    <div className="space-y-3">
-                      {items.map((resource: any, index: number) => (
-                        <a
-                          key={index}
-                          href={resource.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-start gap-4 p-4 rounded-lg bg-zinc-50 hover:bg-blue-50 border border-zinc-200 hover:border-blue-300 transition-all group"
-                        >
-                          <ExternalLink className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                          <div className="flex-1">
-                            <h4 className="font-semibold text-zinc-900 group-hover:text-blue-600 transition-colors mb-1">
-                              {resource.title}
-                            </h4>
-                            <p className="text-sm text-zinc-600">{resource.description}</p>
-                          </div>
-                        </a>
-                      ))}
-                    </div>
+              {categorizedResources.length > 0 ? (
+                categorizedResources.map(([category, items]) => (
+                  <Card key={category}>
+                    <CardHeader className="bg-zinc-50">
+                      <CardTitle className="capitalize text-zinc-900">
+                        {category === 'student' && '🎓 Öğrenciler İçin Kaynaklar'}
+                        {category === 'job_search' && '💼 İş Arama Platformları'}
+                        {category === 'university_search' && '🏫 Üniversite Arama'}
+                        {category === 'community' && '👥 Topluluk ve Destek'}
+                        {category === 'housing' && '🏠 Konut Arama'}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="p-6">
+                      <div className="space-y-3">
+                        {items.map((resource, index: number) => (
+                          <a
+                            key={index}
+                            href={resource.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-start gap-4 p-4 rounded-lg bg-zinc-50 hover:bg-blue-50 border border-zinc-200 hover:border-blue-300 transition-all group"
+                          >
+                            <ExternalLink className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                            <div className="flex-1">
+                              <h4 className="font-semibold text-zinc-900 group-hover:text-blue-600 transition-colors mb-1">
+                                {resource.title}
+                              </h4>
+                              <p className="text-sm text-zinc-600">{resource.description}</p>
+                            </div>
+                          </a>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))
+              ) : (
+                <Card>
+                  <CardContent className="p-6 text-center text-zinc-600">
+                    <p>Bu ülke için kaynak listesi yakında eklenecek.</p>
                   </CardContent>
                 </Card>
-              ))}
+              )}
             </TabsContent>
           </Tabs>
 
@@ -280,7 +291,7 @@ export default function CountryDetailPage() {
           <Card className="mt-8 bg-gradient-to-br from-blue-600 to-indigo-700 border-0">
             <CardContent className="p-8 text-center">
               <h3 className="text-3xl font-bold text-white mb-3">
-                {country.name}'ya Gitmek İçin Hazır mısınız?
+                {country.name}&rsquo;ya Gitmek İçin Hazır mısınız?
               </h3>
               <p className="text-blue-100 mb-6 max-w-2xl mx-auto text-lg">
                 Profesyonel danışmanlarımız vize sürecinde size yardımcı olabilir.

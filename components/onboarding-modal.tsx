@@ -24,11 +24,9 @@ export function OnboardingModal() {
     isModalOpen,
     currentStep,
     closeModal,
-    setStep,
     nextStep,
     prevStep,
     userProfile,
-    updateProfile,
     completeForm,
   } = useAppStore();
 
