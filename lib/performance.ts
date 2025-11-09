@@ -1,4 +1,4 @@
-import type { Metric } from 'web-vitals';
+import type { NextWebVitalsMetric } from 'next/app';
 
 /**
  * Performance utilities and helpers
@@ -69,7 +69,7 @@ export const prefersReducedMotion = (): boolean => {
 /**
  * Report Web Vitals
  */
-export const reportWebVitals = (metric: Metric) => {
+export const reportWebVitals = (metric: NextWebVitalsMetric) => {
   if (process.env.NODE_ENV === 'production') {
     // Log to analytics
     console.log(metric);
