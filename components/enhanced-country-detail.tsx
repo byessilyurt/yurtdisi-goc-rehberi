@@ -6,9 +6,7 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
 import {
   ArrowLeft,
   Check,
@@ -25,15 +23,12 @@ import {
   Rocket,
   ChevronDown,
   ChevronRight,
-  AlertCircle,
   Info,
   ExternalLink,
   Calculator,
   CheckCircle2,
-  XCircle,
 } from 'lucide-react';
 import {
-  type EmigrationData,
   type VisaProgram,
   getCountryData,
   getCountryMetadata,
@@ -42,6 +37,15 @@ import {
 
 interface EnhancedCountryDetailProps {
   countrySlug: string;
+}
+
+// Helper type for Turkish citizen specific info
+interface TurkishCitizenInfo {
+  visaFreeTravel?: {
+    allowed?: boolean;
+    duration?: string;
+  };
+  specialAgreements?: Record<string, { name?: string; benefits?: string[] }>;
 }
 
 const getCategoryIcon = (category: string) => {
@@ -365,61 +369,63 @@ export function EnhancedCountryDetail({ countrySlug }: EnhancedCountryDetailProp
           </div>
 
           {/* Turkish Citizen Specific Info */}
-          {countryData.turkishCitizenSpecificInfo && (
-            <Card className="mb-12 border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-white">
-              <CardHeader>
-                <div className="flex items-center gap-3">
-                  <div className="p-3 bg-blue-600 rounded-lg">
-                    <Info className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <CardTitle className="text-2xl">🇹🇷 Türk Vatandaşları İçin Özel</CardTitle>
-                    <p className="text-sm text-zinc-600 mt-1">
-                      Bu ülkeye özel avantajlar ve kolaylıklar
-                    </p>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                {/* Visa-free travel info */}
-                {countryData.turkishCitizenSpecificInfo.visaFreeTravel?.allowed && (
-                  <div className="bg-white rounded-lg p-4 border border-blue-100 mb-4">
-                    <div className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                      <div>
-                        <h4 className="font-semibold text-zinc-900 mb-1">Vizesiz Seyahat</h4>
-                        <p className="text-sm text-zinc-700">
-                          {countryData.turkishCitizenSpecificInfo.visaFreeTravel.duration} süreyle
-                          vizesiz ziyaret edebilirsiniz
-                        </p>
-                      </div>
+          {countryData.turkishCitizenSpecificInfo && (() => {
+            const turkishInfo = countryData.turkishCitizenSpecificInfo as TurkishCitizenInfo;
+            return (
+              <Card className="mb-12 border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-white">
+                <CardHeader>
+                  <div className="flex items-center gap-3">
+                    <div className="p-3 bg-blue-600 rounded-lg">
+                      <Info className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <CardTitle className="text-2xl">🇹🇷 Türk Vatandaşları İçin Özel</CardTitle>
+                      <p className="text-sm text-zinc-600 mt-1">
+                        Bu ülkeye özel avantajlar ve kolaylıklar
+                      </p>
                     </div>
                   </div>
-                )}
-
-                {/* Special agreements */}
-                {countryData.turkishCitizenSpecificInfo.specialAgreements && (
-                  <div className="space-y-3">
-                    {Object.entries(countryData.turkishCitizenSpecificInfo.specialAgreements).map(
-                      ([key, agreement]: [string, any]) => (
-                        <div key={key} className="bg-white rounded-lg p-4 border border-blue-100">
-                          <h4 className="font-semibold text-zinc-900 mb-2">{agreement.name}</h4>
-                          <ul className="space-y-2">
-                            {agreement.benefits?.map((benefit: string, idx: number) => (
-                              <li key={idx} className="flex items-start gap-2 text-sm text-zinc-700">
-                                <CheckCircle2 className="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5" />
-                                {benefit}
-                              </li>
-                            ))}
-                          </ul>
+                </CardHeader>
+                <CardContent>
+                  {/* Visa-free travel info */}
+                  {turkishInfo.visaFreeTravel?.allowed && (
+                    <div className="bg-white rounded-lg p-4 border border-blue-100 mb-4">
+                      <div className="flex items-start gap-3">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <h4 className="font-semibold text-zinc-900 mb-1">Vizesiz Seyahat</h4>
+                          <p className="text-sm text-zinc-700">
+                            {turkishInfo.visaFreeTravel.duration} süreyle vizesiz ziyaret edebilirsiniz
+                          </p>
                         </div>
-                      )
-                    )}
-                  </div>
-                )}
-              </CardContent>
-            </Card>
-          )}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Special agreements */}
+                  {turkishInfo.specialAgreements && (
+                    <div className="space-y-3">
+                      {Object.entries(turkishInfo.specialAgreements).map(
+                        ([key, agreement]: [string, { name?: string; benefits?: string[] }]) => (
+                          <div key={key} className="bg-white rounded-lg p-4 border border-blue-100">
+                            <h4 className="font-semibold text-zinc-900 mb-2">{agreement.name}</h4>
+                            <ul className="space-y-2">
+                              {agreement.benefits?.map((benefit: string, idx: number) => (
+                                <li key={idx} className="flex items-start gap-2 text-sm text-zinc-700">
+                                  <CheckCircle2 className="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                                  {benefit}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )
+                      )}
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
+            );
+          })()}
         </div>
       </section>
 
@@ -603,18 +609,6 @@ export function EnhancedCountryDetail({ countrySlug }: EnhancedCountryDetailProp
                         {selectedVisa.eligibilityCriteria.ageRequirements.maximumAge || 'Sınır yok'}
                       </div>
                     </div>
-
-                    {/* Financial */}
-                    {selectedVisa.eligibilityCriteria.financialRequirements?.proofOfFundsRequired && (
-                      <div className="bg-zinc-50 rounded-lg p-4 border border-zinc-200">
-                        <div className="font-semibold text-zinc-900 mb-2">Finansal</div>
-                        <div className="text-sm text-zinc-700">
-                          {selectedVisa.eligibilityCriteria.financialRequirements.minimumSalary
-                            ? `Min: €${selectedVisa.eligibilityCriteria.financialRequirements.minimumSalary.amount}`
-                            : 'Finansal kanıt gerekli'}
-                        </div>
-                      </div>
-                    )}
                   </div>
                 </div>
 

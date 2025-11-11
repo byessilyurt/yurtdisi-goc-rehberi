@@ -41,10 +41,10 @@ export interface VisaProgram {
       maximumAge: number | null;
       notes?: string;
     };
-    educationRequirements: Record<string, any>;
-    languageRequirements: Record<string, any>;
-    financialRequirements: Record<string, any>;
-    workExperienceRequirements?: Record<string, any>;
+    educationRequirements: Record<string, unknown>;
+    languageRequirements: Record<string, unknown>;
+    financialRequirements: Record<string, unknown>;
+    workExperienceRequirements?: Record<string, unknown>;
   };
   applicationProcess: {
     overview: string;
@@ -84,9 +84,9 @@ export interface VisaProgram {
     };
   };
   rightsAndRestrictions: {
-    workRights: Record<string, any>;
-    familyRights: Record<string, any>;
-    travelRights: Record<string, any>;
+    workRights: Record<string, unknown>;
+    familyRights: Record<string, unknown>;
+    travelRights: Record<string, unknown>;
   };
   pathToPermanentResidency?: {
     available: boolean;
@@ -105,8 +105,8 @@ export interface EmigrationData {
   lastUpdated: string;
   country: CountryData;
   visaPrograms?: VisaProgram[];
-  turkishCitizenSpecificInfo?: Record<string, any>;
-  governmentContacts?: Record<string, any>;
+  turkishCitizenSpecificInfo?: Record<string, unknown>;
+  governmentContacts?: Record<string, unknown>;
 }
 
 // Type guards
@@ -115,7 +115,7 @@ function isEmigrationData(data: unknown): data is EmigrationData {
     typeof data === 'object' &&
     data !== null &&
     'country' in data &&
-    typeof (data as any).country === 'object'
+    typeof (data as Record<string, unknown>).country === 'object'
   );
 }
 
