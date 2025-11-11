@@ -1,0 +1,1089 @@
+{
+  "$schema": "Ireland Emigration Data - Complete v1.0",
+  "meta": {
+    "version": "1.0",
+    "lastUpdated": "2025-11-11",
+    "dataCollectionNotes": "Comprehensive Ireland immigration data for Turkish citizens. All information verified from official Irish government sources including enterprise.gov.ie, irishimmigration.ie, and gov.ie. Data current as of November 2025.",
+    "sources": [
+      "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/",
+      "https://www.irishimmigration.ie/",
+      "https://www.gov.ie/en/services/immigration/",
+      "https://www.ireland.ie/en/turkey/",
+      "https://www.citizensinformation.ie/"
+    ],
+    "lastVerified": "2025-11-11"
+  },
+
+  "countries": [
+    {
+      "countryCode": "IE",
+      "countrySlug": "irlanda",
+      "officialName": "Ireland / Éire",
+      "officialLanguages": ["English", "Irish (Gaeilge)"],
+      "currency": "EUR",
+      "timezone": "GMT/IST (UTC+0/UTC+1)",
+
+      "governmentContacts": {
+        "immigrationDepartment": {
+          "name": "Irish Naturalisation and Immigration Service (INIS)",
+          "website": "https://www.irishimmigration.ie",
+          "phone": "+353 1 616 7700",
+          "email": "INISCustomerService@justice.ie",
+          "workingHours": "Pazartesi-Cuma 09:00-17:00 GMT"
+        },
+        "employmentPermitsDepartment": {
+          "name": "Department of Enterprise, Trade and Employment - Employment Permits Section",
+          "website": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/",
+          "onlinePortal": "https://employmentpermits.enterprise.gov.ie/home",
+          "email": "employmentpermits@enterprise.gov.ie",
+          "workingHours": "Pazartesi-Cuma 09:30-17:00 GMT"
+        },
+        "embassyInTurkey": {
+          "name": "Embassy of Ireland in Turkey",
+          "address": "MNG Building, Uğur Mumcu Cad. 88, Floor 3, 06700 Gaziosmanpaşa, Ankara, Turkey",
+          "phone": "+90 312 459 10 00",
+          "email": "ankaraembassy@dfa.ie",
+          "website": "https://www.ireland.ie/en/turkey/",
+          "workingHours": "Pazartesi-Cuma 09:00-13:00, 14:00-17:00 (Türkiye saati)",
+          "appointmentSystem": "VFS Global İrlanda Vize Başvuru Merkezleri: Ankara, İstanbul, İzmir, Antalya, Gaziantep - https://visa.vfsglobal.com/tur/en/irl/"
+        },
+        "emergencyContacts": {
+          "police": "999 veya 112",
+          "ambulance": "999 veya 112",
+          "fire": "999 veya 112",
+          "consularEmergency": "+353 1 408 2000 (İrlanda Dışişleri Bakanlığı 7/24)"
+        }
+      },
+
+      "visaPrograms": [
+        {
+          "visaCode": "CSEP",
+          "officialName": "Critical Skills Employment Permit",
+          "officialNameTR": "Kritik Beceriler İstihdam İzni",
+          "category": "work",
+          "description": "İrlanda'nın en avantajlı çalışma izni olan Critical Skills Employment Permit, yüksek vasıflı profesyonelleri hedefleyen ve hızlı süreçlerle daimi oturuma (Stamp 4) geçiş sağlayan bir programdır. Bilişim, mühendislik, sağlık ve finans sektörlerinde kritik beceri açığı bulunan mesleklere yöneliktir. Aile birleşimi hakkı tanır ve eş de çalışma izni olmadan çalışabilir.",
+          "keyBenefits": [
+            "Sadece 2 yıl sonra kalıcı oturma izni (Stamp 4) için başvuru hakkı",
+            "Aile birleşimi hakkı - eş ve 21 yaş altı çocuklar",
+            "Eş Stamp 1G izni ile çalışma izni olmadan çalışabilir",
+            "İşgücü piyasası testi (Labour Market Needs Test) gerektirmez",
+            "5 yıl sonra İrlanda vatandaşlığı başvurusu",
+            "Trusted Partner işverenler için 1 hafta içinde onay",
+            "9 ay sonra iş değiştirme serbestliği (2024 güncellemesi)"
+          ],
+          "estimatedTotalCost": {
+            "amount": 2800,
+            "currency": "EUR",
+            "breakdown": "İzin ücreti €1000 + vize ücreti €100 + IRP kartı €300 + sağlık sigortası yaklaşık €150/ay + diğer belgeler €250"
+          },
+
+          "eligibilityCriteria": {
+            "ageRequirements": {
+              "minimumAge": 18,
+              "maximumAge": null,
+              "notes": "Yaş sınırı yok ancak emeklilik yaşına yakın başvurular daha dikkatli değerlendirilebilir"
+            },
+            "educationRequirements": {
+              "minimumLevel": "€38,000 maaş bandı için üniversite lisans derecesi veya dengi; €64,000 maaş bandı için şart yok",
+              "acceptedDegrees": [
+                "Bilgisayar Bilimleri ve Yazılım Mühendisliği",
+                "Elektrik, Elektronik, Makine Mühendisliği",
+                "Tıp, Hemşirelik, Sağlık Bilimleri",
+                "Finans, İşletme, Ekonomi",
+                "Veri Bilimi, Bilişim Sistemleri",
+                "Mühendislik (tüm dallar)"
+              ],
+              "degreeRecognitionProcess": "NARIC Ireland (QQI) üzerinden Türk üniversite diplomalarının İrlanda NFQ seviyesine denkliği değerlendirilir. Çoğu Türk üniversite diploması Level 8 (Honours Bachelor) olarak tanınır.",
+              "equivalencyOptions": [
+                "Üniversite diploması yerine eşdeğer deneyim (€64,000+ maaş bandı için)",
+                "Yurtdışı üniversite diplomaları QQI/NARIC Ireland ile denklendirilebilir",
+                "Mesleki sertifikalar ve sektör deneyimi kombinasyonu"
+              ]
+            },
+            "workExperienceRequirements": {
+              "minimumYears": 0,
+              "relevantFields": [
+                "Yazılım geliştirme, veri bilimi, siber güvenlik",
+                "Mühendislik (inşaat, makine, elektrik, yazılım)",
+                "Sağlık hizmetleri (doktor, hemşire, fizyoterapist)",
+                "Finans ve yönetim danışmanlığı",
+                "Araştırma ve geliştirme"
+              ],
+              "documentationRequired": [
+                "İş deneyim mektupları (referans mektupları)",
+                "Pozisyon, görev tanımı ve çalışma sürelerini gösteren belgeler",
+                "Sosyal güvenlik kayıtları (SGK çıkışları Türkiye için)",
+                "CV/özgeçmiş"
+              ]
+            },
+            "languageRequirements": {
+              "required": false,
+              "minimumLevel": "Resmi İngilizce test şartı yok ancak iş gerekliliği için B2-C1 seviyesi beklenir",
+              "acceptedTests": [
+                "IELTS Academic (önerilen minimum 6.5 overall)",
+                "TOEFL iBT",
+                "Cambridge English (B2 First, C1 Advanced)",
+                "Pearson PTE Academic"
+              ],
+              "minimumScores": {
+                "IELTS": "6.5 overall (iş gereksinimi için önerilen)",
+                "TOEFL": "90+ (iş gereksinimi için önerilen)"
+              },
+              "exemptions": [
+                "İngilizce eğitim veren üniversiteden mezun olanlar",
+                "İngilizce konuşulan ülkelerde 3+ yıl çalışmış olanlar",
+                "İşveren İngilizce yeterliliğini kabul ederse"
+              ]
+            },
+            "financialRequirements": {
+              "proofOfFundsRequired": false,
+              "minimumAmount": 0,
+              "salaryRequirements": {
+                "tier1": {
+                  "amount": 38000,
+                  "currency": "EUR",
+                  "description": "Critical Skills Occupations List'teki meslekler için minimum yıllık maaş. Üniversite diploması gereklidir.",
+                  "notes": "17 Ocak 2024'ten itibaren geçerli. Temel maaş ve sağlık sigortası primleri dahil."
+                },
+                "tier2": {
+                  "amount": 64000,
+                  "currency": "EUR",
+                  "description": "Liste dışındaki meslekler veya diploma olmayan adaylar için minimum yıllık maaş",
+                  "notes": "Bu maaş seviyesinde diploma şartı olmaz, deneyim yeterlidir"
+                }
+              },
+              "acceptedProofTypes": [
+                "İş sözleşmesi (Contract of Employment) - imzalı",
+                "İşverenden maaş teyit mektubu",
+                "İş teklifi mektubu (detaylı pozisyon ve maaş bilgisi ile)"
+              ]
+            },
+            "healthRequirements": {
+              "medicalExamRequired": false,
+              "vaccinations": [],
+              "prohibitedConditions": [],
+              "panelDoctors": "İrlanda özel sağlık kontrolü gerektirmez ancak bazı sağlık meslekleri için Türkiye'den temiz sağlık raporu istenebilir",
+              "healthInsurance": {
+                "required": true,
+                "minimumCoverage": "Özel sağlık sigortası önerilir. Yıllık maliyet yaklaşık €1,850 (temel plan)",
+                "providers": ["VHI Healthcare", "Laya Healthcare", "Irish Life Health", "HSF Health Plan"],
+                "notes": "AB dışı vatandaşlar için ilk 1 yıl kamu sağlık sistemine erişim sınırlıdır"
+              }
+            },
+            "characterRequirements": {
+              "policeCertificateRequired": true,
+              "excludingFactors": [
+                "Ağır suç geçmişi",
+                "Göç kurallarını önceden ihlal etme",
+                "Sahte belge kullanımı",
+                "Kamu güvenliği tehdidi"
+              ],
+              "securityChecks": [
+                "Garda (İrlanda Polisi) geçmiş kontrolleri",
+                "Uluslararası güvenlik kontrolleri",
+                "Sabıka kaydı (Adli Sicil Kaydı) Türkiye'den"
+              ],
+              "requiredDocuments": [
+                "Türk Adli Sicil Kaydı (Sabıka Kaydı) - Apostil'li ve İngilizce noter onaylı tercümesi",
+                "Son 10 yıl içinde 6 ay+ ikamet edilen her ülkeden sabıka kaydı"
+              ]
+            }
+          },
+
+          "applicationProcess": {
+            "overview": "Critical Skills Employment Permit başvurusu 3 aşamalıdır: (1) İrlanda'da işveren bulma ve iş teklifi alma, (2) İşveren tarafından online çalışma izni başvurusu (Employment Permits Online sistemi), (3) İzin onayı sonrası vize ve IRP kartı başvurusu. Tüm süreç 3-6 ay arası sürer. Trusted Partner işverenler için işlem çok daha hızlıdır (1-2 hafta).",
+            "estimatedTotalDuration": "60-180 gün (işveren bulma hariç)",
+            "steps": [
+              {
+                "stepNumber": 1,
+                "stepName": "İrlanda'da İşveren ve İş Teklifi Bulma",
+                "description": "İrlanda'da Critical Skills listesindeki bir meslekte minimum €38,000 (veya €64,000) maaşla en az 2 yıllık iş sözleşmesi teklifi almalısınız. LinkedIn, IrishJobs.ie, Indeed.ie gibi platformlar kullanılabilir. İşveren Revenue'ya kayıtlı ve çalışanların minimum %50'si EEA vatandaşı olmalıdır.",
+                "duration": "30-120 gün (başvuranın deneyimine göre değişir)",
+                "requiredDocuments": [
+                  "Güncel CV/özgeçmiş (İngilizce)",
+                  "Cover letter (motivasyon mektubu)",
+                  "Diploma ve transkript kopyaları",
+                  "İş deneyim belgeleri ve referans mektupları",
+                  "Portfolio veya proje örnekleri (özellikle IT için)"
+                ],
+                "forms": [],
+                "costs": [
+                  {
+                    "item": "CV hazırlık ve düzenleme hizmeti",
+                    "amount": 50,
+                    "currency": "EUR",
+                    "optional": true
+                  }
+                ],
+                "tips": [
+                  "LinkedIn profilinizi güçlendirin ve 'Open to work' olarak işaretleyin",
+                  "Dublin, Cork, Galway gibi tech hub'lara odaklanın - Google, Microsoft, Meta buralarda",
+                  "Trusted Partner statüsündeki şirketlere öncelik verin (1 hafta onay)",
+                  "İş ilanlarında 'Sponsorship available' ibaresine dikkat edin",
+                  "Networking etkinliklerine katılın veya online connect olun"
+                ],
+                "commonMistakes": [
+                  "Sponsorluk yapmayan şirketlere başvurmak",
+                  "Maaş beklentisini €38,000 altında tutmak",
+                  "İrlanda CV formatına uymayan başvurular",
+                  "Critical Skills listesinde olmayan pozisyonlara başvurmak"
+                ]
+              },
+              {
+                "stepNumber": 2,
+                "stepName": "İş Sözleşmesi İmzalama ve Belgelerin Hazırlanması",
+                "description": "İşveren iş teklifi yaptığında resmi sözleşme (Contract of Employment) imzalanır. Bu sözleşme minimum 2 yıl süreli, pozisyon detayları, maaş (€38,000+), çalışma saatleri ve şartları içermelidir. Her iki taraf da imzalamalıdır.",
+                "duration": "7-14 gün",
+                "requiredDocuments": [
+                  "İmzalı iş sözleşmesi (Contract of Employment) - 2 yıl+",
+                  "Detaylı iş tanımı (job description)",
+                  "İşveren şirket bilgileri ve Revenue kayıt belgesi",
+                  "Eğitim belgeleri (diploma, transkript) - Noter onaylı İngilizce tercüme + Apostil",
+                  "İş deneyim belgeleri",
+                  "Pasaport kopyası (en az 12 ay geçerli)"
+                ],
+                "forms": [],
+                "costs": [
+                  {
+                    "item": "Diploma Apostil (Türkiye Dışişleri Bakanlığı)",
+                    "amount": 15,
+                    "currency": "EUR",
+                    "notes": "Yaklaşık TL karşılığı"
+                  },
+                  {
+                    "item": "Noter onaylı İngilizce tercüme (diploma ve transkript)",
+                    "amount": 80,
+                    "currency": "EUR"
+                  },
+                  {
+                    "item": "Adli Sicil Kaydı Apostil + tercüme",
+                    "amount": 60,
+                    "currency": "EUR"
+                  }
+                ],
+                "tips": [
+                  "Türk üniversite diplomalarınızı mutlaka Apostil'letin (Hague Convention - Türkiye üye)",
+                  "NARIC Ireland (QQI) üzerinden diploma denkliği önceden kontrol edilebilir",
+                  "Tüm belgelerin orijinal veya noter onaylı kopyası gerekir",
+                  "İngilizce tercümeler sworn translator veya noter onaylı olmalı"
+                ],
+                "commonMistakes": [
+                  "Sözleşmenin 2 yıldan kısa olması (red nedeni)",
+                  "Maaşın €38,000 altında yazılması",
+                  "Apostil ve tercüme eksiklikleri",
+                  "İş tanımının Critical Skills listesine uymayan ifadeler içermesi"
+                ]
+              },
+              {
+                "stepNumber": 3,
+                "stepName": "İşveren Tarafından Employment Permit Başvurusu",
+                "description": "İşveren Employment Permits Online (EPOS) sistemi üzerinden resmi başvuruyu yapar. Başvuru en az 12 hafta önceden yapılmalı. İşveren Trusted Partner ise 1 hafta, standart işveren ise 5-12 hafta işlem süresi vardır.",
+                "duration": "7-90 gün (işveren tipine göre)",
+                "requiredDocuments": [
+                  "Online başvuru formu (EPOS sistemi)",
+                  "İmzalı iş sözleşmesi",
+                  "Başvuranın pasaport kopyası",
+                  "Eğitim ve deneyim belgeleri",
+                  "İşveren bilgileri ve Revenue kayıt belgesi",
+                  "50% EEA çalışan oranı belgesi (start-up hariç)"
+                ],
+                "forms": [
+                  "Employment Permit Application Form (EPOS online)"
+                ],
+                "costs": [
+                  {
+                    "item": "Critical Skills Employment Permit başvuru ücreti",
+                    "amount": 1000,
+                    "currency": "EUR",
+                    "notes": "Red durumunda %90 iade edilir. İşveren öder, çalışandan kesilemez."
+                  }
+                ],
+                "tips": [
+                  "Başvuruyu planlanan iş başlama tarihinden minimum 12 hafta önce yapın",
+                  "Trusted Partner şirketler 1 hafta içinde onay alır - büyük avantaj",
+                  "Eksik belge durumunda 28 gün içinde tamamlama şansı verilir",
+                  "Başvuru tarihi çok önemli - sırayla işlenir",
+                  "Online sistemde başvuruyu başlattıktan sonra 28 gün içinde tamamlayın"
+                ],
+                "commonMistakes": [
+                  "Son dakika başvurusu - işlem süresi yeterli değilse vize yetişmez",
+                  "Eksik veya hatalı belgeler - 28 gün içinde tamamlanmazsa red",
+                  "İşverenin Revenue'ya kayıtlı olmaması",
+                  "EEA çalışan oranının %50 altında olması (start-up değilse)"
+                ]
+              },
+              {
+                "stepNumber": 4,
+                "stepName": "Employment Permit Onay Beklemesi ve Karar",
+                "description": "Department of Enterprise, Trade and Employment başvuruyu inceler. Trusted Partner için ~1 hafta, standart işveren için ~5 hafta. Karar verilirse onay mektubu email ile gelir. Red durumunda 28 gün içinde review (itiraz) hakkı vardır.",
+                "duration": "7-90 gün",
+                "requiredDocuments": [],
+                "forms": [],
+                "costs": [],
+                "tips": [
+                  "EPOS sisteminden başvuru durumunu takip edin",
+                  "Ek bilgi isterse 28 gün içinde mutlaka yanıtlayın",
+                  "Onay mektubu geldiğinde hemen vize başvurusuna geçin",
+                  "Current processing dates sayfasını düzenli kontrol edin"
+                ],
+                "commonMistakes": [
+                  "Ek bilgi taleplerini zamanında cevaplamamak",
+                  "Email spam klasörünü kontrol etmemek",
+                  "İşlem süresini hafife alıp işe başlama tarihini çok yakın tutmak"
+                ]
+              },
+              {
+                "stepNumber": 5,
+                "stepName": "D Vizesi (İş Vizesi) Başvurusu - Türkiye'den",
+                "description": "Employment Permit onaylandıktan sonra Türkiye'deki İrlanda Büyükelçiliği'ne (VFS Global aracılığıyla) D vizesi başvurusu yapılır. Ankara, İstanbul, İzmir, Antalya, Gaziantep'te VFS merkezleri vardır. Online başvuru formu doldurulur, belgeler eklenir ve randevu alınır.",
+                "duration": "30-60 gün",
+                "requiredDocuments": [
+                  "Online vize başvuru formu (www.visas.inis.gov.ie)",
+                  "Geçerli pasaport (en az 12 ay geçerli)",
+                  "Employment Permit onay mektubu",
+                  "İş sözleşmesi (signed)",
+                  "Eğitim belgeleri (Apostil + İngilizce tercüme)",
+                  "Adli Sicil Kaydı (Apostil + İngilizce tercüme - 6 aydan yeni)",
+                  "Pasaport fotoğrafı (45mm x 35mm)",
+                  "Sağlık sigortası poliçesi veya taahhüt mektubu",
+                  "Finansal yeterlilik kanıtı (banka ekstreleri - 6 ay)",
+                  "CV/özgeçmiş"
+                ],
+                "forms": [
+                  "Online D Visa Application Form (AVATS - visas.inis.gov.ie)"
+                ],
+                "costs": [
+                  {
+                    "item": "D vizesi (multiple-entry, 90+ gün)",
+                    "amount": 100,
+                    "currency": "EUR",
+                    "notes": "Multi-journey vize. İade edilmez."
+                  },
+                  {
+                    "item": "VFS Global servis ücreti",
+                    "amount": 25,
+                    "currency": "EUR"
+                  }
+                ],
+                "tips": [
+                  "Vize başvurusunu Employment Permit onayından hemen sonra yapın",
+                  "VFS randevuları dolabiliyor - erken alın",
+                  "Mülakata (interview) hazırlıklı gidin - İrlanda'daki planlarınızı açıklayın",
+                  "Tüm belgelerin orijinal + fotokopi setini hazırlayın",
+                  "Vize kararı haftalık olarak yayınlanır - ireland.ie/turkey sitesinden takip edin"
+                ],
+                "commonMistakes": [
+                  "Online formu eksik doldurmak",
+                  "Sabıka kaydının 6 aydan eski olması",
+                  "Pasaport geçerlilik süresinin 12 aydan az olması",
+                  "Mülakata gitmeden vize beklentisi (Ankara'da mülakat zorunlu)",
+                  "Seyahat bileti almak (vize çıkmadan bilet almayın)"
+                ]
+              },
+              {
+                "stepNumber": 6,
+                "stepName": "İrlanda'ya Giriş ve İlk Adımlar",
+                "description": "Vize aldıktan sonra İrlanda'ya giriş yapılır. Havalimanında giriş izni (90 gün geçici damga) verilir. İşe başlama tarihinden önce gelmek önemlidir.",
+                "duration": "1-2 gün",
+                "requiredDocuments": [
+                  "Geçerli pasaport ve vize",
+                  "Employment Permit belgesi",
+                  "İş sözleşmesi",
+                  "İrlanda'daki adres bilgisi (otel veya kira sözleşmesi)",
+                  "Dönüş bileti veya devam bileti",
+                  "Yeterli finansal kaynak kanıtı"
+                ],
+                "forms": [],
+                "costs": [],
+                "tips": [
+                  "Tüm belgeleri el çantasında taşıyın",
+                  "İlk 1-2 hafta için otel veya Airbnb rezervasyonu yapın",
+                  "İşverenle temasta olun, işe başlama tarihini netleştirin",
+                  "İrlanda'da kalacağınız adresin kanıtını hazırlayın"
+                ],
+                "commonMistakes": [
+                  "Belgeleri bagajda göndermek (el çantasında olmalı)",
+                  "İş başlama tarihini kaçırmak",
+                  "Adres kanıtı olmadan gitmek"
+                ]
+              },
+              {
+                "stepNumber": 7,
+                "stepName": "IRP (Irish Residence Permit) Kartı Başvurusu ve Stamp 1",
+                "description": "İrlanda'ya vardıktan sonra 90 gün içinde IRP (Irish Residence Permit) kartı için başvurulmalıdır. Dublin'de Burgh Quay Registration Office, diğer şehirlerde yerel Garda İstasyonları. Randevu online alınır. Stamp 1 izni verilir (employment permit holders için).",
+                "duration": "14-30 gün",
+                "requiredDocuments": [
+                  "Pasaport (orijinal)",
+                  "Employment Permit",
+                  "İş sözleşmesi",
+                  "İkamet adresi kanıtı (kira sözleşmesi veya utility bill)",
+                  "İşverenden mektup (employment confirmation)",
+                  "3 adet pasaport fotoğrafı"
+                ],
+                "forms": [
+                  "IRP Online Randevu Formu"
+                ],
+                "costs": [
+                  {
+                    "item": "IRP kartı ücreti",
+                    "amount": 300,
+                    "currency": "EUR",
+                    "notes": "Her yenileme ve ilk başvuruda ödenir. Sadece kredi/banka kartı kabul edilir."
+                  }
+                ],
+                "tips": [
+                  "IRP randevusu almak zor olabilir - hemen başvurun (90 gün içinde)",
+                  "Burgh Quay Office randevuları çok erken dolar (Dublin)",
+                  "Stamp 1 izni ile çalışma hakkınız var ancak sadece sponsorlu işverenle",
+                  "IRP kartı fiziksel kimlik kartıdır - her zaman yanınızda taşıyın",
+                  "İlk IRP genelde 1-2 yıl geçerli olur"
+                ],
+                "commonMistakes": [
+                  "90 gün içinde başvurmamak (yasal sorun)",
+                  "Adres kanıtı olmadan randevuya gitmek",
+                  "Nakit ödeme denemesi (sadece kart)",
+                  "Eksik belge ile randevuya gitmek - yeni randevu almak çok zor"
+                ]
+              },
+              {
+                "stepNumber": 8,
+                "stepName": "2 Yıl Sonra Stamp 4 (Kalıcı Oturum) Başvurusu",
+                "description": "Critical Skills Employment Permit sahipleri 2 yıl sonra doğrudan Stamp 4 (long-term residence) başvurusu yapabilir. Stamp 4 ile çalışma izni gerekmeden her türlü işte çalışabilir, kendi işinizi kurabilirsiniz. 5 yıl geçerli, yenilenir.",
+                "duration": "90-180 gün (başvuru işleme süresi)",
+                "requiredDocuments": [
+                  "Pasaport",
+                  "Mevcut IRP kartı",
+                  "Employment Permit (süresi dolmuş olabilir)",
+                  "İşverenden görev belgesi (son 2 yıl çalışma kanıtı)",
+                  "Vergi uyum belgesi (Revenue'dan tax clearance)",
+                  "Adres kanıtı",
+                  "İyi karakter belgesi (character reference)"
+                ],
+                "forms": [
+                  "Stamp 4 Application Form (INIS online platform)"
+                ],
+                "costs": [
+                  {
+                    "item": "Stamp 4 başvuru ücreti",
+                    "amount": 300,
+                    "currency": "EUR",
+                    "notes": "IRP yenileme ücreti"
+                  }
+                ],
+                "tips": [
+                  "2 yıl dolduktan hemen sonra başvurun",
+                  "Vergi uyumunuzu kontrol edin - Revenue'dan tax clearance alın",
+                  "Stamp 4 aldıktan sonra iş değiştirme tamamen serbest",
+                  "30 Kasım 2023'ten itibaren Department of Enterprise'dan destek mektubu gerekmez",
+                  "Stamp 4 ile sosyal haklara tam erişim var"
+                ],
+                "commonMistakes": [
+                  "Vergi borcu varken başvurmak",
+                  "İyi karakter şartını sağlayamama (suç kaydı, vb.)",
+                  "Yıllık 90 günden fazla yurtdışında kalma (ikamet şartını bozar)"
+                ]
+              },
+              {
+                "stepNumber": 9,
+                "stepName": "5 Yıl Sonra İrlanda Vatandaşlığı Başvurusu (Naturalisation)",
+                "description": "Toplam 5 yıl İrlanda'da yasal ikametten sonra vatandaşlık başvurusu yapılabilir. Son 1 yıl kesintisiz ikamet ve önceki 8 yıl içinde toplam 4 yıl ikamet şartı vardır.",
+                "duration": "18-24 ay (işlem süresi)",
+                "requiredDocuments": [
+                  "Naturalisation başvuru formu",
+                  "Pasaport ve IRP geçmişi",
+                  "İkamet kanıtları (son 5 yıl)",
+                  "İyi karakter referansları",
+                  "Vergi uyum belgesi",
+                  "İrlanda ile bağları gösteren belgeler (iş, ev, aile)"
+                ],
+                "forms": [
+                  "Application for a Certificate of Naturalisation"
+                ],
+                "costs": [
+                  {
+                    "item": "Başvuru ücreti",
+                    "amount": 175,
+                    "currency": "EUR"
+                  },
+                  {
+                    "item": "Onay ücreti (başarılı olursa)",
+                    "amount": 950,
+                    "currency": "EUR"
+                  }
+                ],
+                "tips": [
+                  "İkamet sürelerini dikkatli hesaplayın - yurtdışı seyahatler dahil",
+                  "Son 1 yılda maksimum 70-90 gün yurtdışında kalabilirsiniz",
+                  "İrlanda pasaportu AB pasaportu demektir - tüm AB'de yaşama ve çalışma hakkı",
+                  "İrlanda çifte vatandaşlığa izin verir - Türk vatandaşlığını kaybetmezsiniz"
+                ],
+                "commonMistakes": [
+                  "İkamet süresini yanlış hesaplama",
+                  "Yurtdışı kalış sürelerini aşma",
+                  "Vergi borcu veya suç kaydı ile başvurma"
+                ]
+              }
+            ],
+            "totalCosts": {
+              "applicantPays": [
+                {
+                  "item": "Diploma Apostil ve tercüme",
+                  "amount": 95,
+                  "currency": "EUR"
+                },
+                {
+                  "item": "Sabıka kaydı Apostil ve tercüme",
+                  "amount": 60,
+                  "currency": "EUR"
+                },
+                {
+                  "item": "D Vizesi (multiple entry)",
+                  "amount": 100,
+                  "currency": "EUR"
+                },
+                {
+                  "item": "VFS Global servis ücreti",
+                  "amount": 25,
+                  "currency": "EUR"
+                },
+                {
+                  "item": "IRP kartı (ilk başvuru)",
+                  "amount": 300,
+                  "currency": "EUR"
+                },
+                {
+                  "item": "Özel sağlık sigortası (ilk yıl)",
+                  "amount": 1850,
+                  "currency": "EUR",
+                  "notes": "Opsiyonel ama şiddetle tavsiye edilir"
+                },
+                {
+                  "item": "Diğer belgeler ve masraflar",
+                  "amount": 100,
+                  "currency": "EUR"
+                }
+              ],
+              "employerPays": [
+                {
+                  "item": "Critical Skills Employment Permit ücreti",
+                  "amount": 1000,
+                  "currency": "EUR",
+                  "notes": "Yasal olarak işveren öder, çalışandan kesilemez"
+                }
+              ],
+              "optional": [
+                {
+                  "item": "NARIC diploma denklik değerlendirmesi",
+                  "amount": 60,
+                  "currency": "EUR"
+                },
+                {
+                  "item": "CV hazırlık ve danışmanlık",
+                  "amount": 50,
+                  "currency": "EUR"
+                },
+                {
+                  "item": "Immigration lawyer/consultant",
+                  "amount": 500,
+                  "currency": "EUR"
+                }
+              ],
+              "totalEstimate": {
+                "minimum": 2530,
+                "typical": 2680,
+                "maximum": 3730,
+                "currency": "EUR",
+                "notes": "Sağlık sigortası dahil. İşveren €1,000 ek ödeme yapar."
+              }
+            },
+            "rejectionReasons": {
+              "common": [
+                {
+                  "reason": "Yetersiz veya eksik belgeler",
+                  "solution": "Tüm belgelerin eksiksiz, güncel ve doğru formatta olduğundan emin olun. Eksik belge talebi gelirse 28 gün içinde tamamlayın."
+                },
+                {
+                  "reason": "Meslekte uyumsuzluk - pozisyon Critical Skills listesinde değil",
+                  "solution": "Başvurmadan önce mesleğinizin Critical Skills Occupations List'te olduğunu doğrulayın. İş tanımı (job description) liste ile uyumlu olmalı."
+                },
+                {
+                  "reason": "Maaşın minimum eşiği karşılamaması (€38,000 veya €64,000)",
+                  "solution": "İş sözleşmesinde brüt yıllık maaşın açıkça belirtildiğinden ve minimum eşiği geçtiğinden emin olun."
+                },
+                {
+                  "reason": "İşveren uygunluk sorunları - Revenue kaydı yok veya %50 EEA çalışan yok",
+                  "solution": "İşverenin Revenue'ya kayıtlı olduğunu ve personelinin en az %50'sinin EEA vatandaşı olduğunu teyit edin."
+                },
+                {
+                  "reason": "Eğitim nitelikleri yetersiz veya tanınmıyor",
+                  "solution": "Diplomalarınızı NARIC Ireland üzerinden önceden değerlendirin. Eksikse deneyim kanıtlayın (€64,000 bandı için)."
+                },
+                {
+                  "reason": "Sabıka kaydı sorunları veya güvenlik endişeleri",
+                  "solution": "Temiz adli sicil gerekir. Geçmişte sorun varsa immigration lawyer'a danışın."
+                },
+                {
+                  "reason": "Sözleşme süresi yetersiz (2 yıldan kısa)",
+                  "solution": "İş sözleşmesi mutlaka minimum 2 yıl olmalıdır."
+                },
+                {
+                  "reason": "Başvuru zamanlaması - 12 hafta kuralına uymama",
+                  "solution": "Başvuruyu iş başlama tarihinden en az 12 hafta önce yapın."
+                }
+              ],
+              "statistics": {
+                "approvalRate": "Yaklaşık %85-90 (doğru belgelerle)",
+                "averageProcessingTime": "Trusted Partner: 1 hafta, Standart: 5-12 hafta",
+                "yearlyQuota": "Kota yok",
+                "notes": "2024 Employment Permits Act ile süreç kolaylaştırıldı. Eksik başvurular %90 iade ile iade edilebilir."
+              }
+            },
+            "appeals": {
+              "available": true,
+              "process": "Red kararına itiraz (review request) 28 gün içinde yapılmalıdır. Üst düzey yetkili tarafından yeniden incelenir. Yeni bilgi veya açıklama sunabilirsiniz.",
+              "timeframe": "28 gün içinde itiraz başvurusu, 30-60 gün işlem süresi",
+              "successRate": "Yeni belge veya açıklama ile yaklaşık %40-50",
+              "notes": "İtiraz formunu Employment Permits Online sisteminden indirebilirsiniz. Immigration lawyer desteği tavsiye edilir."
+            }
+          },
+
+          "requiredDocuments": {
+            "personalDocuments": [
+              {
+                "documentName": "Pasaport",
+                "documentNameTR": "T.C. Pasaportu",
+                "description": "En az 12 ay geçerli, boş sayfa olan biyometrik pasaport",
+                "validityRequired": "Başvuru tarihinden itibaren minimum 12 ay geçerli",
+                "howToObtain": "Türkiye Nüfus Müdürlüğü veya yurtdışı temsilciliklerinden",
+                "obtainDuration": "5-10 gün (Türkiye'de, normal başvuru)",
+                "apostilleRequired": false,
+                "translationRequired": false,
+                "notarizationRequired": false,
+                "numberOfCopies": 1,
+                "estimatedCost": {
+                  "amount": 40,
+                  "currency": "EUR",
+                  "notes": "Yaklaşık TL karşılığı"
+                }
+              },
+              {
+                "documentName": "Passport Photos",
+                "documentNameTR": "Pasaport Fotoğrafı",
+                "description": "45mm x 35mm, beyaz arka plan, güncel fotoğraf",
+                "validityRequired": "Son 6 ay içinde çekilmiş",
+                "howToObtain": "Fotoğrafçılar veya pasaport fotoğraf kabinleri",
+                "obtainDuration": "Aynı gün",
+                "apostilleRequired": false,
+                "translationRequired": false,
+                "notarizationRequired": false,
+                "numberOfCopies": 6,
+                "estimatedCost": {
+                  "amount": 10,
+                  "currency": "EUR"
+                }
+              },
+              {
+                "documentName": "Police Certificate / Criminal Record",
+                "documentNameTR": "Adli Sicil Kaydı (Sabıka Kaydı)",
+                "description": "Temiz adli sicil belgesi, Türkiye Adalet Bakanlığı'ndan",
+                "validityRequired": "Son 6 ay içinde alınmış",
+                "howToObtain": "E-Devlet üzerinden veya Adliye Adli Sicil Müdürlüğü'nden",
+                "obtainDuration": "Aynı gün (e-devlet) veya 1-3 gün",
+                "apostilleRequired": true,
+                "translationRequired": true,
+                "notarizationRequired": true,
+                "numberOfCopies": 2,
+                "estimatedCost": {
+                  "amount": 60,
+                  "currency": "EUR",
+                  "notes": "Belge ücreti + Apostil (Dışişleri) + Noter onaylı İngilizce tercüme"
+                },
+                "notes": "Türkiye Hague Convention üyesi olduğu için Apostil yeterli (konsolosluk onayı gerekmez). Son 10 yıl içinde 6+ ay yaşanan tüm ülkelerden de gerekli."
+              }
+            ],
+            "educationDocuments": [
+              {
+                "documentName": "University Degree / Diploma",
+                "documentNameTR": "Üniversite Diploması",
+                "description": "Lisans veya daha yüksek derece diploması (€38,000 maaş bandı için gerekli)",
+                "validityRequired": "Süresiz geçerli",
+                "howToObtain": "Mezun olunan üniversiteden",
+                "obtainDuration": "3-14 gün (üniversiteye göre)",
+                "apostilleRequired": true,
+                "translationRequired": true,
+                "notarizationRequired": true,
+                "numberOfCopies": 2,
+                "estimatedCost": {
+                  "amount": 80,
+                  "currency": "EUR",
+                  "notes": "Diploma suret ücreti + Apostil + Noter onaylı sworn translation"
+                },
+                "notes": "Türk üniversite diplomaları için Apostil Yükseköğretim Kurulu (YÖK) veya Dışişleri Bakanlığı'ndan alınır. NARIC Ireland değerlendirmesi opsiyonel ancak önerilir."
+              },
+              {
+                "documentName": "Academic Transcript",
+                "documentNameTR": "Transkript (Not Dökümü)",
+                "description": "Üniversite not dökümü, tüm dersler ve notlar",
+                "validityRequired": "Süresiz geçerli",
+                "howToObtain": "Üniversite öğrenci işlerinden",
+                "obtainDuration": "1-7 gün",
+                "apostilleRequired": true,
+                "translationRequired": true,
+                "notarizationRequired": true,
+                "numberOfCopies": 2,
+                "estimatedCost": {
+                  "amount": 60,
+                  "currency": "EUR"
+                },
+                "notes": "Diploma ile birlikte Apostil'lenir"
+              },
+              {
+                "documentName": "NARIC Recognition (Optional)",
+                "documentNameTR": "NARIC Diploma Denklik Belgesi (Opsiyonel)",
+                "description": "QQI/NARIC Ireland tarafından Türk diplomasının İrlanda NFQ sisteminde denkliği",
+                "validityRequired": "Süresiz geçerli",
+                "howToObtain": "NARIC Ireland - QQI web sitesi (qsearch.qqi.ie) veya online başvuru",
+                "obtainDuration": "14-30 gün (database'de yoksa)",
+                "apostilleRequired": false,
+                "translationRequired": false,
+                "notarizationRequired": false,
+                "numberOfCopies": 1,
+                "estimatedCost": {
+                  "amount": 60,
+                  "currency": "EUR",
+                  "notes": "Database'de varsa ücretsiz"
+                },
+                "notes": "Zorunlu değil ama güçlü başvuru için önerilir. Türk üniversite diplomaları genelde Level 8 (Honours Bachelor) olarak tanınır."
+              }
+            ],
+            "employmentDocuments": [
+              {
+                "documentName": "Contract of Employment",
+                "documentNameTR": "İş Sözleşmesi",
+                "description": "Minimum 2 yıl süreli, imzalı resmi iş sözleşmesi (€38,000+ maaş)",
+                "validityRequired": "2+ yıl süre",
+                "howToObtain": "İrlandalı işverenden",
+                "obtainDuration": "1-7 gün (müzakere sonrası)",
+                "apostilleRequired": false,
+                "translationRequired": false,
+                "notarizationRequired": false,
+                "numberOfCopies": 2,
+                "estimatedCost": {
+                  "amount": 0,
+                  "currency": "EUR"
+                },
+                "notes": "Her iki taraf da imzalamalı. Pozisyon, maaş, çalışma saatleri, yan haklar detaylı yazılmalı."
+              },
+              {
+                "documentName": "Job Description",
+                "documentNameTR": "İş Tanımı",
+                "description": "Detaylı görev ve sorumluluklar belgesi, Critical Skills listesine uygun",
+                "validityRequired": "Güncel",
+                "howToObtain": "İşverenden",
+                "obtainDuration": "1-3 gün",
+                "apostilleRequired": false,
+                "translationRequired": false,
+                "notarizationRequired": false,
+                "numberOfCopies": 1,
+                "estimatedCost": {
+                  "amount": 0,
+                  "currency": "EUR"
+                },
+                "notes": "SOC code ile uyumlu olmalı"
+              },
+              {
+                "documentName": "CV / Resume",
+                "documentNameTR": "Özgeçmiş",
+                "description": "Güncel CV, tüm eğitim ve iş deneyimleri ile",
+                "validityRequired": "Güncel (son 3 ay)",
+                "howToObtain": "Kendi hazırlığınız",
+                "obtainDuration": "1-3 gün",
+                "apostilleRequired": false,
+                "translationRequired": false,
+                "notarizationRequired": false,
+                "numberOfCopies": 2,
+                "estimatedCost": {
+                  "amount": 0,
+                  "currency": "EUR"
+                }
+              },
+              {
+                "documentName": "Reference Letters",
+                "documentNameTR": "Referans Mektupları",
+                "description": "Önceki işverenlerden deneyim ve pozisyon teyit mektupları",
+                "validityRequired": "Son 5 yıl içindeki işler",
+                "howToObtain": "Önceki işverenlerden (Türkiye veya yurtdışı)",
+                "obtainDuration": "7-14 gün",
+                "apostilleRequired": false,
+                "translationRequired": true,
+                "notarizationRequired": false,
+                "numberOfCopies": 1,
+                "estimatedCost": {
+                  "amount": 30,
+                  "currency": "EUR",
+                  "notes": "Türkçe ise İngilizce tercüme gerekir"
+                },
+                "notes": "İşveren letterhead'i, tarih, pozisyon, görev süresi içermeli"
+              },
+              {
+                "documentName": "Employer Documents",
+                "documentNameTR": "İşveren Belgeleri",
+                "description": "İşverenin Revenue kaydı, şirket bilgileri, EEA çalışan oranı belgesi",
+                "validityRequired": "Güncel",
+                "howToObtain": "İrlandalı işverenden",
+                "obtainDuration": "İşveren sağlar",
+                "apostilleRequired": false,
+                "translationRequired": false,
+                "notarizationRequired": false,
+                "numberOfCopies": 1,
+                "estimatedCost": {
+                  "amount": 0,
+                  "currency": "EUR"
+                },
+                "notes": "İşveren başvurunun bu kısmını hazırlar"
+              }
+            ],
+            "financialDocuments": [
+              {
+                "documentName": "Bank Statements",
+                "documentNameTR": "Banka Hesap Ekstresi",
+                "description": "Son 6 ay banka ekstresi (vize başvurusu için)",
+                "validityRequired": "Son 6 ay",
+                "howToObtain": "Bankanızdan",
+                "obtainDuration": "Aynı gün - 3 gün",
+                "apostilleRequired": false,
+                "translationRequired": false,
+                "notarizationRequired": false,
+                "numberOfCopies": 1,
+                "estimatedCost": {
+                  "amount": 10,
+                  "currency": "EUR"
+                },
+                "notes": "Vize için finansal yeterlilik kanıtı. Minimum tutar belirtilmemiş ancak €2,000-3,000 önerilir."
+              },
+              {
+                "documentName": "Health Insurance",
+                "documentNameTR": "Sağlık Sigortası Poliçesi",
+                "description": "Özel sağlık sigortası poliçesi veya işverenden taahhüt mektubu",
+                "validityRequired": "İrlanda'daki ilk dönem için geçerli",
+                "howToObtain": "VHI, Laya, Irish Life Health gibi sigorta şirketlerinden veya işverenden taahhüt",
+                "obtainDuration": "1-7 gün (online satın alma)",
+                "apostilleRequired": false,
+                "translationRequired": false,
+                "notarizationRequired": false,
+                "numberOfCopies": 1,
+                "estimatedCost": {
+                  "amount": 150,
+                  "currency": "EUR",
+                  "notes": "Aylık temel plan ~€150-200"
+                },
+                "notes": "AB dışı vatandaşlar için ilk yıl özel sigorta şiddetle tavsiye edilir"
+              }
+            ],
+            "otherDocuments": [
+              {
+                "documentName": "Proof of Address (Ireland)",
+                "documentNameTR": "İrlanda Adres Kanıtı",
+                "description": "İrlanda'da kalacağınız adresin kanıtı (IRP için gerekli)",
+                "validityRequired": "Son 3 ay içinde",
+                "howToObtain": "Kira sözleşmesi, utility bill (elektrik/su faturası) veya banka mektubu",
+                "obtainDuration": "İrlanda'ya vardıktan sonra 1-4 hafta",
+                "apostilleRequired": false,
+                "translationRequired": false,
+                "notarizationRequired": false,
+                "numberOfCopies": 1,
+                "estimatedCost": {
+                  "amount": 0,
+                  "currency": "EUR"
+                },
+                "notes": "IRP başvurusu için gerekli. Adınıza olmalı."
+              }
+            ]
+          },
+
+          "rightsAndRestrictions": {
+            "workRights": {
+              "canWork": true,
+              "restrictions": "Stamp 1 izni ile sadece sponsorlu işverenle çalışabilirsiniz. İlk 9 ay işveren değişikliği yasak (2024 kuralı). 9 ay sonra başka işverene geçebilirsiniz ancak yeni employment permit gerekebilir.",
+              "canChangeEmployer": true,
+              "processForChange": "9 ay sonra iş değiştirilebilir. Yeni işveren için yeni employment permit başvurusu gerekir (ancak ilk izin değilse işlem daha hızlı). 2 yıl sonra Stamp 4 aldıktan sonra sınırsız iş değiştirme hakkı.",
+              "canBeSelfEmployed": false,
+              "selfEmploymentNotes": "Stamp 1 ile kendi işinizi kuramazsınız. Stamp 4 aldıktan sonra serbest çalışma ve şirket kurma hakkınız olur.",
+              "workingHours": "Sözleşmedeki şartlara göre. İrlanda'da standart 39-40 saat/hafta. Fazla mesai ücretleri yasalarla korunur."
+            },
+            "familyRights": {
+              "canBringFamily": true,
+              "eligibleRelatives": [
+                "Eş (spouse) veya fiili eş (civil partner)",
+                "21 yaş altı bekar çocuklar",
+                "Bağımlı çocuklar (18-23 yaş arası tam zamanlı öğrenci)"
+              ],
+              "spouseWorkRights": "Eş Stamp 1G izni alır ve çalışma izni olmadan çalışabilir (Mayıs 2024 güncellemesi ile). Önceden Stamp 3 ile çalışma yasaktı.",
+              "childrenEducationRights": true,
+              "childEducationDetails": "Çocuklar kamu okullarına ücretsiz kayıt olabilir. İrlanda'da 6-16 yaş arası eğitim zorunludur. Kamu okulları ücretsiz, özel okullar €5,000-20,000/yıl.",
+              "pathToFamilyPR": true,
+              "familyPRNotes": "Aile üyeleri de 5 yıl sonra Stamp 4 ve ardından vatandaşlık başvurusu yapabilir.",
+              "applicationProcess": "Aile birleşimi başvurusu Critical Skills permit sahipleri için bekleme süresi yok - hemen başvurulabilir. Preclearance veya vize başvurusu yapılır.",
+              "familyReunificationCosts": {
+                "amount": 400,
+                "currency": "EUR",
+                "notes": "Her aile üyesi için vize €100 + IRP €300"
+              }
+            },
+            "travelRights": {
+              "canTravelAbroad": true,
+              "reentryRequirements": [
+                "Geçerli pasaport",
+                "Geçerli IRP kartı",
+                "Employment permit belgesi (kopyası)"
+              ],
+              "visaRevalidation": "IRP kartı ile İrlanda'ya geri dönüş sorunsuz. Ancak kalıcı oturum (Stamp 4) ve vatandaşlık başvurusu için yıllık 90 günden fazla yurtdışında kalamazsınız.",
+              "schengenAccess": false,
+              "schengenNotes": "İrlanda Schengen bölgesinde DEĞİLDİR. AB ülkelerine seyahat için ayrı Schengen vizesi gerekir (ancak Stamp 4 sahipleri için daha kolay onay).",
+              "commonTravelArea": true,
+              "commonTravelAreaNotes": "İrlanda ile İngiltere arasında Common Travel Area (CTA) anlaşması vardır. Ancak AB dışı vatandaşlar için UK vizesi ayrıca gerekir."
+            },
+            "residencyRights": {
+              "canBuyProperty": true,
+              "propertyNotes": "Yabancılar İrlanda'da ev satın alabilir. Mortgage (konut kredisi) alabileceğiniz ilk 1-2 yıl kısıtlı olabilir (kredi geçmişi yok). Minimum %20 peşinat gerekir.",
+              "canRentProperty": true,
+              "rentalNotes": "Kiralama serbest. Dublin'de 1+1 daire €1,500-2,500, Cork/Galway €1,000-1,500. Genelde 1 ay depozito + 1 ay kira peşin ödenir.",
+              "mustRegisterAddress": true,
+              "registrationDetails": "IRP başvurusu sırasında adres kaydı yapılır. Adres değişikliklerini INIS'e bildirmeniz gerekir.",
+              "canOpenBankAccount": true,
+              "bankingDetails": "İrlanda'da banka hesabı açabilirsiniz. Gerekli: Pasaport, IRP kartı, adres kanıtı, işveren mektubu. Ana bankalar: AIB, Bank of Ireland, Permanent TSB, Revolut (online).",
+              "canGetDriversLicense": true,
+              "driverLicenseDetails": "Türk ehliyeti ile 12 ay kullanabilirsiniz. Sonra İrlanda ehliyeti için başvuru gerekir. Teorik ve pratik sınav vardır. Türk ehliyeti direkt dönüştürülemez."
+            },
+            "socialBenefits": {
+              "healthcareAccess": "İlk 1 yıl sınırlı. Ordinary residence (1+ yıl ikamet niyeti) kanıtlanırsa kamu sağlık sistemi (HSE) erişimi başlar. Ancak özel sigorta şiddetle tavsiye edilir.",
+              "healthcareDetails": {
+                "publicHealthcare": "HSE (Health Service Executive) - GP ziyareti €50-70 (Medical Card yoksa). Acil servis ücretsiz ama bekleme süresi uzun.",
+                "privateInsurance": "VHI, Laya, Irish Life Health - Yıllık €1,850 (temel plan). GP, uzman, hastane masraflarını kapsar.",
+                "prescriptions": "İlaç fiyatları yüksek. Medical Card sahipleri için kısmi destek var."
+              },
+              "unemploymentBenefits": false,
+              "unemploymentNotes": "Stamp 1 sahipleri işsizlik maaşı (Jobseeker's Allowance) alamaz. Stamp 4 sahipleri 2+ yıl PRSI ödemesi sonrası alabilir.",
+              "pensionRights": true,
+              "pensionDetails": "Çalışanlar PRSI (Pay Related Social Insurance) öder. Emeklilik sistemine katılım zorunludur. İşveren pension scheme'i de olabilir.",
+              "educationSubsidies": false,
+              "educationDetails": "Stamp 1/4 sahiplerinin çocukları kamu okullarına ücretsiz gidebilir. Yetişkin eğitimi ve üniversite international öğrenci ücreti ödeyebilir (€10,000-25,000/yıl).",
+              "childBenefit": "İkamet şartını sağlayan herkes (Stamp 4 genelde yeterli) çocuk yardımı (Child Benefit) alabilir: €140-€280/ay (çocuk sayısına göre).",
+              "housingSupport": false,
+              "housingNotes": "İlk yıllarda kamu konut desteği yok. Stamp 4 ve uzun süreli ikametle başvuru yapılabilir."
+            }
+          },
+
+          "extensionAndRenewal": {
+            "renewable": true,
+            "maxDuration": "2 yıl (ilk izin), sonra Stamp 4'e geçiş önerilir",
+            "renewalProcess": "İlk 2 yıl sonunda Stamp 4 başvurusu yapılır (kalıcı oturum). Stamp 4 alamazsanız employment permit yenilenebilir ancak bu nadir bir durumdur.",
+            "applicationTiming": "Mevcut iznin bitmesinden 3-4 ay önce",
+            "costs": [
+              {
+                "item": "Stamp 4 başvuru/IRP yenileme",
+                "amount": 300,
+                "currency": "EUR"
+              }
+            ],
+            "approvalRate": "Stamp 4 geçişi için %95+ (şartları sağlıyorsanız)",
+            "notes": "Critical Skills permit sahiplerinin çoğu 2 yıl sonra doğrudan Stamp 4'e geçer. Stamp 4 aldıktan sonra her 5 yılda yenileme gerekir."
+          },
+
+          "pathToPermanentResidency": {
+            "available": true,
+            "process": "Critical Skills Employment Permit sahipleri sadece 2 yıl sonra Stamp 4 (long-term residence) başvurusu yapabilir. Bu İrlanda'nın en hızlı kalıcı oturum yoludur.",
+            "timeline": "2 yıl (Critical Skills permit ile)",
+            "requirements": [
+              "2 yıl boyunca geçerli employment permit ile çalışma",
+              "İyi karakter (good character) - suç kaydı yok",
+              "İkamet şartlarına uyum - yıllık 90 günden fazla yurtdışında kalmamak",
+              "Vergi uyumu - tüm vergiler ödenmiş (Revenue tax clearance)",
+              "İrlanda'da yasal ikamet süresince göç kurallarına uyum"
+            ],
+            "costs": [
+              {
+                "item": "Stamp 4 başvuru ücreti (IRP yenileme)",
+                "amount": 300,
+                "currency": "EUR"
+              }
+            ],
+            "steps": [
+              {
+                "step": 1,
+                "description": "2 yıl dolduktan sonra Stamp 4 başvurusu hazırlığı"
+              },
+              {
+                "step": 2,
+                "description": "Revenue'dan tax clearance certificate alın"
+              },
+              {
+                "step": 3,
+                "description": "İşverenden görev belgesi (employment confirmation) alın"
+              },
+              {
+                "step": 4,
+                "description": "INIS online platformdan Stamp 4 başvurusu yapın"
+              },
+              {
+                "step": 5,
+                "description": "Karar bekleyin (3-6 ay)"
+              },
+              {
+                "step": 6,
+                "description": "Onay sonrası yeni IRP kartı için randevu alın"
+              }
+            ],
+            "benefits": [
+              "Sınırsız iş değiştirme hakkı - employment permit gerekmez",
+              "Kendi işinizi kurabilirsiniz",
+              "Tüm sosyal haklara tam erişim",
+              "5 yıl geçerli (yenilenebilir)",
+              "Aile üyeleri de aynı haklara sahip olur",
+              "Vatandaşlık başvurusu için 3 yıl daha beklemeniz yeterli (toplam 5)"
+            ],
+            "notes": "30 Kasım 2023'ten itibaren Department of Enterprise'dan destek mektubu gerekmez - süreç basitleştirildi."
+          },
+
+          "pathToCitizenship": {
+            "available": true,
+            "minimumResidencyYears": 5,
+            "requirements": [
+              "Toplam 5 yıl yasal ikamet (9 yıl içinde)",
+              "Son 1 yıl kesintisiz ikamet (maximum 70-90 gün yurtdışı)",
+              "İyi karakter (good character)",
+              "İrlanda ile bağlar (iş, ev, aile, sosyal entegrasyon)",
+              "Vergi uyumu - tüm vergilerin ödenmiş olması",
+              "İrlanda'da yaşamaya devam etme niyeti"
+            ],
+            "residencyCalculation": "Son 9 yıl içinde 5 yıl ikamet + son 12 ay kesintisiz. Stamp 1 ve Stamp 4 süreleri sayılır. Yurtdışı seyahatler dikkatle hesaplanır.",
+            "process": "Naturalisation başvurusu online (www.irishimmigration.ie) veya posta ile. Form doldurulur, belgeler eklenir, ücret ödenir. İnceleme 18-24 ay sürer. Onay sonrası citizenship ceremony'de yemin edilir.",
+            "costs": [
+              {
+                "item": "Başvuru ücreti",
+                "amount": 175,
+                "currency": "EUR"
+              },
+              {
+                "item": "Onay ücreti (başarılı olursa)",
+                "amount": 950,
+                "currency": "EUR"
+              }
+            ],
+            "processingTime": "18-24 ay",
+            "benefits": [
+              "İrlanda vatandaşlığı = AB vatandaşlığı",
+              "Tüm AB ülkelerinde yaşama, çalışma, seyahat hakkı",
+              "İrlanda pasaportu - 185+ ülkeye vizesiz giriş",
+              "Seçme ve seçilme hakkı",
+              "Çifte vatandaşlık - Türk vatandaşlığını kaybetmezsiniz",
+              "Aile üyeleri de AB hakları kazanır"
+            ],
+            "dualCitizenship": true,
+            "notes": "İrlanda çifte vatandaşlığa izin verir. Türk vatandaşlığınızı koruyabilirsiniz. İrlanda pasaportu Brexit sonrası özellikle değerli - hem AB hem UK'ye erişim avantajları."
+          }
+        }
+      ]
+    }
+  ]
+}

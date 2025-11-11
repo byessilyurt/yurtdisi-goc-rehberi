@@ -1,0 +1,1475 @@
+{
+  "country": "United States of America",
+  "countryCode": "USA",
+  "partNumber": 3,
+  "partTitle": "Cost of Living, Employment, and Turkish Community",
+  "targetAudience": "Turkish Citizens",
+  "dataCollectionDate": "2025-11",
+
+  "exchangeRate": {
+    "USD_to_TRY": 35,
+    "note": "1 USD = 35 TRY (approximate rate for reference)"
+  },
+
+  "costOfLivingDetailed": {
+    "overview": {
+      "single": {
+        "monthly": {
+          "USD": "3,200-4,500",
+          "TRY": "112,000-157,500"
+        },
+        "note": "Varies significantly by city and lifestyle"
+      },
+      "family_of_4": {
+        "monthly": {
+          "USD": "7,000-10,000",
+          "TRY": "245,000-350,000"
+        }
+      },
+      "ranking": "USA has the 2nd highest cost of living index among developed nations (148.2)"
+    },
+
+    "byCity": [
+      {
+        "city": "New York City",
+        "state": "New York",
+        "costOfLivingIndex": "Very High",
+        "turkishPopulation": "75,000-85,000 (largest in USA)",
+        "turkishNeighborhoods": ["Sheepshead Bay (Brooklyn)", "Sunnyside (Queens)", "Paterson NJ (nearby)"],
+
+        "housing": {
+          "rent": {
+            "studio": {
+              "cityCenter": {
+                "USD": "2,500-3,500",
+                "TRY": "87,500-122,500"
+              },
+              "outside": {
+                "USD": "1,800-2,500",
+                "TRY": "63,000-87,500"
+              }
+            },
+            "oneBedroom": {
+              "cityCenter": {
+                "USD": "3,500-5,000",
+                "TRY": "122,500-175,000"
+              },
+              "outside": {
+                "USD": "2,200-3,200",
+                "TRY": "77,000-112,000"
+              }
+            },
+            "twoBedroom": {
+              "cityCenter": {
+                "USD": "4,500-7,000",
+                "TRY": "157,500-245,000"
+              },
+              "outside": {
+                "USD": "2,800-4,000",
+                "TRY": "98,000-140,000"
+              }
+            }
+          },
+          "buyingPrice_perSqM": {
+            "cityCenter": {
+              "USD": "15,000-25,000",
+              "TRY": "525,000-875,000"
+            }
+          },
+          "note": "Queens and Brooklyn neighborhoods are cheaper than Manhattan. Turkish community concentrated in specific affordable areas."
+        },
+
+        "utilities": {
+          "basic_85sqm": {
+            "monthly": {
+              "USD": "150-250",
+              "TRY": "5,250-8,750"
+            },
+            "includes": "Electricity, heating, cooling, water, garbage"
+          },
+          "internet": {
+            "monthly": {
+              "USD": "60-80",
+              "TRY": "2,100-2,800"
+            }
+          },
+          "mobilePhone": {
+            "monthly": {
+              "USD": "40-80",
+              "TRY": "1,400-2,800"
+            }
+          }
+        },
+
+        "food": {
+          "groceries_monthly_single": {
+            "USD": "400-600",
+            "TRY": "14,000-21,000"
+          },
+          "dining": {
+            "inexpensiveMeal": {
+              "USD": "20-30",
+              "TRY": "700-1,050"
+            },
+            "midRangeRestaurant_2people": {
+              "USD": "80-120",
+              "TRY": "2,800-4,200"
+            },
+            "turkishRestaurant": {
+              "USD": "15-30",
+              "TRY": "525-1,050",
+              "note": "Many Turkish restaurants in NYC - cheaper than American restaurants"
+            }
+          }
+        },
+
+        "transportation": {
+          "publicTransit": {
+            "monthlyPass": {
+              "USD": 132,
+              "TRY": 4620,
+              "system": "Subway and buses (MTA)"
+            },
+            "note": "Excellent public transit - car not necessary in Manhattan"
+          },
+          "carOwnership": {
+            "notRecommended": true,
+            "parkingCost": {
+              "monthly": {
+                "USD": "300-600",
+                "TRY": "10,500-21,000"
+              }
+            }
+          },
+          "gasoline_perLiter": {
+            "USD": "0.90-1.10",
+            "TRY": "31.50-38.50"
+          }
+        },
+
+        "totalMonthlyEstimate": {
+          "single": {
+            "USD": "4,000-6,000",
+            "TRY": "140,000-210,000"
+          },
+          "couple": {
+            "USD": "6,500-9,000",
+            "TRY": "227,500-315,000"
+          }
+        },
+
+        "prosForTurkish": [
+          "Largest Turkish community in USA",
+          "Turkish stores, restaurants, mosques everywhere",
+          "Direct flights to Istanbul",
+          "Excellent job market especially tech and finance",
+          "No car needed - great public transit"
+        ],
+        "cons": [
+          "Very expensive",
+          "High taxes (city + state + federal)",
+          "Crowded and fast-paced"
+        ]
+      },
+
+      {
+        "city": "San Francisco / Bay Area",
+        "state": "California",
+        "costOfLivingIndex": "Very High",
+        "turkishPopulation": "Moderate (5,000-10,000)",
+
+        "housing": {
+          "rent": {
+            "studio": {
+              "cityCenter": {
+                "USD": "2,400-3,200",
+                "TRY": "84,000-112,000"
+              }
+            },
+            "oneBedroom": {
+              "cityCenter": {
+                "USD": "3,000-4,000",
+                "TRY": "105,000-140,000"
+              }
+            },
+            "twoBedroom": {
+              "median": {
+                "USD": 3089,
+                "TRY": 108115
+              }
+            }
+          }
+        },
+
+        "totalMonthlyEstimate": {
+          "single": {
+            "USD": "4,500-6,500",
+            "TRY": "157,500-227,500"
+          },
+          "note": "One of the most expensive cities in USA"
+        },
+
+        "prosForTurkish": [
+          "Best tech job market in the world",
+          "Highest tech salaries",
+          "Diverse and international",
+          "Great weather"
+        ],
+        "cons": [
+          "Extremely expensive",
+          "Smaller Turkish community",
+          "Traffic and parking issues",
+          "High state taxes (13.3% top rate)"
+        ]
+      },
+
+      {
+        "city": "Los Angeles",
+        "state": "California",
+        "costOfLivingIndex": "High",
+        "turkishPopulation": "Moderate (8,000-12,000)",
+
+        "housing": {
+          "rent": {
+            "oneBedroom": {
+              "cityCenter": {
+                "USD": "2,000-3,000",
+                "TRY": "70,000-105,000"
+              }
+            },
+            "twoBedroom": {
+              "cityCenter": {
+                "USD": "2,800-4,200",
+                "TRY": "98,000-147,000"
+              }
+            }
+          },
+          "note": "16% cheaper than San Francisco overall"
+        },
+
+        "transportation": {
+          "carRequired": true,
+          "publicTransit": {
+            "limited": true,
+            "note": "Public transit exists but city designed for cars"
+          },
+          "carOwnership": {
+            "monthlyCarPayment": {
+              "USD": "400-600",
+              "TRY": "14,000-21,000"
+            },
+            "insurance": {
+              "monthly": {
+                "USD": "150-250",
+                "TRY": "5,250-8,750"
+              }
+            },
+            "gas": {
+              "monthly": {
+                "USD": "200-300",
+                "TRY": "7,000-10,500"
+              }
+            }
+          }
+        },
+
+        "totalMonthlyEstimate": {
+          "single_withCar": {
+            "USD": "3,500-5,000",
+            "TRY": "122,500-175,000"
+          }
+        },
+
+        "prosForTurkish": [
+          "Good weather year-round",
+          "Diverse entertainment and tech industries",
+          "Growing Turkish community",
+          "Beach lifestyle"
+        ],
+        "cons": [
+          "Car absolutely necessary",
+          "Notorious traffic",
+          "High cost of living",
+          "High state taxes"
+        ]
+      },
+
+      {
+        "city": "Chicago",
+        "state": "Illinois",
+        "costOfLivingIndex": "Moderate",
+        "turkishPopulation": "15,000-20,000",
+
+        "housing": {
+          "rent": {
+            "oneBedroom": {
+              "cityCenter": {
+                "USD": "1,500-2,200",
+                "TRY": "52,500-77,000"
+              }
+            },
+            "twoBedroom": {
+              "average": {
+                "USD": 2000,
+                "TRY": 70000
+              }
+            }
+          }
+        },
+
+        "totalMonthlyEstimate": {
+          "single": {
+            "USD": "2,500-3,800",
+            "TRY": "87,500-133,000"
+          },
+          "note": "Significantly cheaper than coastal cities"
+        },
+
+        "prosForTurkish": [
+          "Strong Turkish community with cultural centers",
+          "Annual Chicago Turkish Festival",
+          "More affordable than coasts",
+          "Good public transit",
+          "Major business and tech hub"
+        ],
+        "cons": [
+          "Very cold winters (-20°C common)",
+          "High property taxes",
+          "Some areas have safety concerns"
+        ]
+      },
+
+      {
+        "city": "Houston",
+        "state": "Texas",
+        "costOfLivingIndex": "Moderate",
+        "turkishPopulation": "20,000+",
+
+        "housing": {
+          "rent": {
+            "oneBedroom": {
+              "cityCenter": {
+                "USD": "1,200-1,800",
+                "TRY": "42,000-63,000"
+              }
+            },
+            "twoBedroom": {
+              "average": {
+                "USD": 2000,
+                "TRY": 70000
+              }
+            }
+          }
+        },
+
+        "taxation": {
+          "noStateIncomeTax": true,
+          "advantage": "HUGE savings - no state income tax in Texas"
+        },
+
+        "totalMonthlyEstimate": {
+          "single": {
+            "USD": "2,200-3,200",
+            "TRY": "77,000-112,000"
+          }
+        },
+
+        "prosForTurkish": [
+          "Large and active Turkish community",
+          "Strong Turkish association networks",
+          "NO state income tax (huge savings)",
+          "Affordable housing",
+          "Energy industry jobs (many Turkish engineers)",
+          "Car-friendly city"
+        ],
+        "cons": [
+          "Very hot and humid summers",
+          "Car absolutely necessary",
+          "Hurricane risk",
+          "Limited public transit"
+        ]
+      },
+
+      {
+        "city": "Boston",
+        "state": "Massachusetts",
+        "costOfLivingIndex": "High",
+        "turkishPopulation": "8,000-12,000",
+
+        "housing": {
+          "rent": {
+            "oneBedroom": {
+              "cityCenter": {
+                "USD": "2,200-3,200",
+                "TRY": "77,000-112,000"
+              }
+            },
+            "twoBedroom": {
+              "average": {
+                "USD": 3800,
+                "TRY": 133000
+              }
+            }
+          }
+        },
+
+        "totalMonthlyEstimate": {
+          "single": {
+            "USD": "3,000-4,500",
+            "TRY": "105,000-157,500"
+          }
+        },
+
+        "prosForTurkish": [
+          "Excellent universities (Harvard, MIT, BU, etc.)",
+          "Strong tech and biotech industries",
+          "Turkish student associations",
+          "Good public transit",
+          "Historic and cultural city"
+        ],
+        "cons": [
+          "Very expensive",
+          "Harsh winters",
+          "Smaller Turkish community than NYC/Chicago"
+        ]
+      },
+
+      {
+        "city": "Washington DC",
+        "state": "District of Columbia",
+        "costOfLivingIndex": "High",
+        "turkishPopulation": "12,000-15,000",
+
+        "housing": {
+          "rent": {
+            "oneBedroom": {
+              "cityCenter": {
+                "USD": "1,800-2,800",
+                "TRY": "63,000-98,000"
+              }
+            },
+            "twoBedroom": {
+              "average": {
+                "USD": 2500,
+                "TRY": 87500
+              }
+            }
+          }
+        },
+
+        "totalMonthlyEstimate": {
+          "single": {
+            "USD": "2,800-4,200",
+            "TRY": "98,000-147,000"
+          }
+        },
+
+        "prosForTurkish": [
+          "Turkish-American Community Center (TACC)",
+          "Government and international organization jobs",
+          "Embassy district - Turkish diplomatic presence",
+          "Good public transit (Metro)",
+          "Diverse and international"
+        ],
+        "cons": [
+          "Expensive",
+          "Traffic in suburbs",
+          "Hot and humid summers"
+        ]
+      },
+
+      {
+        "city": "Seattle",
+        "state": "Washington",
+        "costOfLivingIndex": "High",
+        "turkishPopulation": "Moderate",
+
+        "housing": {
+          "rent": {
+            "oneBedroom": {
+              "cityCenter": {
+                "USD": "1,800-2,600",
+                "TRY": "63,000-91,000"
+              }
+            }
+          }
+        },
+
+        "taxation": {
+          "noStateIncomeTax": true,
+          "advantage": "No state income tax in Washington"
+        },
+
+        "totalMonthlyEstimate": {
+          "single": {
+            "USD": "2,800-4,000",
+            "TRY": "98,000-140,000"
+          }
+        },
+
+        "prosForTurkish": [
+          "Major tech hub (Amazon, Microsoft)",
+          "High tech salaries",
+          "NO state income tax",
+          "Beautiful nature and scenery",
+          "Good quality of life"
+        ],
+        "cons": [
+          "Rainy weather (9 months/year)",
+          "Expensive",
+          "Smaller Turkish community"
+        ]
+      }
+    ],
+
+    "commonExpenses": {
+      "healthcare": {
+        "description": "VERY EXPENSIVE in USA - insurance is critical",
+        "insurance": {
+          "employerProvided": {
+            "monthlyPremium_employee": {
+              "USD": "100-400",
+              "TRY": "3,500-14,000"
+            },
+            "note": "Most employers cover 60-80% of premium cost"
+          },
+          "individualMarket": {
+            "monthlyPremium": {
+              "USD": "300-600",
+              "TRY": "10,500-21,000"
+            },
+            "deductible_annual": {
+              "USD": "1,000-5,000",
+              "TRY": "35,000-175,000"
+            }
+          }
+        },
+        "outOfPocketCosts": {
+          "doctorVisit": {
+            "withInsurance": {
+              "USD": "20-50 copay",
+              "TRY": "700-1,750"
+            },
+            "withoutInsurance": {
+              "USD": "150-300",
+              "TRY": "5,250-10,500"
+            }
+          },
+          "emergencyRoom": {
+            "withInsurance": {
+              "USD": "100-500 copay",
+              "TRY": "3,500-17,500"
+            },
+            "withoutInsurance": {
+              "USD": "1,000-10,000+",
+              "TRY": "35,000-350,000+",
+              "note": "Can be financially devastating without insurance"
+            }
+          },
+          "prescription": {
+            "genericDrug": {
+              "USD": "10-30",
+              "TRY": "350-1,050"
+            },
+            "brandName": {
+              "USD": "50-500+",
+              "TRY": "1,750-17,500+"
+            }
+          }
+        },
+        "CRITICAL": "Healthcare is the #1 financial risk in USA. NEVER go without insurance."
+      },
+
+      "transportation": {
+        "publicTransit": {
+          "available": "Only in major cities (NYC, Chicago, Boston, DC, San Francisco)",
+          "monthlyPass": {
+            "USD": "80-130",
+            "TRY": "2,800-4,550"
+          }
+        },
+        "carOwnership": {
+          "requiredInMostCities": true,
+          "costs": {
+            "carPurchase_used": {
+              "USD": "10,000-20,000",
+              "TRY": "350,000-700,000"
+            },
+            "monthlyLoan": {
+              "USD": "300-500",
+              "TRY": "10,500-17,500"
+            },
+            "insurance": {
+              "monthly": {
+                "USD": "100-300",
+                "TRY": "3,500-10,500"
+              },
+              "note": "Varies greatly by age, driving record, state"
+            },
+            "gasoline": {
+              "monthly": {
+                "USD": "150-300",
+                "TRY": "5,250-10,500"
+              }
+            },
+            "maintenance": {
+              "annual": {
+                "USD": "500-1,200",
+                "TRY": "17,500-42,000"
+              }
+            }
+          },
+          "totalMonthly": {
+            "USD": "550-1,100",
+            "TRY": "19,250-38,500"
+          }
+        }
+      },
+
+      "education": {
+        "publicSchool_K12": {
+          "tuition": {
+            "USD": 0,
+            "TRY": 0,
+            "note": "Free for residents"
+          },
+          "quality": "Varies greatly by district - good in wealthy suburbs, poor in some urban areas"
+        },
+        "privateschool_K12": {
+          "annual": {
+            "USD": "10,000-40,000",
+            "TRY": "350,000-1,400,000"
+          }
+        },
+        "childcare_preschool": {
+          "monthly": {
+            "USD": "800-2,000",
+            "TRY": "28,000-70,000"
+          },
+          "note": "VERY expensive - major cost for families with young children"
+        }
+      },
+
+      "taxEstimates": {
+        "federal": {
+          "rate": "10-37% progressive brackets",
+          "effective": "15-25% for most middle-class workers"
+        },
+        "state": {
+          "varies": true,
+          "examples": {
+            "Texas": "0%",
+            "Washington": "0%",
+            "Florida": "0%",
+            "California": "up to 13.3%",
+            "NewYork": "up to 10.9%",
+            "Illinois": "4.95% flat"
+          }
+        },
+        "socialSecurity_Medicare": {
+          "rate": "7.65%",
+          "note": "FICA taxes - mandatory"
+        },
+        "totalTaxBurden": {
+          "typical": "25-40% of gross income depending on state and income level"
+        }
+      }
+    }
+  },
+
+  "employmentMarket": {
+    "overview": {
+      "strength": "Very strong for skilled professionals, especially in tech",
+      "unemployment": "Low (3-4% nationally as of 2025)",
+      "opportunities": "Best job market in the world for tech and specialized professionals"
+    },
+
+    "salariesByProfession": [
+      {
+        "profession": "Software Engineer",
+        "education": "Bachelor's degree in Computer Science or related",
+        "salaryRange": {
+          "junior_0to2years": {
+            "USD": "80,000-120,000",
+            "TRY": "2,800,000-4,200,000"
+          },
+          "midLevel_3to5years": {
+            "USD": "110,000-160,000",
+            "TRY": "3,850,000-5,600,000"
+          },
+          "senior_6plus": {
+            "USD": "140,000-220,000",
+            "TRY": "4,900,000-7,700,000"
+          },
+          "topCompanies_FAANG": {
+            "USD": "180,000-400,000+",
+            "TRY": "6,300,000-14,000,000+",
+            "note": "Including base + stock + bonus at companies like Google, Meta, Amazon, Apple"
+          }
+        },
+        "median": {
+          "USD": 128350,
+          "TRY": 4492250
+        },
+        "topPayingCities": {
+          "SanFrancisco": {
+            "USD": 157000,
+            "TRY": 5495000
+          },
+          "Seattle": {
+            "USD": 162000,
+            "TRY": 5670000
+          },
+          "Austin": {
+            "USD": 175000,
+            "TRY": 6125000
+          }
+        },
+        "demand": "Very High - constant shortage of qualified engineers",
+        "h1bSponsorship": "Common at larger companies (though note new $100k fee as of Sept 2025)"
+      },
+      {
+        "profession": "Data Scientist",
+        "education": "Master's degree preferred",
+        "salaryRange": {
+          "USD": "100,000-180,000",
+          "TRY": "3,500,000-6,300,000"
+        },
+        "median": {
+          "USD": 126000,
+          "TRY": 4410000
+        },
+        "demand": "High"
+      },
+      {
+        "profession": "AI/Machine Learning Engineer",
+        "education": "Master's or PhD preferred",
+        "salaryRange": {
+          "midLevel": {
+            "USD": "135,000-240,000",
+            "TRY": "4,725,000-8,400,000"
+          },
+          "senior": {
+            "USD": "200,000-350,000+",
+            "TRY": "7,000,000-12,250,000+"
+          }
+        },
+        "demand": "Extremely High - hottest field in 2025"
+      },
+      {
+        "profession": "Mechanical Engineer",
+        "education": "Bachelor's degree",
+        "salaryRange": {
+          "USD": "70,000-110,000",
+          "TRY": "2,450,000-3,850,000"
+        },
+        "demand": "Moderate"
+      },
+      {
+        "profession": "Electrical Engineer",
+        "education": "Bachelor's degree",
+        "salaryRange": {
+          "USD": "75,000-120,000",
+          "TRY": "2,625,000-4,200,000"
+        },
+        "demand": "Moderate to High"
+      },
+      {
+        "profession": "Accountant",
+        "education": "Bachelor's in Accounting, CPA preferred",
+        "salaryRange": {
+          "USD": "55,000-90,000",
+          "TRY": "1,925,000-3,150,000"
+        },
+        "demand": "Moderate"
+      },
+      {
+        "profession": "Financial Analyst",
+        "education": "Bachelor's in Finance/Economics",
+        "salaryRange": {
+          "USD": "65,000-110,000",
+          "TRY": "2,275,000-3,850,000"
+        },
+        "demand": "Moderate"
+      },
+      {
+        "profession": "Registered Nurse (RN)",
+        "education": "Bachelor's of Science in Nursing (BSN), Nursing license",
+        "salaryRange": {
+          "USD": "70,000-110,000",
+          "TRY": "2,450,000-3,850,000"
+        },
+        "demand": "Very High - nursing shortage",
+        "note": "Turkish nursing degrees may require additional credentialing"
+      },
+      {
+        "profession": "Physical Therapist",
+        "education": "Doctor of Physical Therapy (DPT)",
+        "salaryRange": {
+          "USD": "75,000-95,000",
+          "TRY": "2,625,000-3,325,000"
+        },
+        "demand": "High"
+      },
+      {
+        "profession": "University Professor",
+        "education": "PhD",
+        "salaryRange": {
+          "assistantProfessor": {
+            "USD": "70,000-100,000",
+            "TRY": "2,450,000-3,500,000"
+          },
+          "associateProfessor": {
+            "USD": "85,000-120,000",
+            "TRY": "2,975,000-4,200,000"
+          },
+          "fullProfessor": {
+            "USD": "110,000-200,000+",
+            "TRY": "3,850,000-7,000,000+"
+          }
+        },
+        "demand": "Moderate, varies by field"
+      },
+      {
+        "profession": "Physician / Medical Doctor",
+        "education": "MD or DO degree, Residency, US Medical License",
+        "salaryRange": {
+          "primaryCare": {
+            "USD": "200,000-250,000",
+            "TRY": "7,000,000-8,750,000"
+          },
+          "specialist": {
+            "USD": "300,000-500,000+",
+            "TRY": "10,500,000-17,500,000+"
+          }
+        },
+        "demand": "Very High",
+        "note": "Turkish medical degrees require ECFMG certification and US residency - very difficult path"
+      }
+    ],
+
+    "minimumWage": {
+      "federal": {
+        "hourly": {
+          "USD": 7.25,
+          "TRY": 253.75
+        },
+        "annual_fullTime": {
+          "USD": 15080,
+          "TRY": 527800
+        },
+        "note": "Many states have higher minimum wages"
+      },
+      "byState_examples": {
+        "California": {
+          "USD": 16,
+          "TRY": 560,
+          "annual": {
+            "USD": 33280,
+            "TRY": 1164800
+          }
+        },
+        "NewYork": {
+          "USD": 15,
+          "TRY": 525
+        },
+        "Washington": {
+          "USD": 16.28,
+          "TRY": 569.80
+        }
+      }
+    },
+
+    "benefits": {
+      "typical": [
+        "Health insurance (employer typically pays 60-80% of premium)",
+        "Dental and vision insurance",
+        "401(k) retirement plan with employer match (3-6% typical)",
+        "Paid time off (10-20 days/year)",
+        "Sick leave (5-10 days/year)",
+        "Life insurance",
+        "Disability insurance"
+      ],
+      "tech_companies": [
+        "All of the above PLUS:",
+        "Stock options or RSUs (Restricted Stock Units)",
+        "Signing bonuses ($10,000-$50,000+)",
+        "Annual bonuses (10-20% of base)",
+        "Free meals at office",
+        "Gym memberships",
+        "Professional development budget",
+        "Relocation assistance"
+      ],
+      "paidLeave": {
+        "vacation": "10-25 days/year (varies by company and seniority)",
+        "sickLeave": "5-15 days/year",
+        "maternityLeave": {
+          "federal": "12 weeks unpaid (FMLA)",
+          "progressive_companies": "12-20 weeks paid",
+          "note": "USA has NO federal paid maternity leave - among worst in developed world"
+        },
+        "paternityLeave": {
+          "typical": "1-4 weeks",
+          "progressive_companies": "8-16 weeks"
+        }
+      }
+    },
+
+    "jobSearchResources": [
+      "LinkedIn (most important for professional jobs)",
+      "Indeed.com",
+      "Glassdoor.com",
+      "Monster.com",
+      "AngelList (for startups)",
+      "University career centers (for students/recent grads)",
+      "Turkish professional associations",
+      "Networking events and conferences"
+    ],
+
+    "turkishProfessionalCommunity": {
+      "presence": "Strong in tech, engineering, academia, and business",
+      "networks": [
+        "Turkish American Scientists and Scholars Association (TASSA)",
+        "Turkish Women's International Network (TÜRKAD-WIN)",
+        "LinkedIn Turkish professional groups",
+        "University Turkish student associations (lead to professional networks)"
+      ],
+      "advantages": [
+        "Networking opportunities",
+        "Mentorship from established Turkish professionals",
+        "Cultural connections",
+        "Job referrals"
+      ]
+    }
+  },
+
+  "turkishCommunity": {
+    "totalPopulation": {
+      "estimate": "350,000-400,000",
+      "officialCensus": "252,256 (2023 American Community Survey)",
+      "note": "One of the largest Turkish diaspora communities outside Europe"
+    },
+
+    "distribution": {
+      "topStates": [
+        {
+          "state": "New York/New Jersey",
+          "population": "75,000-85,000",
+          "percentage": "~23%",
+          "characteristics": "Largest concentration. Brooklyn (Sheepshead Bay), Queens (Sunnyside), Paterson NJ."
+        },
+        {
+          "state": "California",
+          "population": "30,000-40,000",
+          "areas": "Los Angeles, San Francisco Bay Area, San Diego"
+        },
+        {
+          "state": "Texas",
+          "population": "25,000-30,000",
+          "areas": "Houston (major concentration), Dallas, Austin"
+        },
+        {
+          "state": "Illinois",
+          "population": "15,000-20,000",
+          "areas": "Chicago metropolitan area"
+        },
+        {
+          "state": "Florida",
+          "population": "12,000-18,000",
+          "areas": "Miami, Tampa, Orlando"
+        }
+      ]
+    },
+
+    "organizations": {
+      "major": [
+        {
+          "name": "Assembly of Turkish American Associations (ATAA)",
+          "type": "Umbrella organization",
+          "website": "https://www.ataa.org/",
+          "description": "Coordinates Turkish-American associations nationwide"
+        },
+        {
+          "name": "Turkish American Federation (TADF)",
+          "coverage": "New York, New Jersey, Connecticut, Pennsylvania",
+          "description": "Serves largest Turkish population in USA"
+        },
+        {
+          "name": "Turkish-American Community Center (TACC)",
+          "location": "Maryland (near Washington DC)",
+          "founded": 1993,
+          "members": "~20 member associations",
+          "description": "Cultural and community services"
+        },
+        {
+          "name": "Turkish-American Chamber of Commerce and Industry (TACCI)",
+          "location": "New York",
+          "founded": 2002,
+          "description": "Business networking and trade promotion"
+        },
+        {
+          "name": "Turkish American Scientists and Scholars Association (TASSA)",
+          "description": "Academic and professional networking"
+        }
+      ],
+      "byCity": {
+        "NewYork": [
+          "New York Turkish Cultural Center",
+          "Turkish-American Association of New York",
+          "Federation of Turkish American Associations (TADF)"
+        ],
+        "Chicago": [
+          "Turkish American Society of Chicago",
+          "Chicago Turkish Festival (annual)"
+        ],
+        "Houston": [
+          "Turkish American Association of Houston",
+          "Strong association networks"
+        ],
+        "WashingtonDC": [
+          "Turkish-American Community Center (TACC)",
+          "American-Turkish Association of Washington DC"
+        ]
+      }
+    },
+
+    "culturalInfrastructure": {
+      "mosques": {
+        "total": "192 mosques in New York State (1st in USA)",
+        "note": "Turks own only 1% of mosques in America (most are Arab/South Asian owned)",
+        "turkishMosques": [
+          "Paterson Diyanet Center (New Jersey)",
+          "Turkish mosques in NYC boroughs",
+          "Turkish Islamic Cultural Center"
+        ]
+      },
+      "restaurants": {
+        "widespread": true,
+        "concentrations": ["New York", "New Jersey", "Chicago", "Houston", "Los Angeles"],
+        "note": "Turkish cuisine increasingly popular - kebab houses, cafes, bakeries in most major cities"
+      },
+      "stores": {
+        "turkishGroceryStores": "Available in all major cities with Turkish populations",
+        "examples": [
+          "Turkish grocery stores in NYC (Brooklyn, Queens)",
+          "Turkish markets in Chicago",
+          "Turkish import stores in Houston"
+        ],
+        "products": "Turkish food products, teas, sweets, household items"
+      },
+      "mediaAndCulture": [
+        "Turkish TV channels via satellite/streaming",
+        "Turkish radio programs (NYC, Chicago)",
+        "Turkish film festivals",
+        "Cultural events and concerts",
+        "Turkish language schools for children"
+      ]
+    },
+
+    "socialAndCultural": {
+      "events": [
+        {
+          "name": "Turkish Festival",
+          "locations": "New York, Chicago, Houston, DC",
+          "frequency": "Annual",
+          "description": "Food, music, dance, cultural exhibitions"
+        },
+        {
+          "name": "Republic Day (October 29)",
+          "celebrated": "By Turkish associations nationwide"
+        },
+        {
+          "name": "Turkish Heritage Month",
+          "month": "April",
+          "activities": "Cultural events, exhibitions, performances"
+        }
+      ],
+      "sportsAndRecreation": [
+        "Turkish football (soccer) leagues in major cities",
+        "Turkish basketball clubs",
+        "Turkish cultural dance groups",
+        "Turkish chess clubs"
+      ],
+      "education": [
+        "Turkish language schools for children",
+        "Turkish student associations at major universities",
+        "Cultural education programs"
+      ]
+    },
+
+    "onlineResources": {
+      "facebookGroups": [
+        "Amerika'daki Türkler (Turks in America)",
+        "NYC Turkish Community",
+        "Chicago Türkler",
+        "Houston Turkish Community",
+        "City-specific groups for most major cities"
+      ],
+      "websites": [
+        "Turkish American associations websites",
+        "Turkish community forums",
+        "Turkish business directories in USA"
+      ]
+    },
+
+    "supportForNewArrivals": {
+      "available": true,
+      "services": [
+        "Settlement advice from established community members",
+        "Housing search assistance",
+        "Job search networking",
+        "Cultural orientation",
+        "Social integration events",
+        "Children's education guidance",
+        "Connection to Turkish schools and mosques"
+      ],
+      "recommendation": "Reach out to local Turkish associations BEFORE arriving - very helpful for settlement"
+    },
+
+    "characteristicsOfCommunity": {
+      "diversity": [
+        "Students (many F-1 visa holders at universities)",
+        "Tech professionals (H-1B, L-1, Green Card holders)",
+        "Academics and researchers",
+        "Business owners and entrepreneurs",
+        "Medical professionals",
+        "Long-established families (2nd, 3rd generation)",
+        "Recent immigrants"
+      ],
+      "integration": "Generally well-integrated while maintaining cultural identity",
+      "education": "High education levels - many with bachelor's and advanced degrees",
+      "language": "Most speak both Turkish and English; 2nd generation often English-dominant"
+    }
+  },
+
+  "settlementInformation": {
+    "firstWeekChecklist": [
+      {
+        "task": "Activate or obtain US phone number",
+        "priority": "Critical",
+        "description": "Needed for everything - banking, job search, emergencies",
+        "providers": ["T-Mobile", "Verizon", "AT&T"],
+        "cost": {
+          "monthly": {
+            "USD": "40-80",
+            "TRY": "1,400-2,800"
+          }
+        }
+      },
+      {
+        "task": "Temporary housing",
+        "priority": "Critical",
+        "options": [
+          "Airbnb for first 1-2 weeks while apartment hunting",
+          "Extended stay hotels",
+          "Staying with Turkish community members (ask in Facebook groups)"
+        ],
+        "note": "Most apartments require credit history - difficult for new arrivals"
+      },
+      {
+        "task": "Transportation",
+        "priority": "High",
+        "options": [
+          "Public transit pass in cities with good transit (NYC, Chicago, Boston, DC)",
+          "Uber/Lyft accounts",
+          "If car-dependent city: rent car short-term while searching for used car to buy"
+        ]
+      },
+      {
+        "task": "Apply for Social Security Number (if authorized to work)",
+        "priority": "Critical",
+        "where": "Local Social Security Administration office",
+        "required": [
+          "Passport",
+          "I-94 arrival record",
+          "I-20 (students) or I-797 (work visa) or Green Card",
+          "Proof of employment or work authorization"
+        ],
+        "timeline": "Apply ASAP, receive card in 2-3 weeks",
+        "note": "SSN is essential for employment, banking, credit, taxes - get it immediately",
+        "website": "https://www.ssa.gov/"
+      },
+      {
+        "task": "Open bank account",
+        "priority": "High",
+        "timing": "After getting SSN (or can use ITIN temporarily)",
+        "banks": [
+          "Chase",
+          "Bank of America",
+          "Wells Fargo",
+          "Citibank",
+          "Online banks: Ally, Capital One 360"
+        ],
+        "requiredDocuments": [
+          "Passport",
+          "Social Security Number or ITIN",
+          "Proof of address (lease, utility bill, or temporary address)",
+          "Initial deposit (usually $25-100)"
+        ],
+        "accounts": {
+          "checking": "For daily transactions",
+          "savings": "For emergency fund and savings"
+        },
+        "note": "Choose bank with nationwide ATMs or no ATM fees"
+      },
+      {
+        "task": "Register children for school (if applicable)",
+        "priority": "High",
+        "note": "Contact local school district immediately"
+      }
+    ],
+
+    "firstMonthChecklist": [
+      {
+        "task": "Find permanent housing",
+        "timeline": "Within first 2-4 weeks",
+        "process": [
+          "Search: Zillow, Apartments.com, Craigslist, local rental sites",
+          "Expect to pay: First month + last month + security deposit (2-3 months rent upfront)",
+          "Credit check likely required (difficult for new arrivals)",
+          "May need co-signer or larger deposit without credit history"
+        ],
+        "tips": [
+          "Join city-specific Turkish Facebook groups for housing leads",
+          "Consider subletting or roommates initially to build credit history",
+          "Look in Turkish neighborhoods - landlords may be more flexible",
+          "Negotiate if you can pay several months upfront (reduces landlord's risk)"
+        ]
+      },
+      {
+        "task": "Set up utilities",
+        "priority": "High",
+        "services": [
+          "Electricity and gas (often same provider)",
+          "Internet and cable",
+          "Water (sometimes included in rent)"
+        ],
+        "deposits": "May require deposits without US credit history"
+      },
+      {
+        "task": "Get health insurance",
+        "priority": "Critical",
+        "options": [
+          "Employer-provided (if employed) - enroll during orientation",
+          "University-provided (if student) - usually automatic",
+          "Individual market via Healthcare.gov if not covered above",
+          "Short-term insurance as temporary solution"
+        ],
+        "DO_NOT_DELAY": "Medical care is EXTREMELY expensive without insurance"
+      },
+      {
+        "task": "Buy or lease car (if needed)",
+        "priority": "High in most cities",
+        "process": [
+          "Get driver's license first (see below)",
+          "Consider used car ($10,000-20,000) initially",
+          "Expect high interest rates without US credit history",
+          "Shop for car insurance BEFORE buying (costs vary dramatically by state/city)"
+        ]
+      },
+      {
+        "task": "Apply for driver's license (if needed)",
+        "priority": "High",
+        "process": [
+          "Study driver's manual for your state",
+          "Take written test at DMV",
+          "Take driving test (may need to provide car)",
+          "Receive license"
+        ],
+        "requirements": [
+          "Passport",
+          "Visa documents",
+          "Social Security Number",
+          "Proof of address",
+          "Fees: $20-90 depending on state"
+        ],
+        "note": "Some states accept Turkish driver's license to waive driving test - check state DMV"
+      },
+      {
+        "task": "Build credit history",
+        "priority": "Medium-High",
+        "importance": "Critical for long-term life in USA (housing, car, loans)",
+        "methods": [
+          "Secured credit card (easiest for new arrivals - requires $200-500 deposit)",
+          "Become authorized user on someone's card (if you know trusted person)",
+          "Pay all bills on time",
+          "Student loans count toward credit history"
+        ],
+        "timeline": "Takes 6-12 months to build initial credit score",
+        "recommendation": "Start immediately - credit history is ESSENTIAL in USA"
+      },
+      {
+        "task": "Find primary care doctor and dentist",
+        "priority": "Medium",
+        "note": "Easier to find when healthy than when you need them urgently"
+      },
+      {
+        "task": "Connect with Turkish community",
+        "priority": "Medium",
+        "actions": [
+          "Join local Turkish associations",
+          "Attend Turkish events and gatherings",
+          "Join Facebook groups for your city",
+          "Visit Turkish restaurants, cafes, stores",
+          "Join Turkish student association (if student)"
+        ],
+        "benefits": [
+          "Social network and friendships",
+          "Practical advice from those who've been through same process",
+          "Job networking opportunities",
+          "Cultural connection and support",
+          "Children can maintain Turkish language and culture"
+        ]
+      }
+    ],
+
+    "importantDocuments": {
+      "keep": [
+        "Passport and visa",
+        "I-94 arrival/departure record",
+        "I-20 (students) or I-797 approval notice (work visas)",
+        "Social Security card",
+        "Driver's license",
+        "Birth certificate (original and English translation)",
+        "Marriage certificate (if applicable)",
+        "Education diplomas and transcripts (original and English translation)",
+        "Vaccination records",
+        "Medical records"
+      ],
+      "digitalCopies": "Keep scanned copies in cloud storage (Google Drive, Dropbox)",
+      "multiplePhysicalCopies": "Keep copies in different locations"
+    },
+
+    "emergencyContacts": {
+      "emergency": "911 (police, fire, ambulance)",
+      "turkish_embassy": {
+        "name": "Embassy of Turkey in Washington DC",
+        "address": "2525 Massachusetts Avenue NW, Washington, DC 20008",
+        "phone": "+1 202 612 6700",
+        "emergencyPhone": "+1 202 612 6701",
+        "website": "http://washington.emb.mfa.gov.tr/"
+      },
+      "consulates": [
+        {
+          "name": "Consulate General of Turkey in New York",
+          "phone": "+1 212 949 0160",
+          "jurisdiction": "New York, New Jersey, Connecticut, Pennsylvania"
+        },
+        {
+          "name": "Consulate General of Turkey in Los Angeles",
+          "phone": "+1 323 937 0118",
+          "jurisdiction": "Southern California, Arizona, Nevada, New Mexico"
+        },
+        {
+          "name": "Consulate General of Turkey in Chicago",
+          "phone": "+1 312 263 0644",
+          "jurisdiction": "Illinois, Indiana, Iowa, Kansas, Michigan, Minnesota, Missouri, Nebraska, North Dakota, South Dakota, Wisconsin"
+        },
+        {
+          "name": "Consulate General of Turkey in Houston",
+          "phone": "+1 713 622 5849",
+          "jurisdiction": "Texas, Oklahoma, Arkansas, Louisiana"
+        }
+      ]
+    },
+
+    "culturalAdjustment": {
+      "differences": [
+        "Direct communication style - Americans are generally informal and direct",
+        "Tipping culture - expected to tip 15-20% at restaurants, taxis, delivery",
+        "Work culture - long hours common, especially in competitive industries",
+        "Healthcare system - complex and expensive, very different from Turkey",
+        "Imperial units - miles, pounds, Fahrenheit (not metric)",
+        "Driving on right side with automatic transmission common"
+      ],
+      "tips": [
+        "Americans are generally friendly and helpful - don't hesitate to ask questions",
+        "Punctuality is very important",
+        "Join activities and clubs to make friends (Americans socialize through activities)",
+        "Networking is crucial for career - maintain professional relationships",
+        "Learn to advocate for yourself - self-promotion is more accepted than in Turkey"
+      ]
+    },
+
+    "financialTips": {
+      "initial": [
+        "Bring enough cash for first 2-3 months expenses",
+        "Open bank account ASAP to avoid currency exchange fees",
+        "Start building credit immediately with secured card",
+        "Budget carefully - everything costs more than expected initially",
+        "Track all expenses to understand your actual cost of living"
+      ],
+      "ongoing": [
+        "Save at least 3-6 months expenses for emergency fund",
+        "Contribute to employer 401(k) up to company match (free money!)",
+        "File taxes correctly and on time (April 15 deadline, extensions available)",
+        "Consider Roth IRA for retirement savings",
+        "Use tax-advantaged accounts (HSA, FSA) if available"
+      ],
+      "taxes": {
+        "filing": "Must file federal and state tax returns annually by April 15",
+        "form": "Form 1040 for federal taxes",
+        "help": [
+          "TurboTax, H&R Block software for simple returns",
+          "CPA or tax professional for complex situations (recommended for first year)",
+          "IRS Free File for income under $79,000"
+        ],
+        "note": "USA taxes worldwide income for residents and Green Card holders. May need to file FBAR if foreign bank accounts >$10,000."
+      }
+    }
+  },
+
+  "sources": [
+    {
+      "title": "Numbeo Cost of Living Database",
+      "url": "https://www.numbeo.com/cost-of-living/",
+      "lastAccessed": "2025-11"
+    },
+    {
+      "title": "Expatistan Cost of Living Comparison",
+      "url": "https://www.expatistan.com/",
+      "lastAccessed": "2025-11"
+    },
+    {
+      "title": "Amerika Yaşam Maliyeti - Turkish sources",
+      "url": "https://www.maliyeti.com.tr/, https://www.eb3vize.com/",
+      "language": "Turkish",
+      "lastAccessed": "2025-11"
+    },
+    {
+      "title": "Salary.com, Glassdoor, Indeed Salary Data",
+      "lastAccessed": "2025-11"
+    },
+    {
+      "title": "ABD'deki Türk Toplumu - Turkish sources",
+      "url": "https://alaturka.com/, https://www.abdpost.com/",
+      "language": "Turkish",
+      "lastAccessed": "2025-11"
+    },
+    {
+      "title": "Assembly of Turkish American Associations",
+      "url": "https://www.ataa.org/",
+      "lastAccessed": "2025-11"
+    },
+    {
+      "title": "Social Security Administration",
+      "url": "https://www.ssa.gov/",
+      "lastAccessed": "2025-11"
+    }
+  ],
+
+  "disclaimer": "Cost of living and salary data are estimates based on November 2025 sources and vary significantly by location, lifestyle, and individual circumstances. Turkish community information is approximate. Always verify current costs and conditions.",
+
+  "conclusion": {
+    "summary": "USA offers excellent opportunities for skilled Turkish professionals, especially in tech and STEM fields, with highest salaries in the world but also very high cost of living. Large Turkish community provides support network. Success requires careful planning, financial preparation, and patience with complex immigration system.",
+    "keyConsiderations": [
+      "Healthcare is expensive - insurance is critical",
+      "Cost of living varies dramatically by city",
+      "Car necessary in most cities (except NYC, Chicago, Boston, DC, San Francisco)",
+      "Strong job market for skilled professionals",
+      "Large Turkish community for support",
+      "Note NEW H-1B $100,000 fee as of September 2025 - major barrier",
+      "Alternative paths: F-1 with OPT, L-1, O-1, or direct Green Card (EB-1, EB-2 NIW)"
+    ]
+  }
+}

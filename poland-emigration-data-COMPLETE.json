@@ -1,0 +1,657 @@
+{
+  "dataVersion": "1.0",
+  "lastUpdated": "2025-01-09",
+  "country": {
+    "countryCode": "PL",
+    "countrySlug": "polonya",
+    "officialName": "Rzeczpospolita Polska (Republic of Poland)",
+    "nameInTurkish": "Polonya",
+    "officialLanguages": ["Polish (Polski)"],
+    "currency": "PLN (Polish Zloty)",
+    "currencyToTRY": 8.0,
+    "currencyNote": "1 PLN = 8 TRY (approximate, verify current rate)",
+    "timezone": "CET (UTC+1), CEST in summer (UTC+2)",
+    "euMember": true,
+    "schengenMember": true,
+    "population": "~38 million",
+    "capital": "Warsaw (Warszawa)"
+  },
+
+  "turkishCitizenSpecificInfo": {
+    "visaFreeTravel": {
+      "allowed": true,
+      "duration": "90 days within 180 days",
+      "type": "Schengen tourist visa exemption",
+      "notes": "Turkish citizens can visit Poland (and all Schengen countries) visa-free for tourism/business for up to 90 days in any 180-day period"
+    },
+    "specialAgreements": {
+      "decision1_80": {
+        "name": "Decision No. 1/80 of the Association Council Turkey-EEC",
+        "date": "September 19, 1980",
+        "benefits": [
+          "After 1 year of legal employment: right to renew work permit with same employer",
+          "After 3 years of legal employment: can work in same profession with any employer (subject to priority of Polish citizens)",
+          "Progressive employment rights specific to Turkish citizens"
+        ],
+        "source": "https://migrant.poznan.uw.gov.pl/en/slownik-pojec/employment-turkish-citizens"
+      }
+    },
+    "bilateralRelations": "Good diplomatic and economic relations. Growing Turkish community in Poland."
+  },
+
+  "governmentContacts": {
+    "immigrationDepartment": {
+      "name": "Urząd do Spraw Cudzoziemców (Office for Foreigners)",
+      "website": "https://www.gov.pl/web/udsc",
+      "englishWebsite": "https://udsc.gov.pl/en/",
+      "phone": "+48 22 601 74 00",
+      "email": "kancelaria@udsc.gov.pl",
+      "address": "ul. Koszykowa 16, 00-564 Warsaw, Poland",
+      "workingHours": "Monday-Friday 8:15-16:15"
+    },
+    "polishEmbassyInTurkey": {
+      "location": "Ankara",
+      "name": "Embassy of the Republic of Poland in Ankara",
+      "address": "Atatürk Bulvarı, No: 241, 06650 Kavaklıdere PK-20 Çankaya / 06690 Ankara, Türkiye",
+      "phone": "+90 312 457 2000",
+      "alternativePhones": ["+90 312 457 2009", "+90 312 457 2016"],
+      "emergencyPhone": "+90 530 469 1261",
+      "fax": "+90 312 468 8301",
+      "email": "ankary.amb.wk@gov.pl",
+      "website": "http://ankara.msz.gov.pl",
+      "workingHours": "Monday-Friday, by appointment",
+      "consularSection": "Same location",
+      "notes": "Book appointments online via e-konsulat system"
+    },
+    "polishConsulateInIstanbul": {
+      "exists": true,
+      "checkWebsite": "https://www.gov.pl/web/turkiye",
+      "notes": "Contact embassy for Istanbul consulate details"
+    },
+    "turkishEmbassyInPoland": {
+      "location": "Warsaw",
+      "name": "Embassy of the Republic of Turkey in Warsaw",
+      "checkWebsite": "http://www.varsovaemb.mfa.gov.tr/",
+      "notes": "Turkish citizens should register with embassy upon arrival for consular services"
+    },
+    "emergencyContacts": {
+      "general": "112",
+      "generalNote": "Unified emergency number - operator will direct to needed service",
+      "police": "997 (with city code)",
+      "ambulance": "999 (with city code)",
+      "fire": "998 (with city code)",
+      "notes": "For city-specific numbers, add city code before number (e.g., Warsaw: 22-997). 112 works everywhere without city code."
+    },
+    "officialGovernmentPortal": {
+      "english": "https://www.gov.pl/web/gov",
+      "turkish": "https://www.gov.pl/web/turkiye",
+      "eKonsulat": "https://www.e-konsulat.gov.pl/"
+    }
+  },
+
+  "visaPrograms": [
+    {
+      "visaId": "PL_STUDENT_D",
+      "visaCode": "Type D - Student",
+      "officialName": "National Visa Type D for Studies",
+      "nameInPolish": "Wiza krajowa typu D - studia",
+      "nameInTurkish": "Ulusal Vize (D Tipi) - Öğrenci Vizesi",
+      "category": "student",
+      "popularity": "Very High - Most common visa for Turkish citizens",
+
+      "overview": {
+        "description": "Long-stay visa (90+ days) for Turkish citizens accepted to Polish universities. Allows full-time study and part-time work. Poland offers affordable EU education with English-taught programs.",
+        "keyBenefits": [
+          "One of the cheapest EU education options (€2,000-6,000/year)",
+          "English-taught programs widely available",
+          "Part-time work allowed during studies",
+          "Schengen area travel access",
+          "Fast processing (15-30 days)",
+          "Can lead to residence permit and eventual PR/citizenship"
+        ],
+        "bestFor": ["Students seeking affordable EU education", "Those wanting to learn in English", "Path to EU residency"]
+      },
+
+      "eligibilityCriteria": {
+        "ageRequirements": {
+          "minimumAge": 17,
+          "maximumAge": null,
+          "notes": "No upper age limit for students"
+        },
+        "educationRequirements": {
+          "minimumLevel": "High school diploma for undergraduate programs",
+          "acceptedDegrees": ["Turkish high school diploma (lise diploması)", "University degree for master's programs"],
+          "degreeRecognitionProcess": "Turkish diplomas recognized but require apostille and certified translation",
+          "equivalencyOptions": ["Direct recognition with apostille", "University admission office handles equivalency"]
+        },
+        "universityAcceptance": {
+          "required": true,
+          "acceptanceType": "Official acceptance letter from Polish university",
+          "notes": "University must be state-recognized in Poland"
+        },
+        "languageRequirements": {
+          "required": true,
+          "forEnglishPrograms": "IELTS 6.0+ or TOEFL 80+",
+          "forPolishPrograms": "No requirement if studying in Polish",
+          "acceptedTests": ["IELTS", "TOEFL", "Cambridge certificates", "University's own language test"],
+          "minimumScores": {
+            "IELTS": "6.0-6.5 depending on university and program",
+            "TOEFL": "80-90 depending on university and program"
+          },
+          "exemptions": ["Previous education in English may exempt"]
+        },
+        "financialRequirements": {
+          "proofOfFundsRequired": true,
+          "minimumAmount": {
+            "perMonth": 1018,
+            "currency": "PLN",
+            "inTRY": 8144,
+            "calculation": "1,018 PLN/month x 12 months = ~12,216 PLN (~97,728 TRY) minimum per year"
+          },
+          "returnTicketFund": {
+            "amount": 2500,
+            "currency": "PLN",
+            "inTRY": 20000,
+            "purpose": "Proof of funds for return ticket"
+          },
+          "totalFirstYear": "~€3,000 minimum for living expenses",
+          "acceptedProofTypes": [
+            "Bank account statement (last 3-6 months)",
+            "Parents' bank statements with sponsorship letter",
+            "Scholarship letter",
+            "University funding confirmation"
+          ]
+        },
+        "healthRequirements": {
+          "medicalExamRequired": false,
+          "healthInsurance": {
+            "required": true,
+            "minimumCoverage": 30000,
+            "currency": "EUR",
+            "validityPeriod": "Must cover entire stay duration",
+            "cost": "€150-300 per year",
+            "costInPLN": "600-1200 PLN per year",
+            "costInTRY": "4,800-9,600 TRY per year"
+          },
+          "vaccinations": [],
+          "prohibitedConditions": []
+        },
+        "characterRequirements": {
+          "policeCertificateRequired": false,
+          "criminalRecordCheck": "Not required for student visa",
+          "excludingFactors": ["Previous deportation from Schengen area", "Visa fraud history"]
+        }
+      },
+
+      "applicationProcess": {
+        "overview": "Apply through e-Konsulat system, submit documents to VFS Global centers in Turkey, attend interview at Polish consulate",
+        "estimatedTotalDuration": "15-30 days",
+        "canExtendToMaxOf": "60 days in complex cases",
+        "whereToApply": ["VFS Global centers in Istanbul (Asia/Europe side), Ankara, Antalya, Trabzon", "Polish Embassy Ankara", "Polish Consulate (if applicable)"],
+
+        "steps": [
+          {
+            "stepNumber": 1,
+            "stepName": "Get University Acceptance",
+            "description": "Apply and receive acceptance letter from Polish university",
+            "duration": "1-3 months (varies by university)",
+            "requiredDocuments": [
+              "High school diploma (apostilled)",
+              "Transcripts (apostilled)",
+              "Language certificate (IELTS/TOEFL)",
+              "Passport copy",
+              "Motivation letter",
+              "CV"
+            ],
+            "costs": [
+              {"item": "University application fee", "amount": "€20-50 per program", "amountPLN": "100-250 PLN", "amountTRY": "800-2000 TRY"}
+            ],
+            "tips": [
+              "Apply to multiple universities to increase chances",
+              "Check application deadlines (usually March-June for October intake)",
+              "English programs more expensive but no Polish language requirement"
+            ],
+            "commonMistakes": ["Missing apostille on documents", "Applying too late", "Not checking program language requirements"]
+          },
+          {
+            "stepNumber": 2,
+            "stepName": "Register on e-Konsulat",
+            "description": "Create account and fill visa application form online",
+            "duration": "1 day",
+            "website": "https://secure.e-konsulat.gov.pl/",
+            "requiredDocuments": [],
+            "forms": ["Online visa application form"],
+            "costs": [],
+            "tips": [
+              "Fill form in English, Polish, or Turkish only",
+              "Double-check all information before submission",
+              "Print confirmation after registration"
+            ],
+            "commonMistakes": ["Incorrect passport details", "Wrong visa type selected"]
+          },
+          {
+            "stepNumber": 3,
+            "stepName": "Book VFS Global Appointment",
+            "description": "Schedule appointment at nearest VFS visa application center",
+            "duration": "1-7 days wait for appointment",
+            "website": "https://www.vfsglobal.com/poland/turkey/",
+            "requiredDocuments": [],
+            "costs": [],
+            "tips": [
+              "Book early during peak season (May-August)",
+              "Choose convenient location",
+              "Bring appointment confirmation printout"
+            ],
+            "commonMistakes": ["Missing appointment", "Not bringing all required documents"]
+          },
+          {
+            "stepNumber": 4,
+            "stepName": "Prepare Documents",
+            "description": "Gather and prepare all required documents with translations",
+            "duration": "7-14 days",
+            "requiredDocuments": [
+              "Valid passport (3+ months validity beyond intended stay, issued within last 10 years, 2+ blank pages)",
+              "University acceptance letter",
+              "Proof of accommodation in Poland",
+              "Health insurance (€30,000 minimum coverage)",
+              "Financial proof (bank statements, sponsorship)",
+              "High school diploma with apostille",
+              "Transcripts with apostille",
+              "4 passport photos (recent, white background)",
+              "Completed visa application form"
+            ],
+            "costs": [
+              {"item": "Document translation (per page)", "amount": "€10-20", "amountPLN": "50-100 PLN", "amountTRY": "400-800 TRY"},
+              {"item": "Apostille (per document)", "amount": "₺50-100", "amountPLN": "~12-25 PLN", "amountTRY": "50-100 TRY"},
+              {"item": "Health insurance", "amount": "€150-300", "amountPLN": "600-1200 PLN", "amountTRY": "4800-9600 TRY"},
+              {"item": "Passport photos", "amount": "₺50-100", "amountPLN": "~12-25 PLN", "amountTRY": "50-100 TRY"}
+            ],
+            "tips": [
+              "Use certified translators for official documents",
+              "Get apostille from Turkish notary (noter)",
+              "Make copies of everything",
+              "Original documents will be returned"
+            ],
+            "commonMistakes": ["Non-certified translations", "Expired passport", "Insufficient insurance coverage"]
+          },
+          {
+            "stepNumber": 5,
+            "stepName": "Submit Application at VFS",
+            "description": "Attend appointment, submit documents, pay fees, provide biometrics",
+            "duration": "1 hour at center",
+            "requiredDocuments": "All documents from step 4",
+            "costs": [
+              {"item": "Visa fee", "amount": "€80", "amountPLN": "~400 PLN", "amountTRY": "~2,816 TRY (includes service fee)"}
+            ],
+            "tips": [
+              "Arrive 15 minutes early",
+              "Bring cash for payment",
+              "Fingerprints will be taken (biometrics)",
+              "Keep receipt safe"
+            ],
+            "commonMistakes": ["Forgetting original documents", "Not having cash", "Missing documents"]
+          },
+          {
+            "stepNumber": 6,
+            "stepName": "Wait for Processing",
+            "description": "Consulate processes application",
+            "duration": "15 days standard, can extend to 30-60 days",
+            "trackingAvailable": true,
+            "trackingMethod": "Check status on VFS Global website with reference number",
+            "tips": [
+              "Check email regularly for updates",
+              "Don't book flights until visa approved",
+              "Processing faster outside peak season"
+            ]
+          },
+          {
+            "stepNumber": 7,
+            "stepName": "Collect Passport",
+            "description": "Receive passport with visa from VFS center or by courier",
+            "duration": "1 day",
+            "collectionOptions": ["Pick up at VFS center", "Courier delivery (extra fee)"],
+            "costs": [
+              {"item": "Courier delivery (optional)", "amount": "~₺100-200", "amountPLN": "~25-50 PLN", "amountTRY": "100-200 TRY"}
+            ],
+            "tips": [
+              "Check visa details immediately for errors",
+              "Verify visa validity dates",
+              "Keep visa copy separate from passport"
+            ]
+          }
+        ],
+
+        "totalCosts": {
+          "mandatory": [
+            {"item": "Visa application fee", "amount": 2816, "currency": "TRY"},
+            {"item": "Health insurance", "amount": 4800, "currency": "TRY", "range": "4,800-9,600 TRY"},
+            {"item": "Document apostilles (2-3 docs)", "amount": 150, "currency": "TRY", "range": "100-300 TRY"},
+            {"item": "Certified translations", "amount": 1600, "currency": "TRY", "range": "1,200-2,400 TRY"},
+            {"item": "Passport photos", "amount": 75, "currency": "TRY"}
+          ],
+          "optional": [
+            {"item": "Courier delivery", "amount": 150, "currency": "TRY"},
+            {"item": "University application fees", "amount": 1200, "currency": "TRY", "range": "800-2,000 TRY"}
+          ],
+          "totalEstimate": {
+            "minimum": 9441,
+            "maximum": 15000,
+            "currency": "TRY",
+            "note": "Plus first year tuition (€2,000-6,000) and living expenses (€3,000-5,000)"
+          }
+        },
+
+        "processingTimes": {
+          "standard": "15 days",
+          "extended": "30 days in justified cases",
+          "maximum": "60 days in complex cases",
+          "peakSeason": "May-August (may take longer)",
+          "offPeakSeason": "September-April (usually faster)"
+        },
+
+        "rejectionReasons": {
+          "common": [
+            "Insufficient financial proof",
+            "Invalid or insufficient health insurance",
+            "Incomplete documentation",
+            "Missing apostille on educational documents",
+            "Previous Schengen visa violations",
+            "Unclear purpose of study",
+            "Insufficient ties to Turkey (risk of overstaying)"
+          ],
+          "statistics": {
+            "approvalRate": "High (80-90% for genuine students)",
+            "notes": "Student visas have good approval rates if documentation is complete"
+          }
+        },
+
+        "appeals": {
+          "available": true,
+          "process": "Submit appeal to Polish consulate within 14 days of rejection with additional documentation",
+          "timeframe": "30-60 days",
+          "successRate": "Varies - higher if new evidence provided"
+        }
+      },
+
+      "requiredDocuments": {
+        "personalDocuments": [
+          {
+            "documentName": "Valid Passport",
+            "description": "Turkish passport",
+            "validityRequired": "Valid for at least 3 months after intended return from Poland",
+            "additionalRequirements": "Issued within last 10 years, minimum 2 blank pages for visas",
+            "howToObtain": "Turkish passport office (Emniyet Müdürlüğü)",
+            "apostilleRequired": false,
+            "translationRequired": false,
+            "notarizationRequired": false,
+            "numberOfCopies": "1 original + 1 copy",
+            "notes": "Old passports also helpful if showing previous travel history"
+          },
+          {
+            "documentName": "Passport Photos",
+            "description": "Recent color photos",
+            "specifications": "4 photos, 35x45mm, white background, taken within last 6 months",
+            "howToObtain": "Any photo studio",
+            "cost": "₺50-100 TRY",
+            "numberOfCopies": 4
+          },
+          {
+            "documentName": "Visa Application Form",
+            "description": "Completed and signed application",
+            "howToObtain": "Fill online at https://secure.e-konsulat.gov.pl/",
+            "languages": "English, Polish, or Turkish only",
+            "notes": "Print after completing online"
+          }
+        ],
+        "educationDocuments": [
+          {
+            "documentName": "University Acceptance Letter",
+            "description": "Official letter from Polish university confirming admission",
+            "validityRequired": "For upcoming academic year",
+            "howToObtain": "From university after acceptance",
+            "apostilleRequired": false,
+            "translationRequired": false,
+            "notarizationRequired": false,
+            "numberOfCopies": "1 original + 1 copy",
+            "notes": "Must specify program, duration, language of instruction"
+          },
+          {
+            "documentName": "High School Diploma",
+            "description": "Turkish lise diploması",
+            "howToObtain": "From school or Ministry of Education",
+            "apostilleRequired": true,
+            "apostilleLocation": "Turkish notary (noter)",
+            "apostilleCost": "₺50-100 TRY",
+            "translationRequired": true,
+            "translationLanguage": "Polish or English (certified translation)",
+            "translationCost": "₺400-800 TRY per document",
+            "notarizationRequired": true,
+            "numberOfCopies": "1 apostilled original + certified translation",
+            "notes": "Both diploma and transcript needed"
+          },
+          {
+            "documentName": "Academic Transcripts",
+            "description": "All grades from high school",
+            "apostilleRequired": true,
+            "translationRequired": true,
+            "translationLanguage": "Polish or English (certified)",
+            "numberOfCopies": "1 apostilled original + certified translation"
+          },
+          {
+            "documentName": "Language Proficiency Certificate",
+            "description": "IELTS, TOEFL, or other accepted test",
+            "validityRequired": "Usually valid for 2 years from test date",
+            "minimumScore": "IELTS 6.0+ or TOEFL 80+",
+            "apostilleRequired": false,
+            "translationRequired": false,
+            "numberOfCopies": "1 original or certified copy",
+            "notes": "Not needed if studying in Polish or if university waives requirement"
+          }
+        ],
+        "financialDocuments": [
+          {
+            "documentName": "Bank Statements",
+            "description": "Proof of sufficient funds",
+            "validityRequired": "Last 3-6 months",
+            "minimumAmount": "1,018 PLN/month + 2,500 PLN return ticket fund (~€3,000 total/year)",
+            "minimumAmountTRY": "~24,000 TRY minimum",
+            "howToObtain": "From your bank",
+            "apostilleRequired": false,
+            "translationRequired": true,
+            "translationLanguage": "English or Polish",
+            "numberOfCopies": "1 original + translation",
+            "acceptedTypes": ["Personal bank statements", "Parents' bank statements with sponsorship letter", "Scholarship letter", "University funding proof"]
+          },
+          {
+            "documentName": "Sponsorship Letter (if applicable)",
+            "description": "Letter from parents/sponsor confirming financial support",
+            "howToObtain": "Notarized letter from sponsor",
+            "apostilleRequired": false,
+            "translationRequired": true,
+            "notarizationRequired": true,
+            "notes": "Include sponsor's bank statements and ID copy"
+          }
+        ],
+        "accommodationDocuments": [
+          {
+            "documentName": "Proof of Accommodation",
+            "description": "Where you will live in Poland",
+            "acceptedTypes": [
+              "University dormitory confirmation",
+              "Rental agreement",
+              "Hotel booking",
+              "Host letter from resident in Poland"
+            ],
+            "apostilleRequired": false,
+            "translationRequired": "If in Polish, translate to English",
+            "numberOfCopies": 1,
+            "notes": "Dormitory confirmation easiest option"
+          }
+        ],
+        "healthDocuments": [
+          {
+            "documentName": "Health Insurance Certificate",
+            "description": "Valid for Poland with minimum €30,000 coverage",
+            "minimumCoverage": "€30,000",
+            "validityRequired": "Must cover entire intended stay",
+            "howToObtain": "Travel insurance companies or specialized student insurance",
+            "cost": "€150-300 per year",
+            "costTRY": "4,800-9,600 TRY per year",
+            "apostilleRequired": false,
+            "translationRequired": false,
+            "numberOfCopies": "1 original",
+            "recommendedProviders": ["Allianz", "AXA", "Europeiska", "StudentHealth.pl"],
+            "notes": "Must explicitly state €30,000 coverage valid in Poland/Schengen"
+          }
+        ]
+      },
+
+      "rightsAndRestrictions": {
+        "workRights": {
+          "canWork": true,
+          "restrictions": "Part-time work allowed: 20 hours/week during semester, full-time during holidays",
+          "canChangeEmployer": true,
+          "processForChange": "Inform university; no special permission needed for part-time work",
+          "canBeSelfEmployed": false,
+          "notes": "After graduation, can apply for job-seeking visa or work permit"
+        },
+        "studyRights": {
+          "mustMaintainEnrollment": true,
+          "canChangeProgram": "With new acceptance, visa must be updated",
+          "attendanceRequired": "Yes, as per university regulations",
+          "notes": "Losing student status may result in visa cancellation"
+        },
+        "familyRights": {
+          "canBringFamily": true,
+          "eligibleRelatives": ["Spouse", "Dependent children"],
+          "familyVisaType": "Family reunification visa (separate application)",
+          "spouseWorkRights": "Can apply for work permit",
+          "childrenEducationRights": true,
+          "pathToFamilyPR": "Yes, if student obtains PR"
+        },
+        "travelRights": {
+          "canTravelAbroad": true,
+          "schengenAreaAccess": "Yes, can travel freely in Schengen zone",
+          "reentryRequirements": ["Valid visa", "Valid passport", "Student status proof"],
+          "visaRevalidation": "Not needed if visa still valid",
+          "notes": "Keep university enrollment certificate when traveling"
+        },
+        "residencyRights": {
+          "canBuyProperty": true,
+          "canRentProperty": true,
+          "mustRegisterAddress": true,
+          "registrationDeadline": "Within 30 days of arrival",
+          "registrationLocation": "Local municipal office (Urząd Miasta)",
+          "canOpenBankAccount": true,
+          "canGetDriversLicense": "Can use Turkish license or apply for Polish",
+          "canGetPhoneContract": true
+        },
+        "socialBenefits": {
+          "healthcareAccess": "With student insurance or NFZ registration",
+          "unemploymentBenefits": false,
+          "pensionRights": false,
+          "educationSubsidies": "Possible scholarships from university",
+          "studentDiscounts": "Public transport, museums, cultural events with ISIC card"
+        }
+      },
+
+      "extensionAndRenewal": {
+        "renewable": true,
+        "maxDuration": "Duration of studies",
+        "renewalProcess": "Apply for residence permit after arrival in Poland (karta pobytu)",
+        "applicationLocation": "Local voivodeship office (Urząd Wojewódzki)",
+        "applicationTiming": "Within 45 days of arrival in Poland with D visa",
+        "requiredDocuments": [
+          "Continued university enrollment proof",
+          "Proof of accommodation",
+          "Financial means",
+          "Health insurance",
+          "Passport"
+        ],
+        "costs": [
+          {"item": "Temporary residence permit application", "amount": 340, "currency": "PLN", "amountTRY": 2720},
+          {"item": "Residence card issuance", "amount": 100, "currency": "PLN", "amountTRY": 800}
+        ],
+        "processingTime": "4-12 months",
+        "approvalRate": "Very high for enrolled students",
+        "legalStayDuringProcessing": "Yes, stay is legal while application pending"
+      },
+
+      "pathToPermanentResidency": {
+        "available": true,
+        "minimumYears": 5,
+        "process": "After 5 consecutive years of legal residence with temporary permits, can apply for permanent residence",
+        "timeline": "5 years + 4-12 months processing",
+        "requirements": [
+          "5 consecutive years of legal stay in Poland",
+          "Valid residence permit at time of application",
+          "Stable income source",
+          "Health insurance",
+          "Accommodation",
+          "Absences not exceeding 6 months per year or 10 months total"
+        ],
+        "costs": [
+          {"item": "Permanent residence application", "amount": 640, "currency": "PLN", "amountTRY": 5120},
+          {"item": "Residence card", "amount": 100, "currency": "PLN", "amountTRY": 800}
+        ],
+        "benefitsGranted": [
+          "Indefinite stay in Poland",
+          "Work without restrictions",
+          "Access to social benefits",
+          "Path to citizenship after 3 more years"
+        ],
+        "notes": "Study years count toward 5-year requirement"
+      },
+
+      "pathToCitizenship": {
+        "available": true,
+        "minimumResidencyYears": 10,
+        "alternativeRoutes": [
+          {
+            "name": "After Permanent Residence",
+            "requirement": "3 years with permanent residence permit",
+            "totalYears": "5 years temporary + 3 years permanent = 8 years minimum"
+          },
+          {
+            "name": "Through Marriage",
+            "requirement": "3 years marriage to Polish citizen + 2 years residence",
+            "totalYears": "2-5 years depending on circumstances"
+          },
+          {
+            "name": "Standard Naturalization",
+            "requirement": "10 years continuous residence",
+            "totalYears": 10
+          }
+        ],
+        "requirements": [
+          "Continuous legal residence for required period",
+          "B1 level Polish language proficiency",
+          "Stable source of income",
+          "Stable accommodation",
+          "No criminal record",
+          "Knowledge of Polish history and culture"
+        ],
+        "languageTest": {
+          "required": true,
+          "level": "B1",
+          "testName": "State Commission for the Certification of Proficiency in Polish as a Foreign Language",
+          "cost": "~500-600 PLN (4,000-4,800 TRY)",
+          "exemptions": ["Completed Polish education", "Other specific cases"]
+        },
+        "process": [
+          "Gather required documents",
+          "Submit application to local voivode",
+          "Wait for decision (6-18 months)",
+          "Oath of allegiance ceremony"
+        ],
+        "costs": [
+          {"item": "Application fee", "amount": 219, "currency": "PLN", "amountTRY": 1752},
+          {"item": "Language test", "amount": 550, "currency": "PLN", "amountTRY": 4400}
+        ],
+        "processingTime": "6-18 months",
+        "dualCitizenshipAllowed": true,
+        "notes": "Poland allows dual citizenship - no need to renounce Turkish citizenship"
+      }
+    }
+  ]
+}

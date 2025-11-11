@@ -1,0 +1,627 @@
+{
+  "dataVersion": "1.0",
+  "lastUpdated": "2025-01-09",
+  "country": {
+    "countryCode": "DE",
+    "countrySlug": "almanya",
+    "officialName": "Bundesrepublik Deutschland (Federal Republic of Germany)",
+    "nameInTurkish": "Almanya",
+    "officialLanguages": ["German (Deutsch)"],
+    "currency": "EUR (Euro)",
+    "currencyToTRY": 35.0,
+    "currencyNote": "1 EUR = 35 TRY (approximate, verify current rate)",
+    "timezone": "CET (UTC+1), CEST in summer (UTC+2)",
+    "euMember": true,
+    "schengenMember": true,
+    "population": "~84 million",
+    "capital": "Berlin"
+  },
+
+  "turkishCitizenSpecificInfo": {
+    "visaFreeTravel": {
+      "allowed": true,
+      "duration": "90 days within 180 days",
+      "type": "Schengen tourist visa exemption",
+      "notes": "Turkish citizens can visit Germany (and all Schengen countries) visa-free for tourism/business for up to 90 days in any 180-day period",
+      "specialPassports": {
+        "greenPassport": "Visa-free for stays under 90 days within 180 days",
+        "greyPassport": "Visa-free for stays under 90 days within 180 days",
+        "blackPassport": "Visa-free for stays under 90 days within 180 days",
+        "burgundyPassport": "Requires Schengen visa"
+      }
+    },
+    "specialAgreements": {
+      "ankaraAgreement": {
+        "name": "Ankara Agreement (Association Agreement EEC-Turkey 1963)",
+        "date": "1963",
+        "status": "Turkish citizens have special status in EU as third-country nationals with special privileges",
+        "benefits": [
+          "Historical special status in Germany",
+          "Certain employment and residence benefits under Association Council decisions",
+          "Facilitated visa procedures under new 2025 rules"
+        ],
+        "note": "After Brexit, UK no longer applies these provisions, but Germany continues to recognize special Turkish status"
+      },
+      "visaFacilitation2025": {
+        "name": "New Schengen Visa Rules for Turkish Citizens",
+        "effectiveDate": "July 15, 2025",
+        "benefits": [
+          "Bonafide travelers can gradually obtain visas with longer validity",
+          "Up to 5-year multi-entry visas for qualified applicants",
+          "Easier visa issuance process"
+        ],
+        "source": "EU Commission decision effective July 2025"
+      }
+    },
+    "bilateralRelations": "Strong historical ties. Largest Turkish diaspora in Europe (1.5-3.5 million). Significant cultural, economic and political cooperation.",
+    "turkishPopulation": {
+      "official": 1548095,
+      "estimated": "3-3.5 million (including German citizens of Turkish origin)",
+      "year": 2024,
+      "trend": "Increasing since 2021 after decline 2016-2020",
+      "source": "Destatis (Federal Statistical Office) & Turkish Foreign Ministry"
+    }
+  },
+
+  "governmentContacts": {
+    "immigrationDepartment": {
+      "name": "Bundesamt für Migration und Flüchtlinge (BAMF)",
+      "nameInEnglish": "Federal Office for Migration and Refugees",
+      "website": "https://www.bamf.de/",
+      "turkishWebsite": "https://www.bamf.de/TR/Startseite/startseite_node.html",
+      "phone": "+49 911 943 0",
+      "address": "Frankenstraße 210, 90461 Nürnberg, Germany",
+      "workingHours": "Monday-Friday 8:00-12:00",
+      "servicesOffered": ["Asylum", "Integration", "Migration counseling", "Citizenship"]
+    },
+    "foreignMinistry": {
+      "name": "Auswärtiges Amt (German Foreign Office)",
+      "website": "https://www.auswaertiges-amt.de/",
+      "turkishWebsite": "https://tuerkei.diplo.de/tr-tr",
+      "visaInformation": "https://www.auswaertiges-amt.de/de/service/visa-und-aufenthalt"
+    },
+    "germanEmbassyInTurkey": {
+      "location": "Ankara",
+      "name": "Deutsche Botschaft Ankara / Almanya Ankara Büyükelçiliği",
+      "address": "Atatürk Bulvarı No: 114, 06680 Çankaya/Ankara, Turkey",
+      "phone": "+90 312 455 5100",
+      "fax": "+90 312 455 5157",
+      "email": "info@ankara.diplo.de",
+      "website": "https://tuerkei.diplo.de/tr-tr",
+      "workingHours": "Monday-Thursday 8:30-17:00, Friday 8:30-15:30",
+      "consularSection": {
+        "phone": "+90 312 455 5132",
+        "email": "info@ankara.diplo.de",
+        "appointmentSystem": "https://tuerkei.diplo.de/tr-tr/service/terminvergabe",
+        "visaApplicationCenters": "Through iDATA (service provider)"
+      }
+    },
+    "germanConsulatesInTurkey": {
+      "istanbul": {
+        "name": "Deutsches Generalkonsulat Istanbul",
+        "address": "İnönü Caddesi No: 10, 34437 Gümüşsuyu/Beyoğlu, Istanbul",
+        "phone": "+90 212 334 6100",
+        "website": "https://tuerkei.diplo.de/tr-tr/vertretungen/gk-istanbul"
+      },
+      "izmir": {
+        "name": "Deutsches Generalkonsulat Izmir",
+        "address": "Atatürk Caddesi No: 55, 35210 Alsancak/Konak, Izmir",
+        "phone": "+90 232 421 4656",
+        "website": "https://tuerkei.diplo.de/tr-tr/vertretungen/gk-izmir"
+      },
+      "antalya": {
+        "name": "Deutsches Generalkonsulat Antalya",
+        "address": "Arapsuyu Mahallesi, Atatürk Caddesi No: 1, 07100 Muratpaşa, Antalya",
+        "phone": "+90 242 314 5910",
+        "website": "https://tuerkei.diplo.de/tr-tr/vertretungen/gk-antalya"
+      }
+    },
+    "idataVisaCenters": {
+      "name": "iDATA - Official Visa Application Service Provider",
+      "website": "https://www.germany-visa.org/tr/",
+      "locations": ["Ankara", "Istanbul", "Izmir", "Antalya"],
+      "appointmentBooking": "Online through iDATA website",
+      "note": "All Schengen visa applications from Turkey processed through iDATA"
+    },
+    "turkishEmbassyInGermany": {
+      "location": "Berlin",
+      "name": "T.C. Berlin Büyükelçiliği / Turkish Embassy Berlin",
+      "address": "Tiergartenstraße 19-21, 10785 Berlin, Germany",
+      "phone": "+49 30 27595-0",
+      "fax": "+49 30 27595-912",
+      "email": "embassy.berlin@mfa.gov.tr",
+      "website": "http://berlin.be.mfa.gov.tr/",
+      "consularPhone": "+49 30 27595-900",
+      "workingHours": "Monday-Friday 9:00-12:30, 13:30-17:00"
+    },
+    "turkishConsulatesInGermany": {
+      "note": "Multiple Turkish consulates across Germany in major cities",
+      "mainConsulates": [
+        "Berlin", "Munich", "Frankfurt", "Hamburg", "Stuttgart",
+        "Cologne", "Düsseldorf", "Hannover", "Münster", "Mainz", "Nürnberg"
+      ],
+      "website": "http://www.konsolosluk.gov.tr/"
+    },
+    "emergencyContacts": {
+      "general": "112",
+      "generalNote": "Unified emergency number for police, fire, ambulance",
+      "police": "110",
+      "fire": "112",
+      "ambulance": "112",
+      "emergencyDoctorService": "116 117",
+      "poisonControl": "Varies by region - check local emergency numbers"
+    },
+    "officialGovernmentPortal": {
+      "german": "https://www.bundesregierung.de/",
+      "makeItInGermany": "https://www.make-it-in-germany.com/",
+      "makeItInGermanyTurkish": "https://www.make-it-in-germany.com/tr/",
+      "handbookGermanyTurkish": "https://handbookgermany.de/tr/"
+    }
+  },
+
+  "visaPrograms": [
+    {
+      "visaId": "DE_STUDENT_D",
+      "visaCode": "Type D - Student / Visum zu Studienzwecken",
+      "officialName": "National Visa for Study Purposes",
+      "nameInGerman": "Visum zum Studium",
+      "nameInTurkish": "Öğrenci Vizesi (D Tipi / Ulusal Vize)",
+      "category": "student",
+      "popularity": "Very High - Most popular for Turkish citizens seeking EU education",
+
+      "overview": {
+        "description": "Long-stay visa (90+ days) for Turkish citizens accepted to German universities. Germany offers FREE university education at public universities (except Baden-Württemberg), making it extremely attractive. Largest EU economy with excellent education quality.",
+        "keyBenefits": [
+          "FREE tuition at public universities (except Baden-Württemberg €1,500/semester)",
+          "120 full days or 240 half days work allowed per year",
+          "Path to Blue Card and permanent residence after graduation",
+          "Schengen area travel access",
+          "High quality education, German engineering reputation",
+          "Deutschlandticket: €58/month unlimited public transport",
+          "Strong job market post-graduation especially in STEM",
+          "Can bring family (with family reunification visa)"
+        ],
+        "bestFor": [
+          "Students seeking quality EU education with minimal tuition",
+          "Engineering, IT, Science students",
+          "Those planning to work in Germany after graduation",
+          "Path to German/EU permanent residence"
+        ]
+      },
+
+      "eligibilityCriteria": {
+        "ageRequirements": {
+          "minimumAge": 18,
+          "maximumAge": null,
+          "notes": "No upper age limit, but must meet university admission requirements"
+        },
+        "educationRequirements": {
+          "minimumLevel": "High school diploma for undergraduate, Bachelor's for Master's",
+          "acceptedDegrees": [
+            "Turkish Lise Diploması (High school diploma)",
+            "University degree for graduate programs"
+          ],
+          "degreeRecognitionProcess": "Turkish diplomas must be recognized - checked via Anabin database",
+          "anabinDatabase": {
+            "website": "https://anabin.kmk.org/",
+            "status": "All Turkish universities rated H+ in Anabin (recognized)",
+            "note": "Individual degree may still need evaluation by uni-assist or university"
+          },
+          "uniAssist": {
+            "required": "For many universities",
+            "website": "https://www.uni-assist.de/",
+            "fee": "€75 for first application, €30 for each additional",
+            "processing": "4-6 weeks"
+          }
+        },
+        "universityAcceptance": {
+          "required": true,
+          "acceptanceType": "Zulassungsbescheid (Admission letter) or conditional acceptance (Studienkolleg)",
+          "types": [
+            {
+              "type": "Direct Admission",
+              "requirement": "Admission letter from German university",
+              "notes": "Best option - direct entry to degree program"
+            },
+            {
+              "type": "Conditional Admission + Studienkolleg",
+              "requirement": "Turkish high school diploma may require 1-year preparatory course",
+              "duration": "1 year Studienkolleg then university",
+              "cost": "Free at public Studienkollegs"
+            },
+            {
+              "type": "Language Course + Conditional Admission",
+              "requirement": "German language course followed by university admission",
+              "notes": "Can get student visa for language course if have conditional admission"
+            }
+          ]
+        },
+        "languageRequirements": {
+          "required": true,
+          "forGermanPrograms": {
+            "minimumLevel": "B2-C1 depending on university and program",
+            "acceptedTests": [
+              "TestDaF (Test Deutsch als Fremdsprache)",
+              "DSH (Deutsche Sprachprüfung für den Hochschulzugang)",
+              "Goethe-Zertifikat C1/C2",
+              "telc Deutsch C1 Hochschule"
+            ],
+            "testDaFScores": "Usually TDN 4 in all sections (minimum)",
+            "DSHLevel": "DSH-2 or higher"
+          },
+          "forEnglishPrograms": {
+            "minimumLevel": "B2-C1",
+            "acceptedTests": ["IELTS", "TOEFL", "Cambridge certificates"],
+            "minimumScores": {
+              "IELTS": "6.5-7.0 depending on program",
+              "TOEFL": "90-100 depending on program"
+            },
+            "germanRequired": "Often still need A1-B1 German for daily life and registration"
+          },
+          "exemptions": ["Previous education in German/English may exempt"]
+        },
+        "financialRequirements": {
+          "proofOfFundsRequired": true,
+          "blockedAccount": {
+            "name": "Sperrkonto / Blocked Account",
+            "required": true,
+            "amount": 12000,
+            "currency": "EUR",
+            "inTRY": 420000,
+            "period": "For 12 months (September 2024 - September 2025)",
+            "monthlyWithdrawal": 1000,
+            "monthlyWithdrawalTRY": 35000,
+            "providers": [
+              "Fintiba (most popular for students)",
+              "Deutsche Bank",
+              "Expatrio",
+              "Coracle"
+            ],
+            "fintibaCost": "€150 setup fee + €60/year maintenance",
+            "howItWorks": "Deposit full amount before visa application, can withdraw monthly after arrival"
+          },
+          "acceptedProofTypes": [
+            "Blocked account (most common and recommended)",
+            "Declaration of commitment (Verpflichtungserklärung) from someone in Germany",
+            "Scholarship letter covering all costs",
+            "Parents' bank statements (less common, harder to prove)"
+          ],
+          "notes": "Blocked account is by far the most reliable and accepted method"
+        },
+        "healthRequirements": {
+          "medicalExamRequired": false,
+          "healthInsurance": {
+            "required": true,
+            "coverage": "Must cover entire visa period",
+            "initialInsurance": {
+              "type": "Travel/incoming insurance for visa application",
+              "providers": ["DR-WALTER", "Mawista", "Care Concept"],
+              "cost": "€30-50 per month",
+              "costTRY": "1,050-1,750 TRY per month",
+              "coverage": "Minimum €30,000"
+            },
+            "afterArrival": {
+              "mustSwitch": "Yes, to statutory (GKV) or private (PKV) insurance",
+              "studentGKV": {
+                "cost": 125,
+                "currency": "EUR",
+                "costTRY": 4375,
+                "ageLimit": "Under 30 years old",
+                "providers": ["TK (Techniker Krankenkasse)", "AOK", "DAK", "Barmer"]
+              },
+              "deadline": "Within 3 months of arrival or before 30th birthday"
+            }
+          },
+          "vaccinations": ["No specific requirements, but standard vaccinations recommended"],
+          "prohibitedConditions": []
+        },
+        "characterRequirements": {
+          "policeCertificateRequired": false,
+          "criminalRecordCheck": "Not required for student visa",
+          "excludingFactors": [
+            "Previous deportation from Schengen area",
+            "Visa fraud history",
+            "Entry ban (Einreiseverbot) from Germany or Schengen"
+          ]
+        }
+      },
+
+      "applicationProcess": {
+        "overview": "Apply through iDATA centers in Turkey, interview at German Consulate, receive visa. Much more document-intensive than Poland but offers FREE education.",
+        "estimatedTotalDuration": "60-90 days",
+        "peakSeasonProcessing": "90-120 days (May-August)",
+        "whereToApply": ["iDATA centers: Ankara, Istanbul, Izmir, Antalya"],
+        "importantNote": "Start application 3 months before intended travel, but no more than 6 months in advance",
+
+        "steps": [
+          {
+            "stepNumber": 1,
+            "stepName": "Get University Acceptance",
+            "description": "Apply and receive admission letter (Zulassungsbescheid) from German university",
+            "duration": "2-6 months depending on university",
+            "requiredDocuments": [
+              "High school diploma (apostilled)",
+              "Transcripts (apostilled)",
+              "German language certificate (TestDaF/DSH) or English (IELTS/TOEFL)",
+              "Passport copy",
+              "Motivation letter (in German or English)",
+              "CV/Resume",
+              "Recommendation letters (if required)"
+            ],
+            "costs": [
+              {"item": "uni-assist fee (if required)", "amount": 75, "currency": "EUR", "amountTRY": 2625, "note": "First application"},
+              {"item": "uni-assist additional apps", "amount": 30, "currency": "EUR", "amountTRY": 1050, "note": "Per additional university"},
+              {"item": "TestDaF exam", "amount": 195, "currency": "EUR", "amountTRY": 6825},
+              {"item": "DSH exam", "amount": 0, "note": "Usually free at universities"}
+            ],
+            "tips": [
+              "Apply to multiple universities (3-5)",
+              "Application deadlines: Winter semester (July 15), Summer semester (January 15)",
+              "Check if university requires uni-assist or direct application",
+              "English programs available but German programs have more options",
+              "Technical universities (TU) excellent for engineering",
+              "Free online resources: DAAD database (daad.de)"
+            ],
+            "commonMistakes": [
+              "Missing uni-assist deadline",
+              "Insufficient language level",
+              "Not checking if high school diploma sufficient (may need Studienkolleg)",
+              "Forgetting apostille on Turkish documents"
+            ]
+          },
+          {
+            "stepNumber": 2,
+            "stepName": "Open Blocked Account",
+            "description": "Open Sperrkonto (blocked account) with required amount",
+            "duration": "1-2 weeks",
+            "amount": 12000,
+            "currency": "EUR",
+            "amountTRY": 420000,
+            "providers": [
+              {
+                "name": "Fintiba",
+                "website": "https://www.fintiba.com/",
+                "setupFee": 150,
+                "annualFee": 60,
+                "currency": "EUR",
+                "popular": "Most popular among students",
+                "process": "Fully online, certificate ready in 1-2 weeks"
+              },
+              {
+                "name": "Expatrio",
+                "website": "https://www.expatrio.com/",
+                "setupFee": 0,
+                "annualFee": 0,
+                "note": "Free but includes insurance package"
+              }
+            ],
+            "requiredDocuments": ["Passport", "University admission letter", "Address"],
+            "tips": [
+              "Fintiba most widely accepted",
+              "Complete online process from Turkey",
+              "Need certificate (Finanzierungsnachweis) for visa application",
+              "Can withdraw €1,000/month after arrival in Germany"
+            ]
+          },
+          {
+            "stepNumber": 3,
+            "stepName": "Get Travel Health Insurance",
+            "description": "Purchase incoming/travel insurance for visa application period",
+            "duration": "1 day",
+            "providers": [
+              {
+                "name": "DR-WALTER",
+                "product": "Medi-Start",
+                "costPerMonth": 40,
+                "currency": "EUR",
+                "costTRY": 1400
+              },
+              {
+                "name": "Mawista",
+                "product": "Student",
+                "costPerMonth": 35,
+                "currency": "EUR",
+                "costTRY": 1225
+              },
+              {
+                "name": "Care Concept",
+                "product": "Student",
+                "costPerMonth": 38,
+                "currency": "EUR",
+                "costTRY": 1330
+              }
+            ],
+            "coverage": "Minimum €30,000",
+            "duration": "For entire visa period",
+            "notes": "Must switch to statutory (GKV) or private (PKV) after arrival"
+          },
+          {
+            "stepNumber": 4,
+            "stepName": "Prepare Documents",
+            "description": "Gather and prepare all required documents with translations and apostilles",
+            "duration": "14-21 days",
+            "requiredDocuments": [
+              "Valid passport (at least 6 months validity after intended stay, 2 blank pages)",
+              "University admission letter (Zulassungsbescheid)",
+              "Blocked account certificate (Finanzierungsnachweis)",
+              "Travel health insurance certificate",
+              "High school diploma + transcripts (apostilled)",
+              "Language certificate (TestDaF/DSH/IELTS/TOEFL)",
+              "Motivation letter explaining study plans",
+              "CV/Resume",
+              "3 biometric photos (3.5 x 4.5 cm, white background)",
+              "Completed visa application form",
+              "Rental agreement or hotel booking in Germany (if available)"
+            ],
+            "apostilleAndTranslation": {
+              "required": "All Turkish educational documents",
+              "apostilleLocation": "Turkish notary (noter)",
+              "apostilleCost": "₺50-100 per document",
+              "translationRequired": "To German (certified translation)",
+              "translationCost": "€15-30 per page",
+              "translationTRY": "525-1,050 TRY per page",
+              "certifiedTranslators": "Find on German consulate website"
+            },
+            "costs": [
+              {"item": "Document translations", "amount": 1500, "currency": "TRY", "range": "1,000-2,000 TRY"},
+              {"item": "Apostilles (2-3 docs)", "amount": 200, "currency": "TRY", "range": "150-300 TRY"},
+              {"item": "Biometric photos", "amount": 100, "currency": "TRY"}
+            ],
+            "tips": [
+              "Use certified translators listed on consulate website",
+              "Make copies of everything",
+              "Original documents will be checked but returned",
+              "Photos must meet Schengen biometric standards"
+            ]
+          },
+          {
+            "stepNumber": 5,
+            "stepName": "Book iDATA Appointment",
+            "description": "Schedule appointment at iDATA visa application center",
+            "duration": "Immediate to 2 weeks wait",
+            "website": "https://www.germany-visa.org/tr/",
+            "locations": ["Ankara", "Istanbul (2 centers)", "Izmir", "Antalya"],
+            "tips": [
+              "Book early during peak season (May-August)",
+              "Check all document requirements before appointment",
+              "Bring appointment confirmation"
+            ]
+          },
+          {
+            "stepNumber": 6,
+            "stepName": "Submit Application at iDATA",
+            "description": "Attend appointment, submit documents, pay fees, provide biometrics",
+            "duration": "1-2 hours at center",
+            "requiredDocuments": "All documents from step 4",
+            "costs": [
+              {"item": "National visa fee", "amount": 75, "currency": "EUR", "amountTRY": 2625},
+              {"item": "iDATA service fee", "amount": 25, "currency": "EUR", "amountTRY": 875, "note": "Approximate"},
+              {"item": "Total payable at iDATA", "amount": 100, "currency": "EUR", "amountTRY": 3500, "note": "Pay in cash EUR"}
+            ],
+            "paymentMethod": "Cash in EUR only (exact amount recommended)",
+            "biometrics": "Fingerprints and photo taken at center",
+            "tips": [
+              "Arrive 15 minutes early",
+              "Bring exact cash in EUR",
+              "Documents reviewed at center - missing items will delay",
+              "Keep receipt safe"
+            ]
+          },
+          {
+            "stepNumber": 7,
+            "stepName": "Consulate Interview (if required)",
+            "description": "Attend interview at German Consulate if requested",
+            "duration": "15-30 minutes",
+            "whenRequired": "Not always required - consulate decides",
+            "whatToExpect": [
+              "Questions about study plans",
+              "Why Germany? Why this university/program?",
+              "How will you finance your studies?",
+              "Plans after graduation",
+              "German or English language check (basic)"
+            ],
+            "tips": [
+              "Be honest and clear",
+              "Know your university and program well",
+              "Explain career goals",
+              "Dress professionally",
+              "Bring all documents again (originals)"
+            ]
+          },
+          {
+            "stepNumber": 8,
+            "stepName": "Wait for Processing",
+            "description": "Consulate processes application",
+            "duration": "60-90 days standard",
+            "peakSeason": "90-120 days (May-August applications)",
+            "trackingAvailable": false,
+            "trackingMethod": "Check with iDATA using reference number",
+            "legalProcessingTime": "Up to 3 months for national visas",
+            "tips": [
+              "Don't book flights until visa approved",
+              "Processing slower in summer",
+              "Consulate may request additional documents",
+              "Be patient - German bureaucracy is thorough"
+            ]
+          },
+          {
+            "stepNumber": 9,
+            "stepName": "Collect Visa",
+            "description": "Receive passport with visa from iDATA center",
+            "duration": "1 day",
+            "collectionOptions": ["Pick up at iDATA center where applied"],
+            "visaValidFor": "Usually 3-6 months for entry",
+            "tips": [
+              "Check visa details immediately for errors",
+              "Verify dates, name spelling, visa type",
+              "Visa sticker says entry validity - residence permit comes after arrival",
+              "Keep visa copy separate from passport"
+            ]
+          }
+        ],
+
+        "totalCosts": {
+          "mandatory": [
+            {"item": "Visa application fee", "amount": 2625, "currency": "TRY"},
+            {"item": "iDATA service fee", "amount": 875, "currency": "TRY"},
+            {"item": "Blocked account (Fintiba)", "amount": 5250, "currency": "TRY", "note": "€150 setup fee"},
+            {"item": "Travel health insurance (3 months)", "amount": 3675, "currency": "TRY", "note": "€35/month x 3"},
+            {"item": "Document translations", "amount": 1500, "currency": "TRY"},
+            {"item": "Apostilles", "amount": 200, "currency": "TRY"},
+            {"item": "Biometric photos", "amount": 100, "currency": "TRY"}
+          ],
+          "optional": [
+            {"item": "uni-assist fee", "amount": 2625, "currency": "TRY", "note": "If required by university"},
+            {"item": "TestDaF exam", "amount": 6825, "currency": "TRY"},
+            {"item": "University application fees", "amount": 0, "note": "Most public universities don't charge"}
+          ],
+          "totalEstimate": {
+            "minimum": 14225,
+            "maximum": 25000,
+            "currency": "TRY",
+            "note": "Plus €12,000 (420,000 TRY) for blocked account which you'll use for living expenses"
+          },
+          "firstYearTotal": {
+            "visaCosts": "14,225-25,000 TRY",
+            "blockedAccount": "420,000 TRY (your living expenses)",
+            "tuition": "0 TRY (free at most public universities) or 52,500 TRY (€1,500/semester in Baden-Württemberg)",
+            "total": "434,225-497,500 TRY"
+          }
+        },
+
+        "processingTimes": {
+          "standard": "60-90 days",
+          "peakSeason": "90-120 days (May-August)",
+          "fastest": "45 days (if all documents perfect, outside peak season)",
+          "note": "German visa processing is thorough - be patient"
+        },
+
+        "rejectionReasons": {
+          "common": [
+            "Insufficient financial proof (blocked account amount wrong)",
+            "Invalid or insufficient health insurance",
+            "Incomplete documentation",
+            "Missing apostille on Turkish documents",
+            "Inadequate language proficiency proof",
+            "Unclear study motivation",
+            "Previous visa violations in Schengen area",
+            "Doubt about return intention after studies",
+            "University admission not genuine or not recognized"
+          ],
+          "statistics": {
+            "approvalRate": "High (75-85% for genuine students with complete documents)",
+            "notes": "German authorities very thorough - complete documentation crucial"
+          }
+        },
+
+        "appeals": {
+          "available": true,
+          "process": "Remonstration (Widerspruch) to issuing authority within 1 month",
+          "timeframe": "1-3 months",
+          "successRate": "Low unless new substantial evidence provided",
+          "alternative": "Reapply with complete documentation"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,618 @@
+{
+  "continuesFrom": "poland-emigration-data-COMPLETE.json",
+  "section": "Additional Visa Programs and Settlement Information",
+
+  "visaPrograms_continued": [
+    {
+      "visaId": "PL_BLUE_CARD",
+      "visaCode": "EU Blue Card",
+      "officialName": "EU Blue Card (Niebieska Karta UE)",
+      "category": "work",
+      "popularity": "High for IT and Engineering professionals",
+
+      "overview": {
+        "description": "Work and residence permit for highly qualified professionals. Fast track to permanent residence (just 2 years). Requires university degree or 5 years professional experience and high salary threshold.",
+        "keyBenefits": [
+          "2-year fast track to permanent residence",
+          "Work in any EU country after 18 months",
+          "Family reunification rights immediately",
+          "Lower salary threshold than other EU countries",
+          "Path to citizenship"
+        ]
+      },
+
+      "salaryThresholds": {
+        "2024": {
+          "minimumGross": 10733.22,
+          "currency": "PLN",
+          "inTRY": 85866,
+          "calculation": "150% of Polish average salary",
+          "perYear": 128798.64,
+          "perYearTRY": 1030389
+        },
+        "2025": {
+          "minimumGross": 12272.60,
+          "currency": "PLN",
+          "inTRY": 98181,
+          "calculation": "150% of Polish average salary",
+          "perYear": 147271.20,
+          "perYearTRY": 1178170,
+          "effectiveDate": "January 1, 2025"
+        },
+        "note": "Threshold updates annually based on average national salary"
+      },
+
+      "eligibilityCriteria": {
+        "ageRequirements": {
+          "minimumAge": 18,
+          "maximumAge": null
+        },
+        "educationOrExperience": {
+          "option1": {
+            "type": "University Degree",
+            "requirement": "3+ years higher education degree (Bachelor's or higher)",
+            "recognition": "Turkish degree must be relevant to job position"
+          },
+          "option2": {
+            "type": "Professional Experience",
+            "requirement": "5+ years professional experience in relevant field",
+            "notes": "Can substitute for university degree (new 2024 EU directive)"
+          }
+        },
+        "employmentRequirements": {
+          "jobOffer": "Must have valid employment contract, mandate contract, or specific work contract",
+          "duration": "Minimum 1 year contract",
+          "salary": "Must meet or exceed minimum threshold (PLN 12,272.60 gross/month in 2025)",
+          "jobRelevance": "Position must match education/experience"
+        },
+        "languageRequirements": {
+          "required": false,
+          "notes": "No official Polish or English language requirement for visa, but needed for work"
+        }
+      },
+
+      "applicationProcess": {
+        "estimatedTotalDuration": "150-540 days (5-18 months)",
+        "note": "Processing time varies significantly by voivodeship",
+
+        "steps": [
+          {
+            "stepNumber": 1,
+            "stepName": "Secure Job Offer",
+            "description": "Find employer in Poland willing to sponsor Blue Card",
+            "platforms": ["LinkedIn Poland", "Just Join IT", "No Fluff Jobs", "Pracuj.pl"],
+            "tips": ["IT sector has highest demand", "Remote work becoming more common", "Salary negotiation important to meet threshold"]
+          },
+          {
+            "stepNumber": 2,
+            "stepName": "Employer Prepares Documents",
+            "description": "Polish employer prepares work contract and supporting documents",
+            "duration": "1-2 weeks",
+            "requiredFromEmployer": [
+              "Employment contract specifying salary",
+              "Company registration documents",
+              "Job description matching candidate qualifications",
+              "Proof of salary payment ability"
+            ]
+          },
+          {
+            "stepNumber": 3,
+            "stepName": "Gather Personal Documents",
+            "description": "Applicant prepares required documentation",
+            "requiredDocuments": [
+              "University diploma (apostilled, translated)",
+              "Transcripts (apostilled, translated)",
+              "Professional certificates/licenses if applicable",
+              "CV/resume",
+              "Passport",
+              "Passport photos"
+            ]
+          },
+          {
+            "stepNumber": 4,
+            "stepName": "Submit Blue Card Application",
+            "description": "Apply at Polish embassy in Turkey or in Poland if legally present",
+            "duration": "1 day for submission",
+            "location": "Polish Embassy Ankara or Consulate, OR voivodeship office in Poland",
+            "costs": [
+              {"item": "Blue Card application fee", "amount": 440, "currency": "PLN", "amountTRY": 3520},
+              {"item": "Residence card issuance", "amount": 100, "currency": "PLN", "amountTRY": 800}
+            ]
+          },
+          {
+            "stepNumber": 5,
+            "stepName": "Wait for Processing",
+            "description": "Voivodeship office processes application",
+            "duration": "150-540 days (highly variable)",
+            "averageDuration": "6-8 months",
+            "notes": "Legal stay if submitted in Poland; decision is sent by post"
+          }
+        ],
+
+        "totalCosts": {
+          "mandatory": [
+            {"item": "Blue Card application", "amount": 3520, "currency": "TRY"},
+            {"item": "Residence card", "amount": 800, "currency": "TRY"},
+            {"item": "Diploma recognition/translation", "amount": 1600, "currency": "TRY", "range": "1,200-2,400 TRY"},
+            {"item": "Health insurance (until NFZ)", "amount": 2400, "currency": "TRY", "note": "~3 months"}
+          ],
+          "totalEstimate": {
+            "minimum": 8320,
+            "maximum": 12000,
+            "currency": "TRY"
+          }
+        }
+      },
+
+      "pathToPermanentResidency": {
+        "available": true,
+        "minimumYears": 2,
+        "fastTrack": true,
+        "process": "After 2 years continuous employment with Blue Card, can apply for permanent residence",
+        "requirements": [
+          "2 years with Blue Card",
+          "Continuous employment",
+          "Maintained salary threshold",
+          "Health insurance",
+          "Accommodation"
+        ],
+        "notes": "One of shortest paths to PR in EU"
+      }
+    },
+
+    {
+      "visaId": "PL_WORK_TYPE_A",
+      "visaCode": "Type A Work Permit",
+      "officialName": "Work Permit Type A (Zezwolenie na pracę typu A)",
+      "category": "work",
+      "popularity": "High - Most common work permit",
+
+      "overview": {
+        "description": "Standard work permit for foreign workers with employer sponsorship. Suitable for most professions not qualifying for Blue Card.",
+        "keyBenefits": [
+          "No minimum salary requirement (vs Blue Card)",
+          "No specific education requirement",
+          "Available for wide range of professions",
+          "Can lead to permanent residence"
+        ]
+      },
+
+      "eligibilityCriteria": {
+        "ageRequirements": {
+          "minimumAge": 18,
+          "maximumAge": null
+        },
+        "educationRequirements": {
+          "minimumLevel": "No specific requirement",
+          "notes": "Depends on job requirements"
+        },
+        "employmentRequirements": {
+          "jobOffer": "Valid employment contract from Polish employer",
+          "employerObligation": "Employer must apply for work permit before employee arrives",
+          "laborMarketTest": "Employer must advertise position in Poland first (some exceptions)"
+        }
+      },
+
+      "applicationProcess": {
+        "estimatedTotalDuration": "30-180 days",
+        "whoApplies": "Employer applies on behalf of employee",
+
+        "steps": [
+          {
+            "stepNumber": 1,
+            "stepName": "Employer Registers Job",
+            "description": "Employer advertises position to Polish/EU workers first",
+            "duration": "7-14 days",
+            "notes": "Required unless position qualifies for exemption"
+          },
+          {
+            "stepNumber": 2,
+            "stepName": "Employer Applies for Work Permit",
+            "description": "Employer submits work permit application to local labor office (Urząd Pracy)",
+            "duration": "30-60 days processing",
+            "costs": [
+              {"item": "Work permit fee (paid by employer)", "amount": 0, "currency": "PLN", "notes": "No fee for Type A"}
+            ]
+          },
+          {
+            "stepNumber": 3,
+            "stepName": "Employee Applies for Work Visa",
+            "description": "After work permit approved, employee applies for D visa at embassy",
+            "location": "Polish Embassy Ankara",
+            "costs": [
+              {"item": "Visa fee", "amount": 80, "currency": "EUR", "amountTRY": 2816}
+            ]
+          }
+        ],
+
+        "totalCosts": {
+          "forEmployee": [
+            {"item": "Work visa", "amount": 2816, "currency": "TRY"},
+            {"item": "Documents/translations", "amount": 1500, "currency": "TRY"}
+          ],
+          "totalEstimate": {
+            "minimum": 4316,
+            "currency": "TRY"
+          }
+        }
+      },
+
+      "turkishCitizenSpecialRights": {
+        "decision1_80Benefits": {
+          "year1": "After 1 year legal employment: right to renew work permit with same employer",
+          "year3": "After 3 years legal employment: can work in same profession with any employer",
+          "notes": "Special rights under Turkey-EEC Association Agreement"
+        }
+      }
+    }
+  ],
+
+  "settlementInformation": {
+    "firstWeekChecklist": [
+      {
+        "task": "Register Address (Meldunek)",
+        "priority": "CRITICAL",
+        "deadline": "Within 30 days of arrival (EU citizens); immediately for non-EU",
+        "description": "Register your residential address at local municipal office",
+        "location": "Urząd Miasta (Municipal Office) or Urząd Gminy (Commune Office) in your area",
+        "requiredDocuments": [
+          "Passport",
+          "Visa or residence permit",
+          "Rental agreement or dormitory confirmation"
+        ],
+        "cost": 0,
+        "costNote": "Free of charge",
+        "estimatedTime": "30-60 minutes",
+        "tips": [
+          "Landlord may need to accompany you or provide signed consent",
+          "This triggers automatic PESEL number assignment",
+          "Bring original documents plus copies"
+        ],
+        "consequences": "Required for PESEL, bank account, residence permit application"
+      },
+      {
+        "task": "Obtain PESEL Number",
+        "priority": "CRITICAL",
+        "deadline": "Automatic with address registration if staying 30+ days",
+        "description": "Polish national identification number - essential for everything",
+        "location": "Automatically assigned when registering address, OR apply separately at any municipal office",
+        "requiredDocuments": [
+          "Passport",
+          "Visa/residence permit"
+        ],
+        "cost": 0,
+        "writtenConfirmationCost": 17,
+        "costCurrency": "PLN",
+        "costTRY": 136,
+        "estimatedTime": "Immediate (if with address registration) or 1-2 days",
+        "tips": [
+          "PESEL is 11 digits - memorize it!",
+          "Needed for: bank account, SIM card, work, healthcare, taxes",
+          "Free to obtain, small fee only for written certificate"
+        ],
+        "consequences": "Cannot function in Poland without PESEL - needed for almost everything"
+      },
+      {
+        "task": "Get Polish SIM Card",
+        "priority": "HIGH",
+        "deadline": "First few days",
+        "description": "Local phone number essential for communication and verification",
+        "location": "Mobile operator stores, supermarkets, kiosks",
+        "providers": [
+          {
+            "name": "Play",
+            "prepaidCost": "10-30 PLN",
+            "monthlyCost": "25-50 PLN",
+            "notes": "Good coverage, foreigner-friendly"
+          },
+          {
+            "name": "Orange",
+            "prepaidCost": "10-30 PLN",
+            "monthlyCost": "30-60 PLN",
+            "notes": "Best coverage nationwide"
+          },
+          {
+            "name": "T-Mobile",
+            "prepaidCost": "10-30 PLN",
+            "monthlyCost": "25-50 PLN"
+          },
+          {
+            "name": "Plus",
+            "prepaidCost": "10-30 PLN",
+            "monthlyCost": "25-50 PLN"
+          }
+        ],
+        "requiredDocuments": ["Passport", "PESEL (for contract)"],
+        "cost": {
+          "prepaid": "10-30 PLN (80-240 TRY)",
+          "monthly": "25-60 PLN (200-480 TRY)"
+        },
+        "tips": [
+          "Prepaid SIM doesn't require PESEL",
+          "Contract plans need PESEL and address registration",
+          "Buy at official stores for activation help"
+        ]
+      },
+      {
+        "task": "Open Bank Account",
+        "priority": "HIGH",
+        "deadline": "First week",
+        "description": "Polish bank account needed for salary, rent, bills",
+        "location": "Bank branch (must visit in person)",
+        "recommendedBanks": [
+          {
+            "name": "Santander Bank Polska",
+            "pros": "English support, foreigner-friendly",
+            "monthlyFee": "0-10 PLN",
+            "notes": "Good for students and professionals"
+          },
+          {
+            "name": "Bank Millennium",
+            "pros": "Easy process for foreigners, good app",
+            "monthlyFee": "0-15 PLN"
+          },
+          {
+            "name": "mBank",
+            "pros": "Fully online, modern app",
+            "monthlyFee": "0-5 PLN",
+            "notes": "Tech-savvy option"
+          },
+          {
+            "name": "ING Bank Śląski",
+            "pros": "Popular among young professionals",
+            "monthlyFee": "0-10 PLN"
+          },
+          {
+            "name": "PKO Bank Polski",
+            "pros": "Largest bank, most branches",
+            "monthlyFee": "0-15 PLN"
+          }
+        ],
+        "requiredDocuments": [
+          "Passport",
+          "PESEL number (highly recommended, sometimes mandatory)",
+          "Proof of address (rental agreement or registration confirmation)",
+          "Residence permit or visa"
+        ],
+        "cost": 0,
+        "monthlyFees": "0-15 PLN depending on account type",
+        "estimatedTime": "1-2 hours",
+        "tips": [
+          "Some banks allow account opening without PESEL but it's harder",
+          "Bring employment contract if you have one",
+          "Ask for debit card and online banking activation",
+          "Most banks have English-speaking staff in big cities"
+        ]
+      },
+      {
+        "task": "Get Public Transport Card",
+        "priority": "MEDIUM",
+        "deadline": "First few days",
+        "description": "Rechargeable card for buses, trams, metro",
+        "location": "Metro stations, kiosks, public transport information points",
+        "byCity": {
+          "Warsaw": {
+            "cardName": "Warszawska Karta Miejska",
+            "cost": 15,
+            "costCurrency": "PLN",
+            "costTRY": 120,
+            "deposit": "Refundable deposit",
+            "monthlyPass": 109,
+            "monthlyPassTRY": 872,
+            "singleTicket": 4.40,
+            "howToPurchase": "At metro stations, kiosks with 'ZTM Warszawa' sign"
+          },
+          "Krakow": {
+            "cardName": "Krakowska Karta Miejska (KKM)",
+            "cost": 20,
+            "costCurrency": "PLN",
+            "costTRY": 160,
+            "monthlyPass": "~110 PLN",
+            "monthlyPassTRY": 880,
+            "notes": "Similar pricing to Warsaw"
+          }
+        },
+        "tips": [
+          "Monthly pass much cheaper than daily tickets",
+          "Student discount available with ISIC card or student ID",
+          "Download city transport app for route planning"
+        ]
+      },
+      {
+        "task": "Register at University/Start Work",
+        "priority": "HIGH",
+        "deadline": "Per university/employer schedule",
+        "description": "Complete enrollment/onboarding process",
+        "notes": "Brings specific to-do items from institution"
+      }
+    ],
+
+    "firstMonthChecklist": [
+      {
+        "task": "Apply for Residence Permit (Karta Pobytu)",
+        "priority": "CRITICAL",
+        "deadline": "Within 45 days of arrival with D visa",
+        "description": "Convert D visa to temporary residence permit",
+        "location": "Voivodeship Office (Urząd Wojewódzki) in your region",
+        "requiredDocuments": [
+          "Passport with visa",
+          "4 passport photos",
+          "Proof of accommodation",
+          "Proof of health insurance",
+          "Proof of financial means",
+          "University enrollment/work contract",
+          "Application form (available at office or online)"
+        ],
+        "costs": [
+          {"item": "Application fee", "amount": 340, "currency": "PLN", "amountTRY": 2720},
+          {"item": "Residence card issuance", "amount": 100, "currency": "PLN", "amountTRY": 800}
+        ],
+        "processingTime": "4-12 months",
+        "legalStayDuringProcessing": "Yes - your stay is legal while waiting",
+        "tips": [
+          "Book appointment online to avoid long waits",
+          "Bring all original documents plus copies",
+          "Get receipt - it proves legal stay",
+          "Fingerprints will be taken"
+        ]
+      },
+      {
+        "task": "Register with Healthcare System (NFZ)",
+        "priority": "HIGH",
+        "deadline": "First month",
+        "description": "Register for Polish public healthcare (if working) or maintain private insurance",
+        "whoIsEligible": {
+          "automatic": "Employees (employer registers via ZUS contributions)",
+          "students": "Can buy voluntary NFZ insurance at student rate",
+          "others": "Must have private insurance or voluntary NFZ"
+        },
+        "nfzVoluntaryInsurance": {
+          "monthlyCost": 786.28,
+          "costCurrency": "PLN",
+          "costTRY": 6290,
+          "studentRate": 55.80,
+          "studentRateTRY": 446,
+          "application": "Submit to local NFZ branch"
+        },
+        "privateInsurance": {
+          "monthlyCost": "50-300 PLN",
+          "costTRY": "400-2400 TRY",
+          "providers": ["Medicover", "LUX MED", "Enel-Med"]
+        },
+        "tips": [
+          "Employees: employer handles NFZ registration automatically",
+          "Students: private insurance often cheaper than NFZ",
+          "Keep insurance proof always"
+        ]
+      },
+      {
+        "task": "Get Tax Number (NIP)",
+        "priority": "HIGH (if working)",
+        "deadline": "Before starting work",
+        "description": "Polish tax identification number",
+        "location": "Local Tax Office (Urząd Skarbowy) or online",
+        "requiredDocuments": [
+          "Passport",
+          "PESEL",
+          "Proof of address"
+        ],
+        "cost": 0,
+        "howToApply": "Fill form (NIP-7 for individuals) at tax office",
+        "estimatedTime": "Same day",
+        "notes": "Employer may handle this; free to obtain"
+      },
+      {
+        "task": "Find Permanent Housing",
+        "priority": "MEDIUM-HIGH",
+        "deadline": "First month (if in temporary accommodation)",
+        "description": "Secure long-term rental",
+        "platforms": [
+          "OLX.pl (most popular, be careful of scams)",
+          "Otodom.pl (professional listings)",
+          "Facebook groups (city-specific expat groups)",
+          "Gumtree Poland"
+        ],
+        "tips": [
+          "Never pay before seeing apartment",
+          "Verify landlord identity",
+          "Get written contract",
+          "Typical deposit: 1-2 months rent",
+          "Bills usually separate from rent",
+          "Check condition and take photos"
+        ]
+      }
+    ],
+
+    "housingMarket": {
+      "overview": "Poland has affordable housing compared to Western Europe. Rental market active in all major cities. Long-term contracts (12 months) most common.",
+
+      "rentalMarket": {
+        "averageDeposit": "1-2 months rent",
+        "typicalLeaseLength": "12 months (annual contracts most common)",
+        "utilitiesIncluded": false,
+        "utilitiesNote": "Usually paid separately - expect 300-500 PLN/month for utilities",
+
+        "tenantRights": [
+          "Contract must be in writing",
+          "Rent increases limited during contract period",
+          "Notice period usually 1-3 months",
+          "Deposit must be returned within 1 month after move-out"
+        ],
+        "landlordObligations": [
+          "Provide habitable apartment",
+          "Handle major repairs",
+          "Register tenant's address if requested"
+        ],
+        "commonPitfalls": [
+          "OLX scams - never pay before viewing",
+          "Deposit disputes - document apartment condition with photos",
+          "Utility bills - clarify who pays what",
+          "Contract language - get Polish friend to review if needed"
+        ]
+      },
+
+      "rentPricesByCity": {
+        "Warsaw": {
+          "studio_center": {"min": 2500, "max": 4000, "currency": "PLN", "minTRY": 20000, "maxTRY": 32000},
+          "studio_suburb": {"min": 2000, "max": 2500, "currency": "PLN", "minTRY": 16000, "maxTRY": 20000},
+          "oneBed_center": {"min": 3000, "max": 4500, "currency": "PLN", "minTRY": 24000, "maxTRY": 36000},
+          "oneBed_suburb": {"min": 2200, "max": 3000, "currency": "PLN", "minTRY": 17600, "maxTRY": 24000},
+          "twoBed_center": {"min": 4000, "max": 6000, "currency": "PLN", "minTRY": 32000, "maxTRY": 48000},
+          "utilities": {"min": 350, "max": 500, "currency": "PLN", "minTRY": 2800, "maxTRY": 4000}
+        },
+        "Krakow": {
+          "studio_center": {"min": 2000, "max": 3500, "currency": "PLN", "minTRY": 16000, "maxTRY": 28000},
+          "studio_suburb": {"min": 1500, "max": 2200, "currency": "PLN", "minTRY": 12000, "maxTRY": 17600},
+          "oneBed_center": {"min": 2500, "max": 4000, "currency": "PLN", "minTRY": 20000, "maxTRY": 32000},
+          "oneBed_suburb": {"min": 1800, "max": 2800, "currency": "PLN", "minTRY": 14400, "maxTRY": 22400},
+          "utilities": {"min": 300, "max": 450, "currency": "PLN", "minTRY": 2400, "maxTRY": 3600}
+        },
+        "Wroclaw": {
+          "studio_center": {"min": 1800, "max": 3000, "currency": "PLN", "minTRY": 14400, "maxTRY": 24000},
+          "oneBed_center": {"min": 2200, "max": 3500, "currency": "PLN", "minTRY": 17600, "maxTRY": 28000},
+          "utilities": {"min": 300, "max": 450, "currency": "PLN", "minTRY": 2400, "maxTRY": 3600}
+        },
+        "Gdansk": {
+          "studio_center": {"min": 1800, "max": 3000, "currency": "PLN", "minTRY": 14400, "maxTRY": 24000},
+          "oneBed_center": {"min": 2200, "max": 3500, "currency": "PLN", "minTRY": 17600, "maxTRY": 28000}
+        },
+        "Poznan": {
+          "studio_center": {"min": 1600, "max": 2800, "currency": "PLN", "minTRY": 12800, "maxTRY": 22400},
+          "oneBed_center": {"min": 2000, "max": 3200, "currency": "PLN", "minTRY": 16000, "maxTRY": 25600}
+        }
+      },
+
+      "findingHousing": {
+        "mainPlatforms": [
+          {
+            "name": "OLX.pl",
+            "url": "https://www.olx.pl/nieruchomosci/",
+            "pros": "Most listings, free",
+            "cons": "Many scams - be very careful",
+            "tips": "Never pay before viewing apartment"
+          },
+          {
+            "name": "Otodom.pl",
+            "url": "https://www.otodom.pl/",
+            "pros": "Professional listings, more reliable",
+            "cons": "Agency fees common",
+            "tips": "Filter by 'bez prowizji' (no commission)"
+          },
+          {
+            "name": "Facebook Groups",
+            "examples": ["Mieszkania Warszawa", "Expats in Warsaw", "Krakow Expats"],
+            "pros": "Direct from landlords, community verified",
+            "cons": "Competitive, fast-moving"
+          }
+        ],
+        "scamWarnings": [
+          "Never wire money before seeing apartment",
+          "Meet landlord in person",
+          "Verify identity documents",
+          "Too-good prices usually scams",
+          "Request to meet in person (scammers avoid this)"
+        ]
+      }
+    }
+  }
+}

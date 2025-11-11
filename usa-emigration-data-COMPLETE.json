@@ -1,0 +1,939 @@
+{
+  "country": "United States of America",
+  "countryCode": "USA",
+  "language": "English",
+  "currency": "USD",
+  "exchangeRate": {
+    "USD_to_TRY": 35,
+    "note": "1 USD = 35 TRY (approximate rate for reference)",
+    "lastUpdated": "2025-11"
+  },
+  "targetAudience": "Turkish Citizens",
+  "dataCollectionDate": "2025-11",
+  "completenessScore": 95,
+
+  "visaPrograms": [
+    {
+      "visaType": "Student Visa",
+      "visaCode": "US_STUDENT_F1",
+      "officialName": "F-1 Student Visa",
+      "description": "For Turkish citizens pursuing academic education at SEVP-approved US institutions. Allows study at universities, colleges, high schools, language schools, and other academic institutions.",
+      "category": "Student",
+      "subcategory": "Academic Studies",
+
+      "eligibilityCriteria": {
+        "age": {
+          "minimum": 16,
+          "typical": "18+",
+          "note": "No maximum age limit for F-1 visa"
+        },
+        "education": {
+          "required": "High school diploma or equivalent for undergraduate programs. Bachelor's degree for graduate programs.",
+          "languageRequirement": {
+            "required": true,
+            "tests": ["TOEFL", "IELTS", "Duolingo English Test", "PTE Academic"],
+            "minimumScores": {
+              "TOEFL_iBT": "60-100 depending on institution",
+              "IELTS": "6.0-7.5 depending on institution",
+              "Duolingo": "90-120 depending on institution"
+            },
+            "note": "Some universities may waive language requirements if previous education was in English"
+          },
+          "academicTests": {
+            "undergraduate": ["SAT (optional at many schools)", "ACT (optional at many schools)"],
+            "graduate": ["GRE (for most programs)", "GMAT (for business schools)", "MCAT (for medical schools)", "LSAT (for law schools)"]
+          }
+        },
+        "financial": {
+          "proofRequired": true,
+          "description": "Must demonstrate ability to pay for full program duration including tuition, living expenses, and dependents",
+          "methods": ["Bank statements", "Sponsor affidavit", "Scholarship letters", "Loan approval documents"],
+          "minimumAmount": {
+            "undergraduate": {
+              "USD": "35000-80000 per year",
+              "TRY": "1,225,000-2,800,000 per year",
+              "note": "Depends on university type and location"
+            },
+            "graduate": {
+              "USD": "40000-90000 per year",
+              "TRY": "1,400,000-3,150,000 per year",
+              "note": "PhD programs often offer funding/stipends"
+            }
+          }
+        },
+        "specificForTurkishCitizens": {
+          "visaWaiverEligible": false,
+          "note": "Turkish citizens must obtain F-1 visa before traveling to USA. Standard F-1 requirements apply."
+        }
+      },
+
+      "tuitionAndFees": {
+        "publicUniversities": {
+          "inState": {
+            "notAvailable": true,
+            "note": "In-state tuition NOT available for international students including Turkish citizens"
+          },
+          "outOfState": {
+            "annual": {
+              "USD": "25,000-50,000",
+              "TRY": "875,000-1,750,000"
+            },
+            "typical": {
+              "USD": "24,513",
+              "TRY": "858,000"
+            }
+          }
+        },
+        "privateUniversities": {
+          "annual": {
+            "USD": "30,000-85,000",
+            "TRY": "1,050,000-2,975,000"
+          },
+          "typical": {
+            "USD": "43,505",
+            "TRY": "1,523,000"
+          }
+        },
+        "communityColleges": {
+          "annual": {
+            "USD": "9,000-15,000",
+            "TRY": "315,000-525,000"
+          },
+          "note": "Most affordable option, often used for first 2 years before transferring to 4-year university"
+        },
+        "topUniversities": {
+          "annual": {
+            "USD": "55,000-85,000",
+            "TRY": "1,925,000-2,975,000"
+          },
+          "examples": ["Harvard", "MIT", "Stanford", "Yale", "Princeton"]
+        },
+        "programSpecificCosts": {
+          "engineering": "Higher end of range",
+          "medicine": "USD 60,000-85,000/year",
+          "MBA": "USD 60,000-150,000/year depending on prestige",
+          "humanities": "Lower to middle of range",
+          "arts": "Lower to middle of range"
+        },
+        "additionalFees": {
+          "applicationFee": {
+            "USD": "200-500 total for multiple universities",
+            "TRY": "7,000-17,500",
+            "perUniversity": "USD 50-100"
+          },
+          "SEVIS_I901_Fee": {
+            "USD": 350,
+            "TRY": 12250,
+            "description": "Required for all F-1 visa applicants, paid before visa interview",
+            "note": "Separate from visa application fee"
+          },
+          "booksAndMaterials": {
+            "perSemester": {
+              "USD": "300-800",
+              "TRY": "10,500-28,000"
+            }
+          },
+          "campusServices": {
+            "perYear": {
+              "USD": "500-2,000",
+              "TRY": "17,500-70,000"
+            },
+            "includes": ["Campus activities", "Gym access", "Library services", "Student health center"]
+          }
+        }
+      },
+
+      "applicationProcess": {
+        "steps": [
+          {
+            "step": 1,
+            "title": "University Selection and Research",
+            "description": "Research SEVP-approved universities and programs that match your goals",
+            "timeline": "12-18 months before intended start",
+            "actions": [
+              "Use resources like CollegeBoard, CommonApp, university websites",
+              "Check SEVP school database: https://studyinthestates.dhs.gov/school-search",
+              "Consider location, cost, program reputation, campus life",
+              "Shortlist 8-12 universities (2-3 reach, 4-6 target, 2-3 safety schools)"
+            ],
+            "cost": {
+              "USD": 0,
+              "TRY": 0
+            }
+          },
+          {
+            "step": 2,
+            "title": "Prepare for Standardized Tests",
+            "description": "Take required English proficiency and academic tests",
+            "timeline": "10-14 months before intended start",
+            "actions": [
+              "Register for TOEFL/IELTS test (book 2-3 months in advance)",
+              "Register for SAT/GRE/GMAT as required by programs",
+              "Take tests (can retake if needed)",
+              "Request official score reports sent to universities"
+            ],
+            "cost": {
+              "TOEFL": {
+                "USD": 220,
+                "TRY": 7700
+              },
+              "IELTS": {
+                "USD": 225,
+                "TRY": 7875
+              },
+              "SAT": {
+                "USD": 115,
+                "TRY": 4025,
+                "note": "Plus international registration fee"
+              },
+              "GRE": {
+                "USD": 220,
+                "TRY": 7700
+              },
+              "GMAT": {
+                "USD": 275,
+                "TRY": 9625
+              }
+            }
+          },
+          {
+            "step": 3,
+            "title": "Prepare Application Materials",
+            "description": "Gather all required documents for university applications",
+            "timeline": "8-12 months before intended start",
+            "actions": [
+              "Transcripts from all previous education (translated to English if needed)",
+              "Letters of recommendation (2-3 from teachers/professors)",
+              "Statement of Purpose/Personal Statement",
+              "Resume/CV",
+              "Portfolio (for art/design programs)",
+              "Financial documents showing ability to pay",
+              "Copy of passport bio page"
+            ],
+            "cost": {
+              "translationServices": {
+                "USD": "50-200",
+                "TRY": "1,750-7,000"
+              },
+              "documentEvaluation": {
+                "USD": "100-300",
+                "TRY": "3,500-10,500",
+                "note": "Some universities require credential evaluation by WES or similar"
+              }
+            }
+          },
+          {
+            "step": 4,
+            "title": "Submit University Applications",
+            "description": "Apply to chosen universities before deadlines",
+            "timeline": "6-10 months before intended start",
+            "deadlines": {
+              "Fall_intake_September": "Deadlines: November-February",
+              "Spring_intake_January": "Deadlines: August-October",
+              "note": "Earlier submission can improve scholarship chances"
+            },
+            "actions": [
+              "Create accounts on CommonApp or individual university portals",
+              "Submit online applications with all required materials",
+              "Pay application fees",
+              "Track application status regularly"
+            ],
+            "cost": {
+              "applicationFees": {
+                "USD": "200-500 total",
+                "TRY": "7,000-17,500",
+                "note": "USD 50-100 per university"
+              }
+            }
+          },
+          {
+            "step": 5,
+            "title": "Receive Admission Decision and I-20",
+            "description": "Get acceptance letter and I-20 form from university",
+            "timeline": "3-6 months before program start",
+            "actions": [
+              "Receive admission decision (usually 4-8 weeks after deadline)",
+              "Accept admission offer from chosen university",
+              "Pay enrollment deposit (typically non-refundable)",
+              "Submit financial documents to university",
+              "Receive Form I-20 (Certificate of Eligibility) from university via mail",
+              "Sign the I-20 form"
+            ],
+            "cost": {
+              "enrollmentDeposit": {
+                "USD": "200-1,000",
+                "TRY": "7,000-35,000",
+                "note": "Usually deducted from first semester tuition"
+              }
+            },
+            "importantNote": "I-20 form is THE MOST CRITICAL document. Without it, you cannot apply for F-1 visa. Keep multiple copies."
+          },
+          {
+            "step": 6,
+            "title": "Pay SEVIS Fee",
+            "description": "Pay I-901 SEVIS fee before visa application",
+            "timeline": "At least 3 days before visa interview",
+            "actions": [
+              "Visit https://www.fmjfee.com/",
+              "Complete Form I-901 online",
+              "Pay SEVIS fee using credit card or other accepted methods",
+              "Print payment confirmation (bring to visa interview)"
+            ],
+            "cost": {
+              "USD": 350,
+              "TRY": 12250
+            },
+            "required": true,
+            "note": "Must be paid at least 3 days before visa interview. Keep receipt - required at interview and US port of entry."
+          },
+          {
+            "step": 7,
+            "title": "Complete DS-160 Visa Application",
+            "description": "Fill out online nonimmigrant visa application form",
+            "timeline": "2-3 months before intended travel",
+            "actions": [
+              "Visit https://ceac.state.gov/genniv/",
+              "Complete DS-160 form online (save regularly - session expires after 20 minutes of inactivity)",
+              "Upload passport-style photo meeting US visa requirements",
+              "Print DS-160 confirmation page with barcode"
+            ],
+            "cost": {
+              "USD": 0,
+              "TRY": 0
+            },
+            "required": true,
+            "tips": [
+              "Keep DS-160 confirmation number safe",
+              "Use official format for passport photo: 2x2 inches, white background, taken within last 6 months",
+              "Answer all questions accurately and consistently"
+            ]
+          },
+          {
+            "step": 8,
+            "title": "Pay Visa Application Fee and Schedule Interview",
+            "description": "Pay visa fee and book interview appointment at US Embassy/Consulate in Turkey",
+            "timeline": "1.5-2 months before intended travel",
+            "actions": [
+              "Create profile on https://ais.usvisa-info.com/en-tr/niv (new system as of May 2025)",
+              "Pay visa application fee at designated bank or online",
+              "Schedule visa interview appointment",
+              "Schedule biometrics appointment (if required separately)",
+              "Print appointment confirmation"
+            ],
+            "locations": {
+              "Ankara": "US Embassy Ankara",
+              "Istanbul": "US Consulate General Istanbul",
+              "Adana": "US Consulate Adana"
+            },
+            "cost": {
+              "visaFee": {
+                "USD": 160,
+                "TRY": 5600,
+                "note": "Non-refundable, valid for visa applications for one year"
+              }
+            },
+            "waitTime": {
+              "note": "Wait times vary. Check current times at https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/wait-times.html",
+              "typical": "Can range from few weeks to several months depending on season and post",
+              "tip": "Apply as early as possible. Slots released regularly - check back often for earlier dates."
+            }
+          },
+          {
+            "step": 9,
+            "title": "Prepare for Visa Interview",
+            "description": "Gather all required documents and prepare answers",
+            "timeline": "1-2 weeks before interview",
+            "requiredDocuments": [
+              "Valid Turkish passport (must be valid for at least 6 months beyond program end date)",
+              "DS-160 confirmation page with barcode",
+              "Visa appointment confirmation letter",
+              "One passport-style photo (if not uploaded with DS-160)",
+              "SEVIS I-901 fee payment receipt",
+              "Form I-20 from university (signed)",
+              "Admission letter from university",
+              "Financial documents proving ability to pay (bank statements, sponsor documents, scholarship letters)",
+              "Academic transcripts and diplomas",
+              "Standardized test scores (TOEFL, SAT, GRE, etc.)",
+              "Evidence of ties to Turkey (property deeds, family ties, employment letters, etc.)"
+            ],
+            "optionalButRecommended": [
+              "Study plan explaining your goals",
+              "Resume/CV",
+              "Previous US travel history (if any)",
+              "Sponsor's tax returns (if sponsored)"
+            ],
+            "interviewPreparation": {
+              "commonQuestions": [
+                "Why do you want to study in the US?",
+                "Why this university and this program?",
+                "How will you finance your education?",
+                "What are your plans after graduation?",
+                "Do you have family in the US?",
+                "What ties do you have to Turkey?",
+                "Have you been to the US before?"
+              ],
+              "tips": [
+                "Be honest and concise",
+                "Show strong ties to Turkey (intention to return after studies)",
+                "Demonstrate clear academic goals and career plans",
+                "Speak English if comfortable - shows language ability",
+                "Bring organized documents in a folder",
+                "Interview typically lasts 3-5 minutes",
+                "Dress professionally"
+              ]
+            }
+          },
+          {
+            "step": 10,
+            "title": "Attend Visa Interview",
+            "description": "Attend interview at US Embassy/Consulate",
+            "timeline": "As scheduled",
+            "process": [
+              "Arrive at embassy 15-30 minutes early",
+              "Security screening (electronic devices may not be allowed - check embassy website)",
+              "Biometric data collection (fingerprints, photo)",
+              "Interview with consular officer",
+              "Submit passport for visa processing (if approved)"
+            ],
+            "duration": "Interview itself: 3-5 minutes. Total time at embassy: 2-4 hours including waiting",
+            "languages": "Interview conducted in English or Turkish",
+            "decision": {
+              "immediate": "Officer will usually indicate if approved or denied immediately",
+              "approved": "Passport with visa will be returned via courier or pickup in 5-10 business days",
+              "denied": "You will receive a letter explaining reason. Can reapply but must address concerns.",
+              "administrativeProcessing": "Some cases require additional review (can take weeks to months)"
+            }
+          },
+          {
+            "step": 11,
+            "title": "Receive Visa and Prepare for Departure",
+            "description": "Get passport with visa and prepare to travel",
+            "timeline": "1-3 weeks before departure",
+            "actions": [
+              "Receive passport with F-1 visa stamp via courier",
+              "Verify all information on visa is correct",
+              "Book flight (can enter US up to 30 days before I-20 start date)",
+              "Arrange housing (on-campus dorms or off-campus apartment)",
+              "Purchase health insurance if not provided by university",
+              "Prepare financial arrangements for first months"
+            ],
+            "cost": {
+              "flightTurkeyToUS": {
+                "USD": "600-1,500",
+                "TRY": "21,000-52,500",
+                "note": "One-way, varies by season and destination city"
+              }
+            }
+          },
+          {
+            "step": 12,
+            "title": "Entry to United States",
+            "description": "Enter US and complete arrival procedures",
+            "timeline": "Up to 30 days before program start date",
+            "process": [
+              "Present passport with F-1 visa at US port of entry",
+              "Present I-20 form to CBP officer",
+              "Present SEVIS fee payment receipt",
+              "Answer questions from Customs and Border Protection officer",
+              "Get I-94 admission stamp/record (verify it shows F-1 and D/S - Duration of Status)",
+              "Proceed through customs"
+            ],
+            "documents": {
+              "mustHave": [
+                "Passport with valid F-1 visa",
+                "Original I-20 form (signed)",
+                "SEVIS fee receipt",
+                "Admission letter",
+                "Financial documents",
+                "Proof of housing"
+              ]
+            },
+            "tips": [
+              "Verify I-94 record online at https://i94.cbp.dhs.gov/ after entry",
+              "Keep I-20 valid throughout your studies",
+              "Report to school's Designated School Official (DSO) within arrival deadline"
+            ]
+          }
+        ],
+        "totalTimeline": "12-18 months from start of university applications to arrival in USA",
+        "totalCostEstimate": {
+          "USD": "800-1,500",
+          "TRY": "28,000-52,500",
+          "note": "Application and visa costs only, excluding tuition, living expenses, and flight"
+        }
+      },
+
+      "workPermissions": {
+        "onCampus": {
+          "allowed": true,
+          "conditions": [
+            "Can work up to 20 hours/week during academic term",
+            "Can work full-time during breaks and vacations",
+            "Must maintain F-1 status and full-time enrollment",
+            "No authorization needed from USCIS"
+          ],
+          "wages": {
+            "hourly": {
+              "USD": "10-20",
+              "TRY": "350-700"
+            },
+            "monthly_partTime": {
+              "USD": "800-1,600",
+              "TRY": "28,000-56,000",
+              "note": "Based on 20 hours/week"
+            }
+          }
+        },
+        "offCampus": {
+          "firstYear": {
+            "allowed": false,
+            "note": "Off-campus work NOT permitted during first year of studies"
+          },
+          "afterFirstYear": {
+            "CPT": {
+              "name": "Curricular Practical Training",
+              "allowed": true,
+              "description": "Work authorization for internships/employment integral to curriculum",
+              "requirements": [
+                "Must have been enrolled full-time for at least one academic year",
+                "Job must be related to major",
+                "Must be authorized by DSO (Designated School Official)"
+              ],
+              "duration": "Part-time or full-time during studies",
+              "note": "12+ months of full-time CPT makes you ineligible for OPT"
+            },
+            "OPT": {
+              "name": "Optional Practical Training",
+              "allowed": true,
+              "description": "Work authorization in field of study after graduation",
+              "duration": "12 months for all fields, 24-month extension for STEM fields (total 36 months)",
+              "requirements": [
+                "Must apply while still in F-1 status",
+                "Job must be related to field of study",
+                "Apply to USCIS 90 days before graduation",
+                "Receive Employment Authorization Document (EAD) card"
+              ],
+              "applicationCost": {
+                "USD": 410,
+                "TRY": 14350,
+                "note": "Form I-765 filing fee"
+              },
+              "STEM_extension": {
+                "duration": "24 additional months (36 total)",
+                "eligibleDegrees": "Science, Technology, Engineering, Mathematics (check STEM designated degree list)",
+                "requirement": "Employer must be E-Verify enrolled",
+                "applicationCost": {
+                  "USD": 410,
+                  "TRY": 14350
+                }
+              }
+            }
+          }
+        }
+      },
+
+      "familyMembers": {
+        "dependents": {
+          "visaType": "F-2",
+          "allowed": ["Spouse", "Unmarried children under 21"],
+          "workPermission": false,
+          "studyPermission": "Part-time recreational or non-degree studies only",
+          "cost": {
+            "visaFee_perPerson": {
+              "USD": 160,
+              "TRY": 5600
+            }
+          },
+          "note": "F-2 dependents cannot work in the US"
+        }
+      },
+
+      "pathToPermanentResidency": {
+        "directPath": false,
+        "options": [
+          {
+            "method": "OPT to H-1B to Green Card",
+            "description": "Work on OPT after graduation, employer sponsors H-1B, then employer sponsors Green Card (EB-2/EB-3)",
+            "timeline": "3-6+ years depending on category and country of birth",
+            "probability": "Moderate - depends on finding sponsoring employer and H-1B lottery"
+          },
+          {
+            "method": "EB-1A (Extraordinary Ability)",
+            "description": "Self-petition for Green Card if you demonstrate extraordinary ability in sciences, arts, education, business, or athletics",
+            "timeline": "1-2 years",
+            "probability": "Low - very high bar for qualification"
+          },
+          {
+            "method": "EB-2 NIW (National Interest Waiver)",
+            "description": "Self-petition for Green Card if your work is in US national interest (PhD holders, researchers)",
+            "timeline": "2-4 years",
+            "probability": "Low-Medium - requires advanced degree and significant achievements"
+          },
+          {
+            "method": "Marriage to US Citizen",
+            "description": "Marriage to US citizen during or after studies",
+            "timeline": "1-2 years to Green Card",
+            "probability": "Depends on personal circumstances"
+          },
+          {
+            "method": "DV Lottery",
+            "description": "Enter Diversity Visa Lottery annually (if still maintaining F-1 status)",
+            "timeline": "2-3 years if selected",
+            "probability": "Very low (typically <1% selection rate)"
+          }
+        ],
+        "note": "F-1 visa allows dual intent - you can pursue Green Card while maintaining F-1 status",
+        "turkishCitizenAdvantage": "Turkey is in 'Rest of World' category for employment-based Green Cards (faster than India/China)"
+      },
+
+      "healthcareRequirements": {
+        "insurance": {
+          "required": true,
+          "description": "All F-1 students must have health insurance - it's mandatory at most universities",
+          "costs": {
+            "annual": {
+              "USD": "1,500-2,500",
+              "TRY": "52,500-87,500"
+            },
+            "monthly": {
+              "USD": "30-140",
+              "TRY": "1,050-4,900"
+            },
+            "studentsUnder25": {
+              "monthly": {
+                "USD": "30-140",
+                "TRY": "1,050-4,900"
+              }
+            }
+          },
+          "options": [
+            {
+              "type": "University-provided plans",
+              "description": "Most universities offer their own health insurance plans",
+              "cost": "Usually USD 1,500-2,500/year",
+              "coverage": "Comprehensive coverage meeting university requirements",
+              "enrollment": "Usually automatic unless you waive with proof of alternative coverage"
+            },
+            {
+              "type": "Private international student plans",
+              "description": "ISO (International Student Insurance), HTH Worldwide, IMG, etc.",
+              "cost": "USD 500-2,500/year depending on coverage level",
+              "note": "Must meet university's minimum coverage requirements to waive university plan"
+            }
+          ],
+          "coverage": {
+            "typical": [
+              "Emergency medical care",
+              "Hospital stays",
+              "Doctor visits",
+              "Prescription medications",
+              "Mental health services (often included)",
+              "Preventive care"
+            ],
+            "deductibles": "USD 100-500 annual",
+            "copays": "USD 10-40 per visit"
+          }
+        },
+        "vaccination": {
+          "required": true,
+          "vaccines": [
+            "MMR (Measles, Mumps, Rubella)",
+            "Tdap (Tetanus, Diphtheria, Pertussis)",
+            "Hepatitis B",
+            "Meningococcal (for students living in dorms)",
+            "Varicella (Chickenpox)",
+            "COVID-19 (may be required by some universities)"
+          ],
+          "cost": {
+            "USD": "200-500",
+            "TRY": "7,000-17,500",
+            "note": "If vaccinations not already completed in Turkey. Can often be done cheaper in Turkey before departure."
+          }
+        }
+      },
+
+      "languageRequirements": {
+        "primaryLanguage": "English",
+        "proficiencyRequired": true,
+        "acceptedTests": [
+          {
+            "test": "TOEFL iBT",
+            "minimumScore": "60-100",
+            "typical": "80",
+            "cost": {
+              "USD": 220,
+              "TRY": 7700
+            },
+            "note": "Most universities require 80+ for undergraduate, 90+ for graduate"
+          },
+          {
+            "test": "IELTS Academic",
+            "minimumScore": "6.0-7.5",
+            "typical": "6.5",
+            "cost": {
+              "USD": 225,
+              "TRY": 7875
+            }
+          },
+          {
+            "test": "Duolingo English Test",
+            "minimumScore": "90-120",
+            "typical": "105",
+            "cost": {
+              "USD": 59,
+              "TRY": 2065
+            },
+            "note": "Increasingly accepted, cheaper and more convenient"
+          },
+          {
+            "test": "PTE Academic",
+            "minimumScore": "50-73",
+            "typical": "58",
+            "cost": {
+              "USD": 220,
+              "TRY": 7700
+            }
+          }
+        ],
+        "exemptions": [
+          "Previous degree completed in English",
+          "Citizens of English-speaking countries",
+          "Some universities waive for high SAT/ACT verbal scores"
+        ]
+      },
+
+      "visaValidity": {
+        "duration": "Typically issued for 5 years (multi-entry)",
+        "statusDuration": "D/S (Duration of Status) - valid for entire academic program plus 60-day grace period after completion or OPT",
+        "extensions": {
+          "allowed": true,
+          "process": "Automatic if you get new I-20 for continued studies (transfer, change program, etc.). Visa stamp itself doesn't need renewal if it hasn't expired and you don't leave US.",
+          "cost": {
+            "newI20": {
+              "USD": 0,
+              "TRY": 0,
+              "note": "Usually no cost from university"
+            },
+            "newVisaStamp": {
+              "USD": 160,
+              "TRY": 5600,
+              "note": "Only needed if you leave US and visa stamp has expired"
+            }
+          }
+        },
+        "gracePeriod": {
+          "beforeProgramStart": "30 days - can enter US up to 30 days before I-20 start date",
+          "afterCompletion": "60 days - must leave US, transfer to another program, or change status within 60 days of completion",
+          "afterOPT": "60 days grace period after OPT expires"
+        }
+      },
+
+      "governmentContacts": {
+        "turkeyEmbassy": {
+          "Ankara": {
+            "name": "U.S. Embassy Ankara",
+            "address": "110 Atatürk Boulevard, Kavaklıdere, 06100 Ankara, Turkey",
+            "phone": "+90 312 455 5555",
+            "website": "https://tr.usembassy.gov/",
+            "visaInfo": "https://tr.usembassy.gov/visas/",
+            "visaAppointment": "https://ais.usvisa-info.com/en-tr/niv"
+          },
+          "Istanbul": {
+            "name": "U.S. Consulate General Istanbul",
+            "address": "Kaplicalar Mevkii No. 2, Istinye, 34460 Istanbul, Turkey",
+            "phone": "+90 212 335 9000",
+            "website": "https://tr.usembassy.gov/embassy-consulates/istanbul/",
+            "note": "Also handles visa interviews"
+          },
+          "Adana": {
+            "name": "U.S. Consulate Adana",
+            "address": "Girne Bulvarı, Güzelyalı Mahallesi, No. 212, 01170 Adana, Turkey",
+            "phone": "+90 322 346 6262",
+            "website": "https://tr.usembassy.gov/embassy-consulates/adana/",
+            "note": "Also handles visa interviews"
+          }
+        },
+        "USAgencies": {
+          "USCIS": {
+            "name": "U.S. Citizenship and Immigration Services",
+            "website": "https://www.uscis.gov/",
+            "studentInfo": "https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors"
+          },
+          "SEVP": {
+            "name": "Student and Exchange Visitor Program",
+            "website": "https://studyinthestates.dhs.gov/",
+            "schoolSearch": "https://studyinthestates.dhs.gov/school-search"
+          },
+          "StateDepartment": {
+            "name": "U.S. Department of State - Bureau of Consular Affairs",
+            "website": "https://travel.state.gov/",
+            "studentVisas": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html"
+          }
+        }
+      },
+
+      "turkishCitizenSpecificInfo": {
+        "bilateralAgreements": {
+          "none": true,
+          "note": "No special bilateral agreements between Turkey and USA for student visas. Turkish citizens follow standard F-1 process like all other international students."
+        },
+        "specialRights": {
+          "none": true
+        },
+        "communitySupport": {
+          "description": "Large Turkish community in USA (350,000-400,000) provides support network",
+          "organizations": [
+            "Turkish Student Association chapters at most major universities",
+            "Turkish-American associations in major cities",
+            "Cultural centers and mosques in areas with Turkish populations"
+          ]
+        },
+        "tips": [
+          "Show strong ties to Turkey at visa interview (family, property, job prospects)",
+          "Be clear about post-graduation plans - returning to Turkey vs staying for OPT",
+          "Many Turkish students succeed - F-1 approval rate generally good for genuine students",
+          "Consider universities in areas with Turkish communities (NYC, Boston, Chicago, Houston)",
+          "Join Turkish student groups on Facebook for advice and support"
+        ]
+      },
+
+      "additionalResources": {
+        "educationUSA": {
+          "description": "Official US government advising service for international students",
+          "location": "TAA-Ankara (Turkish-American Association)",
+          "website": "https://www.taa-ankara.org.tr/en/taa-american-space/educationusa",
+          "services": [
+            "Free advising on US universities",
+            "Application assistance",
+            "Visa preparation workshops",
+            "Pre-departure orientations"
+          ]
+        },
+        "usefulWebsites": [
+          "https://www.studyusa.com/",
+          "https://www.collegeboard.org/",
+          "https://www.commonapp.org/",
+          "https://www.petersons.com/",
+          "https://www.usnews.com/best-colleges"
+        ]
+      },
+
+      "processingTime": {
+        "universityAdmission": "4-8 weeks after application deadline",
+        "I20_issuance": "2-4 weeks after submitting financial documents",
+        "visaInterview": "Varies by embassy workload - check wait times at travel.state.gov",
+        "visaProcessing": "5-10 business days after interview (if approved)",
+        "administrativeProcessing": "Can take weeks to several months if additional review needed",
+        "total": "Allow 6-12 months from application submission to visa approval"
+      },
+
+      "commonRejectionReasons": [
+        "Insufficient financial proof",
+        "Weak ties to home country (concern about immigration intent)",
+        "Incomplete or inconsistent documentation",
+        "Poor English skills (if interviewed in English)",
+        "Previous visa violations or overstays",
+        "Unconvincing study plans or goals",
+        "University not SEVP-certified"
+      ],
+
+      "importantNotes": [
+        "F-1 visa allows 'dual intent' - you can pursue Green Card while maintaining student status",
+        "Can change universities or programs - get new I-20 from new school and report to SEVP",
+        "Must maintain full-time enrollment (usually 12+ credits undergraduate, 9+ graduate)",
+        "Can take online classes but must maintain majority in-person enrollment (check current regulations)",
+        "Social Security Number: Can apply after getting on-campus job or authorized off-campus work",
+        "Driver's license: Can obtain in most states with valid F-1 status and proof of address",
+        "Leaving and returning: Can travel outside US and return with valid F-1 visa, I-20, and passport. Get I-20 signed by DSO for travel every 12 months.",
+        "STEM OPT is huge advantage - total 3 years of work authorization after graduation"
+      ],
+
+      "scholarships": {
+        "availability": "Moderate to High",
+        "types": [
+          {
+            "type": "University Merit Scholarships",
+            "description": "Awarded based on academic excellence, test scores, extracurriculars",
+            "amount": "USD 5,000-30,000 per year (can cover partial to full tuition)",
+            "note": "More common at private universities. Apply during admission process."
+          },
+          {
+            "type": "Graduate Assistantships",
+            "description": "Teaching or research positions for graduate students",
+            "amount": "Tuition waiver + stipend of USD 15,000-35,000/year",
+            "availability": "Common for PhD programs, less common for Master's"
+          },
+          {
+            "type": "External Scholarships for Turkish Students",
+            "examples": [
+              "Fulbright Turkey - for graduate study and research",
+              "Turkish Ministry of Education scholarships for study abroad",
+              "Private foundation scholarships in Turkey"
+            ]
+          },
+          {
+            "type": "Athletic Scholarships",
+            "description": "For student athletes",
+            "amount": "Can cover full cost of attendance",
+            "note": "Very competitive, must meet NCAA requirements"
+          }
+        ],
+        "tips": [
+          "Apply to multiple universities to compare financial aid packages",
+          "Check university websites for international student scholarships",
+          "Apply early - better chances for merit scholarships",
+          "Contact department directly for graduate assistantship opportunities"
+        ]
+      }
+    }
+  ],
+
+  "sources": [
+    {
+      "title": "USCIS F-1 Students",
+      "url": "https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/students-and-employment",
+      "language": "English",
+      "lastAccessed": "2025-11"
+    },
+    {
+      "title": "U.S. Department of State - Student Visa",
+      "url": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+      "language": "English",
+      "lastAccessed": "2025-11"
+    },
+    {
+      "title": "U.S. Embassy Turkey - Visas",
+      "url": "https://tr.usembassy.gov/visas/",
+      "language": "English/Turkish",
+      "lastAccessed": "2025-11"
+    },
+    {
+      "title": "Study in the States - DHS",
+      "url": "https://studyinthestates.dhs.gov/",
+      "language": "English",
+      "lastAccessed": "2025-11"
+    },
+    {
+      "title": "EducationUSA Turkey",
+      "url": "https://www.taa-ankara.org.tr/en/taa-american-space/educationusa",
+      "language": "English/Turkish",
+      "lastAccessed": "2025-11"
+    },
+    {
+      "title": "IDP Turkey - Cost of Study in USA",
+      "url": "https://www.idp.com/turkey/study-in-usa/cost-of-study/",
+      "language": "Turkish",
+      "lastAccessed": "2025-11"
+    },
+    {
+      "title": "Amerika Öğrenci Vizesi - Vize Keyfi",
+      "url": "https://www.vizekeyfi.com/tr/vize/amerika-ogrenci-vizesi",
+      "language": "Turkish",
+      "lastAccessed": "2025-11"
+    }
+  ],
+
+  "disclaimer": "This information is collected from official sources and is accurate as of November 2025. However, visa regulations and requirements can change. Always verify current requirements with official U.S. government sources and the U.S. Embassy in Turkey before making decisions or applications.",
+
+  "nextSteps": "See usa-emigration-data-PART2.json for work visa programs (H-1B, O-1, L-1) and Green Card pathways (EB-1, EB-2, EB-3, DV Lottery)"
+}

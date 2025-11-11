@@ -1,0 +1,1141 @@
+{
+  "country": "United States of America",
+  "countryCode": "USA",
+  "partNumber": 2,
+  "partTitle": "Work Visas and Green Card Pathways",
+  "targetAudience": "Turkish Citizens",
+  "dataCollectionDate": "2025-11",
+
+  "exchangeRate": {
+    "USD_to_TRY": 35,
+    "note": "1 USD = 35 TRY (approximate rate for reference)"
+  },
+
+  "workVisaPrograms": [
+    {
+      "visaType": "Specialty Occupation Work Visa",
+      "visaCode": "US_H1B",
+      "officialName": "H-1B Specialty Occupations Visa",
+      "description": "Temporary work visa for foreign nationals in specialty occupations requiring theoretical or technical expertise. Most common visa for professional employment in USA.",
+      "category": "Work",
+      "subcategory": "Specialty Occupation",
+
+      "2025_CRITICAL_UPDATE": {
+        "newPetitionFee": {
+          "amount": {
+            "USD": 100000,
+            "TRY": 3500000
+          },
+          "effectiveDate": "September 21, 2025 12:01 AM EDT",
+          "appliesTo": "New H-1B petitions filed on or after effective date",
+          "exemptions": [
+            "H-1B renewals/extensions",
+            "Cases where DHS Secretary determines hiring is in US national interest",
+            "Industry-wide or company-wide exemptions granted by Secretary"
+          ],
+          "WARNING": "This is a MAJOR CHANGE. $100,000 fee makes H-1B economically unfeasible for many petitions.",
+          "note": "Presidential Proclamation issued September 19, 2025. This fee is IN ADDITION to regular filing fees."
+        }
+      },
+
+      "eligibilityCriteria": {
+        "education": {
+          "minimum": "Bachelor's degree or equivalent",
+          "acceptable": [
+            "U.S. bachelor's degree or higher",
+            "Foreign degree equivalent to U.S. bachelor's",
+            "Combination of education and experience (3 years work experience = 1 year university)"
+          ],
+          "note": "Degree must be in specific specialty related to the job"
+        },
+        "jobRequirements": {
+          "specialty": "Position must require theoretical or technical expertise in specialized field",
+          "commonOccupations": [
+            "Computer Programmers/Software Engineers",
+            "Engineers (all types)",
+            "Accountants",
+            "Doctors/Healthcare professionals",
+            "College professors",
+            "Architects",
+            "Scientists/Researchers",
+            "Financial analysts"
+          ]
+        },
+        "salaryRequirement": {
+          "DOL_minimum": {
+            "USD": 60000,
+            "TRY": 2100000,
+            "note": "Department of Labor minimum, but real minimum is usually much higher"
+          },
+          "actualRequirement": "Must be paid prevailing wage OR employer's actual wage, whichever is HIGHER",
+          "prevailingWage": {
+            "description": "Salary paid to workers in similar occupations in same geographic area",
+            "determination": "Employer must obtain prevailing wage determination from DOL",
+            "levels": {
+              "Level_I": "Entry level - 17th percentile",
+              "Level_II": "Qualified - 34th percentile",
+              "Level_III": "Experienced - 50th percentile",
+              "Level_IV": "Fully competent - 67th percentile"
+            }
+          },
+          "exampleSalaries": {
+            "softwareEngineer_SanFrancisco": {
+              "USD": "120,000-180,000",
+              "TRY": "4,200,000-6,300,000"
+            },
+            "softwareEngineer_Austin": {
+              "USD": "90,000-140,000",
+              "TRY": "3,150,000-4,900,000"
+            }
+          }
+        }
+      },
+
+      "annualCap": {
+        "total": 85000,
+        "breakdown": {
+          "regular": 65000,
+          "advancedDegree": 20000
+        },
+        "lottery": {
+          "required": true,
+          "registrationPeriod": "Usually March (3 weeks)",
+          "registrationFee": {
+            "USD": 10,
+            "TRY": 350,
+            "note": "Per registration, non-refundable"
+          },
+          "selectionMethod": "Random electronic lottery - weighted by salary level (higher salaries prioritized)",
+          "results": "Usually announced in late March/early April",
+          "probability": "Varies yearly - typically 25-40% selection rate depending on applications"
+        },
+        "capExemptions": [
+          "Current H-1B holders changing employers",
+          "H-1B renewals/extensions",
+          "Employment at universities and affiliated nonprofits",
+          "Employment at nonprofit research organizations",
+          "Employment at government research organizations"
+        ]
+      },
+
+      "applicationProcess": {
+        "employerSponsored": true,
+        "selfPetition": false,
+        "steps": [
+          {
+            "step": 1,
+            "title": "Find Employer Willing to Sponsor",
+            "description": "Secure job offer from US employer willing to sponsor H-1B",
+            "timeline": "Varies - months to years",
+            "actions": [
+              "Apply to US companies that sponsor H-1B visas",
+              "Disclose need for H-1B sponsorship early in interview process",
+              "Highlight specialized skills and qualifications",
+              "Consider companies known for H-1B sponsorship (tech companies, consulting firms)"
+            ],
+            "challenges": [
+              "Many employers reluctant due to cost and uncertainty",
+              "Competition from US workers",
+              "Lottery uncertainty",
+              "NEW: $100,000 fee makes sponsorship unlikely for most employers"
+            ]
+          },
+          {
+            "step": 2,
+            "title": "Labor Condition Application (LCA)",
+            "description": "Employer files LCA with Department of Labor",
+            "timeline": "7-10 days for approval",
+            "requirements": [
+              "Employer attests to pay prevailing wage",
+              "Attest working conditions won't adversely affect US workers",
+              "Provide notice to existing employees",
+              "Maintain public access file"
+            ],
+            "cost": {
+              "USD": 0,
+              "TRY": 0,
+              "note": "No government fee for LCA"
+            }
+          },
+          {
+            "step": 3,
+            "title": "H-1B Registration (if cap-subject)",
+            "description": "Employer or attorney registers for H-1B lottery",
+            "timeline": "Usually March (exact dates announced by USCIS)",
+            "period": "3-week registration window",
+            "cost": {
+              "registrationFee": {
+                "USD": 10,
+                "TRY": 350
+              }
+            },
+            "note": "Must wait for selection before filing full petition. If not selected, cannot file until next year."
+          },
+          {
+            "step": 4,
+            "title": "H-1B Petition Filing (Form I-129)",
+            "description": "Employer files H-1B petition with USCIS (only if selected in lottery or cap-exempt)",
+            "timeline": "April 1st onwards (for October 1st start date)",
+            "requiredDocuments": [
+              "Form I-129 (Petition for Nonimmigrant Worker)",
+              "Approved LCA from DOL",
+              "Educational credentials and evaluations",
+              "Resume/CV of beneficiary",
+              "Job offer letter",
+              "Evidence employer can pay offered wage",
+              "Company financial documents"
+            ],
+            "fees": {
+              "baseFiling": {
+                "USD": 460,
+                "TRY": 16100
+              },
+              "fraudFee": {
+                "USD": 500,
+                "TRY": 17500,
+                "note": "For employers with 25+ employees"
+              },
+              "ACWIA_fee": {
+                "smallEmployer": {
+                  "USD": 750,
+                  "TRY": 26250,
+                  "condition": "Fewer than 25 full-time employees"
+                },
+                "largeEmployer": {
+                  "USD": 1500,
+                  "TRY": 52500,
+                  "condition": "25 or more full-time employees"
+                }
+              },
+              "publicLaw114_113": {
+                "USD": 4000,
+                "TRY": 140000,
+                "condition": "If employer has 50+ employees and 50%+ are H-1B/L-1 holders"
+              },
+              "premiumProcessing_optional": {
+                "USD": 2500,
+                "TRY": 87500,
+                "benefit": "15-day processing instead of 2-6 months"
+              },
+              "NEW_2025_petitionFee": {
+                "USD": 100000,
+                "TRY": 3500000,
+                "note": "APPLIES TO NEW PETITIONS FILED AFTER SEPT 21, 2025",
+                "warning": "This makes H-1B prohibitively expensive for most cases"
+              }
+            },
+            "totalCostEstimate": {
+              "withoutNewFee": {
+                "minimum": {
+                  "USD": "1,710-6,460",
+                  "TRY": "59,850-226,100"
+                },
+                "withPremium": {
+                  "USD": "4,210-8,960",
+                  "TRY": "147,350-313,600"
+                }
+              },
+              "withNewFee": {
+                "USD": "101,710-106,460",
+                "TRY": "3,559,850-3,726,100",
+                "note": "For petitions filed after September 21, 2025"
+              }
+            }
+          },
+          {
+            "step": 5,
+            "title": "USCIS Petition Processing",
+            "description": "USCIS reviews and adjudicates petition",
+            "timeline": {
+              "regular": "2-6 months",
+              "premium": "15 calendar days"
+            },
+            "possibleOutcomes": [
+              "Approved",
+              "Request for Evidence (RFE) - additional documentation needed",
+              "Denied"
+            ]
+          },
+          {
+            "step": 6,
+            "title": "Visa Stamping (if outside US)",
+            "description": "If beneficiary is outside US, must obtain H-1B visa stamp at US Embassy/Consulate",
+            "location": "US Embassy Ankara or US Consulate Istanbul/Adana for Turkish citizens",
+            "requiredDocuments": [
+              "Valid passport",
+              "Form I-797 (Approval Notice)",
+              "DS-160 confirmation",
+              "Visa application fee receipt",
+              "Petition supporting documents"
+            ],
+            "cost": {
+              "visaFee": {
+                "USD": 190,
+                "TRY": 6650
+              }
+            },
+            "timeline": "1-3 weeks after interview (if approved)"
+          },
+          {
+            "step": 7,
+            "title": "Entry to United States",
+            "description": "Enter US with H-1B visa and begin employment",
+            "earliestStartDate": "October 1st (for cap-subject petitions approved in current year)",
+            "note": "Can change employers with new H-1B petition while in US"
+          }
+        ],
+        "totalTimeline": {
+          "fromJobOffer": "6-12 months minimum (including lottery wait)",
+          "fromLotterySelection": "6-9 months to start work"
+        }
+      },
+
+      "duration": {
+        "initial": "3 years",
+        "extension": "Additional 3 years (total 6 years maximum)",
+        "beyondSixYears": {
+          "allowed": true,
+          "conditions": [
+            "If employer has started Green Card process (I-140 approved or PERM filed 365+ days ago)",
+            "Can extend in 1-3 year increments while waiting for Green Card"
+          ]
+        }
+      },
+
+      "familyMembers": {
+        "dependents": {
+          "visaType": "H-4",
+          "allowed": ["Spouse", "Unmarried children under 21"],
+          "workPermission": {
+            "allowed": "Limited",
+            "conditions": [
+              "H-1B holder has approved I-140 (immigrant petition)",
+              "OR H-1B holder is in 6+ year H-1B extension status"
+            ],
+            "note": "H-4 EAD (Employment Authorization Document) allows spouse to work"
+          },
+          "studyPermission": true
+        }
+      },
+
+      "pathToGreenCard": {
+        "common": true,
+        "process": "Employer sponsors for EB-2 or EB-3 employment-based Green Card",
+        "timeline": "2-6 years depending on category and country",
+        "advantage": "H-1B allows dual intent - can pursue Green Card while maintaining H-1B status",
+        "note": "See Green Card section below for details"
+      },
+
+      "turkishCitizenNotes": {
+        "greenCardPriority": "Turkey is in 'Rest of World' category - faster than India/China (can be years faster)",
+        "communitySupport": "Large Turkish professional community in tech hubs can help with job search",
+        "challenges": [
+          "NEW $100,000 fee makes H-1B sponsorship very unlikely from September 2025",
+          "Lottery is unpredictable - no guarantee of selection",
+          "Most practical path: F-1 student visa → OPT → H-1B lottery → Green Card",
+          "Alternative: Transfer within multinational company using L-1 visa (see below)"
+        ]
+      },
+
+      "alternatives": [
+        "F-1 student visa with OPT/STEM OPT (3 years work authorization) then H-1B",
+        "L-1 visa (intracompany transfer) - no lottery, no cap",
+        "O-1 visa (extraordinary ability) - no lottery, no cap",
+        "EB-1 Green Card (direct permanent residence if highly qualified)"
+      ],
+
+      "importantWarnings": [
+        "CRITICAL: $100,000 petition fee effective Sept 21, 2025 makes H-1B economically unfeasible for most employers",
+        "H-1B is employer-specific - if you lose job, must find new sponsor quickly or leave US",
+        "Lottery is random - many qualified candidates never get selected",
+        "Processing times can be very long without premium processing",
+        "Cannot start work until October 1st (cap-subject cases)",
+        "H-1B denial rate has increased in recent years"
+      ]
+    },
+
+    {
+      "visaType": "Intracompany Transfer",
+      "visaCode": "US_L1",
+      "officialName": "L-1 Intracompany Transfer Visa",
+      "description": "For employees of multinational companies transferring to US office. Includes executives, managers, and specialized knowledge workers.",
+      "category": "Work",
+      "subcategory": "Intracompany Transfer",
+
+      "advantages": {
+        "NO_lottery": true,
+        "NO_cap": true,
+        "NO_newPetitionFee": true,
+        "dualIntent": true,
+        "note": "Major advantage over H-1B - no annual quota or lottery"
+      },
+
+      "categories": {
+        "L1A": {
+          "name": "L-1A Managers and Executives",
+          "for": "Executives and managers",
+          "duration": {
+            "initial": "3 years (1 year if opening new US office)",
+            "maximum": "7 years total"
+          }
+        },
+        "L1B": {
+          "name": "L-1B Specialized Knowledge",
+          "for": "Workers with specialized knowledge of company's products, services, or procedures",
+          "duration": {
+            "initial": "3 years",
+            "maximum": "5 years total"
+          },
+          "note": "USCIS applies strict standards - must demonstrate truly specialized knowledge"
+        }
+      },
+
+      "eligibilityCriteria": {
+        "employmentHistory": {
+          "required": "Must have worked for foreign company for at least 1 continuous year in the last 3 years",
+          "position": "In managerial, executive, or specialized knowledge capacity",
+          "note": "Employment must be outside the US"
+        },
+        "companyRelationship": {
+          "required": "US company must be parent, subsidiary, affiliate, or branch of foreign company",
+          "ownership": "At least 50% common ownership and/or control",
+          "examples": [
+            "Turkish company opening US subsidiary",
+            "Turkish employee of multinational transferring to US branch",
+            "Turkish startup establishing US presence and sending founders"
+          ]
+        },
+        "positionRequirements": {
+          "L1A": {
+            "executive": "Directs organization or major component, establishes goals and policies",
+            "manager": "Manages organization/department/subdivision, supervises professional employees"
+          },
+          "L1B": {
+            "specializedKnowledge": "Knowledge of company's product, service, research, systems, techniques, management, or procedures that is advanced and not readily available in US labor market"
+          }
+        },
+        "noEducationRequirement": {
+          "note": "Unlike H-1B, L-1 does NOT require bachelor's degree"
+        }
+      },
+
+      "applicationProcess": {
+        "employerSponsored": true,
+        "steps": [
+          {
+            "step": 1,
+            "title": "Establish Qualifying Relationship",
+            "description": "Ensure US and foreign companies have proper corporate relationship",
+            "requirements": [
+              "Corporate documents showing relationship",
+              "Ownership structure",
+              "US company must be actively doing business"
+            ]
+          },
+          {
+            "step": 2,
+            "title": "File L-1 Petition (Form I-129)",
+            "description": "US employer files petition with USCIS",
+            "requiredDocuments": [
+              "Form I-129 with L supplement",
+              "Evidence of qualifying relationship between companies",
+              "Proof of beneficiary's employment abroad (1 year in last 3 years)",
+              "Job description and organizational chart",
+              "Evidence of executive/managerial/specialized knowledge role",
+              "Business operations evidence for both companies"
+            ],
+            "fees": {
+              "baseFiling": {
+                "USD": 460,
+                "TRY": 16100
+              },
+              "fraudFee": {
+                "USD": 500,
+                "TRY": 17500
+              },
+              "publicLaw114_113": {
+                "USD": 4000,
+                "TRY": 140000,
+                "condition": "If employer has 50+ employees and 50%+ are H-1B/L-1 holders"
+              },
+              "premiumProcessing": {
+                "USD": 2500,
+                "TRY": 87500,
+                "processing": "15 calendar days"
+              },
+              "NEW_2025_visaIntegrityFee": {
+                "USD": 250,
+                "TRY": 8750,
+                "note": "Starting FY2025, paid at visa issuance",
+                "effectiveDate": "October 1, 2025"
+              }
+            },
+            "totalCost": {
+              "typical": {
+                "USD": "960-5,460",
+                "TRY": "33,600-191,100"
+              }
+            }
+          },
+          {
+            "step": 3,
+            "title": "USCIS Adjudication",
+            "description": "USCIS reviews petition",
+            "timeline": {
+              "regular": "2-4 months",
+              "premium": "15 calendar days"
+            }
+          },
+          {
+            "step": 4,
+            "title": "Visa Application at US Consulate (if outside US)",
+            "description": "Apply for L-1 visa stamp at US Embassy/Consulate in Turkey",
+            "location": "Ankara, Istanbul, or Adana",
+            "documents": [
+              "Valid passport",
+              "Form I-797 Approval Notice",
+              "DS-160",
+              "Visa photo",
+              "Supporting petition documents"
+            ],
+            "cost": {
+              "visaFee": {
+                "USD": 190,
+                "TRY": 6650
+              },
+              "visaIntegrityFee_2025": {
+                "USD": 250,
+                "TRY": 8750
+              }
+            }
+          }
+        ],
+        "blanketL1": {
+          "available": true,
+          "description": "For larger companies with frequent transfers - significantly faster process",
+          "benefits": [
+            "No individual petition needed",
+            "Apply directly at consulate",
+            "Much faster processing"
+          ],
+          "requirements": {
+            "companySize": "Company must have US office for 1+ year AND meet criteria:",
+            "criteria": [
+              "3+ domestic and foreign branches/affiliates",
+              "AND either:",
+              "- $25 million in annual US sales, OR",
+              "- 1,000+ US employees, OR",
+              "- Obtained approval of 10+ L-1 petitions in past 12 months"
+            ]
+          }
+        }
+      },
+
+      "pathToGreenCard": {
+        "EB1C": {
+          "description": "L-1A managers/executives can apply for EB-1C Green Card",
+          "advantage": "Usually current - no waiting period for Turkish citizens",
+          "timeline": "1-2 years to Green Card",
+          "note": "Very fast path to permanent residence"
+        },
+        "EB2_EB3": {
+          "description": "L-1B workers can pursue EB-2 or EB-3",
+          "timeline": "2-4 years"
+        }
+      },
+
+      "turkishCitizenAdvantages": [
+        "Excellent option for employees of Turkish companies expanding to US",
+        "Good for Turkish startups establishing US presence",
+        "No lottery uncertainty like H-1B",
+        "Fast path to Green Card via EB-1C (for L-1A)",
+        "Can use if working for multinational company in Turkey (transfer to US office)"
+      ]
+    },
+
+    {
+      "visaType": "Extraordinary Ability",
+      "visaCode": "US_O1",
+      "officialName": "O-1 Visa for Individuals with Extraordinary Ability",
+      "description": "For individuals who demonstrate extraordinary ability in sciences, arts, education, business, athletics, or extraordinary achievement in motion picture/TV industry",
+      "category": "Work",
+      "subcategory": "Extraordinary Ability",
+
+      "advantages": {
+        "NO_lottery": true,
+        "NO_cap": true,
+        "NO_newPetitionFee": true,
+        "note": "No annual quota or lottery - if you qualify, you can get it"
+      },
+
+      "categories": {
+        "O1A": "Sciences, Education, Business, or Athletics",
+        "O1B": "Arts, Motion Picture or Television Industry"
+      },
+
+      "eligibilityStandard": {
+        "extraordinaryAbility": "Level of expertise indicating that the person is one of the small percentage who have risen to the very top of the field",
+        "highBar": true,
+        "note": "VERY HIGH STANDARD - must be truly exceptional in your field"
+      },
+
+      "evidenceRequirements": {
+        "option1": {
+          "title": "Major International Award",
+          "examples": ["Nobel Prize", "Olympic Medal", "Oscar", "Grammy"],
+          "note": "Very few people qualify through this route"
+        },
+        "option2": {
+          "title": "At least 3 of the following",
+          "criteria": [
+            "Nationally or internationally recognized prizes or awards for excellence",
+            "Membership in associations requiring outstanding achievements (judged by recognized experts)",
+            "Published material about you in professional/major trade publications or media",
+            "Evidence of participation as a judge of others' work in your field",
+            "Original scientific, scholarly, artistic, athletic, or business-related contributions of major significance",
+            "Authorship of scholarly articles in professional journals or major media",
+            "Employment in a critical or essential capacity for organizations with distinguished reputation",
+            "High salary or remuneration compared to others in field",
+            "Other comparable evidence (if above criteria don't readily apply to your occupation)"
+          ]
+        }
+      },
+
+      "applicationProcess": {
+        "employerSponsored": true,
+        "selfPetition": false,
+        "note": "Must have US agent, employer, or sponsor, but more flexible than H-1B",
+        "steps": [
+          {
+            "step": 1,
+            "title": "Gather Evidence",
+            "description": "Compile extensive documentation of extraordinary ability",
+            "documents": [
+              "Awards and recognition certificates",
+              "Publications about you (news articles, features, interviews)",
+              "Your publications (papers, articles, books)",
+              "Letters of recommendation from recognized experts in field",
+              "Evidence of membership in elite associations",
+              "Evidence of high compensation",
+              "Patents, citations, impact metrics"
+            ],
+            "timeline": "Several months to compile strong package"
+          },
+          {
+            "step": 2,
+            "title": "Obtain Advisory Opinion",
+            "description": "Get consultation from peer group, labor organization, or expert in field",
+            "required": true,
+            "note": "USCIS wants opinion from relevant professional organization"
+          },
+          {
+            "step": 3,
+            "title": "File O-1 Petition",
+            "description": "Employer/agent files Form I-129 with USCIS",
+            "fees": {
+              "baseFiling": {
+                "USD": 460,
+                "TRY": 16100
+              },
+              "premiumProcessing": {
+                "USD": 2500,
+                "TRY": 87500,
+                "timeline": "15 calendar days"
+              }
+            }
+          },
+          {
+            "step": 4,
+            "title": "Visa Application (if outside US)",
+            "description": "Apply for O-1 visa at US Embassy/Consulate",
+            "cost": {
+              "USD": 190,
+              "TRY": 6650
+            }
+          }
+        ],
+        "totalCost": {
+          "USD": "650-3,150",
+          "TRY": "22,750-110,250",
+          "note": "Plus attorney fees (highly recommended) - typically USD 3,000-8,000"
+        }
+      },
+
+      "duration": {
+        "initial": "Up to 3 years",
+        "extensions": "1-year increments, unlimited extensions as long as you maintain extraordinary ability",
+        "note": "More flexible than H-1B"
+      },
+
+      "familyMembers": {
+        "visaType": "O-3",
+        "allowed": ["Spouse", "Children under 21"],
+        "workPermission": false,
+        "studyPermission": true
+      },
+
+      "pathToGreenCard": {
+        "EB1A": {
+          "description": "Can self-petition for EB-1A Green Card (same standard as O-1)",
+          "timeline": "Usually current for Turkish citizens - 1-2 years",
+          "advantage": "NO employer sponsorship needed"
+        },
+        "EB2_NIW": {
+          "description": "National Interest Waiver - for those whose work benefits US",
+          "timeline": "2-3 years"
+        }
+      },
+
+      "examplesOfQualification": [
+        "PhD researchers with significant publications and citations",
+        "Tech entrepreneurs with successful startups",
+        "Professional athletes with national/international achievements",
+        "Artists with major exhibitions or performances",
+        "Business executives with track record of major achievements",
+        "Award-winning scientists, academics, or professionals"
+      ],
+
+      "turkishCitizenNotes": [
+        "Good option for highly accomplished Turkish professionals",
+        "No lottery like H-1B",
+        "Can lead to self-petitioned Green Card (EB-1A)",
+        "High bar - must have significant achievements and recognition",
+        "Often used by researchers, professors, tech leaders, artists"
+      ]
+    }
+  ],
+
+  "greenCardPrograms": [
+    {
+      "programName": "Employment-Based Immigration",
+      "programCode": "EB_CATEGORIES",
+      "description": "Permanent residence (Green Card) through employment",
+      "permanentResidence": true,
+
+      "categories": [
+        {
+          "category": "EB-1",
+          "name": "First Preference - Priority Workers",
+          "subcategories": {
+            "EB1A": {
+              "name": "Extraordinary Ability",
+              "description": "Persons with extraordinary ability in sciences, arts, education, business, or athletics",
+              "selfPetition": true,
+              "employerRequired": false,
+              "requirements": [
+                "Same standard as O-1 visa",
+                "Must demonstrate sustained national or international acclaim",
+                "Major international award OR meet 3 of 10 criteria (same as O-1)"
+              ],
+              "advantage": "NO employer sponsorship needed - can self-petition",
+              "currentPriorityDate": {
+                "status": "CURRENT",
+                "note": "Turkish citizens (Rest of World) - no waiting period as of November 2025"
+              },
+              "timeline": "12-24 months to Green Card"
+            },
+            "EB1B": {
+              "name": "Outstanding Professors and Researchers",
+              "description": "For professors and researchers recognized internationally",
+              "employerRequired": true,
+              "requirements": [
+                "At least 3 years teaching or research experience",
+                "Entering US to pursue tenure/tenure-track teaching or comparable research position",
+                "Meet 2 of 6 criteria (major awards, membership in associations, published material about you, etc.)"
+              ],
+              "currentPriorityDate": {
+                "status": "CURRENT",
+                "note": "No waiting period for Turkish citizens"
+              }
+            },
+            "EB1C": {
+              "name": "Multinational Manager or Executive",
+              "description": "Managers/executives transferring from foreign company to US",
+              "employerRequired": true,
+              "requirements": [
+                "Worked for foreign company 1 of last 3 years in managerial/executive capacity",
+                "Coming to US to work for same employer (or affiliate) in managerial/executive capacity",
+                "Often used by L-1A visa holders"
+              ],
+              "currentPriorityDate": {
+                "status": "CURRENT",
+                "note": "Fastest employment-based Green Card option"
+              },
+              "timeline": "12-24 months",
+              "advantage": "Excellent path for L-1A holders - fast and usually current"
+            }
+          },
+          "overallAdvantage": "EB-1 is CURRENT for Turkish citizens - no multi-year wait",
+          "note": "High qualification bar but fastest path to Green Card if you qualify"
+        },
+
+        {
+          "category": "EB-2",
+          "name": "Second Preference - Advanced Degree or Exceptional Ability",
+          "description": "Professionals with advanced degrees or exceptional ability",
+          "currentPriorityDate": {
+            "RestOfWorld": "December 1, 2023",
+            "Turkey": "Falls under Rest of World",
+            "waitTime": "Approximately 2 years backlog as of November 2025",
+            "note": "Much faster than India (8+ years) or China (3+ years)"
+          },
+
+          "subcategories": {
+            "standardEB2": {
+              "requirements": {
+                "option1": "Advanced degree (Master's or higher) AND job requiring advanced degree",
+                "option2": "Bachelor's degree + 5 years progressive experience in specialty",
+                "option3": "Exceptional ability in sciences, arts, or business (must meet 3 of 6 criteria)"
+              },
+              "process": {
+                "step1": "PERM Labor Certification - employer must prove no qualified US workers available (6-12 months)",
+                "step2": "File I-140 Immigrant Petition (4-8 months)",
+                "step3": "Wait for priority date to become current (2 years for Turkish citizens as of Nov 2025)",
+                "step4": "File I-485 Adjustment of Status or immigrant visa application (8-12 months)"
+              },
+              "employerRequired": true,
+              "timeline": "Total 3-5 years"
+            },
+            "EB2_NIW": {
+              "name": "National Interest Waiver",
+              "description": "Waiver of job offer and labor certification if work is in US national interest",
+              "selfPetition": true,
+              "employerRequired": false,
+              "requirements": [
+                "Advanced degree OR exceptional ability",
+                "AND: Work is in US national interest",
+                "Must show: (1) substantial merit and national importance, (2) well-positioned to advance endeavor, (3) beneficial to waive job offer requirement"
+              ],
+              "advantage": "NO employer needed, NO labor certification",
+              "commonFields": [
+                "Medical doctors serving underserved areas",
+                "STEM researchers",
+                "Entrepreneurs with innovative businesses",
+                "Public health professionals",
+                "Clean energy researchers"
+              ],
+              "timeline": "2-4 years total",
+              "note": "Increasingly popular option for skilled Turkish professionals"
+            }
+          },
+
+          "costsEmployerSponsored": {
+            "PERMlaborCert": {
+              "USD": "3,000-8,000",
+              "TRY": "105,000-280,000",
+              "note": "Employer's cost (attorney + recruitment ads)"
+            },
+            "I140_petition": {
+              "USD": "700-3,500",
+              "TRY": "24,500-122,500",
+              "governmentFee": {
+                "USD": 700,
+                "TRY": 24500
+              }
+            },
+            "I485_adjustment": {
+              "USD": "1,140-1,440",
+              "TRY": "39,900-50,400",
+              "note": "Per person, plus fees for dependents"
+            },
+            "totalEstimate": {
+              "USD": "10,000-20,000",
+              "TRY": "350,000-700,000",
+              "note": "Including attorney fees, typically paid by employer"
+            }
+          }
+        },
+
+        {
+          "category": "EB-3",
+          "name": "Third Preference - Skilled Workers and Professionals",
+          "description": "Skilled workers, professionals, and other workers",
+          "currentPriorityDate": {
+            "RestOfWorld": "April 1, 2023",
+            "Turkey": "Falls under Rest of World",
+            "waitTime": "Approximately 2.5 years backlog",
+            "note": "Slightly longer wait than EB-2 but lower qualification requirements"
+          },
+
+          "requirements": {
+            "skilledWorker": {
+              "education": "Bachelor's degree OR 2 years job training/experience",
+              "examples": "Engineers, accountants, chefs, physical therapists"
+            },
+            "professional": {
+              "education": "Bachelor's degree required for job",
+              "examples": "Teachers, business analysts, accountants with degree requirement"
+            },
+            "otherWorker": {
+              "education": "Less than 2 years training/experience",
+              "examples": "Food service workers, cleaners, laborers",
+              "note": "Much longer wait times (can be 7-10+ years)"
+            }
+          },
+
+          "process": "Same as EB-2: PERM → I-140 → Wait for priority date → I-485",
+          "timeline": "4-6 years total for Turkish citizens",
+          "employerRequired": true,
+
+          "note": "Lower requirements than EB-2 but longer wait. Good for bachelor's degree holders without 5 years experience."
+        }
+      ],
+
+      "turkishCitizenAdvantage": {
+        "priorityDateStatus": "Turkey is in 'Rest of World' category",
+        "comparison": {
+          "Turkey_EB2": "~2 year wait",
+          "India_EB2": "8-10+ year wait",
+          "China_EB2": "3-4 year wait",
+          "note": "HUGE advantage over India and China"
+        },
+        "EB1_current": "EB-1 categories are CURRENT - no wait for Turkish citizens",
+        "recommendation": "If you qualify for EB-1, pursue it. If not, EB-2 NIW is excellent self-petition option."
+      }
+    },
+
+    {
+      "programName": "Diversity Visa Lottery",
+      "programCode": "DV_LOTTERY",
+      "officialName": "Diversity Immigrant Visa Program",
+      "description": "Annual lottery providing up to 55,000 immigrant visas to persons from countries with low immigration rates to USA",
+
+      "turkishCitizenEligibility": {
+        "eligible": true,
+        "note": "Turkey is eligible for DV Lottery"
+      },
+
+      "requirements": {
+        "education": {
+          "option1": "High school diploma or equivalent (12 years of formal education)",
+          "option2": "2 years work experience within past 5 years in occupation requiring at least 2 years training/experience"
+        },
+        "cost": {
+          "entry": {
+            "USD": 0,
+            "TRY": 0,
+            "note": "FREE to enter lottery"
+          }
+        }
+      },
+
+      "applicationProcess": {
+        "when": "Usually October-November each year",
+        "duration": "Approximately 1 month registration period",
+        "example": "DV-2026 lottery registration: October 2, 2025 - November 5, 2025",
+        "website": "https://dvprogram.state.gov/",
+        "steps": [
+          {
+            "step": 1,
+            "title": "Online Registration",
+            "description": "Submit electronic entry during registration period",
+            "requiredInfo": [
+              "Name, date of birth, place of birth",
+              "Photo meeting strict requirements (600x600 pixels, recent, specific format)",
+              "Passport information",
+              "Education/work experience",
+              "Spouse and children information"
+            ],
+            "cost": {
+              "USD": 0,
+              "TRY": 0
+            },
+            "note": "ONE entry per person. Multiple entries = disqualification. Keep confirmation number."
+          },
+          {
+            "step": 2,
+            "title": "Check Results",
+            "description": "Check if selected via Entrant Status Check",
+            "when": "Following May (e.g., May 2026 for DV-2027)",
+            "website": "https://dvprogram.state.gov/ESC",
+            "selectionRate": "Very low - typically less than 1% of applicants",
+            "note": "ONLY official website - beware of scams"
+          },
+          {
+            "step": 3,
+            "title": "If Selected: Submit DS-260 and Documents",
+            "description": "Complete immigrant visa application",
+            "fees": {
+              "DS260_processing": {
+                "USD": 330,
+                "TRY": 11550,
+                "note": "Per person including dependents"
+              }
+            },
+            "documents": [
+              "Birth certificates",
+              "Marriage certificate",
+              "Police certificates",
+              "Education documents",
+              "Passport",
+              "Medical exam"
+            ]
+          },
+          {
+            "step": 4,
+            "title": "Visa Interview",
+            "description": "Attend interview at US Embassy Ankara or Istanbul",
+            "timeline": "Between October and September of fiscal year",
+            "note": "Must complete process before September 30th deadline - no extensions"
+          },
+          {
+            "step": 5,
+            "title": "Receive Green Card",
+            "description": "If approved, receive immigrant visa and enter US",
+            "note": "Must enter US before visa expires (usually 6 months)"
+          }
+        ]
+      },
+
+      "timeline": {
+        "fromEntry": "18-24 months if selected",
+        "breakdown": {
+          "registration": "October-November 2025 (example)",
+          "results": "May 2026",
+          "processing": "June 2026 - September 2027",
+          "deadline": "Must complete by September 30, 2027"
+        }
+      },
+
+      "probability": {
+        "veryLow": true,
+        "selectionRate": "Typically <1% of all applicants selected",
+        "note": "Lottery is purely random. Turkish selection rate varies by year.",
+        "recommendation": "Apply every year (free) but don't rely on it as primary strategy"
+      },
+
+      "familyMembers": {
+        "included": true,
+        "derivativeBeneficiaries": ["Spouse", "Unmarried children under 21"],
+        "note": "Must list all family members on initial entry - can't add later"
+      },
+
+      "importantWarnings": [
+        "Beware of scams - official entry is FREE and only via dvprogram.state.gov",
+        "Don't pay anyone to 'increase your chances' - it's a random lottery",
+        "Only ONE entry per person - multiple entries = automatic disqualification",
+        "Must meet strict photo requirements - incorrect photo = disqualification",
+        "If selected, you MUST complete process by September 30 deadline - no exceptions",
+        "Selection doesn't guarantee visa - must still meet requirements and pass interview"
+      ],
+
+      "turkishCitizenNotes": [
+        "Free to try every year - no downside",
+        "Very low probability but offers direct path to Green Card",
+        "Can apply while on other visas (F-1, H-1B, etc.) - DV lottery doesn't affect current status",
+        "If selected, provides path to Green Card without employer sponsorship",
+        "Good 'backup' option while pursuing other immigration paths"
+      ]
+    }
+  ],
+
+  "pathToCitizenship": {
+    "fromGreenCard": {
+      "timeline": {
+        "standard": "5 years as permanent resident",
+        "marriedToUSC": "3 years if married to US citizen",
+        "earlyFiling": "Can apply 90 days before 5-year (or 3-year) anniversary"
+      },
+      "physicalPresence": {
+        "5yearPath": "Must be physically present in US for at least 30 months out of 5 years",
+        "3yearPath": "Must be physically present for at least 18 months out of 3 years"
+      },
+      "continuousResidence": {
+        "required": true,
+        "trips": "No single trip over 6 months (or will break continuous residence)",
+        "note": "Trips over 6 months raise presumption of abandoning residence"
+      },
+      "otherRequirements": [
+        "At least 18 years old",
+        "Lived in state/USCIS district for at least 3 months before applying",
+        "Good moral character (no serious crimes, no fraud, pay taxes)",
+        "Basic English reading, writing, speaking ability",
+        "Pass civics test (U.S. history and government)",
+        "Oath of allegiance to the United States"
+      ],
+      "process": {
+        "form": "N-400 Application for Naturalization",
+        "cost": {
+          "USD": 725,
+          "TRY": 25375,
+          "breakdown": {
+            "filing": {
+              "USD": 640,
+              "TRY": 22400
+            },
+            "biometrics": {
+              "USD": 85,
+              "TRY": 2975
+            }
+          }
+        },
+        "timeline": "8-14 months from application to oath ceremony",
+        "steps": [
+          "Submit N-400 application",
+          "Biometrics appointment",
+          "Naturalization interview and tests",
+          "Oath of Allegiance ceremony",
+          "Receive US citizenship certificate"
+        ]
+      },
+      "dualCitizenship": {
+        "allowed": true,
+        "note": "USA allows dual citizenship. Turkey also allows dual citizenship. Turkish citizens who become US citizens CAN keep Turkish citizenship.",
+        "benefit": "Can maintain ties to Turkey while enjoying US citizenship benefits"
+      }
+    },
+    "totalTimeline": {
+      "minimum": "6-7 years from Green Card to citizenship (5 years + 8-14 months processing)",
+      "typical": "7-8 years",
+      "viaMarriage": "4-5 years (3 years + processing)"
+    }
+  },
+
+  "sources": [
+    {
+      "title": "USCIS H-1B Program",
+      "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+      "lastAccessed": "2025-11"
+    },
+    {
+      "title": "White House - Restriction on H-1B Workers (Sept 2025)",
+      "url": "https://www.whitehouse.gov/presidential-actions/2025/09/restriction-on-entry-of-certain-nonimmigrant-workers/",
+      "lastAccessed": "2025-11"
+    },
+    {
+      "title": "USCIS L-1 Intracompany Transferee",
+      "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/l-1a-intracompany-transferee-executive-or-manager",
+      "lastAccessed": "2025-11"
+    },
+    {
+      "title": "USCIS O-1 Visa",
+      "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/o-1-visa-individuals-with-extraordinary-ability-or-achievement",
+      "lastAccessed": "2025-11"
+    },
+    {
+      "title": "State Department Visa Bulletin November 2025",
+      "url": "https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin/2025/visa-bulletin-for-november-2025.html",
+      "lastAccessed": "2025-11"
+    },
+    {
+      "title": "DV Lottery Program",
+      "url": "https://dvprogram.state.gov/",
+      "lastAccessed": "2025-11"
+    },
+    {
+      "title": "USCIS Naturalization",
+      "url": "https://www.uscis.gov/citizenship",
+      "lastAccessed": "2025-11"
+    },
+    {
+      "title": "Turkish Sources - Amerika Vizesi",
+      "url": "https://www.eb3vize.com/, https://www.vizekeyfi.com/",
+      "language": "Turkish",
+      "lastAccessed": "2025-11"
+    }
+  ],
+
+  "disclaimer": "Information accurate as of November 2025. Immigration laws and policies can change rapidly. The September 2025 H-1B $100,000 fee represents a major policy shift. Always verify current requirements with official sources.",
+
+  "nextSteps": "See usa-emigration-data-PART3.json for cost of living, employment market, Turkish community, and settlement information"
+}

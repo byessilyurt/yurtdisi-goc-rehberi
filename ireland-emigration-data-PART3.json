@@ -1,0 +1,568 @@
+{
+  "settlementInformation": {
+    "firstWeekChecklist": [
+      {
+        "task": "IRP Registration Randevusu Al",
+        "taskTR": "Irish Residence Permit (IRP) Kartı için Online Randevu Alma",
+        "description": "İrlanda'ya vardıktan sonra ilk 7 gün içinde mutlaka IRP randevusu alın. 90 gün içinde tamamlamanız gerekir ama randevular çok hızlı dolar.",
+        "location": "Dublin: Burgh Quay Registration Office (online randevu), Diğer şehirler: Yerel Garda İstasyonu",
+        "website": "https://burghquayregistrationoffice.inis.gov.ie/ (Dublin için)",
+        "requiredDocuments": [
+          "Pasaport",
+          "Employment Permit veya üniversite kabul mektubu",
+          "İkamet adresi kanıtı",
+          "Pasaport fotoğrafları (3 adet)"
+        ],
+        "estimatedTime": "Randevu almak: anında, Randevu tarihi: 2-8 hafta sonra",
+        "cost": 0,
+        "priority": "critical",
+        "tips": [
+          "Randevular sabah 8-9'da açılır ve hızla biter - erkenden online olun",
+          "Dublin dışı şehirlerde randevu daha kolay",
+          "90 gün içinde kayıt olmak ZORUNLU - gecikme ceza ve sorun yaratır"
+        ]
+      },
+      {
+        "task": "Geçici Konaklama",
+        "taskTR": "İlk 1-2 Hafta için Otel/Airbnb Rezervasyonu",
+        "description": "Uzun vadeli ev bulmak zaman alır. İlk 1-2 hafta için otel veya Airbnb ayarlayın.",
+        "location": "İş yerinize yakın bölge tercih edin",
+        "requiredDocuments": [],
+        "estimatedTime": "1-14 gün",
+        "cost": 400,
+        "costCurrency": "EUR",
+        "costNotes": "€50-80/gece otel veya €30-50/gece Airbnb (ortalama)",
+        "priority": "critical",
+        "tips": [
+          "Dublin'de konaklama çok pahalı - banliyö düşünün",
+          "Daft.ie, Rent.ie gibi sitelerde önceden ev aramaya başlayın",
+          "Facebook grupları: Dubliners, Turks in Ireland"
+        ]
+      },
+      {
+        "task": "PPS Number Başvurusu",
+        "taskTR": "PPS Number (Personal Public Service Number) - Sosyal Güvenlik Numarası",
+        "description": "İrlanda'da çalışmak, vergi ödemek, banka hesabı açmak için PPS Number zorunludur. Social Welfare Office'den alınır.",
+        "location": "Intreo Centre / Social Welfare Local Office (MyWelfare.ie'den randevu)",
+        "website": "https://www.gov.ie/en/service/12e6de-get-a-personal-public-service-pps-number/",
+        "requiredDocuments": [
+          "Pasaport",
+          "İkamet adresi kanıtı (utility bill, bank statement, kira sözleşmesi)",
+          "İşverenden mektup (employment confirmation)",
+          "Employment Permit (fotokopi)"
+        ],
+        "estimatedTime": "Randevu: 1-3 hafta, PPS numarası: randevu gününde verilir",
+        "cost": 0,
+        "costCurrency": "EUR",
+        "priority": "critical",
+        "tips": [
+          "Online randevu sistemi: MyWelfare.ie",
+          "PPS olmadan maaş alamazsınız",
+          "Numarayı aldığınızda hemen işverene bildirin",
+          "Format: 1234567A (7 rakam + 1-2 harf)"
+        ]
+      },
+      {
+        "task": "Banka Hesabı Açma",
+        "taskTR": "İrlanda'da Banka Hesabı Açmak",
+        "description": "Maaş almak ve faturaları ödemek için İrlanda banka hesabı açın.",
+        "location": "AIB, Bank of Ireland, Permanent TSB, Revolut (online) şubeleri",
+        "requiredDocuments": [
+          "Pasaport",
+          "PPS Number",
+          "İkamet adresi kanıtı",
+          "İşverenden mektup veya employment permit"
+        ],
+        "estimatedTime": "1-2 hafta (hesap açılması)",
+        "cost": 0,
+        "costCurrency": "EUR",
+        "costNotes": "Bazı bankalar aylık hesap ücreti alır (€5-10), bazıları ücretsiz",
+        "priority": "high",
+        "tips": [
+          "Revolut/N26 gibi online bankalar daha hızlı (aynı gün)",
+          "Geleneksel bankalar daha fazla belge ister",
+          "PPS Number olmadan hesap açmak çok zor",
+          "Adres kanıtı için ilk utility bill'i bekleyin veya employer letter kullanın"
+        ],
+        "recommendedBanks": [
+          "Revolut (online, hızlı, ücretsiz)",
+          "N26 (online, kolay)",
+          "AIB (geleneksel, yaygın ATM)",
+          "Bank of Ireland (geleneksel, güvenilir)",
+          "Permanent TSB"
+        ]
+      },
+      {
+        "task": "Telefon Hattı ve SIM Kart",
+        "taskTR": "İrlanda SIM Kartı ve Telefon Hattı Alma",
+        "description": "İrlanda telefon numarası alın - iletişim ve randevular için gerekli",
+        "location": "Havalimanı, süpermarketler, operatör mağazaları",
+        "requiredDocuments": [
+          "Pasaport (kimlik için)"
+        ],
+        "estimatedTime": "Aynı gün",
+        "cost": 20,
+        "costCurrency": "EUR",
+        "costNotes": "Prepaid SIM €10-20, Aylık paket €10-30",
+        "priority": "high",
+        "providers": [
+          "Three Ireland (iyi kapsama, ucuz)",
+          "Vodafone (en yaygın)",
+          "Eir Mobile",
+          "Tesco Mobile (ucuz, süpermarketten)",
+          "48 Mobile (öğrenciler için uygun)"
+        ],
+        "tips": [
+          "Prepaid SIM havalimanında hemen alabilirsiniz",
+          "Aylık unlimited calls+data paketler €20-30 civarı",
+          "EU roaming dahil (AB'de ek ücret yok)",
+          "İrlanda numarası olmazsa randevu almak zor"
+        ]
+      },
+      {
+        "task": "GP (Aile Hekimi) Kaydı",
+        "taskTR": "General Practitioner (GP) - Aile Hekimi Kaydı",
+        "description": "Sağlık ihtiyaçları için yakınınızdaki bir GP'ye kayıt olun",
+        "location": "İkamet adresinize yakın GP kliniği",
+        "requiredDocuments": [
+          "Pasaport",
+          "İkamet adresi kanıtı",
+          "Sağlık sigortası bilgileri (varsa)"
+        ],
+        "estimatedTime": "1 hafta",
+        "cost": 60,
+        "costCurrency": "EUR",
+        "costNotes": "GP ziyaret ücreti €50-70 (sigortasız), €0-25 (sigortalı)",
+        "priority": "medium",
+        "tips": [
+          "GP bulma: www.icgp.ie veya Google Maps",
+          "İlk kayıt ücretsiz veya düşük ücretli olabilir",
+          "Sağlık sigortası varsa masraflar karşılanır",
+          "Acil durumlar için: 999/112 (ambulans)"
+        ]
+      },
+      {
+        "task": "Uzun Vadeli Konut Arama",
+        "taskTR": "Kiralık Ev/Daire Bulma",
+        "description": "İrlanda'da kira piyasası rekabetçi. Erken aramaya başlayın ve viewing'lere hızla gidin.",
+        "location": "İş yerinize ulaşım kolaylığı olan bölge",
+        "requiredDocuments": [
+          "Pasaport",
+          "İşverenden referans mektubu",
+          "Maaş bordrosu (varsa)",
+          "Depozito (genelde 1 ay kira)"
+        ],
+        "estimatedTime": "2-6 hafta",
+        "cost": 1500,
+        "costCurrency": "EUR",
+        "costNotes": "1 ay depozito + 1 ay kira peşin (örnek €1,500 x 2 = €3,000 ilk ödeme)",
+        "priority": "high",
+        "platforms": [
+          "Daft.ie (en popüler)",
+          "Rent.ie",
+          "MyHome.ie",
+          "Facebook groups: Dubliners, Rent Dublin",
+          "SpareRoom.ie (flatmate arayanlar için)"
+        ],
+        "tips": [
+          "Viewinglere erken gidin - aynı gün başvuru yapın",
+          "Dublin çok pahalı - banliyö düşünün (DART/Luas erişimi)",
+          "Flatshare (oda kiralama) daha ucuz (€600-900/ay)",
+          "Kira sözleşmesi genelde 12 ay",
+          "Landlord referans ister - işverenden mektup hazırlayın"
+        ]
+      },
+      {
+        "task": "Toplu Taşıma Kartı",
+        "taskTR": "Leap Card (Toplu Taşıma Kartı) Alma",
+        "description": "Dublin ve diğer şehirlerde otobüs, DART, Luas için Leap Card alın - indirimli seyahat",
+        "location": "Spar, Centra, Tesco mağazaları, Heuston/Connolly istasyonları",
+        "requiredDocuments": [],
+        "estimatedTime": "Aynı gün",
+        "cost": 5,
+        "costCurrency": "EUR",
+        "costNotes": "Kart €5, aylık pass €120-140, tekli bilet €2-3",
+        "priority": "medium",
+        "tips": [
+          "Leap Card ile %20-30 indirim",
+          "Adult monthly pass: €120-140 (unlimited travel)",
+          "Online yükleme: www.leapcard.ie",
+          "DART (tren) + Luas (tramvay) + Dublin Bus hepsinde geçerli"
+        ]
+      }
+    ],
+
+    "housingSystem": {
+      "rentalMarket": {
+        "overview": "İrlanda kira piyasası çok rekabetçi, özellikle Dublin'de. Arz sınırlı, talep yüksek. Erken aramaya başlayın.",
+        "averageDeposit": "1 ay kira (yasal maksimum)",
+        "typicalLeaseLength": "12 ay (bazıları 6 ay veya part-time 4 yıla kadar)",
+        "depositProtection": "Landlord depozitonu RTB (Residential Tenancies Board) korumasında tutmalı",
+        "tenantRights": [
+          "4 yıl boyunca kira artışı max yılda 1 kere ve %4 (RPZ bölgelerinde)",
+          "Landlord eviction için minimum 6 ay notice vermeli (belirli sebepler gerekli)",
+          "Kiracı 28 gün notice ile çıkabilir",
+          "Landlord evin tadilat/onarımından sorumlu",
+          "Depozito iade garantisi (zarar yoksa)"
+        ],
+        "landlordObligations": [
+          "Evin yaşanabilir durumda olması (habitability standards)",
+          "Isınma, elektrik, su sağlanması",
+          "Tadilat ve onarımlar landlord'un sorumluluğu",
+          "Kiracı privacy'sine saygı (notice ile ziyaret)"
+        ],
+        "evictionLaws": "Landlord sebepsiz eviction yapamaz. Geçerli sebepler: kira ödenmemesi, mal hasarı, landlord/ailesi taşınacak, satış. Minimum 6 ay notice gerekir.",
+        "rentalAgreementEssentials": [
+          "Yazılı kira sözleşmesi (tenancy agreement)",
+          "Kira miktarı, ödeme günü, depozito",
+          "Ev durumu inventory report",
+          "Landlord ve kiracı bilgileri",
+          "RTB kayıt numarası (landlord kayıt yapmalı)"
+        ],
+        "commonPitfalls": [
+          "Sözleşmesiz ev tutmak (yasal koruma yok)",
+          "Depozito alındısız vermek",
+          "Ev durumunu fotoğraflamadan taşınmak",
+          "RTB kayıtsız landlord (illegal)",
+          "Kira nakit ödeme (banka transferi tercih edin - kayıt)"
+        ],
+        "averageRents": {
+          "dublin": {
+            "studio": "€1,400-1,800",
+            "oneBedroom": "€1,800-2,500",
+            "twoBedroom": "€2,200-3,200",
+            "roomInSharedHouse": "€700-1,200"
+          },
+          "cork": {
+            "studio": "€900-1,200",
+            "oneBedroom": "€1,200-1,600",
+            "twoBedroom": "€1,500-2,000",
+            "roomInSharedHouse": "€500-800"
+          },
+          "galway": {
+            "studio": "€800-1,100",
+            "oneBedroom": "€1,100-1,500",
+            "twoBedroom": "€1,400-1,900",
+            "roomInSharedHouse": "€450-700"
+          }
+        },
+        "rentalTips": [
+          "Viewing'e hemen gidin - iyi evler 1-2 gün içinde gider",
+          "İşverenden referans mektubu hazırlayın",
+          "İlk aylarda flatshare düşünün (daha ucuz + sosyalleşme)",
+          "Commuter towns düşünün: Maynooth, Drogheda, Dundalk (Dublin'e tren)",
+          "DART/Luas hatları boyunca arayın (ulaşım kolay)"
+        ]
+      },
+
+      "buyingProperty": {
+        "foreignerRestrictions": false,
+        "overview": "Yabancılar İrlanda'da ev satın alabilir - kısıtlama yok",
+        "mortgageAvailability": "İlk 1-2 yıl zor (kredi geçmişi yok). Stamp 4 aldıktan sonra daha kolay.",
+        "typicalDownPayment": "20% (first-time buyer için %10 olabilir)",
+        "mortgageRules": "Maksimum borç: Yıllık gelirin 3.5 katı",
+        "propertyTaxes": "LPT (Local Property Tax) - Ev değerine göre €90-1,800/yıl",
+        "stampDuty": "Ev alımında Stamp Duty: %1-2 (€1 milyon altı için %1)",
+        "process": [
+          "Mortgage pre-approval alın (banka)",
+          "Ev arama (Daft.ie, MyHome.ie)",
+          "Offer yapma (solicitor aracılığı)",
+          "Survey ve legal checks",
+          "Mortgage finalization",
+          "Contracts exchange",
+          "Completion ve taşınma"
+        ],
+        "costs": [
+          {
+            "item": "Solicitor fees",
+            "amount": 1500,
+            "currency": "EUR",
+            "notes": "Legal işlemler"
+          },
+          {
+            "item": "Survey (home inspection)",
+            "amount": 500,
+            "currency": "EUR"
+          },
+          {
+            "item": "Stamp Duty",
+            "percentage": 1,
+            "notes": "Ev fiyatının %1'i (€1M altı)"
+          },
+          {
+            "item": "Property registration",
+            "amount": 800,
+            "currency": "EUR"
+          }
+        ],
+        "averagePrices": {
+          "dublin": {
+            "average": "€450,000-550,000",
+            "range": "€300,000-1,000,000+"
+          },
+          "cork": {
+            "average": "€300,000-350,000"
+          },
+          "galway": {
+            "average": "€280,000-320,000"
+          },
+          "notes": "2024 fiyatları - piyasa değişken"
+        },
+        "tips": [
+          "İlk birkaç yıl kiralamak mantıklı - piyasayı tanıyın",
+          "Help to Buy scheme (first-time buyer için vergi iadesi)",
+          "Mortgage broker kullanın (ücretsiz veya düşük ücretli)",
+          "İrlanda'da mortgage oranları: %3-4 civarı (2024)"
+        ]
+      }
+    },
+
+    "healthcareSystem": {
+      "systemType": "Mixed public-private system (HSE + private insurance)",
+      "overview": "İrlanda sağlık sistemi karışık. HSE (Health Service Executive) kamu sistemi var ancak AB dışı vatandaşlar için ilk yıl kısıtlı. Özel sigorta şiddetle tavsiye edilir.",
+      "howToRegister": "GP'ye kayıt olun. Ordinary residence (1+ yıl ikamet niyeti) kanıtlanırsa HSE sistemine erişim başlar.",
+      "ordinaryResidence": "1+ yıl İrlanda'da kalma niyeti kanıtlanırsa HSE hizmetlerine erişim. Employment permit veya Stamp 4 sahipleri genelde qualify eder.",
+      "primaryCareAccess": "GP (General Practitioner) - aile hekimi. Randevu ile ziyaret. Medical Card yoksa €50-70/ziyaret.",
+      "emergencyCareAccess": "A&E (Accident & Emergency) - acil servis. 999/112 ara. Acil müdahale ücretsiz ama bekleme uzun olabilir.",
+      "prescriptionSystem": "GP reçete yazar, eczaneden alırsınız. İlaçlar pahalı olabilir. Drug Payment Scheme: Maksimum €80/ay hane başı.",
+      "costsOverview": {
+        "gpVisit": "€50-70 (Medical Card yoksa)",
+        "gpVisitWithInsurance": "€0-25 (sigorta kapsar)",
+        "emergencyRoom": "€100-150 (non-urgent, public), private daha pahalı",
+        "hospitalStayPerDay": "€80/gün (public in-patient charge), private €200-500/gün",
+        "specialistConsultation": "€150-250 (özel)",
+        "commonMedications": "Antibiyotik €10-20, ağrı kesici €5-10",
+        "dentalCheckup": "€60-100 (dental genelde sigorta dışı)",
+        "eyeTest": "€25-50"
+      },
+      "medicalCard": {
+        "description": "Düşük gelirli ailelere ücretsiz healthcare sağlar",
+        "eligibility": "Gelir testine tabi. Tek kişi <€184/hafta niteleyebilir.",
+        "benefits": "GP, hastane, ilaç masrafları karşılanır",
+        "notes": "Çoğu work permit sahibi gelir seviyesi nedeniyle nitelemez"
+      },
+      "privateHealthInsurance": {
+        "recommended": true,
+        "providers": [
+          {
+            "name": "VHI Healthcare",
+            "plans": "€1,500-3,000/yıl",
+            "coverage": "GP, uzman, hastane, operasyon"
+          },
+          {
+            "name": "Laya Healthcare",
+            "plans": "€1,400-2,800/yıl",
+            "coverage": "Geniş kapsam, competitive prices"
+          },
+          {
+            "name": "Irish Life Health",
+            "plans": "€1,600-3,200/yıl",
+            "coverage": "Premium kapsam seçenekleri"
+          },
+          {
+            "name": "HSF Health Plan",
+            "plans": "€800-1,500/yıl",
+            "coverage": "Temel kapsam, budget-friendly"
+          }
+        ],
+        "averageCost": {
+          "basic": "€1,400-1,800/yıl",
+          "comprehensive": "€2,500-3,500/yıl",
+          "notes": "Yaş, sağlık durumu, kapsam seviyesine göre değişir"
+        },
+        "taxRelief": "Sigorta primleri için vergi indirimi var (Tax Relief at Source - TRS)",
+        "tips": [
+          "İlk 13 hafta içinde sigortaya girersek pre-existing condition bekleme yok",
+          "Employer group scheme'leri daha ucuz olabilir",
+          "Online karşılaştırma: www.hia.ie (Health Insurance Authority)"
+        ]
+      },
+      "importantInfo": [
+        "AB dışı vatandaşlar için ilk yıl public healthcare kısıtlı",
+        "Özel sigorta şiddetle tavsiye edilir (yıllık €1,850 ortalama)",
+        "GP ziyareti €50-70, aciller A&E'ye",
+        "Dental ve göz muayenesi genelde sigorta kapsamı dışı",
+        "İlaçlar pahalı - Drug Payment Scheme kullanın (€80/ay cap)",
+        "112/999 - Acil durum numarası"
+      ]
+    },
+
+    "bankingAndFinance": {
+      "openingBankAccount": {
+        "process": "Banka şubesine veya online başvuru. PPS Number, adres kanıtı, pasaport gerekir.",
+        "requiredDocuments": [
+          "Pasaport",
+          "PPS Number",
+          "Proof of address (utility bill, bank statement, employer letter)",
+          "Employment permit veya işverenden mektup"
+        ],
+        "recommendedBanks": [
+          {
+            "name": "Revolut",
+            "type": "Online/App-based",
+            "pros": "Hızlı açılış (aynı gün), ücretsiz, multi-currency",
+            "cons": "Fiziksel şube yok",
+            "fees": "€0 (basic), €2.99-13.99/ay (premium)"
+          },
+          {
+            "name": "N26",
+            "type": "Online/App-based",
+            "pros": "Hızlı, kolay, ücretsiz",
+            "cons": "Fiziksel şube yok",
+            "fees": "€0"
+          },
+          {
+            "name": "AIB (Allied Irish Banks)",
+            "type": "Traditional",
+            "pros": "Yaygın ATM, güvenilir, mortgage/loan kolay",
+            "cons": "Açılış uzun (1-2 hafta)",
+            "fees": "€4-6/ay (maintenance fee)"
+          },
+          {
+            "name": "Bank of Ireland",
+            "type": "Traditional",
+            "pros": "En büyük banka, yaygın şube/ATM",
+            "cons": "Açılış uzun",
+            "fees": "€6/ay"
+          },
+          {
+            "name": "Permanent TSB",
+            "type": "Traditional",
+            "pros": "İyi mortgage oranları",
+            "cons": "Daha az şube",
+            "fees": "€5/ay"
+          }
+        ],
+        "typicalFees": "€0-6/ay (hesap yönetim ücreti), ATM işlemleri genelde ücretsiz",
+        "onlineBankingOptions": "Tüm bankalar online/mobile banking sunuyor. Revolut/N26 tamamen dijital.",
+        "tips": [
+          "PPS Number alana kadar Revolut/N26 gibi online bankalar kolaylık sağlar",
+          "Employer direct deposit için IBAN gerekir - hemen verin",
+          "Overdraft (kredili hesap) ilk yıl genelde yok",
+          "Credit/debit card hemen verilir"
+        ]
+      },
+
+      "creditSystem": {
+        "howItWorks": "İrlanda'da credit score sistemi var (Central Credit Register). Kredi geçmişi borç alma, mortgage için önemli.",
+        "buildingCreditAsNewcomer": [
+          "Utility bills zamanında ödeyin (elektrik, gaz, telefon)",
+          "Banka hesabını aktif kullanın",
+          "Kredi kartı alıp her ay tam ödeyin",
+          "Kira ödemelerini banka transferi ile yapın (kayıt)",
+          "6-12 ay sonra kredi geçmişi oluşmaya başlar"
+        ],
+        "creditCards": {
+          "securedCards": "İlk yıl standart kredi kartı zor. Bazı bankalar 'deposit-backed' kart verir.",
+          "newcomerFriendly": [
+            "AIB Student Credit Card (düşük limit)",
+            "Bank of Ireland Basic Credit Card",
+            "Revolut virtual card (debit ama credit gibi kullanılabilir)"
+          ],
+          "tips": [
+            "İlk 6-12 ay debit card kullanın",
+            "Sonra düşük limitli credit card başvurun (€500-1000)",
+            "Her ay FULL ödeme yapın (interest yüksek: %15-23)",
+            "Credit history 1-2 yılda güçlenir"
+          ]
+        },
+        "loanOptions": "İlk yıl personal loan zor. Stamp 4 ve kredi geçmişi sonrası kolaylaşır."
+      },
+
+      "taxObligations": {
+        "taxResidencyRules": "İrlanda'da yılda 183+ gün veya 2 yıl içinde 280+ gün kalırsanız tax resident olursunuz. Tüm global gelir vergiye tabi.",
+        "taxYear": "1 Ocak - 31 Aralık",
+        "federalIncomeTax": "Yok - İrlanda unitary system. USC ve Income Tax var.",
+        "incomeTax": {
+          "rates": [
+            {
+              "band": "€0-€40,000",
+              "rate": "20% (standard rate)"
+            },
+            {
+              "band": "€40,000+",
+              "rate": "40% (higher rate)"
+            }
+          ],
+          "personalTaxCredit": "€1,775/yıl (herkes)",
+          "notes": "Evli çiftler için band €80,000'e çıkar (dual income)"
+        },
+        "USC": {
+          "name": "Universal Social Charge",
+          "rates": [
+            {
+              "band": "€0-€12,012",
+              "rate": "0.5%"
+            },
+            {
+              "band": "€12,012-€25,760",
+              "rate": "2%"
+            },
+            {
+              "band": "€25,760-€70,044",
+              "rate": "4.5%"
+            },
+            {
+              "band": "€70,044+",
+              "rate": "8%"
+            }
+          ],
+          "notes": "€13,000 altı gelirde USC muafiyeti var"
+        },
+        "PRSI": {
+          "name": "Pay Related Social Insurance",
+          "rate": "4% (employee), 8.8-11.05% (employer)",
+          "coverage": "Pension, healthcare, unemployment benefits"
+        },
+        "effectiveTaxRate": {
+          "€40,000": "~23-25% (income tax + USC + PRSI toplam)",
+          "€60,000": "~32-35%",
+          "€80,000": "~38-40%",
+          "notes": "Tax credits dahil efektif oran"
+        },
+        "filingRequirements": "PAYE (Pay As You Earn) sistemi - işveren keser. Yıl sonu declaration genelde gerekmez ama Revenue ile kayıt olun.",
+        "revenueMyAccount": {
+          "description": "Revenue.ie'de online hesap açın - tax affairs yönetimi",
+          "website": "https://www.revenue.ie/en/online-services/services/common/register-for-a-personal-account.aspx",
+          "services": [
+            "Tax credits görme/güncelleme",
+            "Tax refund başvurusu",
+            "USC/PRSI kayıtları",
+            "P60, P45 belgelerine erişim"
+          ]
+        },
+        "importantDeadlines": [
+          "31 Ekim - Self-assessment tax return (eğer gerekiyorsa)",
+          "Online ödeme deadline: 31 Ekim",
+          "P60 (yıllık vergi özeti) - İşveren Ocak'ta verir"
+        ],
+        "doubleTaxationTreaty": true,
+        "doubleTaxationDetails": "İrlanda-Türkiye arasında çifte vergilendirme anlaşması VAR. Türkiye'de vergi ödediyseniz İrlanda'da credit alabilirsiniz.",
+        "recommendedAccountants": [
+          "İlk yıl genelde gerekli değil (PAYE basit)",
+          "Self-employed veya side income varsa muhasebeci kullanın",
+          "Maliyet: €300-800/yıl (self-assessment için)"
+        ],
+        "taxCalculatorExample": {
+          "salary": 50000,
+          "currency": "EUR",
+          "breakdown": {
+            "grossSalary": 50000,
+            "incomeTax": -7245,
+            "USC": -1814,
+            "PRSI": -2000,
+            "netSalary": 38941,
+            "takeHomeMonthly": 3245
+          },
+          "notes": "Yaklaşık hesap - tax credits ve circumstances'a göre değişir"
+        },
+        "tips": [
+          "Revenue MyAccount'a ilk hafta kayıt olun",
+          "Tax credits kontrol edin - unutulan credits olabilir",
+          "Med-2 form: Sağlık masrafları için vergi iadesi",
+          "Rent Tax Credit: €500/yıl (kiracılar için)"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,751 @@
+{
+  "additionalVisaPrograms": [
+    {
+      "visaCode": "GEP",
+      "officialName": "General Employment Permit",
+      "officialNameTR": "Genel İstihdam İzni",
+      "category": "work",
+      "description": "General Employment Permit, Critical Skills listesinde olmayan meslekler için çalışma iznidir. Minimum €34,000 maaş gerektirir ve çoğu durumda işgücü piyasası testi (Labour Market Needs Test) yapılması şarttır. 5 yıl sonra Stamp 4'e geçiş hakkı tanır.",
+      "keyBenefits": [
+        "Geniş meslek yelpazesi - ineligible list dışındaki tüm meslekler",
+        "Critical Skills'den daha düşük maaş eşiği (€34,000)",
+        "12 ay sonra aile birleşimi hakkı",
+        "5 yıl sonra Stamp 4 (kalıcı oturum) başvurusu",
+        "Eş Stamp 1G ile çalışma hakkı (Mayıs 2024 güncellemesi)",
+        "Yenilenebilir - maksimum süre yok"
+      ],
+      "estimatedTotalCost": {
+        "amount": 3000,
+        "currency": "EUR",
+        "breakdown": "İzin ücreti €1000 + vize €100 + IRP €300 + belgeler €200 + sağlık sigortası €1400"
+      },
+
+      "eligibilityCriteria": {
+        "ageRequirements": {
+          "minimumAge": 18,
+          "maximumAge": null,
+          "notes": "Yaş sınırı yok"
+        },
+        "educationRequirements": {
+          "minimumLevel": "Pozisyona göre değişir - resmi minimum şart yok",
+          "acceptedDegrees": [],
+          "degreeRecognitionProcess": "İşveren gereksinimlerine göre. NARIC değerlendirmesi opsiyonel.",
+          "equivalencyOptions": [
+            "İş deneyimi diploma yerine geçebilir",
+            "Mesleki sertifikalar",
+            "Sektörel tecrübe"
+          ]
+        },
+        "workExperienceRequirements": {
+          "minimumYears": 0,
+          "relevantFields": ["Pozisyona göre değişir"],
+          "documentationRequired": [
+            "Referans mektupları",
+            "İş deneyim belgeleri",
+            "CV"
+          ]
+        },
+        "languageRequirements": {
+          "required": false,
+          "minimumLevel": "İşveren gereksinimine göre, genelde B2",
+          "acceptedTests": ["IELTS", "TOEFL", "Cambridge"],
+          "minimumScores": {},
+          "exemptions": []
+        },
+        "financialRequirements": {
+          "proofOfFundsRequired": false,
+          "minimumAmount": 0,
+          "salaryRequirements": {
+            "standard": {
+              "amount": 34000,
+              "currency": "EUR",
+              "description": "Genel minimum yıllık maaş (17 Ocak 2024'ten itibaren)",
+              "notes": "Bazı sektörler için €30,000 (tarım, sağlık bakımı)"
+            },
+            "exceptions": [
+              "Horticulture workers: €30,000 (saat başı €14.79)",
+              "Meat Processor Operatives: €30,000",
+              "Healthcare Assistants & Home Support Workers: €30,000 (consultation aşamasında)"
+            ]
+          },
+          "acceptedProofTypes": [
+            "İmzalı iş sözleşmesi",
+            "İşveren maaş teyit mektubu"
+          ]
+        },
+        "healthRequirements": {
+          "medicalExamRequired": false,
+          "vaccinations": [],
+          "prohibitedConditions": [],
+          "panelDoctors": "",
+          "healthInsurance": {
+            "required": true,
+            "notes": "Özel sağlık sigortası şiddetle önerilir"
+          }
+        },
+        "characterRequirements": {
+          "policeCertificateRequired": true,
+          "excludingFactors": ["Suç geçmişi", "Göç ihlalleri"],
+          "securityChecks": ["Garda kontrolleri", "Adli sicil"],
+          "requiredDocuments": [
+            "Türk Adli Sicil Kaydı - Apostil + İngilizce tercüme"
+          ]
+        }
+      },
+
+      "labourMarketNeedsTest": {
+        "required": true,
+        "exemptions": [
+          "Pozisyon Critical Skills listesinde",
+          "Maaş €64,000+",
+          "Enterprise Ireland veya IDA Ireland tavsiyesi",
+          "Exceptional medical needs için bakım",
+          "Son 6 ay içinde işten çıkarılan aynı pozisyon"
+        ],
+        "process": "İşveren pozisyonu DSP Employment Services/EURES + 1 ek online platformda minimum 28 gün ilan etmelidir.",
+        "timeline": "28 gün ilan + değerlendirme",
+        "notes": "Labour market test başarısız olursa izin verilemez"
+      },
+
+      "applicationProcess": {
+        "overview": "General Employment Permit süreci Critical Skills'e benzer ancak işgücü piyasası testi ve 12 ay aile birleşimi bekleme süresi vardır. İşveren önce pozisyonu ilan eder (28 gün), sonra EPOS sistemi ile başvuru yapar.",
+        "estimatedTotalDuration": "90-180 gün (labour market test dahil)",
+        "processingTime": {
+          "trustedPartner": "1-2 hafta",
+          "standard": "8-12 hafta"
+        }
+      },
+
+      "costs": {
+        "newPermit": [
+          {
+            "duration": "6 ay veya daha az",
+            "amount": 500,
+            "currency": "EUR"
+          },
+          {
+            "duration": "6-24 ay",
+            "amount": 1000,
+            "currency": "EUR"
+          }
+        ],
+        "renewal": [
+          {
+            "duration": "6 ay veya daha az",
+            "amount": 750,
+            "currency": "EUR"
+          },
+          {
+            "duration": "6-36 ay",
+            "amount": 1500,
+            "currency": "EUR"
+          }
+        ],
+        "refundPolicy": "Red durumunda %90 iade"
+      },
+
+      "rightsAndRestrictions": {
+        "workRights": {
+          "canWork": true,
+          "restrictions": "Sadece sponsorlu işverenle. İlk 12 ay iş değiştirilemez (Critical Skills'deki 9 ay kuralı burada uygulanmaz).",
+          "canChangeEmployer": true,
+          "processForChange": "12 ay sonra yeni employment permit ile iş değiştirilebilir",
+          "canBeSelfEmployed": false
+        },
+        "familyRights": {
+          "canBringFamily": true,
+          "waitingPeriod": "12 ay (Critical Skills için beklemeden, GEP için 12 ay gerekir)",
+          "eligibleRelatives": ["Eş", "21 yaş altı çocuklar"],
+          "spouseWorkRights": "Stamp 1G - çalışma izni olmadan çalışabilir (Mayıs 2024 güncellemesi)",
+          "childrenEducationRights": true
+        }
+      },
+
+      "pathToPermanentResidency": {
+        "available": true,
+        "timeline": "5 yıl (60 ay) yasal ikamet",
+        "process": "GEP sahipleri 60 ay sonra Stamp 4 başvurusu yapabilir. Critical Skills'den daha uzun süre ancak sonuç aynı.",
+        "requirements": [
+          "60 ay yasal çalışma ve ikamet",
+          "İyi karakter",
+          "Vergi uyumu",
+          "Yıllık 90 günden fazla yurtdışı kalmamak"
+        ]
+      },
+
+      "pathToCitizenship": {
+        "available": true,
+        "minimumResidencyYears": 5,
+        "process": "Stamp 4 aldıktan sonra veya toplam 5 yıl ikamet sonrası naturalisation başvurusu"
+      }
+    },
+
+    {
+      "visaCode": "STAMP2",
+      "officialName": "Student Visa - Stamp 2",
+      "officialNameTR": "Öğrenci Vizesi - Stamp 2",
+      "category": "student",
+      "description": "İrlanda'da üniversite veya yüksekokul eğitimi için öğrenci vizesidir. Part-time çalışma hakkı (20 saat/hafta term, 40 saat/hafta tatil) tanır. Mezuniyet sonrası 1-2 yıl Graduate Programme ile İrlanda'da kalma ve iş arama hakkı verir.",
+      "keyBenefits": [
+        "Part-time çalışma hakkı: 20 saat/hafta dönem içi, 40 saat/hafta tatil dönemlerinde",
+        "Mezuniyet sonrası Third Level Graduate Programme (1-2 yıl stay-back)",
+        "Graduate scheme ile full-time çalışma hakkı (40 saat/hafta)",
+        "Dünya standartlarında eğitim - Trinity College, UCD, UCC",
+        "İngilizce eğitim - dil gelişimi",
+        "AB diploması - uluslararası tanınırlık",
+        "Work permit'e geçiş kolaylığı"
+      ],
+      "estimatedTotalCost": {
+        "amount": 15000,
+        "currency": "EUR",
+        "breakdown": "Öğrenci vizesi €60 + IRP €300 + üniversite kayıt €3,000-15,000/yıl + yaşam masrafı €10,000-12,000/yıl",
+        "notes": "Yıllık maliyet - eğitim programına göre değişir"
+      },
+
+      "eligibilityCriteria": {
+        "ageRequirements": {
+          "minimumAge": 18,
+          "maximumAge": null,
+          "notes": "18 yaş altı öğrenciler için guardian şartı var"
+        },
+        "educationRequirements": {
+          "minimumLevel": "Lise diploması (Bachelor için), Lisans diploması (Master için)",
+          "acceptedDegrees": [],
+          "degreeRecognitionProcess": "Üniversiteler kendi değerlendirmelerini yapar. Bazıları NARIC ister.",
+          "equivalencyOptions": [
+            "Türk lise diploması - üniversite kabul için yeterli",
+            "Türk üniversite diplomaları - master için kabul edilir"
+          ]
+        },
+        "academicRequirements": {
+          "minimumGPA": "Üniversiteye göre değişir - genelde 3.0/4.0 veya %70+",
+          "entranceExams": "Bazı programlar için GMAT, GRE gerekebilir",
+          "notes": "Rekabetçi programlar (Trinity, UCD) daha yüksek not ister"
+        },
+        "languageRequirements": {
+          "required": true,
+          "minimumLevel": "B2-C1 (programa göre)",
+          "acceptedTests": [
+            "IELTS Academic",
+            "TOEFL iBT",
+            "Cambridge English",
+            "Pearson PTE Academic",
+            "Duolingo (bazı üniversiteler)"
+          ],
+          "minimumScores": {
+            "IELTS_Undergraduate": "6.0-6.5 overall (her skill minimum 5.5-6.0)",
+            "IELTS_Postgraduate": "6.5-7.0 overall (her skill minimum 6.0)",
+            "TOEFL_Undergraduate": "80-90",
+            "TOEFL_Postgraduate": "90-100"
+          },
+          "exemptions": [
+            "İngilizce eğitim veren üniversiteden mezun olanlar",
+            "İngilizce konuşulan ülkelerde eğitim görenler"
+          ]
+        },
+        "financialRequirements": {
+          "proofOfFundsRequired": true,
+          "minimumAmount": 10000,
+          "currency": "EUR",
+          "description": "Yıllık minimum €10,000 yaşam masrafı + eğitim ücreti kanıtı",
+          "acceptedProofTypes": [
+            "Banka hesap ekstresi (6 ay)",
+            "Sponsor mektubu (ebeveyn, aile)",
+            "Burs mektubu",
+            "Eğitim kredisi onay belgesi"
+          ],
+          "notes": "Fonlar başvuranın veya sponsor ailenin hesabında olmalı"
+        },
+        "healthRequirements": {
+          "medicalExamRequired": false,
+          "vaccinations": [],
+          "prohibitedConditions": [],
+          "healthInsurance": {
+            "required": true,
+            "minimumCoverage": "€25,000 - €50,000",
+            "providers": ["Üniversite tarafından önerilen planlar", "Irish Life Health", "VHI Student Plans"],
+            "estimatedCost": {
+              "amount": 500,
+              "currency": "EUR",
+              "notes": "Yıllık öğrenci sağlık sigortası"
+            }
+          }
+        },
+        "characterRequirements": {
+          "policeCertificateRequired": false,
+          "notes": "Öğrenci vizesi için genelde sabıka kaydı gerekmez ancak bazı durumlarda istenebilir",
+          "excludingFactors": ["Önceki vize ihlalleri", "Yalan beyan"]
+        }
+      },
+
+      "applicationProcess": {
+        "overview": "Öğrenci vizesi süreci: (1) Üniversite kabul alma, (2) Finansal kanıt hazırlama, (3) Vize başvurusu (VFS Turkey), (4) İrlanda'ya varış ve IRP kaydı. Tüm süreç 2-4 ay sürer.",
+        "estimatedTotalDuration": "60-120 gün",
+        "steps": [
+          {
+            "stepNumber": 1,
+            "stepName": "Üniversite ve Program Seçimi",
+            "description": "İrlanda'da tanınmış üniversitelerden birinde program araştırın ve başvurun. QQI (Quality and Qualifications Ireland) onaylı kurumlar olmalı.",
+            "duration": "30-90 gün",
+            "tips": [
+              "Trinity College Dublin, UCD, UCC, DCU popüler seçenekler",
+              "Program süresi minimum 1 yıl olmalı (part-time çalışma hakkı için)",
+              "Eğitim ücreti: €10,000-25,000/yıl (program ve üniversiteye göre)",
+              "Application deadline'lara dikkat edin (genelde Ocak-Mart)"
+            ]
+          },
+          {
+            "stepNumber": 2,
+            "stepName": "Üniversite Kabul Mektubu (Letter of Acceptance)",
+            "description": "Üniversite başvurunuz onaylanınca resmi kabul mektubu alırsınız. Bu belge vize başvurusu için zorunludur.",
+            "duration": "14-60 gün (üniversiteye göre)",
+            "requiredDocuments": [
+              "Letter of Acceptance",
+              "Eğitim ücreti ödeme kanıtı veya taahhüt"
+            ]
+          },
+          {
+            "stepNumber": 3,
+            "stepName": "Finansal Belgelerin Hazırlanması",
+            "description": "Minimum €10,000 + eğitim ücreti için finansal kanıt hazırlayın",
+            "duration": "7-14 gün",
+            "requiredDocuments": [
+              "Banka ekstresi (6 ay, €10,000+)",
+              "Sponsor mektubu (ebeveyn/aile finansal desteği)",
+              "Burs belgesi (varsa)"
+            ],
+            "costs": [
+              {
+                "item": "Banka ekstresi",
+                "amount": 10,
+                "currency": "EUR"
+              }
+            ]
+          },
+          {
+            "stepNumber": 4,
+            "stepName": "D Vizesi Başvurusu (Student Visa)",
+            "description": "VFS Global aracılığıyla İrlanda öğrenci vizesi başvurusu. Online form doldurulur, belgeler hazırlanır, randevu alınır.",
+            "duration": "30-60 gün",
+            "requiredDocuments": [
+              "Online vize başvuru formu (visas.inis.gov.ie)",
+              "Pasaport (12 ay+ geçerli)",
+              "Letter of Acceptance (üniversite kabul mektubu)",
+              "Finansal kanıt (€10,000+ banka ekstresi)",
+              "Sağlık sigortası poliçesi",
+              "Eğitim ücreti ödeme kanıtı",
+              "IELTS/TOEFL skor belgesi",
+              "Lise/üniversite diploma ve transkript",
+              "Motivasyon mektubu (SOP - Statement of Purpose)",
+              "CV/özgeçmiş",
+              "Pasaport fotoğrafı"
+            ],
+            "costs": [
+              {
+                "item": "Öğrenci vizesi (single entry)",
+                "amount": 60,
+                "currency": "EUR"
+              },
+              {
+                "item": "Multiple entry vize",
+                "amount": 100,
+                "currency": "EUR"
+              },
+              {
+                "item": "VFS servis ücreti",
+                "amount": 25,
+                "currency": "EUR"
+              }
+            ],
+            "tips": [
+              "Motivasyon mektubunda eğitim planınızı ve Türkiye'ye dönüş niyetinizi belirtin",
+              "Vize mülakatına hazırlıklı gidin",
+              "Tüm belgelerin İngilizce olmasına dikkat edin"
+            ]
+          },
+          {
+            "stepNumber": 5,
+            "stepName": "İrlanda'ya Varış ve IRP Kaydı",
+            "description": "Vize aldıktan sonra İrlanda'ya gelip 90 gün içinde IRP (Irish Residence Permit) kartı başvurusu yapılır. Stamp 2 izni verilir.",
+            "duration": "14-30 gün",
+            "costs": [
+              {
+                "item": "IRP kartı",
+                "amount": 300,
+                "currency": "EUR"
+              }
+            ]
+          }
+        ]
+      },
+
+      "workRights": {
+        "duringStudies": {
+          "canWork": true,
+          "termTime": "20 saat/hafta (part-time)",
+          "vacationPeriods": "40 saat/hafta (full-time)",
+          "vacationDates": [
+            "Haziran-Ağustos-Eylül (3.5 ay)",
+            "15 Aralık - 15 Ocak (1 ay)"
+          ],
+          "totalVacationDays": "Yılda 4.5 ay full-time çalışma hakkı",
+          "notes": "Çalışma saatleri sabit - üniversite akademik takviminden bağımsız"
+        },
+        "restrictions": [
+          "Kendi işinizi kuramazsınız",
+          "Dönem içi 20 saat limitini aşamazsınız",
+          "Çalışma zorunlu değil, hak olarak tanınır"
+        ],
+        "earnings": {
+          "minimumWage": "€12.70/saat (2024)",
+          "estimatedMonthlyIncome": "€400-1000 (part-time, 20 saat/hafta)",
+          "notes": "Tatil dönemlerinde (40 saat/hafta) €2,000+ kazanılabilir"
+        }
+      },
+
+      "graduateScheme": {
+        "name": "Third Level Graduate Programme (Stamp 1G)",
+        "description": "Mezuniyet sonrası İrlanda'da kalarak iş arama ve full-time çalışma hakkı tanıyan program",
+        "eligibility": [
+          "Stamp 2 öğrenci vizesi ile minimum 1 yıl eğitim tamamlanmış olmalı",
+          "QQI onaylı kurumdan Level 8, 9 veya 10 diploma",
+          "Diploma tarihi 1 Ocak 2017 veya sonrası",
+          "Mezuniyet bildiriminden itibaren 6 ay içinde başvuru"
+        ],
+        "duration": {
+          "level8": "12 ay (Honours Bachelor degree)",
+          "level9": "24 ay (Master's degree - 2x12 ay bloklar halinde)",
+          "level10": "24 ay (PhD)"
+        },
+        "workRights": {
+          "canWork": true,
+          "hours": "40 saat/hafta (full-time)",
+          "employmentType": "Contract, internship, probation dahil her türlü iş",
+          "employmentPermitRequired": false
+        },
+        "maximumStayAsStudent": {
+          "level8": "7 yıl toplam (Stamp 2 + Stamp 1G)",
+          "level9": "8 yıl toplam (Stamp 2 + Stamp 1G)"
+        },
+        "pathToWorkPermit": "Graduate scheme sırasında iş bulursanız Critical Skills veya General Employment Permit'e geçebilirsiniz",
+        "costs": [
+          {
+            "item": "Stamp 1G başvuru/IRP yenileme",
+            "amount": 300,
+            "currency": "EUR"
+          }
+        ],
+        "applicationProcess": "Graduation öncesi veya sonrası (6 ay içinde) online başvuru. Diploma ve üniversite belgesi gerekir.",
+        "notes": "Bu program sayesinde mezun olduktan sonra aceleyle Türkiye'ye dönmenize gerek yok. 1-2 yıl iş arayabilir ve deneyim kazanabilirsiniz."
+      },
+
+      "pathToPermanentResidency": {
+        "available": true,
+        "process": "Öğrenci vizesinden direkt Stamp 4 yok. Önce work permit (Critical Skills veya General) almalısınız. Sonra work permit süreleri ile Stamp 4'e geçiş yapılır.",
+        "timeline": "Stamp 2 (öğrenci) → Stamp 1G (graduate) → Stamp 1 (work permit) → 2-5 yıl sonra Stamp 4",
+        "notes": "Popüler yol: Öğrenci → Graduate Scheme → Critical Skills permit (2 yıl) → Stamp 4"
+      },
+
+      "costs": {
+        "tuitionFees": {
+          "undergraduate": "€10,000-20,000/yıl",
+          "postgraduate": "€12,000-25,000/yıl",
+          "MBA": "€20,000-35,000/yıl",
+          "notes": "International öğrenci ücreti. AB vatandaşları daha az öder."
+        },
+        "livingExpenses": {
+          "monthly": "€1,000-1,500 (Dublin dışı), €1,500-2,000 (Dublin)",
+          "annual": "€12,000-18,000",
+          "breakdown": {
+            "accommodation": "€500-1,200/ay",
+            "food": "€250-400/ay",
+            "transport": "€100-150/ay",
+            "utilities": "€50-100/ay",
+            "socialLife": "€100-200/ay"
+          }
+        }
+      }
+    },
+
+    {
+      "visaCode": "STEP",
+      "officialName": "Start-up Entrepreneur Programme (STEP)",
+      "officialNameTR": "Girişimci Start-up Programı",
+      "category": "entrepreneur",
+      "description": "Yenilikçi iş fikirleri olan girişimciler için İrlanda'da şirket kurma izni. Minimum €50,000 sermaye gerektirir. High Potential Start-Up (HPSU) kriterlerine uygun olmalıdır. 2+3 yıl izin, sonra Stamp 4 başvurusu.",
+      "keyBenefits": [
+        "İnovatif iş fikirlerinizi İrlanda'da hayata geçirme",
+        "Minimum €50,000 fonlama (kendi kaynak, yatırımcı veya kredi)",
+        "İlk 2 yıl + 3 yıl uzatma = 5 yıl",
+        "5 yıl sonra Stamp 4 (kalıcı oturum) başvurusu",
+        "Aile üyeleri de aynı haklara sahip",
+        "AB pazarına erişim",
+        "İrlanda'nın tech ecosystem'inden faydalanma"
+      ],
+      "estimatedTotalCost": {
+        "amount": 50750,
+        "currency": "EUR",
+        "breakdown": "Başvuru ücreti €350 + minimum sermaye €50,000 + IRP €300 + vize €100"
+      },
+
+      "eligibilityCriteria": {
+        "ageRequirements": {
+          "minimumAge": 18,
+          "maximumAge": null
+        },
+        "fundingRequirements": {
+          "minimumAmount": 50000,
+          "currency": "EUR",
+          "description": "İlk kurucu için minimum €50,000 fonlama gerekir",
+          "additionalFounders": {
+            "amount": 30000,
+            "currency": "EUR",
+            "description": "2. ve sonraki kurucular (CEO, CFO, CTO, CIO) için ek €30,000"
+          },
+          "acceptedSources": [
+            "Kendi kaynaklar (personal savings)",
+            "İş kredisi (business loan)",
+            "Business angel yatırımcılar",
+            "Venture capital",
+            "Enterprise Ireland veya diğer devlet ajanslarından hibe"
+          ]
+        },
+        "businessRequirements": {
+          "type": "High Potential Start-Up (HPSU)",
+          "criteria": [
+            "Uluslararası pazarlara yeni veya yenilikçi ürün/hizmet sunmalı",
+            "3-4 yıl içinde İrlanda'da 10 iş yaratma ve €1 milyon ciro potansiyeli",
+            "Deneyimli yönetim ekibi",
+            "Merkez ve kontrol İrlanda'da olmalı",
+            "6 yıldan az süredir kurulu şirket"
+          ],
+          "excludedSectors": [
+            "Perakende (retail)",
+            "Catering / restoran işletmeciliği",
+            "Kişisel hizmetler",
+            "Benzer düşük değer hizmetler"
+          ],
+          "preferredSectors": [
+            "Teknoloji ve yazılım",
+            "Fintech",
+            "Biyoteknoloji ve sağlık teknolojisi",
+            "Yeşil teknoloji / clean tech",
+            "İnovatif üretim",
+            "Dijital medya ve gaming"
+          ]
+        },
+        "businessPlanRequirements": {
+          "required": true,
+          "mustInclude": [
+            "Executive summary",
+            "Ürün/hizmet detayları ve inovasyon",
+            "Pazar analizi ve hedef müşteriler",
+            "Rekabet avantajı",
+            "Pazarlama ve satış stratejisi",
+            "5 yıllık finansal projeksiyonlar",
+            "İş yaratma planı (10 iş, 3-4 yıl içinde)",
+            "Yönetim ekibi CV'leri ve deneyim",
+            "Risk analizi"
+          ]
+        },
+        "characterRequirements": {
+          "policeCertificateRequired": true,
+          "goodCharacter": true,
+          "notes": "İyi karakter ve temiz adli sicil gerekir"
+        }
+      },
+
+      "applicationProcess": {
+        "overview": "STEP başvurusu detaylı iş planı ve fonlama kanıtı gerektirir. Evaluation committee çeyrek yılda bir toplanır ve başvuruları değerlendirir.",
+        "estimatedTotalDuration": "90-180 gün",
+        "evaluationCommittee": {
+          "meetingFrequency": "Quarterly (3 ayda bir)",
+          "composition": "Enterprise Ireland, Department of Justice, DJEI temsilcileri",
+          "assessmentCriteria": [
+            "İnovasyon seviyesi",
+            "Uluslararası pazar potansiyeli",
+            "İş yaratma potansiyeli",
+            "Yönetim ekibinin deneyimi",
+            "Finansal uygulanabilirlik"
+          ]
+        },
+        "steps": [
+          {
+            "stepNumber": 1,
+            "stepName": "İş Fikri ve Plan Geliştirme",
+            "description": "İnovatif iş fikri geliştirin ve detaylı business plan hazırlayın",
+            "duration": "30-90 gün"
+          },
+          {
+            "stepNumber": 2,
+            "stepName": "Fonlama Teminati",
+            "description": "€50,000 fonlamayı temin edin (kendi kaynak, yatırımcı veya kredi)",
+            "duration": "30-90 gün"
+          },
+          {
+            "stepNumber": 3,
+            "stepName": "STEP Başvurusu",
+            "description": "Online başvuru formu, business plan, fonlama kanıtı ve destekleyici belgelerle başvuru",
+            "duration": "7-14 gün (hazırlık)",
+            "requiredDocuments": [
+              "Completed STEP application form",
+              "Business plan (comprehensive)",
+              "Proof of €50,000 funding",
+              "Funding source documentation",
+              "Police clearance certificate",
+              "CV of founder(s)",
+              "Passport copy",
+              "Detailed financial projections"
+            ],
+            "costs": [
+              {
+                "item": "STEP başvuru ücreti",
+                "amount": 350,
+                "currency": "EUR",
+                "notes": "İade edilmez, aile üyelerini kapsar"
+              }
+            ]
+          },
+          {
+            "stepNumber": 4,
+            "stepName": "Evaluation ve Karar",
+            "description": "Başvuru evaluation committee tarafından değerlendirilir. Quarterly meeting'de karar verilir.",
+            "duration": "60-120 gün"
+          },
+          {
+            "stepNumber": 5,
+            "stepName": "Onay Sonrası İşlemler",
+            "description": "Onaylandıktan sonra İrlanda'ya giriş vizesi alınır, şirket kurulur, IRP kaydı yapılır",
+            "duration": "30-60 gün"
+          }
+        ]
+      },
+
+      "permissionTerms": {
+        "initial": "2 yıl",
+        "renewal": "3 yıl (performance review sonrası)",
+        "total": "5 yıl",
+        "conditions": [
+          "Full-time şirkete odaklanmalısınız (başka işte çalışamazsınız)",
+          "İrlanda Devleti'ne finansal yük olmamak",
+          "İş planında belirtilen hedeflere ulaşmak",
+          "Şirket İrlanda'da headquarter ve kontrol altında olmalı"
+        ],
+        "performanceReview": "2. yıl sonunda iş planı hedefleri değerlendirilir. 3 yıllık uzatma bu review'a bağlıdır."
+      },
+
+      "familyRights": {
+        "canBringFamily": true,
+        "eligibleRelatives": ["Eş", "21 yaş altı bağımlı çocuklar"],
+        "familyPermission": "Aynı süre ve haklar",
+        "spouseWorkRights": "Eş de çalışabilir - aynı izinle kapsanır",
+        "notes": "Aile başvuru ücreti STEP ücretine dahildir (€350 toplam)"
+      },
+
+      "pathToPermanentResidency": {
+        "available": true,
+        "timeline": "5 yıl (2+3 yıl STEP süresi sonrası)",
+        "process": "5 yıllık süre sonunda Stamp 4 (long-term residence) başvurusu yapılabilir",
+        "requirements": [
+          "5 yıl boyunca STEP şartlarına uyum",
+          "İş başarılı şekilde devam ediyor olmalı",
+          "İyi karakter",
+          "Vergi uyumu"
+        ]
+      },
+
+      "pathToCitizenship": {
+        "available": true,
+        "minimumResidencyYears": 5,
+        "process": "Stamp 4 aldıktan sonra veya toplam 5 yıl sonra naturalisation başvurusu"
+      }
+    },
+
+    {
+      "visaCode": "ICT",
+      "officialName": "Intra-Company Transfer Employment Permit",
+      "officialNameTR": "Şirket İçi Transfer İstihdam İzni",
+      "category": "work",
+      "description": "Çok uluslu şirketler içinde yurt dışından İrlanda şubesine transfer olan çalışanlar için izin. Minimum 6 ay aynı şirkette çalışmış olma şartı vardır. Senior management, key personnel veya trainee pozisyonları için geçerlidir.",
+      "keyBenefits": [
+        "Çok uluslu şirketler içinde transfer kolaylığı",
+        "Labour market test gerekmez",
+        "2 yıl izin, 5 yıla kadar uzatılabilir",
+        "Aile birleşimi hakkı",
+        "5 yıl sonra Stamp 4 başvurusu"
+      ],
+      "estimatedTotalCost": {
+        "amount": 1500,
+        "currency": "EUR",
+        "breakdown": "İzin ücreti €1000 + vize €100 + IRP €300"
+      },
+
+      "eligibilityCriteria": {
+        "ageRequirements": {
+          "minimumAge": 18,
+          "maximumAge": null
+        },
+        "employmentRequirements": {
+          "minimumTenure": "6 ay aynı şirkette (yurtdışı şubesinde)",
+          "eligibleRoles": [
+            "Senior management (üst düzey yönetici)",
+            "Key personnel (kritik uzmanlık gerektiren pozisyon)",
+            "Trainee (eğitim programı kapsamında transfer)"
+          ]
+        },
+        "salaryRequirements": {
+          "seniorManagement": {
+            "amount": 53000,
+            "currency": "EUR",
+            "effectiveDate": "Ocak 2025",
+            "previousAmount": 46000,
+            "previousDate": "Ocak 2024"
+          },
+          "trainee": {
+            "amount": 39000,
+            "currency": "EUR",
+            "effectiveDate": "Ocak 2025",
+            "previousAmount": 34000,
+            "previousDate": "Ocak 2024"
+          }
+        },
+        "companyRequirements": {
+          "type": "Multinational corporation",
+          "structure": "Yurtdışı ana şirket + İrlanda şubesi",
+          "relationship": "Parent company, subsidiary, branch veya affiliate",
+          "notes": "Şirketler arasında yasal bağ olmalı"
+        }
+      },
+
+      "applicationProcess": {
+        "overview": "İşveren (İrlanda şubesi) başvuruyu yapar. Minimum 12 hafta önceden başvurulmalıdır.",
+        "estimatedTotalDuration": "60-90 gün",
+        "processingTime": {
+          "trustedPartner": "1-2 hafta",
+          "standard": "6-10 hafta"
+        }
+      },
+
+      "costs": {
+        "amount": 1000,
+        "currency": "EUR",
+        "notes": "İşveren öder. Red durumunda %90 iade."
+      },
+
+      "permitDuration": {
+        "initial": "12-24 ay",
+        "maximum": "5 yıl toplam (senior management/key personnel için)",
+        "trainee": "Daha kısa süreler",
+        "renewal": "Uzatılabilir"
+      },
+
+      "pathToPermanentResidency": {
+        "available": true,
+        "timeline": "5 yıl sonra Stamp 4 başvurusu",
+        "process": "5 yıl ICT izni ile çalıştıktan sonra Stamp 4'e başvurulabilir"
+      }
+    }
+  ],
+
+  "notes": "Bu dosya ireland-emigration-data-COMPLETE.json dosyasının devamıdır. Ek vize tipleri ve detaylar içerir."
+}

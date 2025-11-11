@@ -1,0 +1,614 @@
+{
+  "continuesFrom": "germany-emigration-data-COMPLETE.json",
+  "section": "Additional Visa Programs, Work Permits, and Settlement Information",
+
+  "visaPrograms_continued": [
+    {
+      "visaId": "DE_BLUE_CARD",
+      "visaCode": "EU Blue Card / EU-Blaue Karte",
+      "officialName": "EU Blue Card Germany",
+      "nameInGerman": "Blaue Karte EU",
+      "nameInTurkish": "AB Mavi Kartı",
+      "category": "work",
+      "popularity": "Very High for qualified professionals - Fast track to permanent residence",
+
+      "overview": {
+        "description": "EU-wide work and residence permit for highly qualified professionals. Germany has one of the easiest Blue Card processes in EU with lower salary thresholds than most countries. Fastest path to permanent residence (33 months with B1 German, 21 months with C1 German).",
+        "keyBenefits": [
+          "Fast track to permanent residence: 33 months (B1 German) or 21 months (C1 German)",
+          "Lower salary threshold for shortage occupations",
+          "Family reunification immediate (spouse can work)",
+          "Can work anywhere in EU after 18 months",
+          "No labor market test required",
+          "NEW 2024: No German language requirement for application!",
+          "Path to German citizenship after 5 years (with good integration)"
+        ]
+      },
+
+      "salaryThresholds": {
+        "2025": {
+          "general": {
+            "annualGross": 48300,
+            "monthlyGross": 4025,
+            "currency": "EUR",
+            "annualTRY": 1690500,
+            "monthlyTRY": 140875
+          },
+          "shortageOccupations": {
+            "annualGross": 43759.80,
+            "monthlyGross": 3646.65,
+            "currency": "EUR",
+            "annualTRY": 1531593,
+            "monthlyTRY": 127632.75,
+            "youngProfessionals": "Same threshold for university graduates <3 years"
+          }
+        },
+        "shortageOccupationsList": [
+          "IT and technology managers",
+          "Information and communications technology service managers",
+          "Manufacturing, mining, construction managers",
+          "Professional services managers (childcare, health, education)",
+          "Scientists (natural sciences, engineering, IT)",
+          "Engineers",
+          "Healthcare professionals (doctors, dentists, pharmacists)",
+          "Teaching professionals",
+          "IT specialists"
+        ],
+        "note": "Salary threshold updated annually based on German average salary"
+      },
+
+      "eligibilityCriteria": {
+        "ageRequirements": {
+          "minimumAge": 18,
+          "maximumAge": null
+        },
+        "educationOrExperience": {
+          "option1": {
+            "type": "University Degree (most common)",
+            "requirement": "Bachelor's or higher from recognized university",
+            "duration": "At least 3 years of higher education",
+            "recognition": "Turkish degrees recognized if university in Anabin database (H+)",
+            "recognitionProcess": {
+              "anabin": "Check if Turkish university listed",
+              "ZAB": "Central Office for Foreign Education (ZAB) for formal recognition",
+              "cost": "€100-485 for recognition",
+              "duration": "3-6 months"
+            }
+          },
+          "option2": {
+            "type": "Professional Experience (NEW 2024)",
+            "requirement": "5+ years professional experience",
+            "specialConditions": "For IT professionals with 3+ years experience in last 7 years",
+            "notes": "Can substitute for university degree in some cases",
+            "ITspecialists": {
+              "requirement": "3 years experience in IT in last 7 years",
+              "salaryThreshold": 43759.80,
+              "currency": "EUR",
+              "inTRY": 1531593
+            }
+          }
+        },
+        "employmentRequirements": {
+          "jobOffer": "Must have valid employment contract",
+          "contractTypes": ["Employment contract (Arbeitsvertrag)", "Job offer with contract details"],
+          "duration": "Typically permanent or at least 1 year",
+          "salary": "Must meet or exceed threshold for general or shortage occupation",
+          "jobRelevance": "Job must match qualification",
+          "employerRequirements": "Employer must be established in Germany"
+        },
+        "languageRequirements": {
+          "forApplication": {
+            "required": false,
+            "note": "NEW 2024: No German language requirement for Blue Card application!"
+          },
+          "forPermanentResidence": {
+            "B1German": "33 months to PR with B1",
+            "C1German": "21 months to PR with C1"
+          },
+          "forDailyLife": "B1-B2 German highly recommended for integration and work environment"
+        },
+        "turkishSpecifics": {
+          "applicationFee": {
+            "age24Plus": 37,
+            "currency": "EUR",
+            "inTRY": 1295,
+            "note": "Reduced fee for Turkish citizens under Association Agreement"
+          },
+          "noDifference": "Same salary thresholds and requirements as other non-EU nationals"
+        }
+      },
+
+      "applicationProcess": {
+        "estimatedTotalDuration": "90-180 days (3-6 months)",
+        "processingVariation": "Depends on Ausländerbehörde (local immigration office) workload",
+
+        "steps": [
+          {
+            "stepNumber": 1,
+            "stepName": "Secure Job Offer Meeting Threshold",
+            "description": "Find employer in Germany willing to sponsor, verify salary meets Blue Card threshold",
+            "salary2025": {
+              "general": "€48,300/year (€4,025/month)",
+              "shortage": "€43,759.80/year (€3,646.65/month)"
+            },
+            "platforms": [
+              {
+                "name": "Make it in Germany",
+                "url": "https://www.make-it-in-germany.com/en/jobs/",
+                "note": "Official German government job portal"
+              },
+              {
+                "name": "LinkedIn Germany",
+                "note": "Very active, many English-speaking roles"
+              },
+              {
+                "name": "StepStone",
+                "url": "https://www.stepstone.de/",
+                "note": "Major German job portal"
+              },
+              {
+                "name": "Indeed Germany",
+                "url": "https://de.indeed.com/"
+              },
+              {
+                "name": "XING",
+                "url": "https://www.xing.com/",
+                "note": "German professional network"
+              }
+            ],
+            "tips": [
+              "IT, engineering, healthcare have highest demand",
+              "Many employers familiar with Blue Card process",
+              "Salary negotiation: ensure it meets threshold",
+              "Get written job offer with exact salary specified"
+            ]
+          },
+          {
+            "stepNumber": 2,
+            "stepName": "Degree Recognition (if needed)",
+            "description": "Get Turkish degree officially recognized in Germany",
+            "whenRequired": "For regulated professions (medicine, engineering, teaching)",
+            "database": {
+              "name": "Anabin",
+              "url": "https://anabin.kmk.org/",
+              "check": "All Turkish universities H+ rated (recognized)"
+            },
+            "recognitionAuthority": {
+              "name": "ZAB - Zentralstelle für ausländisches Bildungswesen",
+              "url": "https://www.kmk.org/zab/",
+              "cost": "€100-485",
+              "duration": "3-6 months"
+            },
+            "alternativeDatabase": {
+              "name": "Recognition in Germany portal",
+              "url": "https://www.anerkennung-in-deutschland.de/html/tr/",
+              "inTurkish": "Yes, available in Turkish"
+            },
+            "notes": "Not always required for Blue Card, but helpful"
+          },
+          {
+            "stepNumber": 3,
+            "stepName": "Employer Pre-Approval (Optional but Helpful)",
+            "description": "Employer can pre-check with Bundesagentur für Arbeit (Federal Employment Agency)",
+            "benefit": "Speeds up process",
+            "duration": "2-4 weeks",
+            "note": "Not mandatory but recommended"
+          },
+          {
+            "stepNumber": 4,
+            "stepName": "Prepare Documents",
+            "description": "Gather all required documents with translations",
+            "requiredDocuments": [
+              "Valid passport (minimum 6 months validity)",
+              "University degree certificates (apostilled)",
+              "Transcripts (apostilled)",
+              "Employment contract or binding job offer",
+              "CV/Resume",
+              "Biometric photos (3.5 x 4.5 cm)",
+              "Proof of accommodation in Germany (rental contract or hotel)",
+              "Health insurance confirmation",
+              "Degree recognition certificate (if already obtained)"
+            ],
+            "translationRequirements": {
+              "language": "German",
+              "type": "Certified translation",
+              "cost": "€15-30 per page",
+              "costTRY": "525-1,050 TRY per page",
+              "documents": ["Degree certificate", "Transcripts", "Employment contract if in Turkish/English"]
+            },
+            "apostille": {
+              "required": "On all Turkish educational documents",
+              "where": "Turkish notary (noter)",
+              "cost": "₺50-100 per document"
+            }
+          },
+          {
+            "stepNumber": 5,
+            "stepName": "Apply for Blue Card",
+            "description": "Submit application to German mission in Turkey or in Germany if legally present",
+            "applicationLocations": {
+              "fromTurkey": "German Embassy Ankara or Consulates (Istanbul, Izmir, Antalya) via iDATA",
+              "fromGermany": "Local Ausländerbehörde (if already in Germany on another permit)"
+            },
+            "costs": [
+              {"item": "Blue Card application fee (Turkish citizens age 24+)", "amount": 37, "currency": "EUR", "amountTRY": 1295},
+              {"item": "Residence permit issuance", "amount": 100, "currency": "EUR", "amountTRY": 3500},
+              {"item": "iDATA service fee (if applying from Turkey)", "amount": 25, "currency": "EUR", "amountTRY": 875}
+            ],
+            "requiredForms": [
+              "Application for residence permit form",
+              "Declaration on employment"
+            ]
+          },
+          {
+            "stepNumber": 6,
+            "stepName": "Wait for Processing",
+            "description": "Immigration office processes application",
+            "duration": "90-180 days",
+            "averageDuration": "3-4 months",
+            "variability": "Depends on city and time of year",
+            "fastestCities": "Berlin, Munich, Frankfurt (established processes)",
+            "slowerCities": "Smaller cities may take longer",
+            "legalStayDuringProcessing": "Yes, if applied from within Germany (Fiktionsbescheinigung issued)",
+            "trackingNote": "Can inquire via email to processing office"
+          },
+          {
+            "stepNumber": 7,
+            "stepName": "Receive Blue Card",
+            "description": "Collect Blue Card residence permit",
+            "validity": "Up to 4 years, depends on contract length",
+            "renewalNeeded": "If contract extends beyond initial validity",
+            "notes": "Card allows work for issuing employer; changing jobs requires notification"
+          }
+        ],
+
+        "totalCosts": {
+          "mandatory": [
+            {"item": "Blue Card application fee (Turkish citizens)", "amount": 1295, "currency": "TRY"},
+            {"item": "Residence permit issuance", "amount": 3500, "currency": "TRY"},
+            {"item": "iDATA service fee (if from Turkey)", "amount": 875, "currency": "TRY"},
+            {"item": "Degree recognition (if required)", "amount": 3500, "currency": "TRY", "range": "3,500-17,000 TRY"},
+            {"item": "Document translations", "amount": 1500, "currency": "TRY", "range": "1,000-2,500 TRY"},
+            {"item": "Apostilles", "amount": 200, "currency": "TRY"}
+          ],
+          "totalEstimate": {
+            "minimum": 10870,
+            "maximum": 25000,
+            "currency": "TRY",
+            "note": "Significantly lower than other work visa costs"
+          }
+        }
+      },
+
+      "pathToPermanentResidency": {
+        "available": true,
+        "fastTrack": true,
+        "minimumMonths": 21,
+        "standardPath": 33,
+        "process": "Niederlassungserlaubnis (permanent residence permit)",
+        "requirements": {
+          "option1": {
+            "name": "Standard Path",
+            "duration": "33 months with Blue Card",
+            "germanLanguage": "B1 level",
+            "pension": "33 months of contributions",
+            "accommodation": "Adequate accommodation",
+            "income": "Continued appropriate income"
+          },
+          "option2": {
+            "name": "Fast Track",
+            "duration": "21 months with Blue Card",
+            "germanLanguage": "C1 level (advanced)",
+            "pension": "21 months of contributions",
+            "accommodation": "Adequate accommodation",
+            "income": "Continued appropriate income",
+            "note": "Fastest PR path in Germany!"
+          }
+        },
+        "benefits": [
+          "Unrestricted work rights",
+          "Can live and work anywhere in Germany",
+          "Access to all social benefits",
+          "No more visa renewals",
+          "Path to citizenship"
+        ],
+        "notes": "Blue Card is one of fastest paths to PR in entire EU"
+      },
+
+      "pathToCitizenship": {
+        "available": true,
+        "minimumYears": 5,
+        "newLaw2024": "Dual citizenship now allowed for Turkish citizens!",
+        "requirements": [
+          "5 years legal residence (with exceptional integration) OR 8 years standard",
+          "Permanent residence permit (Niederlassungserlaubnis)",
+          "B1 German language proficiency",
+          "Pass citizenship test (Einbürgerungstest)",
+          "Secure livelihood (no social welfare dependency)",
+          "No serious criminal record",
+          "Commitment to democratic principles"
+        ],
+        "germanLanguageTest": {
+          "level": "B1",
+          "acceptedCertificates": [
+            "Goethe-Zertifikat B1",
+            "telc Deutsch B1",
+            "ÖSD Zertifikat B1",
+            "TestDaF"
+          ],
+          "exemptions": ["German school education", "German university degree"]
+        },
+        "citizenshipTest": {
+          "name": "Einbürgerungstest",
+          "questions": 33,
+          "passScore": "17 correct (51%)",
+          "duration": "60 minutes",
+          "cost": "€25",
+          "costTRY": 875,
+          "testLocation": "VHS (Volkshochschule) or similar institutions",
+          "preparationMaterial": "Free online practice tests available"
+        },
+        "costs": [
+          {"item": "Citizenship application", "amount": 255, "currency": "EUR", "amountTRY": 8925},
+          {"item": "Minor children (with parents)", "amount": 51, "currency": "EUR", "amountTRY": 1785},
+          {"item": "Language test (if needed)", "amount": 150, "currency": "EUR", "amountTRY": 5250, "note": "Goethe Institute"},
+          {"item": "Citizenship test", "amount": 25, "currency": "EUR", "amountTRY": 875}
+        ],
+        "processingTime": "6-24 months depending on city",
+        "dualCitizenshipNEW": {
+          "effectiveDate": "June 27, 2024",
+          "allowed": true,
+          "note": "MAJOR CHANGE! Turkish citizens can now keep Turkish citizenship when naturalizing as German citizens. Previously had to renounce.",
+          "benefits": [
+            "Keep Turkish passport",
+            "Travel freely with both passports",
+            "Rights in both countries",
+            "No loss of property rights in Turkey"
+          ]
+        }
+      }
+    }
+  ],
+
+  "settlementInformation": {
+    "firstWeekChecklist": [
+      {
+        "task": "Register Address (Anmeldung)",
+        "priority": "CRITICAL",
+        "deadline": "Within 14 days of arrival",
+        "legalRequirement": "§ 17 Bundesmeldegesetz (Federal Registration Act)",
+        "description": "Register your residential address at registration office - absolutely essential first step",
+        "location": "Einwohnermeldeamt or Bürgeramt in your city district",
+        "appointmentRequired": true,
+        "bookingWebsite": "Varies by city - check city website (e.g., Berlin: service.berlin.de)",
+        "requiredDocuments": [
+          "Valid passport",
+          "Visa or residence permit",
+          "Wohnungsgeberbestätigung (Landlord confirmation - landlord must sign)",
+          "Anmeldung form (download from city website or get at office)"
+        ],
+        "cost": 0,
+        "costNote": "Free of charge",
+        "estimatedTime": "15-30 minutes at office",
+        "result": "Meldebescheinigung (registration certificate)",
+        "tips": [
+          "Book appointment ASAP - can take 2-4 weeks in big cities",
+          "Landlord must sign Wohnungsgeberbestätigung - ask them in advance",
+          "Bring completed form to save time",
+          "If can't get appointment within 14 days, booking appointment itself fulfills requirement",
+          "This certificate needed for EVERYTHING: bank account, insurance, phone contract, etc."
+        ],
+        "consequences": "Cannot open bank account, get insurance, or complete any official procedures without this. Fine of up to €1,000 for not registering!",
+        "penalty": "€500-1,000 fine for late registration"
+      },
+      {
+        "task": "Get Tax Number (Steueridentifikationsnummer)",
+        "priority": "HIGH",
+        "deadline": "Automatic after Anmeldung",
+        "description": "11-digit personal tax ID number - sent automatically by post 2-4 weeks after Anmeldung",
+        "location": "Sent by mail from Bundeszentralamt für Steuern (BZSt)",
+        "requiredDocuments": [],
+        "cost": 0,
+        "automaticProcess": true,
+        "estimatedTime": "2-4 weeks after Anmeldung",
+        "tips": [
+          "Keep this number safe - need for life!",
+          "Employer needs it for payroll",
+          "If lost, can request duplicate from BZSt",
+          "Different from tax number (Steuernummer) for self-employed"
+        ],
+        "ifNotReceived": "Contact Bundeszentralamt für Steuern after 4 weeks: +49 228 406-1240"
+      },
+      {
+        "task": "Get Health Insurance",
+        "priority": "CRITICAL",
+        "deadline": "Before starting work/studies, latest 3 months after arrival",
+        "description": "Mandatory health insurance - cannot work or study without it",
+        "types": {
+          "GKV_statutory": {
+            "name": "Gesetzliche Krankenversicherung (Statutory/Public)",
+            "forWho": ["Employees earning under €73,800/year (2025)", "Students under 30"],
+            "studentCost": {
+              "amount": 125,
+              "currency": "EUR",
+              "costTRY": 4375,
+              "note": "Per month for students under 30"
+            },
+            "employeeCost": {
+              "percentage": 14.6,
+              "note": "7.3% employee + 7.3% employer, plus Zusatzbeitrag (~1.7%)",
+              "calculation": "Based on gross salary"
+            },
+            "providers": [
+              {
+                "name": "TK - Techniker Krankenkasse",
+                "popular": "Most popular among expats",
+                "englishSupport": true,
+                "app": "Excellent TK-App"
+              },
+              {
+                "name": "AOK",
+                "note": "Largest public insurer"
+              },
+              {
+                "name": "DAK-Gesundheit",
+                "popular": true
+              },
+              {
+                "name": "Barmer",
+                "note": "Good coverage"
+              }
+            ]
+          },
+          "PKV_private": {
+            "name": "Private Krankenversicherung (Private Health Insurance)",
+            "forWho": [
+              "Self-employed",
+              "Employees earning over €73,800/year",
+              "Students over 30",
+              "Optional for eligible"
+            ],
+            "cost": {
+              "min": 259,
+              "max": 600,
+              "currency": "EUR",
+              "minTRY": 9065,
+              "maxTRY": 21000,
+              "note": "Based on age, health status, coverage"
+            },
+            "providers": ["Allianz", "HUK-Coburg", "DKV", "Signal Iduna"]
+          }
+        },
+        "requiredDocuments": [
+          "Passport",
+          "Anmeldung certificate",
+          "Employment contract or university enrollment",
+          "Bank account (for direct debit)"
+        ],
+        "tips": [
+          "Students: TK or AOK most popular",
+          "Employees: Usually employer helps with registration",
+          "Public insurance covers family for free (spouse, children)",
+          "Cannot easily switch from private back to public - choose wisely",
+          "Public insurance recommended for most people"
+        ]
+      },
+      {
+        "task": "Open Bank Account",
+        "priority": "HIGH",
+        "deadline": "First week",
+        "description": "German bank account essential for salary, rent, bills",
+        "location": "Bank branch or online",
+        "recommendedBanks": [
+          {
+            "name": "N26",
+            "type": "Online bank",
+            "pros": "Fully English, easy app, free account, no Schufa needed initially",
+            "cons": "Not accepted by all landlords (some want traditional bank)",
+            "cost": 0,
+            "openingTime": "15 minutes online"
+          },
+          {
+            "name": "Deutsche Bank",
+            "type": "Traditional bank",
+            "pros": "Widely accepted, large network",
+            "cons": "Higher fees, German language",
+            "monthlyFee": "€5-10",
+            "openingRequirement": "Visit branch"
+          },
+          {
+            "name": "Commerzbank",
+            "type": "Traditional bank",
+            "pros": "Large network, some English support",
+            "monthlyFee": "€7-10"
+          },
+          {
+            "name": "Sparkasse",
+            "type": "Savings bank (regional)",
+            "pros": "Most branches in Germany",
+            "cons": "Very German-focused, fees",
+            "monthlyFee": "€5-8"
+          },
+          {
+            "name": "ING-DiBa",
+            "type": "Online bank",
+            "pros": "Free account, good app, German expat-friendly",
+            "cons": "Less acceptance than traditional banks"
+          }
+        ],
+        "requiredDocuments": [
+          "Passport",
+          "Anmeldung certificate (registration confirmation)",
+          "Residence permit or visa",
+          "Sometimes: Employment contract or university enrollment"
+        ],
+        "cost": 0,
+        "monthlyFees": "€0-10 depending on bank and account type",
+        "schufa": {
+          "name": "Schufa credit check",
+          "required": "For traditional banks",
+          "problem": "Newcomers have no Schufa history",
+          "solution": "N26 and some online banks don't require Schufa initially"
+        },
+        "tips": [
+          "Start with N26 for quick setup",
+          "Open traditional bank later for landlord requirements",
+          "Ask for Girocard (debit card) and Maestro/V-Pay",
+          "Setup online banking immediately",
+          "Some banks offer English customer service"
+        ]
+      },
+      {
+        "task": "Get SIM Card / Phone Contract",
+        "priority": "MEDIUM-HIGH",
+        "deadline": "First few days",
+        "description": "German phone number essential for registration, verification",
+        "providers": [
+          {
+            "name": "Aldi Talk (Prepaid)",
+            "cost": 10,
+            "currency": "EUR",
+            "costTRY": 350,
+            "pros": "No contract, cheap, available at Aldi supermarkets",
+            "dataPackage": "€5 for 3GB, €10 for 10GB"
+          },
+          {
+            "name": "Lidl Connect (Prepaid)",
+            "cost": 10,
+            "currency": "EUR",
+            "costTRY": 350,
+            "pros": "No contract, available at Lidl"
+          },
+          {
+            "name": "Telekom (Contract)",
+            "monthlyFrom": 20,
+            "currency": "EUR",
+            "pros": "Best network coverage",
+            "cons": "Expensive, 24-month contract usually"
+          },
+          {
+            "name": "Vodafone (Contract)",
+            "monthlyFrom": 15,
+            "currency": "EUR"
+          },
+          {
+            "name": "O2 (Contract)",
+            "monthlyFrom": 10,
+            "currency": "EUR",
+            "pros": "Cheapest among major carriers"
+          }
+        ],
+        "requiredDocuments": {
+          "prepaid": ["Passport"],
+          "contract": ["Passport", "Anmeldung certificate", "Bank account", "Sometimes Schufa"]
+        },
+        "tips": [
+          "Start with prepaid (no Schufa check)",
+          "Buy at supermarket for immediate activation",
+          "Get contract later when Schufa established",
+          "Prepaid sufficient for most needs"
+        ]
+      }
+    ]
+  }
+}

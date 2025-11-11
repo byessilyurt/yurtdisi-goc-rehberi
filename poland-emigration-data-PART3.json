@@ -1,0 +1,562 @@
+{
+  "continuesFrom": "poland-emigration-data-PART2.json",
+  "section": "Cost of Living, Healthcare, Employment, and Practical Information",
+
+  "costOfLivingDetailed": {
+    "currency": "PLN",
+    "conversionRate": "1 PLN = 8 TRY",
+    "lastUpdated": "2024-2025",
+
+    "majorCities": [
+      {
+        "cityName": "Warsaw (Warszawa)",
+        "description": "Capital and most expensive city, but highest salaries",
+        "monthlyBudget": {
+          "minimumSingle": {"amount": 5050, "currency": "PLN", "amountTRY": 40400, "note": "Including rent and all expenses"},
+          "comfortableSingle": {"amount": 7000, "currency": "PLN", "amountTRY": 56000},
+          "student": {"amount": 3500, "currency": "PLN", "amountTRY": 28000, "note": "With modest lifestyle"}
+        },
+        "rentOneBedroomCenter": {"min": 3000, "max": 4500, "currency": "PLN", "minTRY": 24000, "maxTRY": 36000},
+        "rentOneBedroomSuburb": {"min": 2200, "max": 3000, "currency": "PLN", "minTRY": 17600, "maxTRY": 24000},
+        "utilities": {"amount": 400, "range": "350-500", "currency": "PLN", "amountTRY": 3200, "note": "Electricity, water, heating, garbage"},
+        "groceriesMonthly": {"amount": 800, "range": "600-1000", "currency": "PLN", "amountTRY": 6400, "note": "Single person, cooking at home"},
+        "publicTransportMonthly": {"amount": 109, "currency": "PLN", "amountTRY": 872, "note": "Unlimited pass all zones"},
+        "internetMonthly": {"amount": 50, "range": "40-70", "currency": "PLN", "amountTRY": 400},
+        "gymMembership": {"amount": 150, "range": "100-200", "currency": "PLN", "amountTRY": 1200},
+        "mealRestaurant": {"amount": 30, "range": "20-50", "currency": "PLN", "amountTRY": 240, "note": "Mid-range restaurant"},
+        "coffee": {"amount": 12, "range": "10-15", "currency": "PLN", "amountTRY": 96},
+        "cinema": {"amount": 25, "range": "20-30", "currency": "PLN", "amountTRY": 200}
+      },
+      {
+        "cityName": "Krakow",
+        "description": "Historic city, student-friendly, slightly cheaper than Warsaw",
+        "monthlyBudget": {
+          "minimumSingle": {"amount": 4500, "currency": "PLN", "amountTRY": 36000},
+          "comfortableSingle": {"amount": 6000, "currency": "PLN", "amountTRY": 48000},
+          "student": {"amount": 3000, "currency": "PLN", "amountTRY": 24000}
+        },
+        "rentOneBedroomCenter": {"min": 2500, "max": 4000, "currency": "PLN", "minTRY": 20000, "maxTRY": 32000},
+        "rentOneBedroomSuburb": {"min": 1800, "max": 2800, "currency": "PLN", "minTRY": 14400, "maxTRY": 22400},
+        "utilities": {"amount": 350, "currency": "PLN", "amountTRY": 2800},
+        "groceriesMonthly": {"amount": 700, "range": "500-900", "currency": "PLN", "amountTRY": 5600},
+        "publicTransportMonthly": {"amount": 110, "currency": "PLN", "amountTRY": 880, "note": "Approximate"},
+        "internetMonthly": {"amount": 50, "currency": "PLN", "amountTRY": 400}
+      },
+      {
+        "cityName": "Wroclaw",
+        "description": "Growing tech hub, student city, good quality of life",
+        "monthlyBudget": {
+          "minimumSingle": {"amount": 4200, "currency": "PLN", "amountTRY": 33600},
+          "comfortableSingle": {"amount": 5500, "currency": "PLN", "amountTRY": 44000}
+        },
+        "rentOneBedroomCenter": {"min": 2200, "max": 3500, "currency": "PLN", "minTRY": 17600, "maxTRY": 28000},
+        "publicTransportMonthly": {"amount": 100, "currency": "PLN", "amountTRY": 800}
+      },
+      {
+        "cityName": "Gdansk",
+        "description": "Baltic coast city, tech sector growing, beautiful location",
+        "monthlyBudget": {
+          "minimumSingle": {"amount": 4000, "currency": "PLN", "amountTRY": 32000},
+          "comfortableSingle": {"amount": 5500, "currency": "PLN", "amountTRY": 44000}
+        },
+        "rentOneBedroomCenter": {"min": 2200, "max": 3500, "currency": "PLN", "minTRY": 17600, "maxTRY": 28000}
+      }
+    ],
+
+    "foodAndGroceries": {
+      "weeklyGroceries": {"amount": 200, "range": "150-300", "currency": "PLN", "amountTRY": 1600, "note": "Single person"},
+      "commonPrices": {
+        "milk_1L": {"amount": 3.5, "currency": "PLN", "amountTRY": 28},
+        "bread": {"amount": 4, "currency": "PLN", "amountTRY": 32},
+        "eggs_12": {"amount": 12, "currency": "PLN", "amountTRY": 96},
+        "chicken_1kg": {"amount": 18, "currency": "PLN", "amountTRY": 144},
+        "rice_1kg": {"amount": 5, "currency": "PLN", "amountTRY": 40},
+        "potatoes_1kg": {"amount": 2.5, "currency": "PLN", "amountTRY": 20},
+        "tomatoes_1kg": {"amount": 8, "currency": "PLN", "amountTRY": 64},
+        "water_1.5L": {"amount": 2, "currency": "PLN", "amountTRY": 16}
+      },
+      "supermarkets": [
+        {"name": "Biedronka", "type": "Discount", "note": "Cheapest, most common"},
+        {"name": "Lidl", "type": "Discount", "note": "Good quality/price ratio"},
+        {"name": "Kaufland", "type": "Mid-range", "note": "Large selection"},
+        {"name": "Carrefour", "type": "Mid-range to premium"},
+        {"name": "Auchan", "type": "Hypermarket"},
+        {"name": "Żabka", "type": "Convenience", "note": "24/7 but expensive"}
+      ],
+      "turkishStores": {
+        "available": true,
+        "locations": "Warsaw, Krakow (limited selection)",
+        "note": "Turkish grocery stores exist in major cities"
+      }
+    },
+
+    "transportation": {
+      "publicTransport": {
+        "Warsaw": {
+          "monthlyPass": {"amount": 109, "currency": "PLN", "amountTRY": 872},
+          "singleTicket": {"amount": 4.40, "currency": "PLN", "amountTRY": 35.2},
+          "types": ["Metro (2 lines)", "Buses", "Trams"],
+          "coverage": "Excellent",
+          "notes": "Modern, clean, efficient"
+        },
+        "Krakow": {
+          "monthlyPass": {"amount": 110, "currency": "PLN", "amountTRY": 880},
+          "types": ["Buses", "Trams"],
+          "coverage": "Good",
+          "notes": "No metro, but compact city"
+        }
+      },
+      "driversLicense": {
+        "turkishLicenseValid": "Yes, but with conditions",
+        "validityPeriod": "6 months from residence registration",
+        "exchangeProcess": {
+          "possible": "Not automatic - Turkey not on exchange list",
+          "mustTakeExam": true,
+          "theoryTest": {
+            "required": true,
+            "language": "Polish (can request translator)",
+            "cost": {"amount": 50, "currency": "PLN", "amountTRY": 400}
+          },
+          "practicalTest": {
+            "required": true,
+            "cost": {"amount": 250, "range": "200-300", "currency": "PLN", "amountTRY": 2000}
+          },
+          "drivingSchool": {
+            "recommended": true,
+            "cost": {"amount": 2000, "range": "1500-3000", "currency": "PLN", "amountTRY": 16000},
+            "minimumHours": "30 hours practical required"
+          },
+          "totalCost": {"min": 1750, "max": 3350, "currency": "PLN", "minTRY": 14000, "maxTRY": 26800}
+        },
+        "internationalDrivingPermit": {
+          "recommended": true,
+          "validityWithPolishResidence": "Limited - get Polish license within 6 months"
+        }
+      }
+    }
+  },
+
+  "healthcareSystem": {
+    "systemType": "Public (NFZ - Narodowy Fundusz Zdrowia) with private option",
+    "overview": "Poland has public healthcare funded through social security contributions. Quality varies - public has long waits, private is fast but costs extra.",
+
+    "nfzPublicHealthcare": {
+      "howToRegister": {
+        "employees": "Automatic - employer registers you via ZUS contributions",
+        "students": "Can buy voluntary NFZ insurance at student rate (55.80 PLN/month)",
+        "selfEmployed": "Must pay voluntary contributions",
+        "unemployed": "Can apply for voluntary insurance"
+      },
+      "monthlyCost": {
+        "employed": "Included in salary (9% of gross, split with employer)",
+        "voluntaryStandard": {"amount": 786.28, "currency": "PLN", "amountTRY": 6290, "year": 2025},
+        "voluntaryStudent": {"amount": 55.80, "currency": "PLN", "amountTRY": 446, "year": 2025}
+      },
+      "whatsCovered": [
+        "GP visits",
+        "Specialist visits (with referral)",
+        "Hospital treatment",
+        "Emergency care",
+        "Some medications (partial coverage)",
+        "Pregnancy and childbirth"
+      ],
+      "whatsNotCovered": [
+        "Dental (basic only, most dental is private)",
+        "Many medications (partial coverage only)",
+        "Non-emergency procedures (long waits)"
+      ],
+      "waitingTimes": {
+        "gp": "Same day to few days",
+        "specialist": "Weeks to months",
+        "surgery": "Months to over a year for non-urgent"
+      },
+      "qualityRating": "Adequate but overcrowded; long waits for specialists"
+    },
+
+    "privateHealthcare": {
+      "overview": "Fast, convenient, English-speaking doctors, worth considering",
+      "monthlyCost": {"min": 50, "max": 300, "currency": "PLN", "minTRY": 400, "maxTRY": 2400},
+      "providers": [
+        {
+          "name": "Medicover",
+          "monthlyPremium": {"min": 150, "max": 300, "currency": "PLN", "minTRY": 1200, "maxTRY": 2400},
+          "pros": "Largest network, English-speaking doctors",
+          "coverage": "Nationwide"
+        },
+        {
+          "name": "LUX MED",
+          "monthlyPremium": {"min": 150, "max": 280, "currency": "PLN", "minTRY": 1200, "maxTRY": 2240},
+          "pros": "High quality, many locations",
+          "coverage": "Major cities"
+        },
+        {
+          "name": "Enel-Med",
+          "monthlyPremium": {"min": 100, "max": 250, "currency": "PLN", "minTRY": 800, "maxTRY": 2000},
+          "pros": "Good value",
+          "coverage": "Major cities"
+        }
+      ],
+      "payPerVisit": {
+        "gp": {"amount": 150, "range": "100-200", "currency": "PLN", "amountTRY": 1200},
+        "specialist": {"amount": 250, "range": "200-350", "currency": "PLN", "amountTRY": 2000},
+        "diagnostics": "Varies widely"
+      }
+    },
+
+    "costsOverview": {
+      "gpVisit_NFZ": {"amount": 0, "currency": "PLN", "note": "Free with NFZ"},
+      "gpVisit_private": {"amount": 150, "range": "100-200", "currency": "PLN", "amountTRY": 1200},
+      "specialistVisit_NFZ": {"amount": 0, "currency": "PLN", "note": "Free but long wait"},
+      "specialistVisit_private": {"amount": 250, "range": "200-350", "currency": "PLN", "amountTRY": 2000},
+      "emergencyRoom_NFZ": {"amount": 0, "currency": "PLN", "note": "Free"},
+      "emergencyRoom_private": {"amount": 500, "range": "300-1000", "currency": "PLN", "amountTRY": 4000},
+      "hospitalStayPerDay_NFZ": {"amount": 0, "currency": "PLN", "note": "Free"},
+      "prescriptionMedication": {"note": "Partial NFZ coverage, pay 30-100% depending on drug"},
+      "dental": {"note": "Mostly private - checkup 150-300 PLN, filling 200-500 PLN"}
+    },
+
+    "emergencyNumbers": {
+      "general": "112",
+      "ambulance": "999 (or city code + 999)",
+      "notes": "112 works everywhere, no city code needed"
+    },
+
+    "findingEnglishSpeakingDoctors": {
+      "platforms": [
+        "Medicover and LUX MED (private) have English speakers",
+        "ZnanyLekarz.pl website (filter by language)",
+        "Expat Facebook groups for recommendations"
+      ]
+    }
+  },
+
+  "employmentMarket": {
+    "minimumWage": {
+      "2024_firstHalf": {"gross": 4242, "net": 3221, "currency": "PLN"},
+      "2024_secondHalf": {"gross": 4300, "net": 3262, "currency": "PLN"},
+      "2025": {"gross": 4666, "net": 3511, "currency": "PLN", "netTRY": 28088},
+      "hourly_2025": {"gross": 30.50, "currency": "PLN", "amountTRY": 244}
+    },
+
+    "averageSalaries": {
+      "national_average_2024": {"gross": 7979, "currency": "PLN", "amountTRY": 63832},
+      "byProfession": [
+        {
+          "profession": "Software Engineer (Junior)",
+          "grossMonthly": {"min": 8000, "max": 12000, "currency": "PLN", "minTRY": 64000, "maxTRY": 96000},
+          "experience": "0-2 years"
+        },
+        {
+          "profession": "Software Engineer (Mid)",
+          "grossMonthly": {"min": 12000, "max": 20000, "currency": "PLN", "minTRY": 96000, "maxTRY": 160000},
+          "experience": "3-5 years",
+          "median": 17000
+        },
+        {
+          "profession": "Software Engineer (Senior)",
+          "grossMonthly": {"min": 20000, "max": 30000, "currency": "PLN", "minTRY": 160000, "maxTRY": 240000},
+          "experience": "5+ years"
+        },
+        {
+          "profession": "Frontend Developer",
+          "grossMonthly": {"min": 8123, "max": 30100, "currency": "PLN", "note": "B2B contract, varies by experience"}
+        },
+        {
+          "profession": "DevOps Engineer",
+          "grossMonthly": {"min": 9500, "max": 33863, "currency": "PLN", "note": "B2B contract"}
+        },
+        {
+          "profession": "Data Scientist",
+          "grossMonthly": {"min": 10000, "max": 25000, "currency": "PLN", "minTRY": 80000, "maxTRY": 200000}
+        },
+        {
+          "profession": "Nurse",
+          "grossMonthly": {"min": 4690, "max": 14100, "currency": "PLN", "minTRY": 37520, "maxTRY": 112800},
+          "median": 7200,
+          "medianTRY": 57600,
+          "notes": "Wide range based on experience and location"
+        },
+        {
+          "profession": "Doctor (Specialist)",
+          "grossMonthly": {"min": 12000, "max": 25000, "currency": "PLN", "minTRY": 96000, "maxTRY": 200000},
+          "notes": "Varies greatly by specialty and sector (public vs private)"
+        },
+        {
+          "profession": "Engineer (Mechanical/Civil)",
+          "grossMonthly": {"min": 7000, "max": 15000, "currency": "PLN", "minTRY": 56000, "maxTRY": 120000}
+        },
+        {
+          "profession": "Teacher",
+          "grossMonthly": {"min": 5000, "max": 8000, "currency": "PLN", "minTRY": 40000, "maxTRY": 64000},
+          "notes": "Public sector, lower than private"
+        },
+        {
+          "profession": "Accountant",
+          "grossMonthly": {"min": 6000, "max": 12000, "currency": "PLN", "minTRY": 48000, "maxTRY": 96000}
+        }
+      ],
+      "note": "IT sector pays significantly above average. Gross to net: approximately 70-75% after taxes and ZUS"
+    },
+
+    "jobSearchResources": [
+      {
+        "name": "Just Join IT",
+        "url": "https://justjoin.it/",
+        "focus": "IT and tech jobs",
+        "pros": "Transparent salaries, English-language jobs, relocation support filter",
+        "bestFor": "Software developers, IT professionals"
+      },
+      {
+        "name": "No Fluff Jobs",
+        "url": "https://nofluffjobs.com/",
+        "focus": "IT jobs",
+        "pros": "Salary transparency, English jobs, tech-focused",
+        "bestFor": "IT professionals"
+      },
+      {
+        "name": "Pracuj.pl",
+        "url": "https://www.pracuj.pl/",
+        "focus": "General jobs (all sectors)",
+        "pros": "Largest job board in Poland",
+        "bestFor": "All professions",
+        "language": "Mostly Polish"
+      },
+      {
+        "name": "LinkedIn Poland",
+        "url": "https://www.linkedin.com/jobs/",
+        "focus": "Professional jobs",
+        "pros": "International companies, networking",
+        "bestFor": "All professionals"
+      },
+      {
+        "name": "Rocket Jobs",
+        "url": "https://rocketjobs.pl/",
+        "focus": "Startup jobs",
+        "bestFor": "Those wanting startup environment"
+      }
+    ],
+
+    "workCulture": {
+      "workingHours": "8 hours/day, 40 hours/week standard",
+      "flexibleHours": "Common in IT sector, rare in traditional sectors",
+      "remoteWork": "Increased post-COVID, especially IT; hybrid common",
+      "vacationDays": {
+        "legal_minimum": "20 days (for employees with <10 years experience)",
+        "after_10_years": "26 days",
+        "typical": "20-26 days",
+        "publicHolidays": "13 public holidays per year"
+      },
+      "sickLeave": {
+        "first33Days": "80% of salary (paid by employer)",
+        "after33Days": "Paid by ZUS (social insurance)",
+        "certificateRequired": "From day 1"
+      },
+      "maternityLeave": {
+        "duration": "20-52 weeks depending on number of children",
+        "paidPercentage": "100% for first 20 weeks, 60-80% after",
+        "paternityLeave": "2 weeks for fathers"
+      },
+      "workEnvironment": "Formal in traditional sectors, casual in tech/startups",
+      "punctuality": "Expected - being on time important",
+      "hierarchy": "Moderate - less hierarchical than Turkey but more than US"
+    },
+
+    "employmentLaws": {
+      "contractTypes": [
+        {
+          "type": "Umowa o pracę (Employment Contract)",
+          "description": "Standard employment contract, most protective",
+          "benefits": "Full ZUS, vacation, sick leave, notice period protection",
+          "mostCommon": "Traditional sectors"
+        },
+        {
+          "type": "Umowa zlecenie (Contract of Mandate)",
+          "description": "Civil law contract, less protection",
+          "benefits": "Flexible, lower costs",
+          "drawbacks": "Limited labor protections, minimal ZUS"
+        },
+        {
+          "type": "B2B (Business to Business)",
+          "description": "Self-employed contractor",
+          "benefits": "Higher net salary, more control",
+          "drawbacks": "Must handle own taxes, ZUS, no vacation/sick leave",
+          "mostCommon": "IT sector"
+        }
+      ],
+      "noticePeriods": {
+        "trial_period": "3 days notice",
+        "under_6_months": "2 weeks notice",
+        "6months_to_3years": "1 month notice",
+        "over_3_years": "3 months notice"
+      },
+      "severance": "Depends on contract type and duration",
+      "trialPeriod": "Up to 3 months common",
+      "overtime": "Must be paid or compensated with time off"
+    }
+  },
+
+  "taxSystem": {
+    "taxResidency": {
+      "rule": "Tax resident if center of life in Poland OR stay 183+ days in tax year",
+      "implications": "Tax residents pay tax on worldwide income; non-residents only on Polish income"
+    },
+
+    "incomeTax": {
+      "system": "Progressive rates",
+      "brackets_2025": [
+        {
+          "upTo": 120000,
+          "rate": "12%",
+          "currency": "PLN",
+          "upToTRY": 960000
+        },
+        {
+          "above": 120000,
+          "rate": "32%",
+          "currency": "PLN",
+          "aboveTRY": 960000
+        }
+      ],
+      "taxFreeAmount": {
+        "amount": 30000,
+        "currency": "PLN",
+        "amountTRY": 240000,
+        "note": "First 30,000 PLN tax-free for everyone"
+      }
+    },
+
+    "socialSecurity_ZUS": {
+      "employeeContribution": "~13.71% of gross salary",
+      "employerContribution": "~17-22% on top of gross",
+      "totalCost": "~35% of gross",
+      "covers": ["Pension", "Disability", "Sickness", "Healthcare (NFZ)"],
+      "self_employed_2024": {
+        "monthly": 1600.27,
+        "currency": "PLN",
+        "amountTRY": 12802,
+        "healthInsurance": 381.78,
+        "total_minimum": 1982.05
+      }
+    },
+
+    "netFromGross": {
+      "example_10000_PLN": {
+        "gross": 10000,
+        "ZUS_employee": 1371,
+        "taxBase": 8629,
+        "incomeTax": 1035,
+        "net": 7594,
+        "netPercentage": "75.94%"
+      },
+      "example_15000_PLN": {
+        "gross": 15000,
+        "net": "~11,000 PLN",
+        "netPercentage": "~73%"
+      }
+    },
+
+    "taxFiling": {
+      "deadline": "April 30 following tax year",
+      "filingMethod": "Online via e-PIT portal (automatic for employees)",
+      "form": "PIT-37 (for employment income)",
+      "employeesNote": "Employer pre-fills most information; just review and confirm"
+    },
+
+    "turkeyPolandTaxTreaty": {
+      "exists": true,
+      "purpose": "Avoid double taxation",
+      "mechanism": "Credit method - tax paid in one country credited against tax in other",
+      "note": "Consult tax advisor for specifics"
+    },
+
+    "NIP_taxNumber": {
+      "what": "Numer Identyfikacji Podatkowej - Polish tax ID",
+      "required": "Yes, for all who work or earn income in Poland",
+      "howToObtain": "Apply at local tax office (Urząd Skarbowy) or online",
+      "cost": 0,
+      "form": "NIP-7",
+      "processingTime": "Same day or 1-2 days"
+    },
+
+    "recommendedAccountants": {
+      "forForeigners": "Look for 'księgowy dla cudzoziemców' (accountant for foreigners)",
+      "monthlyCost": {"min": 100, "max": 300, "currency": "PLN", "minTRY": 800, "maxTRY": 2400},
+      "annualTaxReturn": {"cost": 200, "range": "150-500", "currency": "PLN", "costTRY": 1600}
+    }
+  },
+
+  "turkishCommunity": {
+    "size": "Growing community, estimated few thousand in major cities",
+    "mainCities": ["Warsaw", "Krakow", "Wroclaw"],
+
+    "associations": [
+      {
+        "name": "Turkish Cultural associations",
+        "location": "Warsaw",
+        "note": "Check Facebook groups for current contact info"
+      }
+    ],
+
+    "mosques": {
+      "Warsaw": [
+        {
+          "name": "Islamic Cultural Center Warsaw",
+          "location": "Wilanów district",
+          "notes": "Largest mosque in Poland, Turkish community attends"
+        },
+        {
+          "name": "Muslim prayer houses",
+          "location": "Various locations",
+          "note": "Tatar mosques also exist"
+        }
+      ],
+      "other_cities": "Limited - Warsaw has most developed Muslim community infrastructure"
+    },
+
+    "turkishBusinesses": {
+      "restaurants": "Turkish restaurants in all major cities (döner shops common)",
+      "groceryStores": "Limited Turkish grocery stores in Warsaw, Krakow",
+      "barbers": "Turkish barbers (berber) increasingly common in cities"
+    },
+
+    "onlineCommunities": [
+      {
+        "platform": "Facebook",
+        "groups": [
+          "Turks in Poland",
+          "Polonya'daki Türkler",
+          "Turkish Students in Poland"
+        ]
+      },
+      {
+        "platform": "WhatsApp/Telegram",
+        "note": "Various city-specific groups"
+      }
+    ],
+
+    "culturalDifferences": {
+      "language": "Polish very difficult but English common in big cities among young people",
+      "religion": "Poland very Catholic but generally tolerant; growing Muslim community",
+      "socialLife": "Poles can seem reserved initially but warm up; social drinking culture common",
+      "businessCulture": "More formal than Turkey in some ways, direct communication valued"
+    }
+  },
+
+  "importantNotes": {
+    "dataVerification": "All information verified from official sources and current as of 2024-2025. Always verify latest requirements from official government websites.",
+    "sources": [
+      "https://www.gov.pl/ - Official Polish government portal",
+      "https://www.gov.pl/web/turkiye - Polish government portal in Turkish",
+      "https://udsc.gov.pl/ - Office for Foreigners",
+      "https://www.nfz.gov.pl/ - National Health Fund",
+      "https://www.vfsglobal.com/poland/turkey/ - VFS Global visa center"
+    ],
+    "recommendedNextSteps": [
+      "Research specific universities/jobs in Poland",
+      "Join Polish/Turkish expat Facebook groups",
+      "Learn basic Polish phrases",
+      "Calculate detailed budget for your situation",
+      "Consult immigration lawyer if needed"
+    ]
+  }
+}

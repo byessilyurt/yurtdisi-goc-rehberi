@@ -1,0 +1,644 @@
+{
+  "$schema": "Emigration Data Template v1.0",
+  "meta": {
+    "version": "1.0",
+    "lastUpdated": "2025-01-XX",
+    "dataCollectionNotes": "Fill all fields with official, verified information. Include sources and last verification dates."
+  },
+
+  "countries": [
+    {
+      "countryCode": "US",
+      "countrySlug": "abd",
+      "officialName": "United States of America",
+      "officialLanguages": ["English"],
+      "currency": "USD",
+      "timezone": "Multiple (UTC-5 to UTC-10)",
+
+      "governmentContacts": {
+        "immigrationDepartment": {
+          "name": "U.S. Citizenship and Immigration Services (USCIS)",
+          "website": "https://www.uscis.gov",
+          "phone": "",
+          "email": "",
+          "workingHours": ""
+        },
+        "embassyInTurkey": {
+          "name": "",
+          "address": "",
+          "phone": "",
+          "email": "",
+          "website": "",
+          "workingHours": "",
+          "appointmentSystem": ""
+        },
+        "emergencyContacts": {
+          "police": "",
+          "ambulance": "",
+          "fire": "",
+          "consularEmergency": ""
+        }
+      },
+
+      "visaPrograms": [
+        {
+          "visaCode": "H1B",
+          "officialName": "H-1B Specialty Occupation Workers",
+          "category": "work",
+
+          "eligibilityCriteria": {
+            "ageRequirements": {
+              "minimumAge": 21,
+              "maximumAge": null,
+              "notes": ""
+            },
+            "educationRequirements": {
+              "minimumLevel": "Bachelor's degree or equivalent",
+              "acceptedDegrees": [],
+              "degreeRecognitionProcess": "",
+              "equivalencyOptions": []
+            },
+            "workExperienceRequirements": {
+              "minimumYears": 0,
+              "relevantFields": [],
+              "documentationRequired": []
+            },
+            "languageRequirements": {
+              "required": false,
+              "minimumLevel": "",
+              "acceptedTests": [],
+              "minimumScores": {},
+              "exemptions": []
+            },
+            "financialRequirements": {
+              "proofOfFundsRequired": false,
+              "minimumAmount": 0,
+              "acceptedProofTypes": []
+            },
+            "healthRequirements": {
+              "medicalExamRequired": true,
+              "vaccinations": [],
+              "prohibitedConditions": [],
+              "panelDoctors": ""
+            },
+            "characterRequirements": {
+              "policeCertificateRequired": false,
+              "excludingFactors": [],
+              "securityChecks": []
+            }
+          },
+
+          "applicationProcess": {
+            "overview": "",
+            "estimatedTotalDuration": "60-180 days",
+            "steps": [
+              {
+                "stepNumber": 1,
+                "stepName": "Find Employer Sponsor",
+                "description": "",
+                "duration": "",
+                "requiredDocuments": [],
+                "forms": [],
+                "costs": [],
+                "tips": [],
+                "commonMistakes": []
+              },
+              {
+                "stepNumber": 2,
+                "stepName": "Employer Files LCA",
+                "description": "",
+                "duration": "7 days",
+                "requiredDocuments": [],
+                "forms": ["ETA Form 9035"],
+                "costs": [],
+                "tips": [],
+                "commonMistakes": []
+              },
+              {
+                "stepNumber": 3,
+                "stepName": "H-1B Cap Registration (if applicable)",
+                "description": "",
+                "duration": "March registration period",
+                "requiredDocuments": [],
+                "forms": [],
+                "costs": [{"item": "Registration fee", "amount": 10, "currency": "USD"}],
+                "tips": [],
+                "commonMistakes": []
+              }
+            ],
+            "totalCosts": {
+              "applicantPays": [],
+              "employerPays": [],
+              "optional": []
+            },
+            "rejectionReasons": {
+              "common": [],
+              "statistics": {
+                "approvalRate": "",
+                "averageProcessingTime": "",
+                "yearlyQuota": 85000,
+                "selectionRate": "~25%"
+              }
+            },
+            "appeals": {
+              "available": true,
+              "process": "",
+              "timeframe": "",
+              "successRate": ""
+            }
+          },
+
+          "requiredDocuments": {
+            "personalDocuments": [
+              {
+                "documentName": "Valid Passport",
+                "description": "",
+                "validityRequired": "Valid for at least 6 months beyond intended stay",
+                "howToObtain": "",
+                "apostilleRequired": false,
+                "translationRequired": false,
+                "notarizationRequired": false,
+                "numberOfCopies": 1
+              }
+            ],
+            "educationDocuments": [],
+            "employmentDocuments": [],
+            "financialDocuments": [],
+            "otherDocuments": []
+          },
+
+          "rightsAndRestrictions": {
+            "workRights": {
+              "canWork": true,
+              "restrictions": "Only for sponsoring employer",
+              "canChangeEmployer": true,
+              "processForChange": "New H-1B petition required",
+              "canBeSelfEmployed": false
+            },
+            "familyRights": {
+              "canBringFamily": true,
+              "eligibleRelatives": ["Spouse (H-4)", "Unmarried children under 21 (H-4)"],
+              "spouseWorkRights": "Conditional",
+              "childrenEducationRights": true,
+              "pathToFamilyPR": true
+            },
+            "travelRights": {
+              "canTravelAbroad": true,
+              "reentryRequirements": [],
+              "visaRevalidation": ""
+            },
+            "residencyRights": {
+              "canBuyProperty": true,
+              "canRentProperty": true,
+              "mustRegisterAddress": false,
+              "canOpenBankAccount": true,
+              "canGetDriversLicense": true
+            },
+            "socialBenefits": {
+              "healthcareAccess": "Through employer",
+              "unemploymentBenefits": false,
+              "pensionRights": true,
+              "educationSubsidies": false
+            }
+          },
+
+          "extensionAndRenewal": {
+            "renewable": true,
+            "maxDuration": "6 years (can be extended with approved I-140)",
+            "renewalProcess": "",
+            "applicationTiming": "",
+            "costs": [],
+            "approvalRate": ""
+          },
+
+          "pathToPermanentResidency": {
+            "available": true,
+            "process": "EB-2/EB-3 employment-based green card",
+            "timeline": "2-10+ years depending on country of birth",
+            "requirements": [],
+            "costs": [],
+            "steps": []
+          },
+
+          "pathToCitizenship": {
+            "available": true,
+            "minimumResidencyYears": 5,
+            "requirements": [],
+            "process": "",
+            "costs": []
+          }
+        }
+      ],
+
+      "settlementInformation": {
+        "firstWeekChecklist": [
+          {
+            "task": "Obtain Social Security Number",
+            "description": "",
+            "location": "Social Security Administration office",
+            "requiredDocuments": [],
+            "estimatedTime": "",
+            "cost": 0,
+            "priority": "critical"
+          }
+        ],
+
+        "housingSystem": {
+          "rentalMarket": {
+            "averageDeposit": "1-2 months rent",
+            "typicalLeaseLength": "12 months",
+            "tenantRights": "",
+            "landlordObligations": "",
+            "evictionLaws": "",
+            "rentalAgreementEssentials": [],
+            "commonPitfalls": []
+          },
+          "buyingProperty": {
+            "foreignerRestrictions": false,
+            "mortgageAvailability": "Limited without credit history",
+            "typicalDownPayment": "20%",
+            "propertyTaxes": "Varies by state/locality",
+            "process": []
+          }
+        },
+
+        "healthcareSystem": {
+          "systemType": "Private insurance-based",
+          "howToRegister": "",
+          "primaryCareAccess": "",
+          "emergencyCareAccess": "",
+          "prescriptionSystem": "",
+          "costsOverview": {
+            "gpVisit": "$100-200 without insurance",
+            "emergencyRoom": "$500-3000+",
+            "hospitalStayPerDay": "$1000-5000+",
+            "commonMedications": ""
+          },
+          "importantInfo": []
+        },
+
+        "bankingAndFinance": {
+          "openingBankAccount": {
+            "process": "",
+            "requiredDocuments": ["Passport", "SSN", "Proof of address", "Visa documents"],
+            "recommendedBanks": [],
+            "typicalFees": "",
+            "onlineBankingOptions": []
+          },
+          "creditSystem": {
+            "howItWorks": "",
+            "buildingCreditAsNewcomer": "",
+            "creditCards": {
+              "securedCards": [],
+              "newcomerFriendly": []
+            }
+          },
+          "taxObligations": {
+            "taxResidencyRules": "",
+            "federalIncomeTax": "",
+            "stateIncomeTax": "",
+            "socialSecurityTax": "",
+            "filingRequirements": "",
+            "importantDeadlines": ["April 15 - Tax filing deadline"],
+            "doubleTaxationTreaty": true,
+            "recommendedAccountants": []
+          }
+        },
+
+        "transportation": {
+          "publicTransport": {
+            "systemOverview": "",
+            "howToPay": "",
+            "monthlyPassCost": "",
+            "coverage": ""
+          },
+          "driversLicense": {
+            "canUseForeignLicense": "Temporary, varies by state",
+            "conversionProcess": "",
+            "newLicenseProcess": "",
+            "requiredTests": [],
+            "costs": ""
+          },
+          "buyingCar": {
+            "process": "",
+            "requiredDocuments": [],
+            "insurance": "",
+            "registrationProcess": ""
+          }
+        },
+
+        "educationSystem": {
+          "forChildren": {
+            "schoolTypes": ["Public schools", "Private schools", "Charter schools"],
+            "enrollmentProcess": "",
+            "costs": "Public schools free, private $10,000-40,000/year",
+            "languageSupport": "ESL programs available",
+            "schoolDistricts": ""
+          },
+          "degreeRecognition": {
+            "process": "WES or other credential evaluation service",
+            "agencies": ["WES", "ECE", "NACES members"],
+            "costs": "$200-300",
+            "timeline": "7-30 days"
+          },
+          "professionalLicensing": [
+            {
+              "profession": "Engineer",
+              "requiresLicense": true,
+              "licensingBody": "State licensing boards",
+              "process": "",
+              "exams": ["FE exam", "PE exam"],
+              "costs": "",
+              "timeline": ""
+            }
+          ]
+        },
+
+        "employmentMarket": {
+          "jobSearchResources": [],
+          "averageSalaries": {
+            "softwareEngineer": "$80,000-150,000",
+            "nurse": "$60,000-90,000",
+            "teacher": "$45,000-65,000"
+          },
+          "workCulture": "",
+          "employmentLaws": {
+            "minimumWage": "Federal $7.25/hr, varies by state",
+            "workingHours": "Typically 40 hours/week",
+            "vacationDays": "Varies, typically 10-15 days/year",
+            "sickLeave": "Varies by employer",
+            "maternityLeave": "12 weeks unpaid (FMLA)",
+            "paternityLeave": "12 weeks unpaid (FMLA)"
+          }
+        },
+
+        "socialIntegration": {
+          "languageLearning": {
+            "freeResources": [],
+            "governmentPrograms": [],
+            "privateClasses": [],
+            "onlineOptions": []
+          },
+          "culturalOrientation": {
+            "importantCustoms": [],
+            "businessEtiquette": [],
+            "socialNorms": [],
+            "holidays": []
+          },
+          "turkishCommunity": {
+            "size": "~350,000",
+            "mainCities": ["New York", "Los Angeles", "Chicago", "Washington DC"],
+            "associations": [],
+            "mosques": [],
+            "turkishSchools": [],
+            "turkishBusinesses": []
+          }
+        },
+
+        "legalAndCivicResponsibilities": {
+          "mustDo": [
+            "Maintain valid immigration status",
+            "File taxes annually",
+            "Carry valid ID",
+            "Update USCIS of address changes within 10 days"
+          ],
+          "mustNotDo": [
+            "Work without authorization",
+            "Overstay visa",
+            "Commit crimes"
+          ],
+          "votingRights": false,
+          "juryDuty": false,
+          "militaryService": false
+        }
+      },
+
+      "costOfLivingDetailed": {
+        "majorCities": [
+          {
+            "cityName": "New York City",
+            "rentOneBedroomCenter": "$3000-4500",
+            "rentOneBedroomSuburb": "$2000-3000",
+            "utilities": "$150-200",
+            "groceriesMonthly": "$400-600",
+            "publicTransportMonthly": "$127",
+            "internetMonthly": "$60-80",
+            "gymMembership": "$50-150",
+            "mealRestaurant": "$15-30",
+            "coffee": "$4-6",
+            "gasoline": "$3.5/gallon"
+          }
+        ],
+        "nationalAverages": {
+          "studio": "$1200",
+          "oneBedroom": "$1500",
+          "twoBedroom": "$1800"
+        }
+      },
+
+      "commonChallenges": [
+        {
+          "challenge": "Healthcare costs",
+          "description": "",
+          "solutions": [],
+          "resources": []
+        }
+      ],
+
+      "usefulAppsAndServices": [
+        {
+          "category": "Navigation",
+          "apps": ["Google Maps", "Waze"]
+        }
+      ],
+
+      "seasonalConsiderations": {
+        "bestTimeToArrive": "",
+        "weatherPatterns": "",
+        "holidaySeasons": "",
+        "schoolCalendar": ""
+      },
+
+      "officialResources": [
+        {
+          "name": "USCIS Official Website",
+          "url": "https://www.uscis.gov",
+          "description": "",
+          "languages": ["English", "Spanish"]
+        }
+      ],
+
+      "visaSpecificGuidelines": {
+        "H1B": {
+          "quotaSystem": {
+            "totalYearly": 85000,
+            "regularCap": 65000,
+            "advancedDegreeCap": 20000,
+            "registrationPeriod": "March",
+            "resultAnnouncement": "Late March",
+            "applicationPeriod": "April 1",
+            "startDate": "October 1"
+          },
+          "lotteryStatistics": {
+            "year2024": {
+              "totalRegistrations": 780000,
+              "selectedCases": 188400,
+              "selectionRate": "24%"
+            }
+          },
+          "capExemptions": [
+            "Higher education institutions",
+            "Nonprofit research organizations",
+            "Government research organizations",
+            "H-1B extensions",
+            "H-1B transfers"
+          ]
+        }
+      }
+    }
+  ],
+
+  "globalComparisons": {
+    "processingTimes": [
+      {
+        "country": "USA",
+        "visaType": "H-1B",
+        "averageDays": 120,
+        "premiumProcessing": 15
+      }
+    ],
+    "costs": [],
+    "successRates": [],
+    "qualityOfLife": []
+  },
+
+  "turkeyCitizenSpecific": {
+    "bilateralAgreements": [
+      {
+        "country": "USA",
+        "agreementName": "E-2 Treaty Investor Visa",
+        "benefits": "",
+        "specialProvisions": ""
+      }
+    ],
+    "documentTranslation": {
+      "certifiedTranslators": [],
+      "apostilleOffices": [],
+      "notaryServices": []
+    },
+    "turkishConsularServices": {
+      "countriesWithConsulates": [],
+      "servicesProvided": [],
+      "documentRenewal": ""
+    }
+  },
+
+  "dataCollectionChecklist": {
+    "informationTypes": [
+      {
+        "category": "Visa Requirements",
+        "items": [
+          "Official eligibility criteria from government sources",
+          "Complete document list with specifications",
+          "Exact costs in local currency",
+          "Processing times with date ranges",
+          "Success/rejection statistics",
+          "Quota information if applicable"
+        ],
+        "sources": [
+          "Official immigration department website",
+          "Embassy websites",
+          "Government gazettes",
+          "Official statistics"
+        ],
+        "lastVerified": ""
+      },
+      {
+        "category": "Living Costs",
+        "items": [
+          "Rent prices by city and neighborhood",
+          "Utility costs",
+          "Food and groceries",
+          "Transportation",
+          "Healthcare",
+          "Education",
+          "Telecommunications"
+        ],
+        "sources": [
+          "Numbeo",
+          "Government statistics",
+          "Real estate websites",
+          "Local utility companies"
+        ],
+        "lastVerified": ""
+      },
+      {
+        "category": "Legal Framework",
+        "items": [
+          "Immigration laws and regulations",
+          "Employment laws",
+          "Tax regulations",
+          "Rental laws",
+          "Family law (relevant to immigration)",
+          "Citizenship laws"
+        ],
+        "sources": [
+          "Official government legal databases",
+          "Ministry websites",
+          "Legal code publications"
+        ],
+        "lastVerified": ""
+      },
+      {
+        "category": "Practical Information",
+        "items": [
+          "Bank account opening procedures",
+          "Driver's license conversion",
+          "School enrollment",
+          "Healthcare registration",
+          "Social security registration",
+          "Tax registration"
+        ],
+        "sources": [
+          "Official service provider websites",
+          "Government portals",
+          "Verified expat communities"
+        ],
+        "lastVerified": ""
+      }
+    ]
+  },
+
+  "researcherNotes": {
+    "instructions": [
+      "All information must be from official sources",
+      "Include source URLs and last verification date",
+      "Use official terminology and exact names",
+      "Convert all costs to TRY using current exchange rates (note the rate and date)",
+      "When in doubt, mark field as 'NEEDS_VERIFICATION' with notes",
+      "Pay special attention to recent policy changes (2024-2025)",
+      "Cross-reference multiple sources for accuracy",
+      "Note any conflicting information found",
+      "Include both current requirements and upcoming changes if announced"
+    ],
+    "priorityFields": [
+      "applicationProcess.steps",
+      "requiredDocuments",
+      "eligibilityCriteria",
+      "costs",
+      "timeline",
+      "quotaInformation",
+      "rejectionReasons",
+      "pathToPermanentResidency"
+    ],
+    "commonSourceTypes": [
+      "Official government immigration websites",
+      "Embassy websites",
+      "Official legal documents and gazettes",
+      "Government statistical offices",
+      "Official fee schedules",
+      "Verified legal guides",
+      "International organization reports (OECD, UN, etc.)"
+    ]
+  }
+}
