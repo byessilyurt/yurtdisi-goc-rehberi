@@ -8,6 +8,11 @@ export function generateStaticParams() {
   }));
 }
 
-export default function CountryDetailPage({ params }: { params: { slug: string } }) {
-  return <EnhancedCountryDetail countrySlug={params.slug} />;
+export default async function CountryDetailPage({
+  params
+}: {
+  params: Promise<{ slug: string }>
+}) {
+  const { slug } = await params;
+  return <EnhancedCountryDetail countrySlug={slug} />;
 }
